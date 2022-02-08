@@ -1,1 +1,402 @@
-<script language=javascript>document.write(unescape("%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%0A%3Chead%3E%0A%20%20%3Ctitle%3E%uD074%uB808%uC774%uD2BC%20%uAE30%uBC18%20%uD22C%uD45C%20%uD50C%uB7AB%uD3FC%3C/title%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%0A%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css%22%3E%0A%20%20%3Cscript%20src%3D%22https%3A//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22index.js%22%3E%3C/script%3E%0A%3C/head%3E%0A%0A%3Cbody%20style%3D%22background%3A%20rgb%2815%2C%2029%2C%2038%29%3B%20font-family%3A%20TmoneyRoundWindRegular%22%3E%0A%20%20%3Cdiv%3E%0A%20%20%20%20%3Cnav%20class%3D%22navbar%20navbar-expand-md%20navbar-dark%22%20style%3D%22background%3A%20rgb%2836%2C%2050%2C%2060%29%3B%22%3E%0A%20%20%20%20%20%20%3Ca%20class%3D%22navbar-brand%22%20href%3D%22index.html%22%20style%3D%22margin-left%3A%2010px%3B%22%3EBtoo%3Cimg%20src%3D%22images/voting.png%22%20style%3D%22height%3A%2038px%3B%20margin-left%3A%205px%3B%20overflow%3A%20hidden%3B%20display%3Anone%22%3E%3C/a%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22navbar-toggler%22%20type%3D%22button%22%20style%3D%22margin-right%3A%2015px%3B%22%20data-toggle%3D%22collapse%22%20data-target%3D%22%23collapsibleNavbar%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22navbar-toggler-icon%22%3E%3C/span%3E%0A%20%20%20%20%20%20%3C/button%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22collapse%20navbar-collapse%22%20id%3D%22collapsibleNavbar%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22navbar-nav%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22nav-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22nav-link%22%20href%3D%22index.html%22%3EHome%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22nav-item%22%20id%3D%22new_vote%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22nav-link%22%20href%3D%22%23%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23genModal%22%3E%uC0C8%20%uD22C%uD45C%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22nav-item%22%20id%3D%22list_vote%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22nav-link%22%20href%3D%22%23%22%20onclick%3D%22App.changeUIlist%28%29%22%3E%uD22C%uD45C%20%uAC8C%uC2DC%uD310%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22navbar-nav%20ml-auto%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22nav-item%22%20id%3D%22login%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22nav-link%22%20href%3D%22%23%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23loginModal%22%3E%uB85C%uADF8%uC778%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22nav-item%22%20id%3D%22logout%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22nav-link%22%20href%3D%22index.html%22%20onclick%3D%22App.handleLogout%28%29%22%3E%uB85C%uADF8%uC544%uC6C3%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22nav-item%20float-right%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22nav-link%22%20href%3D%22%23%22%20onclick%3D%22App.changeUIhelp%28%29%22%3E%uB3C4%uC6C0%uB9D0%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/nav%3E%0A%20%20%20%20%3Cbr%3E%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20id%3D%22intro%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container-fluid%22%20style%3D%22width%3A%2090%25%3B%22%3E%3Cbr%3E%0A%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A%2040px%3B%20color%3Awhitesmoke%3B%22%3EBtoo%3A%20%uBE14%uB85D%uCCB4%uC778%20%uAE30%uBC18%20%uC628%uB77C%uC778%20%uBE44%uBC00%20%uD22C%uD45C%20%uC2DC%uC2A4%uD15C%3Cbr%3E%3C/div%3E%0A%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%3Cdiv%20style%3D%22width%3A100%25%3B%20border-width%3A%200px%200px%202px%3B%20border-style%3A%20solid%3B%20border-color%3A%20gray%3B%20padding-bottom%3A30px%3B%20margin%3Aauto%3B%20margin-bottom%3A30px%3B%20text-align%3A%20center%3B%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-5%20col-md-5%20col-sm-12%20col-12%22%20style%3D%22color%3Awhitesmoke%3B%20text-align%3A%20center%3B%20margin%3Aauto%3B%22%3E%3Cimg%20src%3D%22images/voting.png%22%20style%3D%22width%3A%2040%25%3B%20height%3A%20auto%3B%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-1%20col-md-1%20col-sm-12%20col-12%22%20style%3D%22color%3Awhitesmoke%3B%20text-align%3A%20center%3B%20margin%3Aauto%3B%20font-size%3A%2064px%3B%22%3Ex%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-6%20col-md-6%20col-sm-12%20col-12%22%20style%3D%22color%3Awhitesmoke%3B%20text-align%3A%20center%3B%20margin%3Aauto%3B%22%3E%3Cimg%20src%3D%22images/klaytn.png%22%20style%3D%22width%3A%2080%25%3B%20height%3A%20auto%3B%22%3E%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-3%20col-sm-6%22style%3D%22color%3Awhitesmoke%3B%20margin%3A%20auto%3B%20margin-top%3A%205px%3Btext-align%3A%20left%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A32px%3B%20color%3Argb%28130%2C%20177%2C%20255%29%3B%20text-align%3A%20center%3Bmargin-bottom%3A%2010px%3B%22%3EBtoo%uB780%3F%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A23px%3B%20margin%3A%205px%2010px%2010px%2010px%3B%22%3EBtoo%uB294%20Blockchain%20tally%20on%20online%uC73C%uB85C%20%uBE14%uB85D%uCCB4%uC778%20%uAE30%uBC18%20%uC628%uB77C%uC778%20%uD22C%uD45C%20%uC11C%uBE44%uC2A4%uC785%uB2C8%uB2E4.%20%uC120%uAC70%uC758%204%uC6D0%uCE59%uC778%20%22%uBCF4%uD1B5%20%uC120%uAC70%22%2C%20%22%uD3C9%uB4F1%20%uC120%uAC70%22%2C%20%22%uC9C1%uC811%20%uC120%uAC70%22%2C%20%22%uBE44%uBC00%20%uC120%uAC70%22%20%uC911%uC5D0%20%uBE14%uB85D%uCCB4%uC778%uC5D0%uC11C%20%uAD6C%uD604%uD558%uAE30%20%uD798%uB4E0%20%uBE44%uBC00%20%uC120%uAC70%uB97C%20Btoo%uB9CC%uC758%20%uC554%uD638%uD654%20%uC54C%uACE0%uB9AC%uC998%uC744%20%uD1B5%uD574%20%uC2E4%uD604%uD558%uC5EC%20%uC2E0%uB8B0%uC131%20%uC788%uB294%20%uD22C%uD45C%uB97C%20%uAC00%uB2A5%uD558%uAC8C%20%uD569%uB2C8%uB2E4%21%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-3%20col-sm-6%22style%3D%22color%3Awhitesmoke%3B%20margin%3A%20auto%3B%20margin-top%3A%205px%3B%20text-align%3A%20left%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A32px%3B%20color%3Argb%28130%2C%20177%2C%20255%29%3B%20text-align%3A%20center%3Bmargin-bottom%3A%2010px%3B%22%3E%uBE14%uB85D%uCCB4%uC778%20%uAE30%uBC18%20%uD22C%uD45C%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A23px%3Bmargin%3A%205px%2010px%2010px%2010px%3B%22%3E%uBE14%uB85D%uCCB4%uC778%uC740%20%uBAA8%uB450%uAC00%20%uB370%uC774%uD130%uB97C%20%uACF5%uC720%uD558%uBA74%uC11C%20%uC5F0%uACB0%uB418%uAE30%20%uB54C%uBB38%uC5D0%20%uD55C%uBC88%20%uAE30%uB85D%uB41C%20%uB370%uC774%uD130%uC758%20%uBCC0%uACBD%uC740%20%uBD88%uAC00%uB2A5%uD569%uB2C8%uB2E4.%20%uC774%uB294%20%uD22C%uD45C%uB97C%20%uD560%20%uB54C%20%uC790%uC2E0%uC774%20%uD22C%uD45C%uD55C%20%uACB0%uACFC%uAC00%20%uBC14%uB00C%uC9C0%20%uC54A%uB294%20%uB2E4%uB294%20%uAC83%uC744%20%uC758%uBBF8%uD569%uB2C8%uB2E4.%20%uD639%uC2DC%20%uBAA8%uB97C%20%uBD80%uC815%20%uD589%uC704%uC5D0%20%uC788%uC5B4%uC11C%20%uBE14%uB85D%uCCB4%uC778%20%uAE30%uBC18%20%uD22C%uD45C%20%uC11C%uBE44%uC2A4%uB294%20%uC644%uBCBD%uD788%20%uC790%uC720%uB86D%uC2B5%uB2C8%uB2E4.%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-3%20col-sm-6%22style%3D%22color%3Awhitesmoke%3B%20margin%3A%20auto%3B%20margin-top%3A%205px%3B%20text-align%3A%20left%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A32px%3B%20color%3Argb%28130%2C%20177%2C%20255%29%3B%20text-align%3A%20center%3Bmargin-bottom%3A%2010px%3B%22%3E%uCCA0%uC800%uD55C%20%uBE44%uBC00%20%uD22C%uD45C%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A23px%3Bmargin%3A%205px%2010px%2010px%2010px%3B%22%3E%uBE14%uB85D%uCCB4%uC778%uC740%20%uBAA8%uB450%uAC00%20%uB370%uC774%uD130%uB97C%20%uACF5%uC720%uD558%uAE30%20%uB54C%uBB38%uC5D0%20%uC790%uC2E0%uC774%20%uBCF4%uB0B8%20%uB370%uC774%uD130%uAC00%20%uB178%uCD9C%uB41C%uB2E4%uB294%20%uBB38%uC81C%uAC00%20%uC788%uC2B5%uB2C8%uB2E4.%20%uD558%uC9C0%uB9CC%20Btoo%uB294%20%uBE44%uBC00%20%uD22C%uD45C%uC758%20%uC904%uC784%uB9D0%uB85C%uC368%20%uD22C%uD45C%20%uB370%uC774%uD130%20%uC554%uD638%uD654%20%uAE30%uC220%uC744%20%uD1B5%uD574%20%uC790%uC2E0%uC774%20%uBCF4%uB0B4%uB294%20%uB370%uC774%uD130%uAC00%20%uBCF4%uC5EC%uC9C8%uC9C0%uC5EC%uB3C4%20%uB204%uAD6C%uC5D0%uAC8C%20%uD22C%uD45C%uD558%uC600%uB294%uC9C0%uB294%20%uC54C%20%uC218%20%uC5C6%uC2B5%uB2C8%uB2E4.%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-3%20col-sm-6%22style%3D%22color%3Awhitesmoke%3B%20margin%3A%20auto%3B%20margin-top%3A%205px%3B%20text-align%3A%20left%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A32px%3B%20color%3Argb%28130%2C%20177%2C%20255%29%3B%20text-align%3A%20center%3Bmargin-bottom%3A%2010px%3B%22%3E%uC5F0%uACC4%uC131%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A23px%3Bmargin%3A%205px%2010px%2010px%2010px%3B%22%3E%uD074%uB808%uC774%uD2BC%uC740%20%uCE74%uCE74%uC624%uC758%20%uBE14%uB85D%uCCB4%uC778%20%uAD00%uB828%20%uC790%uD68C%uC0AC%20%uADF8%uB77C%uC6B4%uB4DCX%uAC00%20%uAC1C%uBC1C%uD55C%20%uBD84%uC0B0%uC5B4%uD50C%uB9AC%uCF00%uC774%uC158%20%uB514%uC571%uC744%20%uB9CC%uB4E4%uAE30%20%uC704%uD55C%20%uBE14%uB85D%uCCB4%uC778%20%uAC1C%uBC1C%20%uD50C%uB7AB%uD3FC%uC785%uB2C8%uB2E4.%20%uD074%uB808%uC774%uD2BC%uC758%20%uC5D0%uCF54%uC2DC%uC2A4%uD15C%uC5D0%uB294%20%uB2E4%uC591%uD55C%20%uAE30%uC5C5%uB4E4%uC774%20%uCC38%uC5EC%uD558%uBA70%20%uADF8%uB85C%20%uC778%uD574%20%uD074%uB808%uC774%uD2BC%uC744%20%uAE30%uBC18%uC73C%uB85C%20%uB2E4%uC591%uD55C%20%uC11C%uBE44%uC2A4%uC640%20%uC27D%uAC8C%20%uC5F0%uB3D9%uC774%20%uAC00%uB2A5%uD569%uB2C8%uB2E4.%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%20%20%20%20%20%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cbr%3E%0A%20%20%3C/div%3E%0A%0A%20%20%3Cdiv%20class%3D%22voting-list%22%20id%3D%22help%22%20style%3D%22margin-top%3A%205%25%3B%20display%3A%20none%3B%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container-fluid%22%3E%3Cbr%3E%0A%20%20%20%20%20%20%3Cdiv%20style%3D%22font-size%3A%20xx-large%3B%22%3E%uC0AC%uC6A9%20%uBC29%uBC95%3Cbr%3E%3C/div%3E%0A%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%3Cdetails%20class%3D%22helps%22%3E%0A%20%20%20%20%20%20%20%20%3Csummary%3E%uACC4%uC815%20%uC0DD%uC131%20%uBC0F%20%uB85C%uADF8%uC778%3C/summary%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//baobab.wallet.klaytn.com/%22%3E%uD074%uB808%uC774%uD2BC%20%uD14C%uC2A4%uD2B8%uB137%3C/a%3E%uC5D0%20%uC811%uC18D%uD558%uC5EC%20Create%20Account%uB97C%20%uD1B5%uD574%20keystore%20%uD30C%uC77C%uACFC%20%uAC1C%uC778%uD0A4%uB97C%20%uC800%uC7A5%uD569%uB2C8%uB2E4.%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%uADF8%20%uD6C4%20%uC6B0%uCE21%20%uC0C1%uB2E8%uC5D0%20%uC788%uB294%20%uB85C%uADF8%uC778%20%uBC84%uD2BC%uC744%20%uB20C%uB7EC%20%uBC1C%uAE09%uBC1B%uC740%20keystore%20%uD30C%uC77C%20+%20%uBE44%uBC00%uBC88%uD638%20%uD639%uC740%20%uAC1C%uC778%uD0A4%uB97C%20%uD1B5%uD558%uC5EC%20%uB85C%uADF8%uC778%20%uD569%uB2C8%uB2E4.%0A%20%20%20%20%20%20%3C/details%3E%3Cbr%3E%0A%20%20%20%20%20%20%3Cdetails%20class%3D%22helps%22%3E%0A%20%20%20%20%20%20%20%20%3Csummary%3E%uC0C8%20%uD22C%uD45C%20%uC0DD%uC131%3C/summary%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%uB85C%uADF8%uC778%uC744%20%uD560%20%uACBD%uC6B0%20%uC0C1%uB2E8%20%uBA54%uB274%20%uBC14%uC5D0%20%22%uC0C8%20%uD22C%uD45C%22%20%uBC84%uD2BC%uC774%20%uC0DD%uAE30%uAC8C%20%uB429%uB2C8%uB2E4.%20%uD574%uB2F9%20%uBC84%uD2BC%uC744%20%uB204%uB974%uACE0%20%uD22C%uD45C%20%uC774%uB984%uACFC%20%uC81C%uD55C%uC2DC%uAC04%28%uCD08%29%uB97C%20%uC785%uB825%uD558%uC2DC%uBA74%20%uC0C8%uB85C%uC6B4%20%uD22C%uD45C%uAC00%20%uC0DD%uC131%uB429%uB2C8%uB2E4.%0A%20%20%20%20%20%20%3C/details%3E%3Cbr%3E%0A%20%20%20%20%20%20%3Cdetails%20class%3D%22helps%22%3E%0A%20%20%20%20%20%20%20%20%3Csummary%3E%uD22C%uD45C%20%uBAA9%uB85D%20%uD655%uC778%3C/summary%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%uB85C%uADF8%uC778%uC744%20%uD560%20%uACBD%uC6B0%20%uC0C1%uB2E8%20%uBA54%uB274%20%uBC14%uC5D0%20%22%uD22C%uD45C%20%uAC8C%uC2DC%uD310%22%20%uBC84%uD2BC%uC774%20%uC0DD%uAE30%uAC8C%20%uB429%uB2C8%uB2E4.%20%uD574%uB2F9%20%uBC84%uD2BC%uC744%20%uB204%uB974%uBA74%20%uD22C%uD45C%uB4E4%uC758%20%uC774%uB984%uACFC%20%uD604%uC7AC%20%uC0C1%uD669%2C%20%uB0A8%uC740%20%uC2DC%uAC04%uC744%20%uD655%uC778%20%uD560%20%uC218%20%uC788%uC2B5%uB2C8%uB2E4.%0A%20%20%20%20%20%20%3C/details%3E%3Cbr%3E%0A%20%20%20%20%20%20%3Cdetails%20class%3D%22helps%22%3E%0A%20%20%20%20%20%20%20%20%3Csummary%3E%uD22C%uD45C%uC790/%uD6C4%uBCF4%20%uB4F1%uB85D%3C/summary%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%uD22C%uD45C%20%uAC8C%uC2DC%uD310%uC5D0%uC11C%20%22%uB4F1%uB85D%20%uB2E8%uACC4%22%uC758%20%uD22C%uD45C%uC5D0%20%uB4E4%uC5B4%uAC00%uAC8C%20%uB418%uBA74%20%22%uD22C%uD45C%uC790%20%uB4F1%uB85D%22%uACFC%20%22%uC0C8%20%uD6C4%uBCF4%22%20%uBC84%uD2BC%uC774%20%uC788%uC2B5%uB2C8%uB2E4.%20%22%uD22C%uD45C%uC790%20%uB4F1%uB85D%22%20%uBC84%uD2BC%uC744%20%uB204%uB97C%20%uACBD%uC6B0%20%uD22C%uD45C%uC758%20%uAD8C%uD55C%uC744%20%uC5BB%uAC8C%20%uB418%uACE0%20%22%uC0C8%20%uD6C4%uBCF4%22%20%uBC84%uD2BC%uC744%20%uB204%uB97C%20%uACBD%uC6B0%20%uC0C8%uB85C%uC6B4%20%uD6C4%uBCF4%uB97C%20%uCD94%uAC00%uD560%20%uC218%20%uC788%uAC8C%20%uB429%uB2C8%uB2E4.%0A%20%20%20%20%20%20%3C/details%3E%3Cbr%3E%0A%20%20%20%20%20%20%3Cdetails%20class%3D%22helps%22%3E%0A%20%20%20%20%20%20%20%20%3Csummary%3E%uD22C%uD45C%20%uB2E8%uACC4%20%uC870%uC815%3C/summary%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%uD22C%uD45C%20%uAC8C%uC2DC%uD310%uC5D0%uC11C%20%uC120%uD0DD%uD55C%20%uD22C%uD45C%uAC00%20%uC790%uC2E0%uC774%20%uC0DD%uC131%uD55C%20%uD22C%uD45C%uC77C%20%uACBD%uC6B0%20%uD398%uC774%uC9C0%20%uD558%uB2E8%uC5D0%20%uBC84%uD2BC%uB4E4%uC774%20%uBCF4%uC774%uAC8C%20%uB429%uB2C8%uB2E4.%20%22%uB4F1%uB85D%20%uB2E8%uACC4%22%uC640%20%22%uD22C%uD45C%20%uB2E8%uACC4%22%20%uBC84%uD2BC%uC744%20%uD1B5%uD574%20%uAC01%20%uB2E8%uACC4%uB85C%20%uBCC0%uACBD%uD560%20%uC218%20%uC788%uC2B5%uB2C8%uB2E4.%20%22%uACB0%uACFC%20%uD655%uC778%22%20%uBC84%uD2BC%uACFC%20%22%uBCF5%uC6D0%20%uD655%uC778%22%20%uBC84%uD2BC%uC740%20%uACB0%uACFC%20%uD655%uC778%20%uBC0F%20%uBCF5%uC6D0%20%uB2E8%uACC4%uC5D0%20%uC0AC%uC6A9%uB429%uB2C8%uB2E4.%0A%20%20%20%20%20%20%3C/details%3E%3Cbr%3E%0A%20%20%20%20%20%20%3Cdetails%20class%3D%22helps%22%3E%0A%20%20%20%20%20%20%20%20%3Csummary%3E%uD22C%uD45C%3C/summary%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%uD22C%uD45C%20%uAC8C%uC2DC%uD310%uC5D0%uC11C%20%uD22C%uD45C%20%uB2E8%uACC4%uC5D0%20%uC788%uB294%20%uD22C%uD45C%uB97C%20%uACE0%uB97C%20%uACBD%uC6B0%20%uD6C4%uBCF4%uC9C0%uAC00%20%uBCF4%uC774%uAC8C%20%uB429%uB2C8%uB2E4.%20%uD6C4%uBCF4%uC9C0%uB97C%20%uC120%uD0DD%uD560%20%uACBD%uC6B0%20%uD574%uB2F9%20%uD22C%uD45C%uC5D0%20%uB4F1%uB85D%uD55C%20%uACBD%uC6B0%20%uD22C%uD45C%uAC00%20%uC644%uB8CC%uB429%uB2C8%uB2E4.%0A%20%20%20%20%20%20%3C/details%3E%3Cbr%3E%0A%20%20%20%20%20%20%3Cdetails%20class%3D%22helps%22%3E%0A%20%20%20%20%20%20%20%20%3Csummary%3E%uACB0%uACFC%20%uD655%uC778%20%uBC0F%20%uBCF5%uC6D0%3C/summary%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%uD22C%uD45C%20%uB2E8%uACC4%uB97C%20%uC870%uC815%uD560%20%uC218%20%uC788%uB294%20%uACBD%uC6B0%20%uD22C%uD45C%uAC00%20%uB05D%uB09C%20%uB4A4%20%22%uACB0%uACFC%20%uD655%uC778%22%20%uBC84%uD2BC%uC744%20%uB20C%uB7EC%20%uACB0%uACFC%uB97C%20%uD655%uC778%uD560%20%uC218%20%uC788%uC2B5%uB2C8%uB2E4.%20%uB9CC%uC77C%20%uB204%uAD70%uAC00%uAC00%20%uD22C%uD45C%uB97C%20%uD558%uC9C0%20%uC54A%uC558%uC744%20%uACBD%uC6B0%20%uC790%uB3D9%uC73C%uB85C%20%uBCF5%uC6D0%20%uB2E8%uACC4%uC5D0%20%uB3CC%uC785%uD558%uAC8C%20%uB429%uB2C8%uB2E4.%20%uBCF5%uC6D0%20%uB2E8%uACC4%uC758%20%uD22C%uD45C%uC5D0%uC11C%uB294%20%uD22C%uD45C%uC5D0%20%uB4F1%uB85D%uD588%uC73C%uBA70%20%uD22C%uD45C%uB97C%20%uC9C4%uD589%uD55C%20%uC0AC%uB78C%uC774%20%uD22C%uD45C%20%uBCF5%uC6D0%uC744%20%uB20C%uB7EC%uC57C%20%uD569%uB2C8%uB2E4.%0A%20%20%20%20%20%20%20%20%uBAA8%uB4E0%20%uC0AC%uB78C%uC774%20%uD22C%uD45C%20%uBCF5%uC6D0%uC744%20%uC644%uB8CC%uD560%20%uACBD%uC6B0%20%22%uBCF5%uC6D0%20%uD655%uC778%22%20%uBC84%uD2BC%uC744%20%uB20C%uB7EC%20%uD22C%uD45C%20%uACB0%uACFC%uB97C%20%uD655%uC778%uD560%20%uC218%20%uC788%uC2B5%uB2C8%uB2E4.%0A%20%20%20%20%20%20%3C/details%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cbr%3E%0A%20%20%3C/div%3E%0A%0A%20%20%3Cdiv%20class%3D%22voting-list%22%20id%3D%22voting-list-container%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%3Cbr%3E%0A%20%20%20%20%3Cdiv%20style%3D%22font-size%3A%20xx-large%3B%22%3E%uD22C%uD45C%20%uBAA9%uB85D%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container-fluid%22%20%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col%22%20id%3D%22voting-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%21--%20%uD22C%uD45C%20%uBAA9%uB85D%20%uB4E4%uC5B4%uAC08%20%uACF3%20--%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cbr%3E%0A%20%20%3C/div%3E%0A%20%20%3Cbr%3E%0A%20%20%3Cdiv%20class%3D%22voting-list%22%20id%3D%22votename%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22name%22%20style%3D%22width%3A70%25%3B%20margin%3Aauto%3B%20border-style%3A%20solid%3B%20border-color%3A%20gray%3B%20border-width%3A%200px%200px%201px%3B%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22row%22%20id%3D%22enroll%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22btn%20col-lg-4%20col-md-4%20col-sm-7%20col-7%22%20onclick%3D%22App.enroll_voter%28%29%22%3E%0A%20%20%20%20%20%20%20%20%uD22C%uD45C%uC790%20%uB4F1%uB85D%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22btn%20col-lg-4%20col-md-4%20col-sm-7%20col-7%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23enrollModal_candidate%22%20style%3D%22margin-bottom%3A%2040px%3B%20margin-top%3A%2040px%3B%22%3E%0A%20%20%20%20%20%20%20%20%uC0C8%20%uD6C4%uBCF4%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cdiv%20id%3D%22vote%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cdiv%20id%3D%22result%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22voting-list%22%20id%3D%22additional%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22btn%22%20onclick%3D%22App.additional_vote%28%29%22%20style%3D%22margin-bottom%3A%2040px%3B%22%3E%0A%20%20%20%20%20%20%20%20%uD22C%uD45C%20%uBCF5%uC6D0%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%3C/div%3E%0A%3Cdiv%20class%3D%22control%22%20id%3D%22controls%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%3Cdiv%20class%3D%22btn%22%20onclick%3D%22App.changeRound1%28%29%22%3E%0A%20%20%20%20%uB4F1%uB85D%20%uB2E8%uACC4%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22btn%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23VotetimeModal%22%3E%0A%20%20%20%20%uD22C%uD45C%20%uB2E8%uACC4%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22btn%22%20onclick%3D%22App.changeRound3%28%29%22%3E%0A%20%20%20%20%uACB0%uACFC%20%uD655%uC778%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22btn%22%20onclick%3D%22App.changeRound4%28%29%22%3E%0A%20%20%20%20%uBCF5%uC6D0%20%uD655%uC778%0A%20%20%3C/div%3E%0A%3C/div%3E%0A%0A%3Cdiv%20class%3D%22modal%20fade%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20id%3D%22loginModal%22%3E%0A%20%20%3Cdiv%20class%3D%22modal-dialog%20modal-md%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22modal-content%22%3E%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22modal-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22keystore%22%3EKeystore%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22file%22%20id%3D%22keystore%22%20onchange%3D%22App.handleImport%28%29%22%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22input-password%22%3E%uBE44%uBC00%uBC88%uD638%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22password%22%20class%3D%22form-control%22%20id%3D%22input-password%22%20onchange%3D%22App.handlePassword%28%29%22%20onKeyup%3D%22javascript%3Aif%28event.keyCode%3D%3D13%29%20%7BApp.handleLogin%28%29%7D%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22help-block%22%20id%3D%22message%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20id%3D%22submit%22%20data-dismiss%3D%22modal%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23loginModal_key%22%3E%uAC1C%uC778%20%uD0A4%20%uB85C%uADF8%uC778%3C/button%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22float%3A%20right%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20id%3D%22submit%22%20onclick%3D%22App.handleLogin%28%29%22%3E%uC81C%uCD9C%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20data-dismiss%3D%22modal%22%3E%uB2EB%uAE30%3C/button%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%3C/div%3E%0A%0A%3Cdiv%20class%3D%22modal%20fade%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20id%3D%22loginModal_key%22%3E%0A%20%20%3Cdiv%20class%3D%22modal-dialog%20modal-md%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22modal-content%22%3E%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22modal-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22input-password%22%3E%uAC1C%uC778%20%uD0A4%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22password%22%20class%3D%22form-control%22%20id%3D%22input-PrivateKey%22%20onchange%3D%22App.handlePrivateKey%28%29%22%20onKeyup%3D%22javascript%3Aif%28event.keyCode%3D%3D13%29%20%7BApp.handleLogin%28%29%7D%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20id%3D%22show_key%22%20valstyle%3D%22margin-right%3A%203px%3B%22%3E%20%uBCF4%uC774%uAE30%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23show_key%27%29.change%28function%28%29%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%28%24%28%27%23show_key%27%29.is%28%27%3Achecked%27%29%29%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23input-PrivateKey%27%29.prop%28%22type%22%2C%22text%22%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7Delse%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23input-PrivateKey%27%29.prop%28%22type%22%2C%22password%22%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/script%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22help-block%22%20id%3D%22message%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20id%3D%22submit%22%20data-dismiss%3D%22modal%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23loginModal%22%3Ekeystore%20%uB85C%uADF8%uC778%3C/button%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22float%3A%20right%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20id%3D%22submit%22%20onclick%3D%22App.handleLogin%28%29%22%3E%uC81C%uCD9C%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20data-dismiss%3D%22modal%22%3E%uB2EB%uAE30%3C/button%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%3C/div%3E%0A%0A%3Cdiv%20class%3D%22modal%20fade%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20id%3D%22VotetimeModal%22%3E%0A%20%20%3Cdiv%20class%3D%22modal-dialog%20modal-sm%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22modal-content%22%3E%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22modal-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22input-password%22%3E%uC81C%uD55C%20%uC2DC%uAC04%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22form-control%22%20onchange%3D%22App.handleVotime%28%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22help-block%22%20id%3D%22message%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22float%3A%20right%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20id%3D%22submit%22%20onclick%3D%22App.changeRound2%28%29%22%3E%uC81C%uCD9C%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20data-dismiss%3D%22modal%22%3E%uB2EB%uAE30%3C/button%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%3C%21--%20/.modal-content%20--%3E%0A%20%20%3C/div%3E%3C%21--%20/.modal-dialog%20--%3E%0A%3C/div%3E%3C%21--%20/.modal%20--%3E%0A%0A%0A%3Cdiv%20class%3D%22modal%20fade%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20id%3D%22enrollModal_candidate%22%3E%0A%20%20%3Cdiv%20class%3D%22modal-dialog%20modal-sm%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22modal-content%22%3E%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22modal-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22input-text%22%3E%uD6C4%uBCF4%20%uB0B4%uC6A9%uC744%20%uC785%uB825%uD558%uC138%uC694%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22candidate%22%20class%3D%22form-control%22%20id%3D%22input-candidate%22%20onchange%3D%22App.handleCandidate%28%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22help-block%22%20id%3D%22message%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22float%3A%20right%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20id%3D%22submit%22%20onclick%3D%22App.enroll_candidate%28%29%22%3E%uC81C%uCD9C%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20data-dismiss%3D%22modal%22%3E%uB2EB%uAE30%3C/button%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%3C%21--%20/.modal-content%20--%3E%0A%20%20%3C/div%3E%3C%21--%20/.modal-dialog%20--%3E%0A%3C/div%3E%3C%21--%20/.modal%20--%3E%0A%0A%3Cdiv%20class%3D%22modal%20fade%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20id%3D%22genModal%22%3E%0A%20%20%3Cdiv%20class%3D%22modal-dialog%20modal-sm%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22modal-content%22%3E%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22modal-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22input-text%22%3E%uD22C%uD45C%20%uC774%uB984%uC744%20%uC785%uB825%uD558%uC138%uC694%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20%20class%3D%22form-control%22%20%20onchange%3D%22App.handleVotingName%28%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22help-block%22%20id%3D%22message%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22input-text%22%3E%uB4F1%uB85D%20%uC81C%uD55C%20%uC2DC%uAC04%uC744%20%uC785%uB825%uD558%uC138%uC694%28%uCD08%29%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20%20class%3D%22form-control%22%20%20onchange%3D%22App.handleVotingTime%28%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22help-block%22%20id%3D%22message%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22float%3A%20right%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20id%3D%22submit%22%20onclick%3D%22App.genVoting%28%29%22%3E%uC81C%uCD9C%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22btn-default%22%20data-dismiss%3D%22modal%22%3E%uB2EB%uAE30%3C/button%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%3C%21--%20/.modal-content%20--%3E%0A%20%20%3C/div%3E%3C%21--%20/.modal-dialog%20--%3E%0A%3C/div%3E%3C%21--%20/.modal%20--%3E%0A%0A%3C/body%3E%0A%0A%3C/html%3E%0A%0A%3Cstyle%3E%0A%20%20%20%20.header%7B%0A%20%20%20%20%20%20%20%20margin%3A%20auto%3B%0A%20%20%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20%20%20line-height%3A%2050px%3B%0A%20%20%20%20%20%20%20%20font-size%3A%20x-large%3B%20%0A%20%20%20%20%20%20%20%20font-weight%3A%20bold%3B%0A%20%20%20%20%20%20%20%20height%3A%2050px%3B%0A%20%20%20%20%20%20%20%20width%3A%2090%25%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2015px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.voting-list%7B%0A%20%20%20%20%20%20%20%20display%3A%20table%3B%0A%20%20%20%20%20%20%20%20margin%3A%20auto%3B%0A%20%20%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20%20%20font-size%3A%20x-large%3B%20%0A%20%20%20%20%20%20%20%20font-weight%3A%20normal%3B%0A%20%20%20%20%20%20%20%20color%3A%20rgb%28130%2C%20177%2C%20255%29%3B%0A%20%20%20%20%20%20%20%20background%3A%20rgb%2842%2C61%2C74%29%3B%0A%20%20%20%20%20%20%20%20width%3A%2055%25%3B%0A%20%20%20%20%20%20%20%20margin-top%3A%205%25%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2015px%3B%0A%20%20%20%20%7D%0A%20%20%20%20.voting%7B%0A%20%20%20%20%20%20%20%20margin%3A%20auto%3B%0A%20%20%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20%20%20font-size%3A%20x-large%3B%20%0A%20%20%20%20%20%20%20%20font-weight%3A%20normal%3B%0A%20%20%20%20%20%20%20%20color%3A%20rgb%28130%2C%20177%2C%20255%29%3B%0A%20%20%20%20%20%20%20%20background%3A%20rgba%2842%2C61%2C74%29%3B%0A%20%20%20%20%20%20%20%20width%3A%2090%25%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2015px%3B%0A%20%20%20%20%7D%0A%20%20%20%20.btn%7B%0A%20%20%20%20%20%20margin%3A%20auto%3B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20line-height%3A%2035px%3B%0A%20%20%20%20%20%20font-size%3A%20x-large%3B%20%0A%20%20%20%20%20%20font-weight%3A%20normal%3B%0A%20%20%20%20%20%20color%3A%20white%3B%0A%20%20%20%20%20%20background%3A%20rgb%2865%2C%2084%2C%2098%29%3B%0A%20%20%20%20%20%20height%3A%2050px%3B%0A%20%20%20%20%20%20width%3A%20150px%3B%0A%20%20%20%20%20%20border-radius%3A%2015px%3B%0A%20%20%20%20%7D%0A%20%20%20%20.modal-body%7B%0A%20%20%20%20%20%20color%3Awhite%3B%0A%20%20%20%20%20%20background%3A%20rgb%2842%2C%2061%2C%2074%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20.modal-footer%7B%0A%20%20%20%20%20%20color%3Awhite%3B%0A%20%20%20%20%20%20background%3A%20rgb%2842%2C%2061%2C%2074%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20@media%20screen%20and%20%28max-width%3A%20768px%29%7B%0A%20%20%20%20%20%20.voting-list%7B%0A%20%20%20%20%20%20%20%20width%3A%2095%25%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.vote%7B%0A%20%20%20%20%20%20border-style%3A%20solid%3B%0A%20%20%20%20%20%20border-width%3A%201px%3B%0A%20%20%20%20%20%20border-radius%3A%2010px%3B%0A%20%20%20%20%20%20padding-top%3A%2010px%3B%0A%20%20%20%20%20%20padding-bottom%3A%2010px%3B%0A%20%20%20%20%20%20margin-top%3A%2010px%3B%0A%20%20%20%20%20%20margin-bottom%3A%2010px%3B%0A%20%20%20%20%20%20color%3Awhite%3B%0A%20%20%20%20%20%20background-color%3A%20rgba%28255%2C%20255%2C%20255%2C%200.322%29%3B%0A%20%20%20%20%20%20border-color%3A%20rgba%28255%2C%20255%2C%20255%2C%200.322%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20.helps%7B%0A%20%20%20%20%20%20color%3Awhitesmoke%3B%20%0A%20%20%20%20%20%20text-align%3A%20left%3B%20%0A%20%20%20%20%20%20margin%3A%200px%2045px%200px%2010px%3B%0A%20%20%20%20%7D%0A%20%20%20%20.control%7B%0A%20%20%20%20%20%20margin%3A%20auto%3B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20x-large%3B%20%0A%20%20%20%20%20%20font-weight%3A%20bold%3B%0A%20%20%20%20%20%20line-height%3A%20100px%3B%0A%20%20%20%20%20%20width%3A%2090%25%3B%0A%20%20%20%20%20%20border-radius%3A%2015px%3B%0A%20%20%20%20%7D%0A%20%20%20%20@font-face%20%7B%0A%20%20%20%20font-family%3A%20%27TmoneyRoundWindRegular%27%3B%0A%20%20%20%20src%3A%20url%28%27https%3A//cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff%27%29%20format%28%27woff%27%29%3B%0A%20%20%20%20font-weight%3Anormal%3B%0A%20%20%20%20font-style%3A%20normal%3B%0A%7D%0A%3C/style%3E%0A"));</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>클레이튼 기반 투표 플랫폼</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body style="background: rgb(15, 29, 38); font-family: TmoneyRoundWindRegular">
+  <div>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background: rgb(36, 50, 60);">
+      <a class="navbar-brand" href="index.html" style="margin-left: 10px;">Btoo<img src="images/voting.png" style="height: 38px; margin-left: 5px; overflow: hidden; display:none"></a>
+      <button class="navbar-toggler" type="button" style="margin-right: 15px;" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item" id="new_vote" style="display: none;">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#genModal">새 투표</a>
+          </li>
+          <li class="nav-item" id="list_vote" style="display: none;">
+            <a class="nav-link" href="#" onclick="App.changeUIlist()">투표 게시판</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="login">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">로그인</a>
+           </li>
+           <li class="nav-item" id="logout" style="display: none;">
+            <a class="nav-link" href="index.html" onclick="App.handleLogout()">로그아웃</a>
+           </li>
+           <li class="nav-item float-right">
+             <a class="nav-link" href="#" onclick="App.changeUIhelp()">도움말</a>
+           </li>
+           <input type="checkbox" id="show_tx" style="margin:auto;"></button>
+          <script>
+            $('#show_tx').change(function(){
+              if($('#show_tx').is(':checked')){
+                $('#txInfo').show()
+              }else{
+                $('#txInfo').hide()
+              }
+            });
+            </script>
+             <li class="nav-item">
+              <label for="show_tx" class="nav-link" style="cursor: pointer; height: 20px;">트랜잭션 표시</label>
+             </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+  </div>
+  <div id="intro">
+    <div class="container-fluid" style="width: 90%;"><br>
+      <div style="font-size: 40px; color:whitesmoke;">Btoo: 블록체인 기반 온라인 비밀 투표 시스템<br></div>
+      <br>
+      <div style="width:100%; border-width: 0px 0px 2px; border-style: solid; border-color: gray; padding-bottom:30px; margin:auto; margin-bottom:30px; text-align: center;">
+      <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-12 col-12" style="color:whitesmoke; text-align: center; margin:auto;"><img src="images/voting.png" style="width: 40%; height: auto;"></div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-12" style="color:whitesmoke; text-align: center; margin:auto; font-size: 64px;">x</div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="color:whitesmoke; text-align: center; margin:auto;"><img src="images/klaytn.png" style="width: 80%; height: auto;"></div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6"style="color:whitesmoke; margin: auto; margin-top: 5px;text-align: left;">
+          <div style="font-size:32px; color:rgb(130, 177, 255); text-align: center;margin-bottom: 10px;">Btoo란?</div>
+          <div style="font-size:23px; margin: 5px 10px 10px 10px;">Btoo는 Blockchain tally on online으로 블록체인 기반 온라인 투표 서비스입니다. 선거의 4원칙인 "보통 선거", "평등 선거", "직접 선거", "비밀 선거" 중에 블록체인에서 구현하기 힘든 비밀 선거를 Btoo만의 암호화 알고리즘을 통해 실현하여 신뢰성 있는 투표를 가능하게 합니다!</div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6"style="color:whitesmoke; margin: auto; margin-top: 5px; text-align: left;">
+          <div style="font-size:32px; color:rgb(130, 177, 255); text-align: center;margin-bottom: 10px;">블록체인 기반 투표</div>
+          <div style="font-size:23px;margin: 5px 10px 10px 10px;">블록체인은 모두가 데이터를 공유하면서 연결되기 때문에 한번 기록된 데이터의 변경은 불가능합니다. 이는 투표를 할 때 자신이 투표한 결과가 바뀌지 않는 다는 것을 의미합니다. 혹시 모를 부정 행위에 있어서 블록체인 기반 투표 서비스는 완벽히 자유롭습니다.</div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6"style="color:whitesmoke; margin: auto; margin-top: 5px; text-align: left;">
+          <div style="font-size:32px; color:rgb(130, 177, 255); text-align: center;margin-bottom: 10px;">철저한 비밀 투표</div>
+          <div style="font-size:23px;margin: 5px 10px 10px 10px;">블록체인은 모두가 데이터를 공유하기 때문에 자신이 보낸 데이터가 노출된다는 문제가 있습니다. 하지만 Btoo는 비밀 투표의 줄임말로써 투표 데이터 암호화 기술을 통해 자신이 보내는 데이터가 보여질지여도 누구에게 투표하였는지는 알 수 없습니다.</div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6"style="color:whitesmoke; margin: auto; margin-top: 5px; text-align: left;">
+          <div style="font-size:32px; color:rgb(130, 177, 255); text-align: center;margin-bottom: 10px;">연계성</div>
+          <div style="font-size:23px;margin: 5px 10px 10px 10px;">클레이튼은 카카오의 블록체인 관련 자회사 그라운드X가 개발한 분산어플리케이션 디앱을 만들기 위한 블록체인 개발 플랫폼입니다. 클레이튼의 에코시스템에는 다양한 기업들이 참여하며 그로 인해 클레이튼을 기반으로 다양한 서비스와 쉽게 연동이 가능합니다.</div>
+        </div>
+      </div>     
+    </div>
+    <br>
+  </div>
+
+  <div class="voting-list" id="help" style="margin-top: 5%; display: none;">
+    <div class="container-fluid"><br>
+      <div style="font-size: xx-large;">사용 방법<br></div>
+      <br>
+      <details class="helps">
+        <summary>계정 생성 및 로그인</summary><br>
+        <a href="https://baobab.wallet.klaytn.com/">클레이튼 테스트넷</a>에 접속하여 Create Account를 통해 keystore 파일과 개인키를 저장합니다. <br>
+        그 후 우측 상단에 있는 로그인 버튼을 눌러 발급받은 keystore 파일 + 비밀번호 혹은 개인키를 통하여 로그인 합니다.
+      </details><br>
+      <details class="helps">
+        <summary>새 투표 생성</summary><br>
+        로그인을 할 경우 상단 메뉴 바에 "새 투표" 버튼이 생기게 됩니다. 해당 버튼을 누르고 투표 이름과 제한시간(초)를 입력하시면 새로운 투표가 생성됩니다.
+      </details><br>
+      <details class="helps">
+        <summary>투표 목록 확인</summary><br>
+        로그인을 할 경우 상단 메뉴 바에 "투표 게시판" 버튼이 생기게 됩니다. 해당 버튼을 누르면 투표들의 이름과 현재 상황, 남은 시간을 확인 할 수 있습니다.
+      </details><br>
+      <details class="helps">
+        <summary>투표자/후보 등록</summary><br>
+        투표 게시판에서 "등록 단계"의 투표에 들어가게 되면 "투표자 등록"과 "새 후보" 버튼이 있습니다. "투표자 등록" 버튼을 누를 경우 투표의 권한을 얻게 되고 "새 후보" 버튼을 누를 경우 새로운 후보를 추가할 수 있게 됩니다.
+      </details><br>
+      <details class="helps">
+        <summary>투표 단계 조정</summary><br>
+        투표 게시판에서 선택한 투표가 자신이 생성한 투표일 경우 페이지 하단에 버튼들이 보이게 됩니다. "등록 단계"와 "투표 단계" 버튼을 통해 각 단계로 변경할 수 있습니다. "결과 확인" 버튼과 "복원 확인" 버튼은 결과 확인 및 복원 단계에 사용됩니다.
+      </details><br>
+      <details class="helps">
+        <summary>투표</summary><br>
+        투표 게시판에서 투표 단계에 있는 투표를 고를 경우 후보지가 보이게 됩니다. 후보지를 선택할 경우 해당 투표에 등록한 경우 투표가 완료됩니다.
+      </details><br>
+      <details class="helps">
+        <summary>결과 확인 및 복원</summary><br>
+        투표 단계를 조정할 수 있는 경우 투표가 끝난 뒤 "결과 확인" 버튼을 눌러 결과를 확인할 수 있습니다. 만일 누군가가 투표를 하지 않았을 경우 자동으로 복원 단계에 돌입하게 됩니다. 복원 단계의 투표에서는 투표에 등록했으며 투표를 진행한 사람이 투표 복원을 눌러야 합니다.
+        모든 사람이 투표 복원을 완료할 경우 "복원 확인" 버튼을 눌러 투표 결과를 확인할 수 있습니다.
+      </details>
+    </div>
+    <br>
+  </div>
+
+  <div class="voting-list" id="voting-list-container" style="display: none;">
+    <br>
+    <div style="font-size: xx-large;">투표 목록</div>
+    <div class="container-fluid" >
+        <div class="col" id="voting-list">
+          <!-- 투표 목록 들어갈 곳 -->
+        </div>
+    </div>
+    <br>
+  </div>
+  <br>
+  <div class="voting-list" id="votename" style="display: none;">
+    <div id="name" style="width:70%; margin:auto; border-style: solid; border-color: gray; border-width: 0px 0px 1px;"></div>
+    <div class="row" id="enroll" style="display: none;">
+      <div class="btn col-lg-4 col-md-4 col-sm-7 col-7" onclick="App.enroll_voter()">
+        투표자 등록
+      </div>
+      <div class="btn col-lg-4 col-md-4 col-sm-7 col-7" data-toggle="modal" data-target="#enrollModal_candidate" style="margin-bottom: 40px; margin-top: 40px;">
+        새 후보
+      </div>
+    </div>
+    <div id="vote" style="display: none;">
+    </div>
+    <div id="result" style="display: none;">
+    </div>
+    <div class="voting-list" id="additional" style="display: none;">
+      <div class="btn" onclick="App.additional_vote()" style="margin-bottom: 40px;">
+        투표 복원
+      </div>
+    </div>
+  </div>
+</div>
+<div class="control" id="controls" style="display: none;">
+  <div class="btn" onclick="App.changeRound1()">
+    등록 단계
+  </div>
+  <div class="btn" data-toggle="modal" data-target="#VotetimeModal">
+    투표 단계
+  </div>
+  <div class="btn" onclick="App.autotallytrue()">
+    자동 복원
+  </div>
+  <div class="btn" onclick="App.autotallyfalse()">
+    수동 복원(기본)
+  </div>
+  <div class="btn" onclick="App.changeRound3()">
+    결과 확인
+  </div>
+  <div class="btn" onclick="App.changeRound4()">
+    복원 확인
+  </div>
+</div>
+<div id="txInfo" class="voting-list" style="display:none; height: 500px;">
+  전송된 트랜잭션
+  <div id="txs" class="vote" style="width:90%; height:80%; margin-left: 5%; overflow: scroll;">
+   </div>
+</div>
+
+<div class="btn" onclick="App.test()" style="display: none;">
+  테스트
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="loginModal">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">         
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="keystore">Keystore</label>
+          <br>
+          <input type="file" id="keystore" onchange="App.handleImport()">
+        </div>
+        <div class="form-group">
+          <label for="input-password">비밀번호</label>
+          <input type="password" class="form-control" id="input-password" onchange="App.handlePassword()" onKeyup="javascript:if(event.keyCode==13) {App.handleLogin()}">
+          <p class="help-block" id="message"></p>
+        </div>
+        <button type="button" class="btn-default" id="submit" data-dismiss="modal" data-toggle="modal" data-target="#loginModal_key">개인 키 로그인</button>
+        <div style="float: right;">
+          <button type="button" class="btn-default" id="submit" onclick="App.handleLogin()">제출</button>
+          <button type="button" class="btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="loginModal_key">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">         
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-password">개인 키</label>
+          <input type="password" class="form-control" id="input-PrivateKey" onchange="App.handlePrivateKey()" onKeyup="javascript:if(event.keyCode==13) {App.handleLogin()}">
+          <input type="checkbox" id="show_key" valstyle="margin-right: 3px;"> 보이기</button>
+          <script>
+            $('#show_key').change(function(){
+              if($('#show_key').is(':checked')){
+                $('#input-PrivateKey').prop("type","text")
+              }else{
+                $('#input-PrivateKey').prop("type","password")
+              }
+            });
+            </script>             
+          <p class="help-block" id="message"></p>
+        </div>
+        <button type="button" class="btn-default" id="submit" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">keystore 로그인</button>
+        <div style="float: right;">
+          <button type="button" class="btn-default" id="submit" onclick="App.handleLogin()">제출</button>
+          <button type="button" class="btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="VotetimeModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">         
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-password">제한 시간</label>
+          <input class="form-control" onchange="App.handleVotime()">
+          <p class="help-block" id="message"></p>
+        </div>
+        <div style="float: right;">
+          <button type="button" class="btn-default" id="submit" onclick="App.changeRound2()">제출</button>
+          <button type="button" class="btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="enrollModal_candidate">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">         
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-text">후보 내용을 입력하세요</label>
+          <input type="candidate" class="form-control" id="input-candidate" onchange="App.handleCandidate()">
+          <p class="help-block" id="message"></p>
+        </div>
+        <div style="float: right;">
+          <button type="button" class="btn-default" id="submit" onclick="App.enroll_candidate()">제출</button>
+          <button type="button" class="btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="genModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">         
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-text">투표 이름을 입력하세요</label>
+          <input  class="form-control"  onchange="App.handleVotingName()">
+          <p class="help-block" id="message"></p>
+        </div>
+        <div class="form-group">
+          <label for="input-text">등록 제한 시간을 입력하세요(초)</label>
+          <input  class="form-control"  onchange="App.handleVotingTime()">
+          <p class="help-block" id="message"></p>
+        </div>
+        <div style="float: right;">
+          <button type="button" class="btn-default" id="submit" onclick="App.genVoting()">제출</button>
+          <button type="button" class="btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+
+</html>
+
+<style>
+    .header{
+        margin: auto;
+        text-align: center;
+        line-height: 50px;
+        font-size: x-large; 
+        font-weight: bold;
+        height: 50px;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .voting-list{
+        display: table;
+        margin: auto;
+        text-align: center;
+        font-size: x-large; 
+        font-weight: normal;
+        color: rgb(130, 177, 255);
+        background: rgb(42,61,74);
+        width: 55%;
+        margin-top: 5%;
+        border-radius: 15px;
+    }
+    @media screen and (max-width: 768px){
+      .voting-list{
+        width: 95%;
+      }
+    }
+    .voting{
+        margin: auto;
+        text-align: center;
+        font-size: x-large; 
+        font-weight: normal;
+        color: rgb(130, 177, 255);
+        background: rgba(42,61,74);
+        width: 90%;
+        border-radius: 15px;
+    }
+    .btn{
+      margin: auto;
+      text-align: center;
+      line-height: 35px;
+      font-size: x-large; 
+      font-weight: normal;
+      color: white;
+      background: rgb(65, 84, 98);
+      height: 50px;
+      width: 150px;
+      border-radius: 15px;
+    }
+    .modal-body{
+      color:white;
+      background: rgb(42, 61, 74);
+    }
+    .modal-footer{
+      color:white;
+      background: rgb(42, 61, 74);
+    }
+    .vote{
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color:white;
+      background-color: rgba(255, 255, 255, 0.322);
+      border-color: rgba(255, 255, 255, 0.322);
+    }
+    .helps{
+      color:whitesmoke; 
+      text-align: left; 
+      margin: 0px 45px 0px 10px;
+    }
+    .control{
+      margin: auto;
+      text-align: center;
+      font-size: x-large; 
+      font-weight: bold;
+      line-height: 100px;
+      width: 90%;
+      border-radius: 15px;
+    }
+    @font-face {
+    font-family: 'TmoneyRoundWindRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+</style>
