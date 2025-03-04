@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Map to 1D Array</title>
+    <style>
+        .grid {
+            display: grid;
+            gap: 2px;
+        }
+        .grid div {
+            width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none; /* 드래그 시 텍스트 선택 방지 */
+        }
+        .grid div[data-clicks] {
+            background-color: rgb(204, 204, 204);
+        }
+    </style>
+</head>
+<body>
+    <div id="gridContainer"></div>
+    <button onclick="generateArray()">Generate 1D Array</button>
+    <button onclick="createGrid()">Clear Grid</button>
+    <button onclick="copyToClipboard()">Copy to Clipboard</button>
+    <pre id="output"></pre>
+
+    <script>
+        let isMouseDown = false;
+
+        function createGrid() {
+            const size = 50;
+            document.getElementById('output').textContent = "";
+            const gridContainer = document.getElementById('gridContainer');
+            gridContainer.innerHTML = ''; // Clear previous grid
+
+            const grid = document.createElement('div');
+            grid.className = 'grid';
+            grid.style.gridTemplateColumns = `repeat(${size}, 30px)`;
+            grid.style.gridTemplateRows = `repeat(${size}, 30px)`;
+
+            for (let i = 0; i < size * size; i++) {
+                const cell = document.createElement('div');
+                cell.dataset.index = i;
+                cell.dataset.clicks = 0;
+
+                cell.addEventListener('mousedown', () => {
+                    isMouseDown = true;
+                    incrementCellClick(cell);
+                });
+
+                cell.addEventListener('mouseover', () => {
+                    if (isMouseDown) {
+                        incrementCellClick(cell);
+                    }
+                });
+
+                grid.appendChild(cell);
+            }
+
+            gridContainer.appendChild(grid);
+
+            document.addEventListener('mouseup', () => {
+                isMouseDown = false;
+            });
+        }
+
+        function incrementCellClick(cell) {
+            let clicks = parseInt(cell.dataset.clicks);
+            clicks += 1;
+            cell.dataset.clicks = clicks;
+            cell.textContent = clicks;
+
+            // Calculate new color
+            const redValue = Math.min(255, 204 + clicks * 5);
+            cell.style.backgroundColor = `rgb(${redValue}, ${204 - clicks * 5}, ${204 - clicks * 5})`;
+        }
+
+        function generateArray() {
+            const size = 50;
+            const cells = document.querySelectorAll('.grid div');
+            const array = new Array(size * size).fill(0);
+
+            cells.forEach(cell => {
+                array[cell.dataset.index] = parseInt(cell.dataset.clicks);
+            });
+
+            document.getElementById('output').textContent = JSON.stringify(array);
+        }
+
+        function copyToClipboard() {
+            const size = 50;
+            const array = document.getElementById('output').textContent;
+            const textToCopy = `${array},${size}`;
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    alert('Copied to clipboard');
+                })
+                .catch(err => {
+                    console.error('Error copying text: ', err);
+                });
+        }
+
+        // Initialize with default grid size
+        createGrid();
+    </script>
+</body>
+</html>
