@@ -122,6 +122,27 @@ id,*상점,*매직박스1,*기본,type,name,description,cat,sub_cat,bundle_size,
 20009,Costume,매직박스1,,item,Gothic Eyes,Dark dramatic and full of mystery.,AVATAR,eyes,1,expr_00027_a_00.png,76,21,1,255,255,255,노말,그림,검정,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.33,""""z"""":-0.0015,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 20010,Costume,매직박스1,,item,Sleek Green Eyes,Elongated green eyes with a sleek elegant look.,AVATAR,eyes,1,expr_00028_a_00.png,84,28,1,255,255,255,노말,그림,초록,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.33,""""z"""":-0.0015,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 20011,,매직박스1,,item,Hypnotic Alluring Eyes,Eyes that draw you in with their mesmerizing allure.,AVATAR,eyes,1,expr_00033_a_00.png,76,22,1,255,255,255,레어,그림,보라,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.33,""""z"""":-0.0015,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+20012,,,,item,eyes1,,AVATAR,eyes,1,expr_00002_a_01.png,78,16,1,255,255,255,노말,그림,검정,,,
+20013,,,,item,eyes2,,AVATAR,eyes,1,expr_00005_a_04.png,68,22,1,255,255,255,노말,그림,검정,,,
+20014,,,,item,eyes3,,AVATAR,eyes,1,expr_00007_a_07.png,80,24,1,255,255,255,노말,그림,검정,,,
+20015,,,,item,eyes4,,AVATAR,eyes,1,expr_00009_a_01.png,72,18,1,255,255,255,노말,그림,검정,,,
+20016,,,,item,eyes5,,AVATAR,eyes,1,expr_00010_a_03.png,82,16,1,255,255,255,노말,그림,검정,,,
+20017,,,,item,eyes6,,AVATAR,eyes,1,expr_00011_a_08.png,80,40,1,255,255,255,레전드,그림,검정,,,
+20018,,,,item,eyes7,,AVATAR,eyes,1,expr_00012_a_06.png,78,34,1,255,255,255,노말,그림,검정,,,
+20019,,,,item,eyes8,,AVATAR,eyes,1,expr_00014_a_06.png,76,28,1,255,255,255,노말,그림,검정,,,
+20020,,,,item,eyes9,,AVATAR,eyes,1,expr_00015_a_03.png,76,32,1,255,255,255,노말,그림,검정,,,
+20021,,,,item,eyes10,,AVATAR,eyes,1,expr_00016_a_03.png,80,32,1,255,255,255,노말,그림,검정,,,
+20022,,,,item,eyes11,,AVATAR,eyes,1,expr_00017_a_02.png,80,19,1,255,255,255,레어,그림,검정,,,
+20023,,,,item,eyes12,,AVATAR,eyes,1,expr_00018_a_05.png,74,26,1,255,255,255,노말,그림,검정,,,
+20024,,,,item,eyes13,,AVATAR,eyes,1,expr_00019_a_03.png,74,38,1,255,255,255,노말,그림,검정,,,
+20025,,,,item,eyes14,,AVATAR,eyes,1,expr_00020_a_04.png,68,29,1,255,255,255,노말,그림,검정,,,
+20026,,,,item,eyes15,,AVATAR,eyes,1,expr_00021_a_01.png,70,24,1,255,255,255,노말,그림,검정,,,
+20027,,,,item,eyes16,,AVATAR,eyes,1,expr_00022_a_07.png,80,47,1,255,255,255,노말,그림,검정,,,
+20028,,,,item,eyes17,,AVATAR,eyes,1,expr_00023_a_07.png,78,35,1,255,255,255,노말,그림,검정,,,
+20029,,,,item,eyes18,,AVATAR,eyes,1,expr_00024_a_02.png,82,19,1,255,255,255,노말,그림,검정,,,
+20030,,,,item,eyes19,,AVATAR,eyes,1,expr_00025_a_08.png,76,37,1,255,255,255,노말,그림,검정,,,
+20031,,,,item,eyes20,,AVATAR,eyes,1,expr_00029_a_09.png,68,30,1,255,255,255,노말,그림,검정,,,
+20032,,,,item,eyes21,,AVATAR,eyes,1,expr_00030_a_04.png,79,25,1,255,255,255,노말,그림,검정,,,
 30000,Costume,,기본,item,Straight Mouth,Quiet yet confident.,AVATAR,mouth,1,expr_00001_b_00.png,20,4,1,255,255,255,노말,그림,,,생성 시 기본 선택,"""{""""x"""":0,""""y"""":0.22,""""z"""":-0.0015,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 30001,Costume,,기본,item,Smiling Mouth,A smile that lights up any room.,AVATAR,mouth,1,expr_00001_b_01.png,30,17,1,255,255,255,노말,그림,,,생성 시 기본 선택,"""{""""x"""":0,""""y"""":0.2,""""z"""":-0.0015,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 30002,Costume,,기본,item,Surprised Mouth,A gasp of pure shock and wonder.,AVATAR,mouth,1,expr_00001_b_04.png,22,15,1,255,255,255,노말,그림,,,생성 시 기본 선택,"""{""""x"""":0,""""y"""":0.2,""""z"""":-0.0015,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":0}"""
@@ -135,6 +156,18 @@ id,*상점,*매직박스1,*기본,type,name,description,cat,sub_cat,bundle_size,
 30010,,매직박스1,,item,Fish Mouth,Blub Blub.,AVATAR,mouth,1,expr_00023_b_08.png,10,15,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":-0.01,""""y"""":0.205,""""z"""":-0.0015,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":2}"""
 30011,,매직박스1,,item,Vampire Mouth,For biting... with elegance.,AVATAR,mouth,1,expr_00024_b_02.png,50,19,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.2,""""z"""":-0.0015,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 30012,,매직박스1,,item,Triangle Mouth,Sharp and stylish like a triangle.,AVATAR,mouth,1,expr_00031_b_09.png,18,9,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.2,""""z"""":-0.0015,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+30013,,,,item,mouth1,,AVATAR,mouth,1,expr_00003_b_07.png,40,12,1,255,255,255,레어,그림,,,,
+30014,,,,item,mouth2,,AVATAR,mouth,1,expr_00006_b_03.png,16,18,1,255,255,255,노말,그림,,,,
+30015,,,,item,mouth3,,AVATAR,mouth,1,expr_00013_b_08.png,20,12,1,255,255,255,레어,그림,,,,
+30016,,,,item,mouth4,,AVATAR,mouth,1,expr_00021_b_04.png,26,25,1,255,255,255,레어,그림,,,,
+30017,,,,item,mouth5,,AVATAR,mouth,1,expr_00022_b_09.png,27,17,1,255,255,255,레전드,그림,,,,
+30018,,,,item,mouth6,,AVATAR,mouth,1,expr_00023_b_09.png,26,14,1,255,255,255,레어,그림,,,,
+30019,,,,item,mouth7,,AVATAR,mouth,1,expr_00025_b_07.png,51,15,1,255,255,255,노말,그림,,,,
+30020,,,,item,mouth8,,AVATAR,mouth,1,expr_00027_b_08.png,22,10,1,255,255,255,노말,그림,,,,
+30021,,,,item,mouth9,,AVATAR,mouth,1,expr_00040_b_01.png,18,11,1,255,255,255,레어,그림,,,,
+30022,,,,item,mouth10,,AVATAR,mouth,1,expr_00046_b_02.png,30,16,1,255,255,255,레어,그림,,,,
+30023,,,,item,mouth11,,AVATAR,mouth,1,expr_00056_b_01.png,20,16,1,255,255,255,레어,그림,,,,
+30024,,,,item,mouth12,,AVATAR,mouth,1,expr_00065_b_05.png,24,6,1,255,255,255,노말,그림,,,,
 40000,Costume,매직박스1,,item,White Jacket,A plain and clean white jacket.,AVATAR,clothes,1,cloth_00001.png,71,85,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 40001,,,기본,item,Red Peacoat,A cheerful and charming bright red coat that brings warmth and cuteness to your look.,AVATAR,clothes,1,cloth_00004.png,92,86,1,255,255,255,노말,그림,,,생성 시 기본 선택,"""{""""x"""":0,""""y"""":0.02,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 40002,,,,item,Chinese Dress,Tradition meets elegance. A traditional chinese-style dress.,AVATAR,clothes,1,cloth_00007.png,71,86,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
@@ -143,29 +176,29 @@ id,*상점,*매직박스1,*기본,type,name,description,cat,sub_cat,bundle_size,
 40005,,매직박스1,,item,Floral Shirt,Fresh and blooming. A shirt with elegant floral patterns.,AVATAR,clothes,1,cloth_00060.png,71,85,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 40006,,매직박스1,,item,Street Hip-Hop Style,An outfit inspired by vibrant street hip-hop culture.,AVATAR,clothes,1,cloth_00067.png,72,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 40007,,매직박스1,,item,Classic Detective Coat,Sleuth chic. A sleek outfit resembling a detective's.,AVATAR,clothes,1,cloth_00096.png,77,88,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40008,,,,item,Little Newbie,Ready to begin your big adventure in PLAY3? This bright and cheerful outfit is perfect for new users taking their first steps!,AVATAR,clothes,1,cloth_000103.png,72,86,1,255,255,255,레어,그림,,,플린이 세트1 구매,"""{""""x"""":0,""""y"""":-0.01,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40009,,매직박스1,,item,Western Sheriff Attire,Hands Up Partner! Channel your inner sheriff with this rugged western outfit.,AVATAR,clothes,1,cloth_000110.png,82,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":-0.02,""""y"""":-0.005,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40010,Costume,매직박스1,,item,Scarf Outfit,An outfit accentuated with a scarf.,AVATAR,clothes,1,cloth_000126.png,68,83,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40011,Costume,매직박스1,,item,Sweater Over Shirt,Cozy layered perfection. A cozy sweater worn over a shirt.,AVATAR,clothes,1,cloth_000127.png,68,83,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40012,,,기본,item,Fish Tank Top,A sleeveless top featuring playful fish prints.,AVATAR,clothes,1,cloth_000140.png,72,86,1,255,255,255,노말,그림,,,생성 시 기본 선택,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40013,,매직박스1,,item,Victory Champion Suit,A bold and winning look for champions.,AVATAR,clothes,1,cloth_000142.png,72,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40014,Costume,매직박스1,,item,Red Stripe Shirt,A Shirt with red stripes.,AVATAR,clothes,1,cloth_000146.png,72,86,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40015,,매직박스1,,item,Doctor's Gown,Professional and caring. A white doctor's gown.,AVATAR,clothes,1,cloth_000165.png,72,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40016,,매직박스1,,item,Native Outfit,Heritage and grace. An outfit inspired by Native styles.,AVATAR,clothes,1,cloth_000244.png,89,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40017,Costume,매직박스1,,item,Men's Swimwear,Beach Ready!,AVATAR,clothes,1,cloth_000251.png,107,86,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40018,Costume,매직박스1,,item,Women's Swimwear,Beach Ready!,AVATAR,clothes,1,cloth_000252.png,72,86,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":-0.015,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40019,,매직박스1,,item,Office Outfit 1,Formal Office Attire Style.,AVATAR,clothes,1,cloth_000272.png,85,84,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40020,,매직박스1,,item,Office Outfit 2,Professional Office Attire Style.,AVATAR,clothes,1,cloth_000275.png,72,87,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40021,,매직박스1,,item,Office Outfit 3,Classic Office Attire Style.,AVATAR,clothes,1,cloth_000276.png,71,83,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40022,,매직박스1,,item,Artist Outfit,An outfit designed for creative and artistic souls.,AVATAR,clothes,1,cloth_000283.png,76,83,1,255,255,255,레전드,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0.025,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40023,,매직박스1,,item,Military Uniform,Disciplined and proud. A military uniform.,AVATAR,clothes,1,cloth_000287.png,74,88,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40024,,매직박스1,,item,Drill Instructor Uniform,Strict and sharp. A uniform worn by drill instructors.,AVATAR,clothes,1,cloth_000288.png,74,88,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40025,nft,,,nft,Flaming Dress,Red hot elegance. A fiery dress with flaming hot patterns.,AVATAR,clothes,1,cloth_000296.png,104,89,1,255,255,255,레전드,그림,,,nft,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40026,,매직박스1,,item,Cozy Winter Puff Jacket,Stay warm and stylish. A cozy winter jacket perfect for cold days.,AVATAR,clothes,1,cloth_000358.png,73,86,1,255,255,255,레어,그림,,,상점 구매,"""{""""x"""":0,""""y"""":0.02,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40027,Costume,매직박스1,,item,Heart-Patterned Overalls,Adorably heartfelt. Overalls featuring cute heart patterns.,AVATAR,clothes,1,cloth_000428.png,76,88,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40028,,매직박스1,,item,Guitarist Outfit,Rockstar vibes. An outfit styled like a rockstar guitarist.,AVATAR,clothes,1,cloth_000470.png,94,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0.04,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40029,,매직박스1,,item,Bathrobe,Relaxed and luxurious. A comfortable robe for after a bath.,AVATAR,clothes,1,cloth_000525.png,69,83,1,255,255,255,레전드,그림,,,상점 구매,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
-40030,,,,item,Smarty Newbie,Ready to begin your big adventure in PLAY3? This clever outfit is perfect for new users who are ready to tackle anything that comes their way.,AVATAR,clothes,1,cloth_000716.png,68,83,1,255,255,255,레어,그림,,,플린이 세트1 구매,"""{""""x"""":0,""""y"""":-0.01,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40008,,,,item,Little Newbie,Ready to begin your big adventure in PLAY3? This bright and cheerful outfit is perfect for new users taking their first steps!,AVATAR,clothes,1,cloth_00103.png,72,86,1,255,255,255,레어,그림,,,플린이 세트1 구매,"""{""""x"""":0,""""y"""":-0.01,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40009,,매직박스1,,item,Western Sheriff Attire,Hands Up Partner! Channel your inner sheriff with this rugged western outfit.,AVATAR,clothes,1,cloth_00110.png,82,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":-0.02,""""y"""":-0.005,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40010,Costume,매직박스1,,item,Scarf Outfit,An outfit accentuated with a scarf.,AVATAR,clothes,1,cloth_00126.png,68,83,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40011,Costume,매직박스1,,item,Sweater Over Shirt,Cozy layered perfection. A cozy sweater worn over a shirt.,AVATAR,clothes,1,cloth_00127.png,68,83,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40012,,,기본,item,Fish Tank Top,A sleeveless top featuring playful fish prints.,AVATAR,clothes,1,cloth_00140.png,72,86,1,255,255,255,노말,그림,,,생성 시 기본 선택,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40013,,매직박스1,,item,Victory Champion Suit,A bold and winning look for champions.,AVATAR,clothes,1,cloth_00142.png,72,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40014,Costume,매직박스1,,item,Red Stripe Shirt,A Shirt with red stripes.,AVATAR,clothes,1,cloth_00146.png,72,86,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40015,,매직박스1,,item,Doctor's Gown,Professional and caring. A white doctor's gown.,AVATAR,clothes,1,cloth_00165.png,72,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40016,,매직박스1,,item,Native Outfit,Heritage and grace. An outfit inspired by Native styles.,AVATAR,clothes,1,cloth_00244.png,89,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40017,Costume,매직박스1,,item,Men's Swimwear,Beach Ready!,AVATAR,clothes,1,cloth_00251.png,107,86,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40018,Costume,매직박스1,,item,Women's Swimwear,Beach Ready!,AVATAR,clothes,1,cloth_00252.png,72,86,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":-0.015,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40019,,매직박스1,,item,Office Outfit 1,Formal Office Attire Style.,AVATAR,clothes,1,cloth_00272.png,85,84,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40020,,매직박스1,,item,Office Outfit 2,Professional Office Attire Style.,AVATAR,clothes,1,cloth_00275.png,72,87,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40021,,매직박스1,,item,Office Outfit 3,Classic Office Attire Style.,AVATAR,clothes,1,cloth_00276.png,71,83,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40022,,매직박스1,,item,Artist Outfit,An outfit designed for creative and artistic souls.,AVATAR,clothes,1,cloth_00283.png,76,83,1,255,255,255,레전드,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0.025,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40023,,매직박스1,,item,Military Uniform,Disciplined and proud. A military uniform.,AVATAR,clothes,1,cloth_00287.png,74,88,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40024,,매직박스1,,item,Drill Instructor Uniform,Strict and sharp. A uniform worn by drill instructors.,AVATAR,clothes,1,cloth_00288.png,74,88,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40025,nft,,,nft,Flaming Dress,Red hot elegance. A fiery dress with flaming hot patterns.,AVATAR,clothes,1,cloth_00296.png,104,89,1,255,255,255,레전드,그림,,,nft,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40026,,매직박스1,,item,Cozy Winter Puff Jacket,Stay warm and stylish. A cozy winter jacket perfect for cold days.,AVATAR,clothes,1,cloth_00358.png,73,86,1,255,255,255,레어,그림,,,상점 구매,"""{""""x"""":0,""""y"""":0.02,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40027,Costume,매직박스1,,item,Heart-Patterned Overalls,Adorably heartfelt. Overalls featuring cute heart patterns.,AVATAR,clothes,1,cloth_00428.png,76,88,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40028,,매직박스1,,item,Guitarist Outfit,Rockstar vibes. An outfit styled like a rockstar guitarist.,AVATAR,clothes,1,cloth_00470.png,94,86,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0.04,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40029,,매직박스1,,item,Bathrobe,Relaxed and luxurious. A comfortable robe for after a bath.,AVATAR,clothes,1,cloth_00525.png,69,83,1,255,255,255,레전드,그림,,,상점 구매,"""{""""x"""":0,""""y"""":0,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+40030,,,,item,Smarty Newbie,Ready to begin your big adventure in PLAY3? This clever outfit is perfect for new users who are ready to tackle anything that comes their way.,AVATAR,clothes,1,cloth_00716.png,68,83,1,255,255,255,레어,그림,,,플린이 세트1 구매,"""{""""x"""":0,""""y"""":-0.01,""""z"""":-0.0005,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 40031,,,,item,clothes1,,AVATAR,clothes,1,cloth_00002.png,79,83,1,255,255,255,레어,그림,,,,
 40032,,,,item,clothes2,,AVATAR,clothes,1,cloth_00003.png,74,88,1,255,255,255,노말,그림,,,,
 40033,,,,item,clothes3,,AVATAR,clothes,1,cloth_00005.png,71,86,1,255,255,255,노말,그림,,,,
@@ -260,11 +293,37 @@ id,*상점,*매직박스1,*기본,type,name,description,cat,sub_cat,bundle_size,
 50002,nft,,,nft,Quirky Platypus Hat,A quirky hat designed like a platypus.,AVATAR,hat,1,hat_00057_f01.png,136,129,1,255,255,255,레전드,그림,,,nft,"""{""""x"""":0,""""y"""":0.47,""""z"""":-0.003,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":0}"""
 50003,Costume,매직박스1,,item,Western Cowboy Hat,Yeehaw Partner! Ride into the sunset with this iconic hat.,AVATAR,hat,1,hat_00064_f01.png,167,108,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":-0.03,""""y"""":0.64,""""z"""":-0.003,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 50004,,매직박스1,,item,Winter Knitted Hat,Warm and snug. A knitted wool hat for winter.,AVATAR,hat,1,hat_00095_f01.png,148,157,1,255,255,255,레어,그림,,,상점 구매,"""{""""x"""":0,""""y"""":0.515,""""z"""":-0.003,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
+50005,,,,item,hat1,,AVATAR,hat,1,hat_00001_m01.png,165,118,1,255,255,255,노말,그림,,,,
+50006,,,,item,hat2,,AVATAR,hat,1,hat_00030_f01.png,143,131,1,255,255,255,레어,그림,,,,
+50007,,,,item,hat3,,AVATAR,hat,1,hat_00031_f01.png,144,115,1,255,255,255,레어,그림,,,,
+50008,,,,item,hat4,,AVATAR,hat,1,hat_00032_f01.png,78,80,1,255,255,255,노말,그림,,,,
+50009,,,,item,hat5,,AVATAR,hat,1,hat_00042_f01.png,192,184,1,255,255,255,노말,그림,,,,
+50010,,,,item,hat6,,AVATAR,hat,1,hat_00070_f01.png,133,143,1,255,255,255,노말,그림,,,,
+50011,,,,item,hat7,,AVATAR,hat,1,hat_00101_f01.png,136,129,1,255,255,255,노말,그림,,,,
+50012,,,,item,hat8,,AVATAR,hat,1,hat_00103_f01.png,162,141,1,255,255,255,노말,그림,,,,
+50013,,,,item,hat9,,AVATAR,hat,1,hat_00105_f01.png,166,130,1,255,255,255,노말,그림,,,,
+50014,,,,item,hat10,,AVATAR,hat,1,hat_00107_f01.png,138,122,1,255,255,255,노말,그림,,,,
+50015,,,,item,hat11,,AVATAR,hat,1,hat_00109_f01.png,138,179,1,255,255,255,노말,그림,,,,
+50016,,,,item,hat12,,AVATAR,hat,1,hat_00111_f01.png,162,119,1,255,255,255,노말,그림,,,,
+50017,,,,item,hat13,,AVATAR,hat,1,hat_00113_f01.png,136,156,1,255,255,255,노말,그림,,,,
+50018,,,,item,hat14,,AVATAR,hat,1,hat_00114_f01.png,134,117,1,255,255,255,노말,그림,,,,
+50019,,,,item,hat15,,AVATAR,hat,1,hat_00116_f01.png,140,119,1,255,255,255,노말,그림,,,,
+50020,,,,item,hat16,,AVATAR,hat,1,hat_00174_f01.png,140,94,1,255,255,255,레어,그림,,,,
+50021,,,,item,hat17,,AVATAR,hat,1,hat_00193_f01.png,129,111,1,255,255,255,레어,그림,,,,
+50022,,,,item,hat18,,AVATAR,hat,1,hat_00326_f01.png,212,147,1,255,255,255,레어,그림,,,,
 60000,Costume,매직박스1,,item,Retro Round Glasses,Retro and chic. Stylish round-shaped glasses.,AVATAR,accessorie,1,face_00001_f01.png,96,42,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.335,""""z"""":-0.0025,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 60001,Costume,매직박스1,,item,Half-Rim Glasses,Sophisticated half-rimmed glasses.,AVATAR,accessorie,1,face_00002_f01.png,100,32,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.335,""""z"""":-0.0025,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 60002,,매직박스1,,item,Retro 3D Movie Glasses,Glasses that bring the magic of 3D movies to life.,AVATAR,accessorie,1,face_00019_f01.png,123,42,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.355,""""z"""":-0.0025,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 60003,,매직박스1,,item,Classic Korean Mask,A nod to Korean heritage with this iconic traditional mask.,AVATAR,accessorie,1,face_00062_f01.png,116,122,1,255,255,255,레어,그림,,,상점 구매,"""{""""x"""":0,""""y"""":0.375,""""z"""":-0.0175,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 60004,nft,,,nft,Opera Mask,Drama guaranteed. A mask fit for dramatic and sophisticated performances.,AVATAR,accessorie,1,face_00071_f01.png,201,146,1,255,255,255,레전드,그림,,,nft,"""{""""x"""":0.085,""""y"""":0.56,""""z"""":-0.0125,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":0}"""
+60005,,,,item,accessorie1,,AVATAR,accessorie,1,face_00003_f01.png,104,33,1,255,255,255,노말,그림,,,,
+60006,,,,item,accessorie2,,AVATAR,accessorie,1,face_00055_f01.png,110,53,1,255,255,255,노말,그림,,,,
+60007,,,,item,accessorie3,,AVATAR,accessorie,1,face_00073_f01.png,119,58,1,255,255,255,레어,그림,,,,
+60008,,,,item,accessorie4,,AVATAR,accessorie,1,face_00074_f01.png,163,65,1,255,255,255,레어,그림,,,,
+60009,,,,item,accessorie5,,AVATAR,accessorie,1,face_00093_f01.png,131,60,1,255,255,255,노말,그림,,,,
+60010,,,,item,accessorie6,,AVATAR,accessorie,1,face_00098_f01.png,120,28,1,255,255,255,레어,그림,,,,
+60011,,,,item,accessorie7,,AVATAR,accessorie,1,face_00118_f01.png,102,43,1,255,255,255,레어,그림,,,,
+60012,,,,item,accessorie8,,AVATAR,accessorie,1,face_00125_f01.png,172,108,1,255,255,255,레전드,그림,,,,
 70000,Costume,매직박스1,,item,Mouth Moustache,Charming and refined. A moustache framing the mouth.,AVATAR,beard,1,Must_00001_01.png,60,47,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":-0.01,""""y"""":0.155,""""z"""":-0.002,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 70001,Costume,매직박스1,,item,Nose Moustache,A thick moustache under the nose.,AVATAR,beard,1,Must_00005_01.png,70,20,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.24,""""z"""":-0.002,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
 70002,Costume,매직박스1,,item,Santa Beard,Ho ho ho! A beard styled after Santa Claus.,AVATAR,beard,1,Must_00013_01.png,140,81,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":0,""""y"""":0.15,""""z"""":-0.012,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0}"""
@@ -276,11 +335,22 @@ id,*상점,*매직박스1,*기본,type,name,description,cat,sub_cat,bundle_size,
 80002,,매직박스1,,item,Harp,Graceful strings.,AVATAR,back,1,back_00050_f01.png,135,135,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,"""{""""x"""":-0.025,""""y"""":0.075,""""z"""":0.001,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0.58902}"""
 80003,,매직박스1,,item,Horn,Resonance with elegance.,AVATAR,back,1,back_00051_f01.png,210,189,1,255,255,255,레어,그림,,,상점 구매,"""{""""x"""":-0.1,""""y"""":0.01,""""z"""":0.001,""""r"""":""""1"""",""""g"""":""""1"""",""""b"""":""""1"""",""""a"""":1,""""f"""":0,""""angle"""":0.9817}"""
 80004,nft,,,nft,Blue Swim Ring,A lightweight sky blue swim ring perfect for pool or beach fun.,AVATAR,back,1,back_00055_f01.png,167,167,1,255,255,255,레어,그림,,,nft,"""{""""x"""":0,""""y"""":0,""""z"""":0.001,""""r"""":1,""""g"""":1,""""b"""":1,""""a"""":1,""""f"""":0,""""angle"""":0}"""
+80005,,,,item,back1,,AVATAR,back,1,back_00048_f01.png,58,153,1,255,255,255,노말,그림,,,,
+80006,,,,item,back2,,AVATAR,back,1,back_00056_f01.png,185,155,1,255,255,255,노말,그림,,,,
+80007,,,,item,back3,,AVATAR,back,1,back_00060.png,177,130,1,255,255,255,레어,그림,,,,
+80008,,,,item,back4,,AVATAR,back,1,back_00065.png,136,113,1,255,255,255,레어,그림,,,,
+80008,,,,item,back5,,AVATAR,back,1,back_00078_b01.png,71,207,1,255,255,255,노말,그림,,,,
+80009,,,,item,back6,,AVATAR,back,1,back_00081.png,208,137,1,255,255,255,레어,그림,,,,
 90000,Costume,매직박스1,,item,Frosty Beer Mug,A frosty mug of refreshing beer perfect for unwinding.,AVATAR,hand,1,hand_00001_f01.png,57,61,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,
 90001,Costume,매직박스1,,item,Ace of Hearts Card,The ace of hearts straight from the deck.,AVATAR,hand,1,hand_00017_f01.png,44,52,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,
 90002,Costume,매직박스1,,item,Savory Chicken Leg,A crispy and savory chicken leg.,AVATAR,hand,1,hand_00021_f01.png,50,81,1,255,255,255,노말,그림,,,매직박스1에서 랜덤 획득,
 90003,,매직박스1,,item,Classic Brewed Americano,A classic americano brewed to perfection.,AVATAR,hand,1,hand_00057_f01.png,47,74,1,255,255,255,레어,그림,,,매직박스1에서 랜덤 획득,
-90004,nft,,,nft,Striking Red Glove,A striking red glove perfect for bold players.,AVATAR,hand,1,hand_00103_f01.png,77,63,1,255,255,255,레어,그림,,,nft,
+90004,nft,삭제,,nft,Striking Red Glove,A striking red glove perfect for bold players.,AVATAR,hand,1,hand_00103_f01.png,77,63,1,255,255,255,레어,그림,,,삭제(뒤틀림이슈),
+90005,,,,item,hand1,,AVATAR,hand,1,hand_00060_f01.png,42,123,1,255,255,255,노말,그림,,,,
+90006,,,,item,hand2,,AVATAR,hand,1,hand_00061_f01.png,37,101,1,255,255,255,노말,그림,,,,
+90007,,,,item,hand3,,AVATAR,hand,1,hand_00098_f01.png,44,125,1,255,255,255,노말,그림,,,,
+90008,,,,item,hand4,,AVATAR,hand,1,hand_00232_f01.png,124,83,1,255,255,255,레어,그림,,,,
+90009,,,,item,hand5,,AVATAR,hand,1,hand_00267_f01.png,86,100,1,255,255,255,노말,그림,,,,
 200000,,,,item,no name,no description,objects,object,1,alba_clothes_01_01.png,185,191,1,,,,,,,,,
 200001,,,,item,no name,no description,objects,object,1,alba_clothes_02.png,116,71,1,,,,,,,,,
 200002,,,,item,no name,no description,objects,object,1,alba_clothes_05.png,77,82,1,,,,,,,,,
