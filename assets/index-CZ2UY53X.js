@@ -1,4 +1,4 @@
-let WCe, wCe, GN, Cr, Iz, ihe, WK, GCe, rhe, oc, on, lhe, dre, oh, ehe, $K, zCe, the, re, DCe, _re, ar, G, tR, kce, x_, BCe, che, sR, kCe, VCe, UCe, iC, oC, LCe, FCe, Ia, NCe, th, Ln, He;
+let WCe, wCe, GN, Cr, Iz, ihe, WK, GCe, rhe, oc, on, lhe, dre, oh, ehe, $K, zCe, the, re, DCe, _re, or, G, tR, kce, x_, BCe, che, sR, kCe, VCe, UCe, iC, oC, LCe, FCe, Ia, NCe, th, Ln, He;
 let __tla = (async () => {
   (function() {
     const e = document.createElement("link").relList;
@@ -12399,7 +12399,7 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
   function Kt(a) {
     return Ro(1, a);
   }
-  function hr(a) {
+  function ur(a) {
     return Ro(2, a);
   }
   function yg(a) {
@@ -16382,31 +16382,31 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
     return lS.delete(a);
   }
   function LC(a, e) {
-    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-7ovqfAER.js").then(async (m) => {
+    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-DbkjJJgT.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-ZQqFezuC.js").then(async (m) => {
+    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-DF-0yd-M.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-BpegxFKB.js").then(async (m) => {
+    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-BCGgGwpn.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-rf6MDZ_D.js").then(async (m) => {
+    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-NF6zLdKZ.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-CGLLlA31.js").then(async (m) => {
+    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-DaoZFk4-.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-DdcLFkEB.js").then(async (m) => {
+    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-DBSG6dKb.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-DdcLFkEB.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-DBSG6dKb.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-BZ_4EYrr.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-6VojD3mX.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-DID6u-H-.js").then(async (m) => {
+    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-CbQMYzSY.js").then(async (m) => {
       await m.__tla;
       return m;
     }), []).then((i) => new i._ExrTextureLoader())));
@@ -29228,10 +29228,10 @@ Bad Bone Indices = ` + m;
   Vt.LIGHTTYPEID_HEMISPHERICLIGHT = Pi.LIGHTTYPEID_HEMISPHERICLIGHT;
   Vt.LIGHTTYPEID_RECT_AREALIGHT = Pi.LIGHTTYPEID_RECT_AREALIGHT;
   T([
-    hr()
+    ur()
   ], Vt.prototype, "diffuse", void 0);
   T([
-    hr()
+    ur()
   ], Vt.prototype, "specular", void 0);
   T([
     I()
@@ -31239,7 +31239,7 @@ Bad Bone Indices = ` + m;
   ], Z.prototype, "isBlocking", null);
   W("BABYLON.Texture", Z);
   Ve._TextureParser = Z.Parse;
-  class or extends Z {
+  class lr extends Z {
     constructor(e, t, i, r, s, n = true, o = false, l = 3, c = 0, h, u, f) {
       super(null, s, !n, o, void 0, void 0, void 0, void 0, void 0, void 0, void 0, void 0, h), this.format = r, this._engine && (!this._engine._caps.textureFloatLinearFiltering && c === 1 && (l = 1), !this._engine._caps.textureHalfFloatLinearFiltering && c === 2 && (l = 1), this._texture = this._engine.createRawTexture(e, t, i, r, n, o, l, null, c, h ?? 0, u ?? false), this.wrapU = Z.CLAMP_ADDRESSMODE, this.wrapV = Z.CLAMP_ADDRESSMODE, this._waitingForData = !!f && !e);
     }
@@ -31248,35 +31248,35 @@ Bad Bone Indices = ` + m;
     }
     clone() {
       if (!this._texture) return super.clone();
-      const e = new or(null, this.getSize().width, this.getSize().height, this.format, this.getScene(), this._texture.generateMipMaps, this._invertY, this.samplingMode, this._texture.type, this._texture._creationFlags, this._useSRGBBuffer);
+      const e = new lr(null, this.getSize().width, this.getSize().height, this.format, this.getScene(), this._texture.generateMipMaps, this._invertY, this.samplingMode, this._texture.type, this._texture._creationFlags, this._useSRGBBuffer);
       return e._texture = this._texture, this._texture.incrementReferences(), e;
     }
     isReady() {
       return super.isReady() && !this._waitingForData;
     }
     static CreateLuminanceTexture(e, t, i, r, s = true, n = false, o = 3) {
-      return new or(e, t, i, 1, r, s, n, o);
+      return new lr(e, t, i, 1, r, s, n, o);
     }
     static CreateLuminanceAlphaTexture(e, t, i, r, s = true, n = false, o = 3) {
-      return new or(e, t, i, 2, r, s, n, o);
+      return new lr(e, t, i, 2, r, s, n, o);
     }
     static CreateAlphaTexture(e, t, i, r, s = true, n = false, o = 3) {
-      return new or(e, t, i, 0, r, s, n, o);
+      return new lr(e, t, i, 0, r, s, n, o);
     }
     static CreateRGBTexture(e, t, i, r, s = true, n = false, o = 3, l = 0, c = 0, h = false) {
-      return new or(e, t, i, 4, r, s, n, o, l, c, h);
+      return new lr(e, t, i, 4, r, s, n, o, l, c, h);
     }
     static CreateRGBATexture(e, t, i, r, s = true, n = false, o = 3, l = 0, c = 0, h = false, u = false) {
-      return new or(e, t, i, 5, r, s, n, o, l, c, h, u);
+      return new lr(e, t, i, 5, r, s, n, o, l, c, h, u);
     }
     static CreateRGBAStorageTexture(e, t, i, r, s = true, n = false, o = 3, l = 0, c = false) {
-      return new or(e, t, i, 5, r, s, n, o, l, 1, c);
+      return new lr(e, t, i, 5, r, s, n, o, l, 1, c);
     }
     static CreateRTexture(e, t, i, r, s = true, n = false, o = Z.TRILINEAR_SAMPLINGMODE, l = 1) {
-      return new or(e, t, i, 6, r, s, n, o, l);
+      return new lr(e, t, i, 6, r, s, n, o, l);
     }
     static CreateRStorageTexture(e, t, i, r, s = true, n = false, o = Z.TRILINEAR_SAMPLINGMODE, l = 1) {
-      return new or(e, t, i, 6, r, s, n, o, l, 1);
+      return new lr(e, t, i, 6, r, s, n, o, l, 1);
     }
   }
   class xu {
@@ -31448,7 +31448,7 @@ Bad Bone Indices = ` + m;
             for (const s of this.bones) s.getParent() || (s.getBindMatrix().multiplyToRef(i, Q.Matrix[1]), s._updateAbsoluteBindMatrices(Q.Matrix[1]));
             if (this.isUsingTextureForMatrices) {
               const s = (this.bones.length + 1) * 4;
-              (!t._transformMatrixTexture || t._transformMatrixTexture.getSize().width !== s) && (t._transformMatrixTexture && t._transformMatrixTexture.dispose(), t._transformMatrixTexture = or.CreateRGBATexture(t._bonesTransformMatrices, (this.bones.length + 1) * 4, 1, this._scene, false, false, 1, 1));
+              (!t._transformMatrixTexture || t._transformMatrixTexture.getSize().width !== s) && (t._transformMatrixTexture && t._transformMatrixTexture.dispose(), t._transformMatrixTexture = lr.CreateRGBATexture(t._bonesTransformMatrices, (this.bones.length + 1) * 4, 1, this._scene, false, false, 1, 1));
             }
           }
           this._computeTransformMatrices(t._bonesTransformMatrices, i), this.isUsingTextureForMatrices && t._transformMatrixTexture && t._transformMatrixTexture.update(t._bonesTransformMatrices);
@@ -31456,7 +31456,7 @@ Bad Bone Indices = ` + m;
       }
       else {
         if (!this._isDirty) return;
-        (!this._transformMatrices || this._transformMatrices.length !== 16 * (this.bones.length + 1)) && (this._transformMatrices = new Float32Array(16 * (this.bones.length + 1)), this.isUsingTextureForMatrices && (this._transformMatrixTexture && this._transformMatrixTexture.dispose(), this._transformMatrixTexture = or.CreateRGBATexture(this._transformMatrices, (this.bones.length + 1) * 4, 1, this._scene, false, false, 1, 1))), this._computeTransformMatrices(this._transformMatrices, null), this.isUsingTextureForMatrices && this._transformMatrixTexture && this._transformMatrixTexture.update(this._transformMatrices);
+        (!this._transformMatrices || this._transformMatrices.length !== 16 * (this.bones.length + 1)) && (this._transformMatrices = new Float32Array(16 * (this.bones.length + 1)), this.isUsingTextureForMatrices && (this._transformMatrixTexture && this._transformMatrixTexture.dispose(), this._transformMatrixTexture = lr.CreateRGBATexture(this._transformMatrices, (this.bones.length + 1) * 4, 1, this._scene, false, false, 1, 1))), this._computeTransformMatrices(this._transformMatrices, null), this.isUsingTextureForMatrices && this._transformMatrixTexture && this._transformMatrixTexture.update(this._transformMatrices);
       }
       this._isDirty = false;
     }
@@ -35672,16 +35672,16 @@ vUV=(position*madd+madd)*scale;gl_Position=vec4(position,0.0,1.0);
       e && (e.dispose(), delete this._vertexBuffers[w.PositionKind]), this._indexBuffer && this.engine._releaseBuffer(this._indexBuffer), this._onContextRestoredObserver && (this.engine.onContextRestoredObservable.remove(this._onContextRestoredObserver), this._onContextRestoredObserver = null);
     }
   }
-  class lr {
+  class cr {
     static RegisterShaderCodeProcessing(e, t) {
       if (!t) {
-        delete lr._CustomShaderCodeProcessing[e ?? ""];
+        delete cr._CustomShaderCodeProcessing[e ?? ""];
         return;
       }
-      lr._CustomShaderCodeProcessing[e ?? ""] = t;
+      cr._CustomShaderCodeProcessing[e ?? ""] = t;
     }
     static _GetShaderCodeProcessing(e) {
-      return lr._CustomShaderCodeProcessing[e] ?? lr._CustomShaderCodeProcessing[""];
+      return cr._CustomShaderCodeProcessing[e] ?? cr._CustomShaderCodeProcessing[""];
     }
     get name() {
       return this.options.name;
@@ -35751,11 +35751,11 @@ vUV=(position*madd+madd)*scale;gl_Position=vec4(position,0.0,1.0);
     }
     _postConstructor(e, t = null, i, r) {
       this._importPromises.length = 0, r && this._importPromises.push(...r);
-      const s = this.options.engine.isWebGPU && !lr.ForceGLSL;
+      const s = this.options.engine.isWebGPU && !cr.ForceGLSL;
       this._gatherImports(s, this._importPromises), i !== void 0 && i(s, this._importPromises), s && this._webGPUReady && (this.options.shaderLanguage = 1), e || this.updateEffect(t);
     }
     updateEffect(e = null, t = null, i = null, r, s, n, o, l) {
-      const c = lr._GetShaderCodeProcessing(this.name);
+      const c = cr._GetShaderCodeProcessing(this.name);
       if (c == null ? void 0 : c.defineCustomBindings) {
         const f = (t == null ? void 0 : t.slice()) ?? [];
         f.push(...this.options.uniforms);
@@ -35790,14 +35790,14 @@ vUV=(position*madd+madd)*scale;gl_Position=vec4(position,0.0,1.0);
     }
     bind() {
       var _a2, _b2;
-      this.options.useAsPostProcess && (this.options.engine.setAlphaMode(this.alphaMode), this.drawWrapper.effect.setFloat2("scale", 1, 1)), (_b2 = (_a2 = lr._GetShaderCodeProcessing(this.name)) == null ? void 0 : _a2.bindCustomBindings) == null ? void 0 : _b2.call(_a2, this.name, this._drawWrapper.effect);
+      this.options.useAsPostProcess && (this.options.engine.setAlphaMode(this.alphaMode), this.drawWrapper.effect.setFloat2("scale", 1, 1)), (_b2 = (_a2 = cr._GetShaderCodeProcessing(this.name)) == null ? void 0 : _a2.bindCustomBindings) == null ? void 0 : _b2.call(_a2, this.name, this._drawWrapper.effect);
     }
     dispose(e = false) {
       this._onContextRestoredObserver && (this.effect.getEngine().onContextRestoredObservable.remove(this._onContextRestoredObserver), this._onContextRestoredObserver = null), this.onEffectCreatedObservable.clear(), this._drawWrapper.dispose(true);
     }
   }
-  lr.ForceGLSL = false;
-  lr._CustomShaderCodeProcessing = {};
+  cr.ForceGLSL = false;
+  cr._CustomShaderCodeProcessing = {};
   Ee.prototype.setTextureFromPostProcess = function(a, e, t) {
     let i = null;
     e && (e._forcedOutputTexture ? i = e._forcedOutputTexture : e._textures.data[e._currentRenderTextureInd] && (i = e._textures.data[e._currentRenderTextureInd])), this._bindTexture(a, (i == null ? void 0 : i.texture) ?? null, t);
@@ -35814,13 +35814,13 @@ vUV=(position*madd+madd)*scale;gl_Position=vec4(position,0.0,1.0);
   };
   class ht {
     static get ForceGLSL() {
-      return lr.ForceGLSL;
+      return cr.ForceGLSL;
     }
     static set ForceGLSL(e) {
-      lr.ForceGLSL = e;
+      cr.ForceGLSL = e;
     }
     static RegisterShaderCodeProcessing(e, t) {
-      lr.RegisterShaderCodeProcessing(e, t);
+      cr.RegisterShaderCodeProcessing(e, t);
     }
     get name() {
       return this._effectWrapper.name;
@@ -35890,7 +35890,7 @@ vUV=(position*madd+madd)*scale;gl_Position=vec4(position,0.0,1.0);
         height: s.height
       });
       const C = !!y;
-      if (this._effectWrapper = y ?? new lr({
+      if (this._effectWrapper = y ?? new cr({
         name: e,
         useShaderStore: true,
         useAsPostProcess: true,
@@ -39192,7 +39192,7 @@ layout (num_views = 2) in;
   ke.SCALEMODE_FLOOR = 1;
   ke.SCALEMODE_NEAREST = 2;
   ke.SCALEMODE_CEILING = 3;
-  class lh extends lr {
+  class lh extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Promise.all([
         Y(() => Promise.resolve().then(() => i5), void 0)
@@ -39212,7 +39212,7 @@ layout (num_views = 2) in;
     }
   }
   lh.FragmentUrl = "pass";
-  class Y_ extends lr {
+  class Y_ extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Promise.all([
         Y(() => Promise.resolve().then(() => uve), void 0)
@@ -41627,16 +41627,16 @@ void main(void)
     Re("_markAllSubMeshesAsTexturesDirty")
   ], ze.prototype, "refractionTexture", void 0);
   T([
-    hr("ambient")
+    ur("ambient")
   ], ze.prototype, "ambientColor", void 0);
   T([
-    hr("diffuse")
+    ur("diffuse")
   ], ze.prototype, "diffuseColor", void 0);
   T([
-    hr("specular")
+    ur("specular")
   ], ze.prototype, "specularColor", void 0);
   T([
-    hr("emissive")
+    ur("emissive")
   ], ze.prototype, "emissiveColor", void 0);
   T([
     I()
@@ -44972,7 +44972,7 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
     }
   }
   T([
-    hr()
+    ur()
   ], fl.prototype, "groundColor", void 0);
   T([
     es()
@@ -51579,7 +51579,7 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
             e("Engine is not defined");
             return;
           }
-          const c = new lr({
+          const c = new cr({
             engine: i,
             name: l.name,
             fragmentShader: l.shader,
@@ -62645,7 +62645,7 @@ Make sure timestamp query is supported and enabled in your browser.`);
         }, void 0)).FlowGraphArrayIndexBlock;
       case "FlowGraphCodeExecutionBlock":
         return async () => (await Y(async () => {
-          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-C4Zd3Zxu.js").then(async (m) => {
+          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-Dy6cFaD8.js").then(async (m) => {
             await m.__tla;
             return m;
           });
@@ -65898,7 +65898,7 @@ ${e}.disabled = ${this.disabled};
     }
     async _initShaderSourceAsync(e) {
       const t = this._engine;
-      t.isWebGPU ? (this._shaderLanguage = 1, await Y(() => Promise.resolve().then(() => Qpe), void 0)) : await Y(() => Promise.resolve().then(() => Ype), void 0), this._shadersLoaded = true, this._effectWrapper = new lr({
+      t.isWebGPU ? (this._shaderLanguage = 1, await Y(() => Promise.resolve().then(() => Qpe), void 0)) : await Y(() => Promise.resolve().then(() => Ype), void 0), this._shadersLoaded = true, this._effectWrapper = new cr({
         engine: t,
         name: "CopyTextureToTexture",
         fragmentShader: "copyTextureToTexture",
@@ -67263,7 +67263,7 @@ ${e}.disabled = ${this.disabled};
     })
   ], J_.prototype, "clearStencil", null);
   W("BABYLON.NodeRenderGraphClearBlock", J_);
-  class Zr extends lr {
+  class Zr extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Promise.all([
         Y(() => Promise.resolve().then(() => tve), void 0),
@@ -69815,7 +69815,7 @@ discard;}}
     }
   }
   W("BABYLON.NodeRenderGraphResourceContainerBlock", tee);
-  class Dl extends lr {
+  class Dl extends cr {
     constructor(e, t = null, i, r, s) {
       super({
         ...s,
@@ -70920,7 +70920,7 @@ discard;}}
     })
   ], Pu.prototype, "blurVerticalSize", null);
   W("BABYLON.NodeRenderGraphHighlightLayerBlock", Pu);
-  class fc extends lr {
+  class fc extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Y(() => Promise.resolve().then(() => txe), void 0))) : t.push(Y(() => Promise.resolve().then(() => Jve), void 0));
     }
@@ -71029,7 +71029,7 @@ discard;}}
     })
   ], nU.prototype, "degree", null);
   W("BABYLON.NodeRenderGraphBlackAndWhitePostProcessBlock", nU);
-  class Ao extends lr {
+  class Ao extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Y(() => Promise.resolve().then(() => Uve), void 0))) : t.push(Y(() => Promise.resolve().then(() => Bve), void 0));
     }
@@ -71068,7 +71068,7 @@ discard;}}
       return t.addDependencies(this.blurTexture), t;
     }
   }
-  class wl extends lr {
+  class wl extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Y(() => Promise.resolve().then(() => Wve), void 0))) : t.push(Y(() => Promise.resolve().then(() => Gve), void 0));
     }
@@ -71326,7 +71326,7 @@ discard;}}
     })
   ], UA.prototype, "kernel", null);
   W("BABYLON.NodeRenderGraphBlurPostProcessBlock", UA);
-  class ta extends lr {
+  class ta extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Y(() => Promise.resolve().then(() => Lve), void 0))) : t.push(Y(() => Promise.resolve().then(() => wve), void 0));
     }
@@ -71456,7 +71456,7 @@ discard;}}
     Ce("Focal length", 1, "PROPERTIES")
   ], tp.prototype, "focalLength", null);
   W("BABYLON.NodeRenderGraphCircleOfConfusionPostProcessBlock", tp);
-  class _c extends lr {
+  class _c extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Y(() => Promise.resolve().then(() => Ove), void 0))) : t.push(Y(() => Promise.resolve().then(() => Pve), void 0));
     }
@@ -72700,7 +72700,7 @@ discard;}}
       return r;
     }
   }
-  class sh extends lr {
+  class sh extends cr {
     _gatherImports(e, t) {
       e ? (this._webGPUReady = true, t.push(Y(() => Promise.resolve().then(() => Age), void 0))) : t.push(Y(() => Promise.resolve().then(() => yge), void 0));
     }
@@ -73821,13 +73821,13 @@ discard;}}
   Jt.StandardReflectance0 = 0.05;
   Jt.StandardReflectance90 = 0.5;
   T([
-    hr()
+    ur()
   ], Jt.prototype, "_primaryColor", void 0);
   T([
     Re("_markAllSubMeshesAsLightsDirty")
   ], Jt.prototype, "primaryColor", void 0);
   T([
-    hr()
+    ur()
   ], Jt.prototype, "__perceptualColor", void 0);
   T([
     I()
@@ -74468,7 +74468,7 @@ discard;}}
     Re("_markAllSubMeshesAsTexturesDirty")
   ], rn.prototype, "isTintEnabled", void 0);
   T([
-    hr()
+    ur()
   ], rn.prototype, "tintColor", void 0);
   T([
     I()
@@ -74775,7 +74775,7 @@ discard;}}
     I()
   ], bc.prototype, "intensity", void 0);
   T([
-    hr()
+    ur()
   ], bc.prototype, "color", void 0);
   T([
     Kt(),
@@ -75087,7 +75087,7 @@ discard;}}
     I()
   ], Nr.prototype, "useThicknessAsDepth", void 0);
   T([
-    hr()
+    ur()
   ], Nr.prototype, "tintColor", void 0);
   T([
     I()
@@ -75096,7 +75096,7 @@ discard;}}
     I()
   ], Nr.prototype, "dispersion", void 0);
   T([
-    hr()
+    ur()
   ], Nr.prototype, "diffusionDistance", void 0);
   T([
     I(),
@@ -75111,7 +75111,7 @@ discard;}}
     Re("_markAllSubMeshesAsTexturesDirty")
   ], Nr.prototype, "translucencyIntensityTexture", void 0);
   T([
-    hr()
+    ur()
   ], Nr.prototype, "translucencyColor", void 0);
   T([
     Kt(),
@@ -75729,7 +75729,7 @@ discard;}}
     Re("_markAllSubMeshesAsTexturesDirty")
   ], at.prototype, "metallicF0Factor", void 0);
   T([
-    hr(),
+    ur(),
     Re("_markAllSubMeshesAsTexturesDirty")
   ], at.prototype, "metallicReflectanceColor", void 0);
   T([
@@ -75757,11 +75757,11 @@ discard;}}
     Re("_markAllSubMeshesAsTexturesDirty", null)
   ], at.prototype, "lightmapTexture", void 0);
   T([
-    hr("ambient"),
+    ur("ambient"),
     Re("_markAllSubMeshesAsTexturesDirty")
   ], at.prototype, "ambientColor", void 0);
   T([
-    hr("albedo"),
+    ur("albedo"),
     Re("_markAllSubMeshesAsTexturesDirty")
   ], at.prototype, "albedoColor", void 0);
   T([
@@ -75769,15 +75769,15 @@ discard;}}
     Re("_markAllSubMeshesAsTexturesDirty")
   ], at.prototype, "baseWeight", void 0);
   T([
-    hr("reflectivity"),
+    ur("reflectivity"),
     Re("_markAllSubMeshesAsTexturesDirty")
   ], at.prototype, "reflectivityColor", void 0);
   T([
-    hr("reflection"),
+    ur("reflection"),
     Re("_markAllSubMeshesAsTexturesDirty")
   ], at.prototype, "reflectionColor", void 0);
   T([
-    hr("emissive"),
+    ur("emissive"),
     Re("_markAllSubMeshesAsTexturesDirty")
   ], at.prototype, "emissiveColor", void 0);
   T([
@@ -76446,12 +76446,12 @@ discard;}}
       }), this._ktx2DecoderOptions = e, e;
     }
   }
-  ar = class {
+  or = class {
     static GetDefaultNumWorkers() {
       return typeof navigator != "object" || !navigator.hardwareConcurrency ? 1 : Math.min(Math.floor(navigator.hardwareConcurrency * 0.5), 4);
     }
     static _Initialize(e) {
-      if (ar._WorkerPoolPromise || ar._DecoderModulePromise) return;
+      if (or._WorkerPoolPromise || or._DecoderModulePromise) return;
       const t = {
         jsDecoderModule: re.GetBabylonScriptURL(this.URLConfig.jsDecoderModule, true),
         wasmUASTCToASTC: re.GetBabylonScriptURL(this.URLConfig.wasmUASTCToASTC, true),
@@ -76464,24 +76464,24 @@ discard;}}
         wasmMSCTranscoder: re.GetBabylonScriptURL(this.URLConfig.wasmMSCTranscoder, true),
         wasmZSTDDecoder: re.GetBabylonScriptURL(this.URLConfig.wasmZSTDDecoder, true)
       };
-      e && typeof Worker == "function" && typeof URL < "u" ? ar._WorkerPoolPromise = new Promise((i) => {
+      e && typeof Worker == "function" && typeof URL < "u" ? or._WorkerPoolPromise = new Promise((i) => {
         const r = `${bS}(${Xee})()`, s = URL.createObjectURL(new Blob([
           r
         ], {
           type: "application/javascript"
         }));
         i(new Qg(e, () => $ee(new Worker(s), void 0, t)));
-      }) : typeof ar._KTX2DecoderModule > "u" ? ar._DecoderModulePromise = re.LoadBabylonScriptAsync(t.jsDecoderModule).then(() => (ar._KTX2DecoderModule = KTX2DECODER, ar._KTX2DecoderModule.MSCTranscoder.UseFromWorkerThread = false, ar._KTX2DecoderModule.WASMMemoryManager.LoadBinariesFromCurrentThread = true, bS(t, ar._KTX2DecoderModule), new ar._KTX2DecoderModule.KTX2Decoder())) : (ar._KTX2DecoderModule.MSCTranscoder.UseFromWorkerThread = false, ar._KTX2DecoderModule.WASMMemoryManager.LoadBinariesFromCurrentThread = true, ar._DecoderModulePromise = Promise.resolve(new ar._KTX2DecoderModule.KTX2Decoder()));
+      }) : typeof or._KTX2DecoderModule > "u" ? or._DecoderModulePromise = re.LoadBabylonScriptAsync(t.jsDecoderModule).then(() => (or._KTX2DecoderModule = KTX2DECODER, or._KTX2DecoderModule.MSCTranscoder.UseFromWorkerThread = false, or._KTX2DecoderModule.WASMMemoryManager.LoadBinariesFromCurrentThread = true, bS(t, or._KTX2DecoderModule), new or._KTX2DecoderModule.KTX2Decoder())) : (or._KTX2DecoderModule.MSCTranscoder.UseFromWorkerThread = false, or._KTX2DecoderModule.WASMMemoryManager.LoadBinariesFromCurrentThread = true, or._DecoderModulePromise = Promise.resolve(new or._KTX2DecoderModule.KTX2Decoder()));
     }
-    constructor(e, t = ar.DefaultNumWorkers) {
+    constructor(e, t = or.DefaultNumWorkers) {
       var _a2;
       this._engine = e;
-      const i = typeof t == "object" && t.workerPool || ar.WorkerPool;
-      if (i) ar._WorkerPoolPromise = Promise.resolve(i);
+      const i = typeof t == "object" && t.workerPool || or.WorkerPool;
+      if (i) or._WorkerPoolPromise = Promise.resolve(i);
       else {
-        typeof t == "object" ? ar._KTX2DecoderModule = (_a2 = t == null ? void 0 : t.binariesAndModulesContainer) == null ? void 0 : _a2.jsDecoderModule : typeof KTX2DECODER < "u" && (ar._KTX2DecoderModule = KTX2DECODER);
-        const r = typeof t == "number" ? t : t.numWorkers ?? ar.DefaultNumWorkers;
-        ar._Initialize(r);
+        typeof t == "object" ? or._KTX2DecoderModule = (_a2 = t == null ? void 0 : t.binariesAndModulesContainer) == null ? void 0 : _a2.jsDecoderModule : typeof KTX2DECODER < "u" && (or._KTX2DecoderModule = KTX2DECODER);
+        const r = typeof t == "number" ? t : t.numWorkers ?? or.DefaultNumWorkers;
+        or._Initialize(r);
       }
     }
     _uploadAsync(e, t, i) {
@@ -76493,7 +76493,7 @@ discard;}}
         etc2: !!r.etc2,
         etc1: !!r.etc1
       };
-      if (ar._WorkerPoolPromise) return ar._WorkerPoolPromise.then((n) => new Promise((o, l) => {
+      if (or._WorkerPoolPromise) return or._WorkerPoolPromise.then((n) => new Promise((o, l) => {
         n.push((c, h) => {
           const u = (m) => {
             c.removeEventListener("error", u), c.removeEventListener("message", f), l(m), h();
@@ -76514,7 +76514,7 @@ discard;}}
           };
           c.addEventListener("error", u), c.addEventListener("message", f), c.postMessage({
             action: "setDefaultDecoderOptions",
-            options: ar.DefaultDecoderOptions._getKTX2DecoderOptions()
+            options: or.DefaultDecoderOptions._getKTX2DecoderOptions()
           });
           const p = new Uint8Array(e.byteLength);
           p.set(new Uint8Array(e.buffer, e.byteOffset, e.byteLength)), c.postMessage({
@@ -76527,7 +76527,7 @@ discard;}}
           ]);
         });
       }));
-      if (ar._DecoderModulePromise) return ar._DecoderModulePromise.then((n) => (ar.DefaultDecoderOptions.isDirty && (ar._KTX2DecoderModule.KTX2Decoder.DefaultDecoderOptions = ar.DefaultDecoderOptions._getKTX2DecoderOptions()), new Promise((o, l) => {
+      if (or._DecoderModulePromise) return or._DecoderModulePromise.then((n) => (or.DefaultDecoderOptions.isDirty && (or._KTX2DecoderModule.KTX2Decoder.DefaultDecoderOptions = or.DefaultDecoderOptions._getKTX2DecoderOptions()), new Promise((o, l) => {
         n.decode(e, r).then((c) => {
           this._createTexture(c, t), o();
         }).catch((c) => {
@@ -76571,7 +76571,7 @@ discard;}}
       return false;
     }
   };
-  ar.URLConfig = {
+  or.URLConfig = {
     jsDecoderModule: "https://cdn.babylonjs.com/babylon.ktx2Decoder.js",
     wasmUASTCToASTC: null,
     wasmUASTCToBC7: null,
@@ -76583,8 +76583,8 @@ discard;}}
     wasmMSCTranscoder: null,
     wasmZSTDDecoder: null
   };
-  ar.DefaultNumWorkers = ar.GetDefaultNumWorkers();
-  ar.DefaultDecoderOptions = new Yee();
+  or.DefaultNumWorkers = or.GetDefaultNumWorkers();
+  or.DefaultDecoderOptions = new Yee();
   class cg extends Sn {
     constructor(e, t, i) {
       super(e, v.Zero(), t), this._xrSessionManager = i, this._firstFrame = false, this._referenceQuaternion = xe.Identity(), this._referencedPosition = new v(), this._trackingState = 0, this.onXRCameraInitializedObservable = new J(), this.onBeforeCameraTeleport = new J(), this.onAfterCameraTeleport = new J(), this.onTrackingStateChanged = new J(), this.compensateOnFirstFrame = true, this._rotate180 = new xe(0, 1, 0, 0), this.minZ = 0.1, this.rotationQuaternion = new xe(), this.cameraRigMode = tt.RIG_MODE_CUSTOM, this.updateUpVectorFromRotation = true, this._updateNumberOfRigCameras(1), this.freezeProjectionMatrix(), this._deferOnly = true, this._xrSessionManager.onXRSessionInit.add(() => {
@@ -85550,8 +85550,8 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
     a.useDelayedTextureLoading = false;
     const t = a._blockEntityCollection;
     a._blockEntityCollection = false, a._ltcTextures = {
-      LTC1: or.CreateRGBATexture(null, 64, 64, a.getEngine(), false, false, 2, 2, 0, false, true),
-      LTC2: or.CreateRGBATexture(null, 64, 64, a.getEngine(), false, false, 2, 2, 0, false, true)
+      LTC1: lr.CreateRGBATexture(null, 64, 64, a.getEngine(), false, false, 2, 2, 0, false, true),
+      LTC2: lr.CreateRGBATexture(null, 64, 64, a.getEngine(), false, false, 2, 2, 0, false, true)
     }, a._blockEntityCollection = t, a._ltcTextures.LTC1.wrapU = Z.CLAMP_ADDRESSMODE, a._ltcTextures.LTC1.wrapV = Z.CLAMP_ADDRESSMODE, a._ltcTextures.LTC2.wrapU = Z.CLAMP_ADDRESSMODE, a._ltcTextures.LTC2.wrapV = Z.CLAMP_ADDRESSMODE, a.useDelayedTextureLoading = e, lre().then((i) => {
       var _a2, _b2;
       a._ltcTextures && (((_a2 = a._ltcTextures) == null ? void 0 : _a2.LTC1).update(i[0]), ((_b2 = a._ltcTextures) == null ? void 0 : _b2.LTC2).update(i[1]), a.onDisposeObservable.addOnce(() => {
@@ -85940,7 +85940,7 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
       const i = [];
       e.gammaSpace && i.push("#define GAMMA_INPUT"), i.push("#define NUM_SAMPLES " + this.quality + "u");
       const r = this._engine.isWebGPU;
-      return new lr({
+      return new cr({
         engine: this._engine,
         name: "hdrFiltering",
         vertexShader: "hdrFiltering",
@@ -86011,7 +86011,7 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
         0,
         255
       ]);
-      this._dummyTexture = new or(t, 1, 1, ke.TEXTUREFORMAT_RGBA, e, false, false, void 0, 2), this._scene && zd._SceneComponentInitialization(this._scene);
+      this._dummyTexture = new lr(t, 1, 1, ke.TEXTUREFORMAT_RGBA, e, false, false, void 0, 2), this._scene && zd._SceneComponentInitialization(this._scene);
     }
     _createTextures() {
       const e = this._iblSource ? {
@@ -86021,7 +86021,7 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
         width: 1,
         height: 1
       };
-      this._iblSource || (this._iblSource = or.CreateRTexture(new Uint8Array([
+      this._iblSource || (this._iblSource = lr.CreateRTexture(new Uint8Array([
         255
       ]), 1, 1, this._engine, false, false, 1, 0), this._iblSource.name = "Placeholder IBL Source"), this._iblSource.isCube && (e.width *= 4, e.height *= 2, e.width = 1 << Math.floor(Math.log2(e.width)), e.height = 1 << Math.floor(Math.log2(e.height)));
       const t = this._engine.isWebGPU, i = {
@@ -86220,7 +86220,7 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
       const r = this._engine.isWebGPU, s = [
         "inputTexture"
       ];
-      return this._cdfGenerator && (s.push("icdfTexture"), i.push("#define IBL_CDF_FILTERING")), new lr({
+      return this._cdfGenerator && (s.push("icdfTexture"), i.push("#define IBL_CDF_FILTERING")), new cr({
         engine: this._engine,
         name: "HDRIrradianceFiltering",
         vertexShader: "hdrIrradianceFiltering",
@@ -92435,7 +92435,7 @@ gl_Position=viewProjection*worldPos;
     Re("_markAllSubMeshesAsTexturesDirty", "_bumpTexture")
   ], xa.prototype, "normalTexture", void 0);
   T([
-    hr("emissive"),
+    ur("emissive"),
     Re("_markAllSubMeshesAsTexturesDirty")
   ], xa.prototype, "emissiveColor", void 0);
   T([
@@ -92486,7 +92486,7 @@ gl_Position=viewProjection*worldPos;
     }
   }
   T([
-    hr(),
+    ur(),
     Re("_markAllSubMeshesAsTexturesDirty", "_albedoColor")
   ], dh.prototype, "baseColor", void 0);
   T([
@@ -92530,7 +92530,7 @@ gl_Position=viewProjection*worldPos;
     }
   }
   T([
-    hr("diffuse"),
+    ur("diffuse"),
     Re("_markAllSubMeshesAsTexturesDirty", "_albedoColor")
   ], fh.prototype, "diffuseColor", void 0);
   T([
@@ -92538,7 +92538,7 @@ gl_Position=viewProjection*worldPos;
     Re("_markAllSubMeshesAsTexturesDirty", "_albedoTexture")
   ], fh.prototype, "diffuseTexture", void 0);
   T([
-    hr("specular"),
+    ur("specular"),
     Re("_markAllSubMeshesAsTexturesDirty", "_reflectivityColor")
   ], fh.prototype, "specularColor", void 0);
   T([
@@ -110248,13 +110248,13 @@ ${C}.rgb = toGammaSpace(${C}.rgb);
         ...t,
         ...Array(n * o - t.length).fill(t[0])
       ]);
-      const l = Di.Color3toRGBAUint8(t), c = new or(l, n, o, ke.TEXTUREFORMAT_RGBA, r, false, true, i);
+      const l = Di.Color3toRGBAUint8(t), c = new lr(l, n, o, ke.TEXTUREFORMAT_RGBA, r, false, true, i);
       return c.name = e, c;
     }
     static PrepareEmptyColorsTexture(e) {
       if (!zn.EmptyColorsTexture) {
         const t = new Uint8Array(4);
-        zn.EmptyColorsTexture = new or(t, 1, 1, ke.TEXTUREFORMAT_RGBA, e, false, false, or.NEAREST_NEAREST), zn.EmptyColorsTexture.name = "grlEmptyColorsTexture";
+        zn.EmptyColorsTexture = new lr(t, 1, 1, ke.TEXTUREFORMAT_RGBA, e, false, false, lr.NEAREST_NEAREST), zn.EmptyColorsTexture.name = "grlEmptyColorsTexture";
       }
       return zn.EmptyColorsTexture;
     }
@@ -110589,7 +110589,7 @@ ${C}.rgb = toGammaSpace(${C}.rgb);
         color: zn.DEFAULT_COLOR
       };
       const r = new Lde();
-      r.GREASED_LINE_HAS_COLOR = !!i.color && !i.useColors, r.GREASED_LINE_SIZE_ATTENUATION = i.sizeAttenuation ?? false, r.GREASED_LINE_COLOR_DISTRIBUTION_TYPE_LINE = i.colorDistributionType === 1, r.GREASED_LINE_RIGHT_HANDED_COORDINATE_SYSTEM = (t ?? e.getScene()).useRightHandedSystem, r.GREASED_LINE_CAMERA_FACING = i.cameraFacing ?? true, super(e, nh.GREASED_LINE_MATERIAL_NAME, 200, r, true, true), this.colorsTexture = null, this._forceGLSL = false, this._forceGLSL = (i == null ? void 0 : i.forceGLSL) || nh.ForceGLSL, this._scene = t ?? e.getScene(), this._engine = this._scene.getEngine(), this._cameraFacing = i.cameraFacing ?? true, this.visibility = i.visibility ?? 1, this.useDash = i.useDash ?? false, this.dashRatio = i.dashRatio ?? 0.5, this.dashOffset = i.dashOffset ?? 0, this.width = i.width ? i.width : i.sizeAttenuation ? zn.DEFAULT_WIDTH_ATTENUATED : zn.DEFAULT_WIDTH, this._sizeAttenuation = i.sizeAttenuation ?? false, this.colorMode = i.colorMode ?? 0, this._color = i.color ?? null, this.useColors = i.useColors ?? false, this._colorsDistributionType = i.colorDistributionType ?? 0, this.colorsSampling = i.colorsSampling ?? or.NEAREST_NEAREST, this._colors = i.colors ?? null, this.dashCount = i.dashCount ?? 1, this.resolution = i.resolution ?? new he(this._engine.getRenderWidth(), this._engine.getRenderHeight()), i.colorsTexture ? this.colorsTexture = i.colorsTexture : this._colors ? this.colorsTexture = Di.CreateColorsTexture(`${e.name}-colors-texture`, this._colors, this.colorsSampling, this._scene) : (this._color = this._color ?? zn.DEFAULT_COLOR, Di.PrepareEmptyColorsTexture(this._scene)), this._engine.onDisposeObservable.add(() => {
+      r.GREASED_LINE_HAS_COLOR = !!i.color && !i.useColors, r.GREASED_LINE_SIZE_ATTENUATION = i.sizeAttenuation ?? false, r.GREASED_LINE_COLOR_DISTRIBUTION_TYPE_LINE = i.colorDistributionType === 1, r.GREASED_LINE_RIGHT_HANDED_COORDINATE_SYSTEM = (t ?? e.getScene()).useRightHandedSystem, r.GREASED_LINE_CAMERA_FACING = i.cameraFacing ?? true, super(e, nh.GREASED_LINE_MATERIAL_NAME, 200, r, true, true), this.colorsTexture = null, this._forceGLSL = false, this._forceGLSL = (i == null ? void 0 : i.forceGLSL) || nh.ForceGLSL, this._scene = t ?? e.getScene(), this._engine = this._scene.getEngine(), this._cameraFacing = i.cameraFacing ?? true, this.visibility = i.visibility ?? 1, this.useDash = i.useDash ?? false, this.dashRatio = i.dashRatio ?? 0.5, this.dashOffset = i.dashOffset ?? 0, this.width = i.width ? i.width : i.sizeAttenuation ? zn.DEFAULT_WIDTH_ATTENUATED : zn.DEFAULT_WIDTH, this._sizeAttenuation = i.sizeAttenuation ?? false, this.colorMode = i.colorMode ?? 0, this._color = i.color ?? null, this.useColors = i.useColors ?? false, this._colorsDistributionType = i.colorDistributionType ?? 0, this.colorsSampling = i.colorsSampling ?? lr.NEAREST_NEAREST, this._colors = i.colors ?? null, this.dashCount = i.dashCount ?? 1, this.resolution = i.resolution ?? new he(this._engine.getRenderWidth(), this._engine.getRenderHeight()), i.colorsTexture ? this.colorsTexture = i.colorsTexture : this._colors ? this.colorsTexture = Di.CreateColorsTexture(`${e.name}-colors-texture`, this._colors, this.colorsSampling, this._scene) : (this._color = this._color ?? zn.DEFAULT_COLOR, Di.PrepareEmptyColorsTexture(this._scene)), this._engine.onDisposeObservable.add(() => {
         Di.DisposeEmptyColorsTexture();
       });
     }
@@ -110829,7 +110829,7 @@ ${C}.rgb = toGammaSpace(${C}.rgb);
         shaderLanguage: s ? 1 : 0
       }), this._color = ue.White(), this._colorsDistributionType = 0, this._colorsTexture = null, i = i || {
         color: zn.DEFAULT_COLOR
-      }, this.visibility = i.visibility ?? 1, this.useDash = i.useDash ?? false, this.dashRatio = i.dashRatio ?? 0.5, this.dashOffset = i.dashOffset ?? 0, this.dashCount = i.dashCount ?? 1, this.width = i.width ? i.width : i.sizeAttenuation && i.cameraFacing ? zn.DEFAULT_WIDTH_ATTENUATED : zn.DEFAULT_WIDTH, this.sizeAttenuation = i.sizeAttenuation ?? false, this.color = i.color ?? ue.White(), this.useColors = i.useColors ?? false, this.colorsDistributionType = i.colorDistributionType ?? 0, this.colorsSampling = i.colorsSampling ?? or.NEAREST_NEAREST, this.colorMode = i.colorMode ?? 0, this._colors = i.colors ?? null, this._cameraFacing = i.cameraFacing ?? true, this.resolution = i.resolution ?? new he(r.getRenderWidth(), r.getRenderHeight()), i.colorsTexture ? this.colorsTexture = i.colorsTexture : this.colorsTexture = Di.PrepareEmptyColorsTexture(t), this._colors && this.useColors && (this.colorsTexture = Di.CreateColorsTexture(`${this.name}-colors-texture`, this._colors, this.colorsSampling, t)), s) {
+      }, this.visibility = i.visibility ?? 1, this.useDash = i.useDash ?? false, this.dashRatio = i.dashRatio ?? 0.5, this.dashOffset = i.dashOffset ?? 0, this.dashCount = i.dashCount ?? 1, this.width = i.width ? i.width : i.sizeAttenuation && i.cameraFacing ? zn.DEFAULT_WIDTH_ATTENUATED : zn.DEFAULT_WIDTH, this.sizeAttenuation = i.sizeAttenuation ?? false, this.color = i.color ?? ue.White(), this.useColors = i.useColors ?? false, this.colorsDistributionType = i.colorDistributionType ?? 0, this.colorsSampling = i.colorsSampling ?? lr.NEAREST_NEAREST, this.colorMode = i.colorMode ?? 0, this._colors = i.colors ?? null, this._cameraFacing = i.cameraFacing ?? true, this.resolution = i.resolution ?? new he(r.getRenderWidth(), r.getRenderHeight()), i.colorsTexture ? this.colorsTexture = i.colorsTexture : this.colorsTexture = Di.PrepareEmptyColorsTexture(t), this._colors && this.useColors && (this.colorsTexture = Di.CreateColorsTexture(`${this.name}-colors-texture`, this._colors, this.colorsSampling, t)), s) {
         const c = new NC();
         c.setParameters(), c.samplingMode = this.colorsSampling, this.setTextureSampler("grlColorsSampler", c);
       }
@@ -111398,7 +111398,7 @@ var dbg_color = vec3f(1.);
   sn._PluginCount = 0;
   sn.MaterialColors = _4;
   T([
-    hr()
+    ur()
   ], sn.prototype, "_materialColor", void 0);
   T([
     I()
@@ -111412,10 +111412,10 @@ var dbg_color = vec3f(1.);
     Re("_markAllDefinesAsDirty")
   ], sn.prototype, "multiply", void 0);
   T([
-    hr()
+    ur()
   ], sn.prototype, "shadedDiffuseColor", void 0);
   T([
-    hr()
+    ur()
   ], sn.prototype, "shadedSpecularColor", void 0);
   T([
     I()
@@ -111424,13 +111424,13 @@ var dbg_color = vec3f(1.);
     I()
   ], sn.prototype, "wireframeThickness", void 0);
   T([
-    hr()
+    ur()
   ], sn.prototype, "wireframeTrianglesColor", void 0);
   T([
-    hr()
+    ur()
   ], sn.prototype, "wireframeVerticesColor", void 0);
   T([
-    hr()
+    ur()
   ], sn.prototype, "vertexColor", void 0);
   T([
     I()
@@ -111439,10 +111439,10 @@ var dbg_color = vec3f(1.);
     I()
   ], sn.prototype, "uvScale", void 0);
   T([
-    hr()
+    ur()
   ], sn.prototype, "uvPrimaryColor", void 0);
   T([
-    hr()
+    ur()
   ], sn.prototype, "uvSecondaryColor", void 0);
   W("BABYLON.MeshDebugPluginMaterial", sn);
   Object.defineProperty(ze.prototype, "decalMap", {
@@ -121697,7 +121697,7 @@ vertexOutputs.grlCounters=input.grl_counters;vertexOutputs.position=grlMatrix*ve
       r[e * 4 + 0] = _a(E[0] / P), r[e * 4 + 1] = _a(E[1] / P), r[e * 4 + 2] = _a(E[2] / P), r[e * 4 + 3] = _a(E[3] / P), s[e * f + 0] = _a(E[4] / P), s[e * f + 1] = _a(E[5] / P), n[e * 4 + 0] = i[32 * e + 24 + 0], n[e * 4 + 1] = i[32 * e + 24 + 1], n[e * 4 + 2] = i[32 * e + 24 + 2], n[e * 4 + 3] = i[32 * e + 24 + 3];
     }
     _updateTextures(e, t, i, r) {
-      const s = this._getTextureSize(this._vertexCount), n = (h, u, f, p) => new or(h, u, f, p, this._scene, false, false, 2, 1), o = (h, u, f, p) => new or(h, u, f, p, this._scene, false, false, 2, 0), l = (h, u, f, p) => new or(h, u, f, p, this._scene, false, false, 1, 7), c = (h, u, f, p) => new or(h, u, f, p, this._scene, false, false, 2, 2);
+      const s = this._getTextureSize(this._vertexCount), n = (h, u, f, p) => new lr(h, u, f, p, this._scene, false, false, 2, 1), o = (h, u, f, p) => new lr(h, u, f, p, this._scene, false, false, 2, 0), l = (h, u, f, p) => new lr(h, u, f, p, this._scene, false, false, 1, 7), c = (h, u, f, p) => new lr(h, u, f, p, this._scene, false, false, 2, 2);
       if (this._covariancesATexture) {
         this._delayedTextureUpdate = {
           covA: e,
@@ -122914,7 +122914,7 @@ fn main(input: FragmentInputs)->FragmentOutputs {fragmentOutputs.color=textureSa
           ue.LerpToRef(s.color, n.color, o, t), e[i * 4] = t.r * 255, e[i * 4 + 1] = t.g * 255, e[i * 4 + 2] = t.b * 255, e[i * 4 + 3] = 255;
         });
       }
-      this._rampGradientsTexture = or.CreateRGBATexture(e, this._rawTextureWidth, 1, this._scene, false, false, 1);
+      this._rampGradientsTexture = lr.CreateRGBATexture(e, this._rawTextureWidth, 1, this._scene, false, false, 1);
     }
     getRampGradients() {
       return this._rampGradients;
@@ -126062,9 +126062,9 @@ vec4 worldPos=vec4(vPositionW,1.0);
       const l = Math.min(this._engine.getCaps().maxTextureSize, n.randomTextureSize);
       let c = [];
       for (let h = 0; h < l; ++h) c.push(Math.random()), c.push(Math.random()), c.push(Math.random()), c.push(Math.random());
-      this._randomTexture = new or(new Float32Array(c), l, 1, 5, i, false, false, 1, 1), this._randomTexture.name = "GPUParticleSystem_random1", this._randomTexture.wrapU = 1, this._randomTexture.wrapV = 1, c = [];
+      this._randomTexture = new lr(new Float32Array(c), l, 1, 5, i, false, false, 1, 1), this._randomTexture.name = "GPUParticleSystem_random1", this._randomTexture.wrapU = 1, this._randomTexture.wrapV = 1, c = [];
       for (let h = 0; h < l; ++h) c.push(Math.random()), c.push(Math.random()), c.push(Math.random()), c.push(Math.random());
-      this._randomTexture2 = new or(new Float32Array(c), l, 1, 5, i, false, false, 1, 1), this._randomTexture2.name = "GPUParticleSystem_random2", this._randomTexture2.wrapU = 1, this._randomTexture2.wrapV = 1, this._randomTextureSize = l;
+      this._randomTexture2 = new lr(new Float32Array(c), l, 1, 5, i, false, false, 1, 1), this._randomTexture2.name = "GPUParticleSystem_random2", this._randomTexture2.wrapU = 1, this._randomTexture2.wrapV = 1, this._randomTextureSize = l;
     }
     _reset() {
       this._releaseBuffers();
@@ -126190,7 +126190,7 @@ vec4 worldPos=vec4(vPositionW,1.0);
           r[s] = on(o.factor1, l.factor1, c);
         });
       }
-      this[t] = or.CreateRTexture(r, this._rawTextureWidth, 1, this._scene || this._engine, false, false, 1), this[t].name = t.substring(1);
+      this[t] = lr.CreateRTexture(r, this._rawTextureWidth, 1, this._scene || this._engine, false, false, 1), this[t].name = t.substring(1);
     }
     _createSizeGradientTexture() {
       this._createFactorGradientTexture(this._sizeGradients, "_sizeGradientsTexture");
@@ -126216,7 +126216,7 @@ vec4 worldPos=vec4(vPositionW,1.0);
           Me.LerpToRef(s.color1, n.color1, o, t), e[i * 4] = t.r * 255, e[i * 4 + 1] = t.g * 255, e[i * 4 + 2] = t.b * 255, e[i * 4 + 3] = t.a * 255;
         });
       }
-      this._colorGradientsTexture = or.CreateRGBATexture(e, this._rawTextureWidth, 1, this._scene, false, false, 1), this._colorGradientsTexture.name = "colorGradients";
+      this._colorGradientsTexture = lr.CreateRGBATexture(e, this._rawTextureWidth, 1, this._scene, false, false, 1), this._colorGradientsTexture.name = "colorGradients";
     }
     _render(e, t) {
       var _a2, _b2, _c2, _d2;
@@ -129642,7 +129642,7 @@ if (grain_amount>0.0) {vec4 grain_color=texture2D(grainSampler,texels_coords*0.0
     _createRandomTexture() {
       const t = new Uint8Array(65536), i = he.Zero();
       for (let s = 0; s < t.length; ) i.set(ft(0, 1), ft(0, 1)).normalize().scaleInPlace(255), t[s++] = Math.floor(i.x), t[s++] = Math.floor(i.y), t[s++] = 0, t[s++] = 255;
-      const r = or.CreateRGBATexture(t, 128, 128, this._scene, false, false, 2);
+      const r = lr.CreateRGBATexture(t, 128, 128, this._scene, false, false, 2);
       r.name = "SSAORandomTexture", r.wrapU = Z.WRAP_ADDRESSMODE, r.wrapV = Z.WRAP_ADDRESSMODE, this._randomTexture = r;
     }
     serialize() {
@@ -129868,7 +129868,7 @@ vec2 uv=viewport.xy+vUV*viewport.zw;vec4 ssaoColor=texture2D(textureSampler,uv);
     _createRandomTexture() {
       const t = new Uint8Array(1048576);
       for (let r = 0; r < t.length; ) t[r++] = Math.floor(Math.max(0, ft(-1, 1)) * 255), t[r++] = Math.floor(Math.max(0, ft(-1, 1)) * 255), t[r++] = Math.floor(Math.max(0, ft(-1, 1)) * 255), t[r++] = 255;
-      const i = or.CreateRGBATexture(t, 512, 512, this._scene, false, false, 2);
+      const i = lr.CreateRGBATexture(t, 512, 512, this._scene, false, false, 2);
       i.name = "SSAORandomTexture", i.wrapU = Z.WRAP_ADDRESSMODE, i.wrapV = Z.WRAP_ADDRESSMODE, this._randomTexture = i;
     }
   }
@@ -130641,7 +130641,7 @@ gl_FragColor=result/float(nSamples);}
     }
   }
   const rge = z.Compose(new v(0.5, 0.5, 0.5), xe.Identity(), new v(0.5, 0.5, 0.5)), sge = z.Compose(new v(0.5, 0.5, 1), xe.Identity(), new v(0.5, 0.5, 0));
-  class ur extends ef {
+  class dr extends ef {
     set samples(e) {
       this._samples !== e && (this._samples = e, this._buildPipeline());
     }
@@ -131024,103 +131024,103 @@ gl_FragColor=result/float(nSamples);}
       return e.customType = "SSRRenderingPipeline", e;
     }
     static Parse(e, t, i) {
-      return Ve.Parse(() => new ur(e._name, t, e._ratio), e, t, i);
+      return Ve.Parse(() => new dr(e._name, t, e._ratio), e, t, i);
     }
   }
   T([
     I()
-  ], ur.prototype, "samples", null);
+  ], dr.prototype, "samples", null);
   T([
     I()
-  ], ur.prototype, "maxDistance", void 0);
+  ], dr.prototype, "maxDistance", void 0);
   T([
     I()
-  ], ur.prototype, "step", void 0);
+  ], dr.prototype, "step", void 0);
   T([
     I()
-  ], ur.prototype, "thickness", void 0);
+  ], dr.prototype, "thickness", void 0);
   T([
     I()
-  ], ur.prototype, "strength", void 0);
+  ], dr.prototype, "strength", void 0);
   T([
     I()
-  ], ur.prototype, "reflectionSpecularFalloffExponent", void 0);
+  ], dr.prototype, "reflectionSpecularFalloffExponent", void 0);
   T([
     I()
-  ], ur.prototype, "maxSteps", void 0);
+  ], dr.prototype, "maxSteps", void 0);
   T([
     I()
-  ], ur.prototype, "roughnessFactor", void 0);
+  ], dr.prototype, "roughnessFactor", void 0);
   T([
     I()
-  ], ur.prototype, "selfCollisionNumSkip", void 0);
+  ], dr.prototype, "selfCollisionNumSkip", void 0);
   T([
     I()
-  ], ur.prototype, "_reflectivityThreshold", void 0);
+  ], dr.prototype, "_reflectivityThreshold", void 0);
   T([
     I("_ssrDownsample")
-  ], ur.prototype, "_ssrDownsample", void 0);
+  ], dr.prototype, "_ssrDownsample", void 0);
   T([
     I()
-  ], ur.prototype, "ssrDownsample", null);
+  ], dr.prototype, "ssrDownsample", null);
   T([
     I("blurDispersionStrength")
-  ], ur.prototype, "_blurDispersionStrength", void 0);
+  ], dr.prototype, "_blurDispersionStrength", void 0);
   T([
     I("blurDownsample")
-  ], ur.prototype, "_blurDownsample", void 0);
+  ], dr.prototype, "_blurDownsample", void 0);
   T([
     I("enableSmoothReflections")
-  ], ur.prototype, "_enableSmoothReflections", void 0);
+  ], dr.prototype, "_enableSmoothReflections", void 0);
   T([
     I("environmentTexture")
-  ], ur.prototype, "_environmentTexture", void 0);
+  ], dr.prototype, "_environmentTexture", void 0);
   T([
     I("environmentTextureIsProbe")
-  ], ur.prototype, "_environmentTextureIsProbe", void 0);
+  ], dr.prototype, "_environmentTextureIsProbe", void 0);
   T([
     I("attenuateScreenBorders")
-  ], ur.prototype, "_attenuateScreenBorders", void 0);
+  ], dr.prototype, "_attenuateScreenBorders", void 0);
   T([
     I("attenuateIntersectionDistance")
-  ], ur.prototype, "_attenuateIntersectionDistance", void 0);
+  ], dr.prototype, "_attenuateIntersectionDistance", void 0);
   T([
     I("attenuateIntersectionIterations")
-  ], ur.prototype, "_attenuateIntersectionIterations", void 0);
+  ], dr.prototype, "_attenuateIntersectionIterations", void 0);
   T([
     I("attenuateFacingCamera")
-  ], ur.prototype, "_attenuateFacingCamera", void 0);
+  ], dr.prototype, "_attenuateFacingCamera", void 0);
   T([
     I("attenuateBackfaceReflection")
-  ], ur.prototype, "_attenuateBackfaceReflection", void 0);
+  ], dr.prototype, "_attenuateBackfaceReflection", void 0);
   T([
     I("clipToFrustum")
-  ], ur.prototype, "_clipToFrustum", void 0);
+  ], dr.prototype, "_clipToFrustum", void 0);
   T([
     I("useFresnel")
-  ], ur.prototype, "_useFresnel", void 0);
+  ], dr.prototype, "_useFresnel", void 0);
   T([
     I("enableAutomaticThicknessComputation")
-  ], ur.prototype, "_enableAutomaticThicknessComputation", void 0);
+  ], dr.prototype, "_enableAutomaticThicknessComputation", void 0);
   T([
     I("backfaceDepthTextureDownsample")
-  ], ur.prototype, "_backfaceDepthTextureDownsample", void 0);
+  ], dr.prototype, "_backfaceDepthTextureDownsample", void 0);
   T([
     I("backfaceForceDepthWriteTransparentMeshes")
-  ], ur.prototype, "_backfaceForceDepthWriteTransparentMeshes", void 0);
+  ], dr.prototype, "_backfaceForceDepthWriteTransparentMeshes", void 0);
   T([
     I("isEnabled")
-  ], ur.prototype, "_isEnabled", void 0);
+  ], dr.prototype, "_isEnabled", void 0);
   T([
     I("inputTextureColorIsInGammaSpace")
-  ], ur.prototype, "_inputTextureColorIsInGammaSpace", void 0);
+  ], dr.prototype, "_inputTextureColorIsInGammaSpace", void 0);
   T([
     I("generateOutputInGammaSpace")
-  ], ur.prototype, "_generateOutputInGammaSpace", void 0);
+  ], dr.prototype, "_generateOutputInGammaSpace", void 0);
   T([
     I("debug")
-  ], ur.prototype, "_debug", void 0);
-  W("BABYLON.SSRRenderingPipeline", ur);
+  ], dr.prototype, "_debug", void 0);
+  W("BABYLON.SSRRenderingPipeline", dr);
   class Du extends ef {
     set samples(e) {
       this._taaThinPostProcess.samples = e;
@@ -134098,7 +134098,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
       return i ? (this._blendBackTexture !== i && (this._blendBackTexture = i, this._blendBackMrt.setInternalTexture(this._blendBackTexture, 0), this._thinTextures[6] && this._thinTextures[6].dispose(), this._thinTextures[6] = new vd(this._blendBackTexture), e.defaultRT.renderTarget.shareDepth(this._depthMrts[0].renderTarget)), true) : false;
     }
     _createEffects() {
-      this._blendBackEffectWrapper = new lr({
+      this._blendBackEffectWrapper = new cr({
         fragmentShader: "oitBackBlend",
         useShaderStore: true,
         engine: this._engine,
@@ -134110,7 +134110,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
         extraInitializationsAsync: async () => {
           this._shaderLanguage === 1 ? await Y(() => Promise.resolve().then(() => r1), void 0) : await Y(() => Promise.resolve().then(() => i1), void 0);
         }
-      }), this._blendBackEffectWrapperPingPong = new lr({
+      }), this._blendBackEffectWrapperPingPong = new cr({
         fragmentShader: "oitBackBlend",
         useShaderStore: true,
         engine: this._engine,
@@ -134122,7 +134122,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
         extraInitializationsAsync: async () => {
           this._shaderLanguage === 1 ? await Y(() => Promise.resolve().then(() => r1), void 0) : await Y(() => Promise.resolve().then(() => i1), void 0);
         }
-      }), this._finalEffectWrapper = new lr({
+      }), this._finalEffectWrapper = new cr({
         fragmentShader: "oitFinal",
         useShaderStore: true,
         engine: this._engine,
@@ -135585,7 +135585,7 @@ totalWeight=max(totalWeight,HALF_MIN);gl_FragColor=vec4(inputColor.rgb+albedo*ma
         "position",
         "offset"
       ], i = [];
-      this._effectsAreDirty = false, this.useVelocity && (t.push("velocity"), i.push("#define FLUIDRENDERING_VELOCITY")), this._scene.useRightHandedSystem && i.push("#define FLUIDRENDERING_RHS"), this._depthEffectWrapper = new lr({
+      this._effectsAreDirty = false, this.useVelocity && (t.push("velocity"), i.push("#define FLUIDRENDERING_VELOCITY")), this._scene.useRightHandedSystem && i.push("#define FLUIDRENDERING_RHS"), this._depthEffectWrapper = new cr({
         engine: this._engine,
         useShaderStore: true,
         vertexShader: "fluidRenderingParticleDepth",
@@ -135604,7 +135604,7 @@ totalWeight=max(totalWeight,HALF_MIN);gl_FragColor=vec4(inputColor.rgb+albedo*ma
             Y(() => Promise.resolve().then(() => cSe), void 0)
           ]);
         }
-      }), e.push("particleAlpha"), this._thicknessEffectWrapper = new lr({
+      }), e.push("particleAlpha"), this._thicknessEffectWrapper = new cr({
         engine: this._engine,
         useShaderStore: true,
         vertexShader: "fluidRenderingParticleThickness",
@@ -136113,7 +136113,7 @@ totalWeight=max(totalWeight,HALF_MIN);gl_FragColor=vec4(inputColor.rgb+albedo*ma
         "offset",
         "color"
       ];
-      this._diffuseEffectWrapper = new lr({
+      this._diffuseEffectWrapper = new cr({
         engine: this._engine,
         useShaderStore: true,
         vertexShader: "fluidRenderingParticleDiffuse",
@@ -140936,7 +140936,7 @@ vertexOutputs.vFogDistance=viewPos;
       const r = e.getDepthInformation(t);
       if (r === null) return;
       const { data: s, width: n, height: o, rawValueToMeters: l, getDepthInMeters: c, normDepthBufferFromNormView: h } = r;
-      this._width = n, this._height = o, this._rawValueToMeters = l, this._cachedDepthBuffer = s, _C = l, fC = i === "luminance-alpha", pC.fromArray(h.matrix), this.onGetDepthInMetersAvailable.notifyObservers(c.bind(r)), this._cachedDepthImageTexture || (this._cachedDepthImageTexture = or.CreateRTexture(null, n, o, this._xrSessionManager.scene, false, false, Z.NEAREST_SAMPLINGMODE, 1), Cd = this._cachedDepthImageTexture);
+      this._width = n, this._height = o, this._rawValueToMeters = l, this._cachedDepthBuffer = s, _C = l, fC = i === "luminance-alpha", pC.fromArray(h.matrix), this.onGetDepthInMetersAvailable.notifyObservers(c.bind(r)), this._cachedDepthImageTexture || (this._cachedDepthImageTexture = lr.CreateRTexture(null, n, o, this._xrSessionManager.scene, false, false, Z.NEAREST_SAMPLINGMODE, 1), Cd = this._cachedDepthImageTexture);
       let u = null;
       switch (i) {
         case "ushort":
@@ -140956,7 +140956,7 @@ vertexOutputs.vFogDistance=viewPos;
       if (_C = c, fC = i === "luminance-alpha", pC.fromArray(h.matrix), this._cachedWebGLTexture) return;
       this._width = n, this._height = o, this._cachedWebGLTexture = s, this._textureType = l;
       const u = this._xrSessionManager.scene, f = this._getInternalTextureFromDepthInfo();
-      this._cachedDepthImageTexture || (this._cachedDepthImageTexture = or.CreateRTexture(null, n, o, u, false, true, Z.NEAREST_SAMPLINGMODE, i === "float" ? 1 : 0)), this._cachedDepthImageTexture._texture = f, Cd = this._cachedDepthImageTexture, this._xrSessionManager.scene.markAllMaterialsAsDirty(1);
+      this._cachedDepthImageTexture || (this._cachedDepthImageTexture = lr.CreateRTexture(null, n, o, u, false, true, Z.NEAREST_SAMPLINGMODE, i === "float" ? 1 : 0)), this._cachedDepthImageTexture._texture = f, Cd = this._cachedDepthImageTexture, this._xrSessionManager.scene.markAllMaterialsAsDirty(1);
     }
     getXRSessionInitExtension() {
       const e = this.options.usagePreference != null && this.options.usagePreference.length !== 0, t = this.options.dataFormatPreference != null && this.options.dataFormatPreference.length !== 0;
@@ -144007,7 +144007,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
     I()
   ], Wi.prototype, "cellId", null);
   W("BABYLON.GUI.Image", Wi);
-  class Rt extends ia {
+  class At extends ia {
     get image() {
       return this._image;
     }
@@ -144087,7 +144087,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       return n.textWrapping = true, n.textHorizontalAlignment = be.HORIZONTAL_ALIGNMENT_CENTER, r.addControl(n), r._image = s, r._textBlock = n, r;
     }
   }
-  W("BABYLON.GUI.Button", Rt);
+  W("BABYLON.GUI.Button", At);
   class ls extends Xn {
     get isVertical() {
       return this._isVertical;
@@ -145100,7 +145100,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         ce.addRowDefinition(X[0], false), ce.addRowDefinition(X[1], false), Se.addControl(ce, 0, 0);
         const F = new ia();
         F.name = "Dialogue Header Bar", F.background = "#cccccc", F.thickness = 0, ce.addControl(F, 0, 0);
-        const $ = Rt.CreateSimpleButton("closeButton", "a");
+        const $ = At.CreateSimpleButton("closeButton", "a");
         $.fontFamily = "coreglyphs";
         const le = ue.FromHexString(F.background), Te = new ue(1 - le.r, 1 - le.g, 1 - le.b);
         $.color = Te.toHexString(), $.fontSize = Math.floor(parseInt(t.headerHeight) * 0.6), $.textBlock.textVerticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, $.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, $.height = $.width = t.headerHeight, $.background = F.background, $.thickness = 0, $.pointerDownAnimation = () => {
@@ -145160,7 +145160,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         Yt.text = "new", Yt.name = "New Color Label", Yt.color = u, Yt.fontSize = Nt, dt.addControl(Yt, 1, 0);
         const Ke = new ia();
         Ke.name = "New Color Swatch", Ke.background = t.lastColor, Ke.thickness = 0, wt.addControl(Ke, 0, 0);
-        const qe = Rt.CreateSimpleButton("currentSwatch", "");
+        const qe = At.CreateSimpleButton("currentSwatch", "");
         qe.background = t.lastColor, qe.thickness = 0, qe.onPointerClickObservable.add(() => {
           const _t = ue.FromHexString(qe.background);
           Is(_t, qe.name), Ps(false);
@@ -145179,7 +145179,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         Rr.addRowDefinition(ka, false), Rr.addRowDefinition(ka, false), Rr.addRowDefinition(ka, false), Qe.addControl(Rr, 0, 1);
         const yn = Math.floor(parseInt(t.pickerWidth) * pe[1] * ge[1] * 0.67).toString() + "px", zs = Math.floor(parseInt(t.pickerHeight) * X[1] * De[0] * (parseFloat(Rr.height.toString()) / 100) * ka * 0.7).toString() + "px";
         parseFloat(yn) > parseFloat(zs) ? R = Math.floor(parseFloat(zs) * 0.45) : R = Math.floor(parseFloat(yn) * 0.11);
-        const pr = Rt.CreateSimpleButton("butOK", "OK");
+        const pr = At.CreateSimpleButton("butOK", "OK");
         pr.width = yn, pr.height = zs, pr.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, pr.thickness = 2, pr.color = u, pr.fontSize = R, pr.background = f, pr.onPointerEnterObservable.add(() => {
           pr.background = p;
         }), pr.onPointerOutObservable.add(() => {
@@ -145191,7 +145191,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         }, pr.onPointerClickObservable.add(() => {
           Ps(false), pl(Ke.background);
         }), Rr.addControl(pr, 0, 0);
-        const ji = Rt.CreateSimpleButton("butCancel", "Cancel");
+        const ji = At.CreateSimpleButton("butCancel", "Cancel");
         ji.width = yn, ji.height = zs, ji.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, ji.thickness = 2, ji.color = u, ji.fontSize = R, ji.background = f, ji.onPointerEnterObservable.add(() => {
           ji.background = p;
         }), ji.onPointerOutObservable.add(() => {
@@ -145202,7 +145202,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
           ji.background = p;
         }, ji.onPointerClickObservable.add(() => {
           Ps(false), pl(qe.background);
-        }), Rr.addControl(ji, 1, 0), t.savedColors && (se = Rt.CreateSimpleButton("butSave", "Save"), se.width = yn, se.height = zs, se.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, se.thickness = 2, se.fontSize = R, t.savedColors.length < t.swatchLimit ? (se.color = u, se.background = f) : yh(se, true), se.onPointerEnterObservable.add(() => {
+        }), Rr.addControl(ji, 1, 0), t.savedColors && (se = At.CreateSimpleButton("butSave", "Save"), se.width = yn, se.height = zs, se.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, se.thickness = 2, se.fontSize = R, t.savedColors.length < t.swatchLimit ? (se.color = u, se.background = f) : yh(se, true), se.onPointerEnterObservable.add(() => {
           t.savedColors && t.savedColors.length < t.swatchLimit && (se.background = p);
         }), se.onPointerOutObservable.add(() => {
           t.savedColors && t.savedColors.length < t.swatchLimit && (se.background = f);
@@ -145338,7 +145338,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
           if (t.savedColors && t.savedColors[ee]) {
             let _t;
             de ? _t = "b" : _t = "";
-            const Bt = Rt.CreateSimpleButton("Swatch_" + ee, _t);
+            const Bt = At.CreateSimpleButton("Swatch_" + ee, _t);
             Bt.fontFamily = "coreglyphs";
             const vt = ue.FromHexString(t.savedColors[ee]);
             vt.r + vt.g + vt.b > P ? Bt.color = y : Bt.color = C, Bt.fontSize = Math.floor(l * 0.7), Bt.textBlock.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, Bt.height = Bt.width = l.toString() + "px", Bt.background = t.savedColors[ee], Bt.thickness = 2;
@@ -145393,7 +145393,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
           }
         }
         function Wa(_t) {
-          _t ? (D = Rt.CreateSimpleButton("butEdit", "Edit"), D.width = yn, D.height = zs, D.left = Math.floor(parseInt(yn) * 0.1).toString() + "px", D.top = (parseFloat(D.left) * -1).toString() + "px", D.verticalAlignment = be.VERTICAL_ALIGNMENT_BOTTOM, D.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, D.thickness = 2, D.color = u, D.fontSize = R, D.background = f, D.onPointerEnterObservable.add(() => {
+          _t ? (D = At.CreateSimpleButton("butEdit", "Edit"), D.width = yn, D.height = zs, D.left = Math.floor(parseInt(yn) * 0.1).toString() + "px", D.top = (parseFloat(D.left) * -1).toString() + "px", D.verticalAlignment = be.VERTICAL_ALIGNMENT_BOTTOM, D.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, D.thickness = 2, D.color = u, D.fontSize = R, D.background = f, D.onPointerEnterObservable.add(() => {
             D.background = p;
           }), D.onPointerOutObservable.add(() => {
             D.background = f;
@@ -145472,7 +145472,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
     I()
   ], yR.prototype, "arc", null);
   W("BABYLON.GUI.Ellipse", yR);
-  class r0e extends Rt {
+  class r0e extends At {
     constructor(e) {
       super(e), this.name = e, this._unfocusedColor = this.color;
     }
@@ -146976,7 +146976,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       return "VirtualKeyboard";
     }
     _createKey(e, t) {
-      const i = Rt.CreateSimpleButton(e, e);
+      const i = At.CreateSimpleButton(e, e);
       return i.width = t && t.width ? t.width : this.defaultButtonWidth, i.height = t && t.height ? t.height : this.defaultButtonHeight, i.color = t && t.color ? t.color : this.defaultButtonColor, i.background = t && t.background ? t.background : this.defaultButtonBackground, i.paddingLeft = t && t.paddingLeft ? t.paddingLeft : this.defaultButtonPaddingLeft, i.paddingRight = t && t.paddingRight ? t.paddingRight : this.defaultButtonPaddingRight, i.paddingTop = t && t.paddingTop ? t.paddingTop : this.defaultButtonPaddingTop, i.paddingBottom = t && t.paddingBottom ? t.paddingBottom : this.defaultButtonPaddingBottom, i.thickness = 0, i.isFocusInvisible = true, i.shadowColor = this.shadowColor, i.shadowBlur = this.shadowBlur, i.shadowOffsetX = this.shadowOffsetX, i.shadowOffsetY = this.shadowOffsetY, i.onPointerUpObservable.add(() => {
         this.onKeyPressObservable.notifyObservers(e);
       }), i;
@@ -148195,10 +148195,10 @@ gl_FragColor=vec4(albedo,alpha);}`;
     Re("_markAllSubMeshesAsTexturesDirty")
   ], na.prototype, "innerGlowColorIntensity", void 0);
   T([
-    hr()
+    ur()
   ], na.prototype, "innerGlowColor", void 0);
   T([
-    hr()
+    ur()
   ], na.prototype, "albedoColor", void 0);
   T([
     I(),
@@ -156344,15 +156344,15 @@ void main()
   function Fn(a) {
     return {
       scale: [
-        new cr(_e.ANIMATIONTYPE_FLOAT, `${a}.uScale`, br, () => 2),
-        new cr(_e.ANIMATIONTYPE_FLOAT, `${a}.vScale`, rT, () => 2)
+        new hr(_e.ANIMATIONTYPE_FLOAT, `${a}.uScale`, br, () => 2),
+        new hr(_e.ANIMATIONTYPE_FLOAT, `${a}.vScale`, rT, () => 2)
       ],
       offset: [
-        new cr(_e.ANIMATIONTYPE_FLOAT, `${a}.uOffset`, br, () => 2),
-        new cr(_e.ANIMATIONTYPE_FLOAT, `${a}.vOffset`, rT, () => 2)
+        new hr(_e.ANIMATIONTYPE_FLOAT, `${a}.uOffset`, br, () => 2),
+        new hr(_e.ANIMATIONTYPE_FLOAT, `${a}.vOffset`, rT, () => 2)
       ],
       rotation: [
-        new cr(_e.ANIMATIONTYPE_FLOAT, `${a}.wAng`, MR, () => 1)
+        new hr(_e.ANIMATIONTYPE_FLOAT, `${a}.wAng`, MR, () => 1)
       ]
     };
   }
@@ -156366,7 +156366,7 @@ void main()
       ];
     }
   }
-  class cr extends pp {
+  class hr extends pp {
     buildAnimations(e, t, i, r) {
       const s = [];
       for (const n in e._data) s.push({
@@ -156410,14 +156410,14 @@ void main()
     new _h(_e.ANIMATIONTYPE_FLOAT, "minZ", br, () => 1)
   ]);
   nt("/materials/{}/pbrMetallicRoughness/baseColorFactor", [
-    new cr(_e.ANIMATIONTYPE_COLOR3, "albedoColor", Lu, () => 4),
-    new cr(_e.ANIMATIONTYPE_FLOAT, "alpha", lCe, () => 4)
+    new hr(_e.ANIMATIONTYPE_COLOR3, "albedoColor", Lu, () => 4),
+    new hr(_e.ANIMATIONTYPE_FLOAT, "alpha", lCe, () => 4)
   ]);
   nt("/materials/{}/pbrMetallicRoughness/metallicFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "metallic", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "metallic", br, () => 1)
   ]);
   nt("/materials/{}/pbrMetallicRoughness/metallicFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "roughness", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "roughness", br, () => 1)
   ]);
   const OR = Fn("albedoTexture");
   nt("/materials/{}/pbrMetallicRoughness/baseColorTexture/extensions/KHR_texture_transform/scale", OR.scale);
@@ -156428,17 +156428,17 @@ void main()
   nt("//materials/{}/pbrMetallicRoughness/metallicRoughnessTexture/offset", DR.offset);
   nt("//materials/{}/pbrMetallicRoughness/metallicRoughnessTexture/rotation", DR.rotation);
   nt("/materials/{}/emissiveFactor", [
-    new cr(_e.ANIMATIONTYPE_COLOR3, "emissiveColor", Lu, () => 3)
+    new hr(_e.ANIMATIONTYPE_COLOR3, "emissiveColor", Lu, () => 3)
   ]);
   const wR = Fn("bumpTexture");
   nt("/materials/{}/normalTexture/scale", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "bumpTexture.level", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "bumpTexture.level", br, () => 1)
   ]);
   nt("/materials/{}/normalTexture/extensions/KHR_texture_transform/scale", wR.scale);
   nt("/materials/{}/normalTexture/extensions/KHR_texture_transform/offset", wR.offset);
   nt("/materials/{}/normalTexture/extensions/KHR_texture_transform/rotation", wR.rotation);
   nt("/materials/{}/occlusionTexture/strength", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "ambientTextureStrength", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "ambientTextureStrength", br, () => 1)
   ]);
   const NR = Fn("ambientTexture");
   nt("/materials/{}/occlusionTexture/extensions/KHR_texture_transform/scale", NR.scale);
@@ -156449,20 +156449,20 @@ void main()
   nt("/materials/{}/emissiveTexture/extensions/KHR_texture_transform/offset", LR.offset);
   nt("/materials/{}/emissiveTexture/extensions/KHR_texture_transform/rotation", LR.rotation);
   nt("/materials/{}/extensions/KHR_materials_anisotropy/anisotropyStrength", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "anisotropy.intensity", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "anisotropy.intensity", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_anisotropy/anisotropyRotation", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "anisotropy.angle", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "anisotropy.angle", br, () => 1)
   ]);
   const FR = Fn("anisotropy.texture");
   nt("/materials/{}/extensions/KHR_materials_anisotropy/anisotropyTexture/extensions/KHR_texture_transform/scale", FR.scale);
   nt("/materials/{}/extensions/KHR_materials_anisotropy/anisotropyTexture/extensions/KHR_texture_transform/offset", FR.offset);
   nt("/materials/{}/extensions/KHR_materials_anisotropy/anisotropyTexture/extensions/KHR_texture_transform/rotation", FR.rotation);
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "clearCoat.intensity", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "clearCoat.intensity", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatRoughnessFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "clearCoat.roughness", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "clearCoat.roughness", br, () => 1)
   ]);
   const BR = Fn("clearCoat.texture");
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatTexture/extensions/KHR_texture_transform/scale", BR.scale);
@@ -156470,7 +156470,7 @@ void main()
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatTexture/extensions/KHR_texture_transform/rotation", BR.rotation);
   const VR = Fn("clearCoat.bumpTexture");
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatNormalTexture/scale", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "clearCoat.bumpTexture.level", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "clearCoat.bumpTexture.level", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatNormalTexture/extensions/KHR_texture_transform/scale", VR.scale);
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatNormalTexture/extensions/KHR_texture_transform/offset", VR.offset);
@@ -156480,25 +156480,25 @@ void main()
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatRoughnessTexture/extensions/KHR_texture_transform/offset", UR.offset);
   nt("/materials/{}/extensions/KHR_materials_clearcoat/clearcoatRoughnessTexture/extensions/KHR_texture_transform/rotation", UR.rotation);
   nt("/materials/{}/extensions/KHR_materials_dispersion/dispersionFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "subSurface.dispersion", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "subSurface.dispersion", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_emissive_strength/emissiveStrength", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "emissiveIntensity", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "emissiveIntensity", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_ior/ior", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "indexOfRefraction", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "indexOfRefraction", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_iridescence/iridescenceFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "iridescence.intensity", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "iridescence.intensity", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_iridescence/iridescenceIor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "iridescence.indexOfRefraction", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "iridescence.indexOfRefraction", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_iridescence/iridescenceThicknessMinimum", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "iridescence.minimumThickness", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "iridescence.minimumThickness", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_iridescence/iridescenceThicknessMaximum", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "iridescence.maximumThickness", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "iridescence.maximumThickness", br, () => 1)
   ]);
   const kR = Fn("iridescence.texture");
   nt("/materials/{}/extensions/KHR_materials_iridescence/iridescenceTexture/extensions/KHR_texture_transform/scale", kR.scale);
@@ -156509,10 +156509,10 @@ void main()
   nt("/materials/{}/extensions/KHR_materials_iridescence/iridescenceThicknessTexture/extensions/KHR_texture_transform/offset", GR.offset);
   nt("/materials/{}/extensions/KHR_materials_iridescence/iridescenceThicknessTexture/extensions/KHR_texture_transform/rotation", GR.rotation);
   nt("/materials/{}/extensions/KHR_materials_sheen/sheenColorFactor", [
-    new cr(_e.ANIMATIONTYPE_COLOR3, "sheen.color", Lu, () => 3)
+    new hr(_e.ANIMATIONTYPE_COLOR3, "sheen.color", Lu, () => 3)
   ]);
   nt("/materials/{}/extensions/KHR_materials_sheen/sheenRoughnessFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "sheen.roughness", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "sheen.roughness", br, () => 1)
   ]);
   const zR = Fn("sheen.texture");
   nt("/materials/{}/extensions/KHR_materials_sheen/sheenColorTexture/extensions/KHR_texture_transform/scale", zR.scale);
@@ -156523,10 +156523,10 @@ void main()
   nt("/materials/{}/extensions/KHR_materials_sheen/sheenRoughnessTexture/extensions/KHR_texture_transform/offset", WR.offset);
   nt("/materials/{}/extensions/KHR_materials_sheen/sheenRoughnessTexture/extensions/KHR_texture_transform/rotation", WR.rotation);
   nt("/materials/{}/extensions/KHR_materials_specular/specularFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "metallicF0Factor", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "metallicF0Factor", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_specular/specularColorFactor", [
-    new cr(_e.ANIMATIONTYPE_COLOR3, "metallicReflectanceColor", Lu, () => 3)
+    new hr(_e.ANIMATIONTYPE_COLOR3, "metallicReflectanceColor", Lu, () => 3)
   ]);
   const HR = Fn("metallicReflectanceTexture");
   nt("/materials/{}/extensions/KHR_materials_specular/specularTexture/extensions/KHR_texture_transform/scale", HR.scale);
@@ -156537,34 +156537,34 @@ void main()
   nt("/materials/{}/extensions/KHR_materials_specular/specularColorTexture/extensions/KHR_texture_transform/offset", XR.offset);
   nt("/materials/{}/extensions/KHR_materials_specular/specularColorTexture/extensions/KHR_texture_transform/rotation", XR.rotation);
   nt("/materials/{}/extensions/KHR_materials_transmission/transmissionFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "subSurface.refractionIntensity", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "subSurface.refractionIntensity", br, () => 1)
   ]);
   const $R = Fn("subSurface.refractionIntensityTexture");
   nt("/materials/{}/extensions/KHR_materials_transmission/transmissionTexture/extensions/KHR_texture_transform/scale", $R.scale);
   nt("/materials/{}/extensions/KHR_materials_transmission/transmissionTexture/extensions/KHR_texture_transform/offset", $R.offset);
   nt("/materials/{}/extensions/KHR_materials_transmission/transmissionTexture/extensions/KHR_texture_transform/rotation", $R.rotation);
   nt("/materials/{}/extensions/KHR_materials_volume/attenuationColor", [
-    new cr(_e.ANIMATIONTYPE_COLOR3, "subSurface.tintColor", Lu, () => 3)
+    new hr(_e.ANIMATIONTYPE_COLOR3, "subSurface.tintColor", Lu, () => 3)
   ]);
   nt("/materials/{}/extensions/KHR_materials_volume/attenuationDistance", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "subSurface.tintColorAtDistance", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "subSurface.tintColorAtDistance", br, () => 1)
   ]);
   nt("/materials/{}/extensions/KHR_materials_volume/thicknessFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "subSurface.maximumThickness", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "subSurface.maximumThickness", br, () => 1)
   ]);
   const YR = Fn("subSurface.thicknessTexture");
   nt("/materials/{}/extensions/KHR_materials_volume/thicknessTexture/extensions/KHR_texture_transform/scale", YR.scale);
   nt("/materials/{}/extensions/KHR_materials_volume/thicknessTexture/extensions/KHR_texture_transform/offset", YR.offset);
   nt("/materials/{}/extensions/KHR_materials_volume/thicknessTexture/extensions/KHR_texture_transform/rotation", YR.rotation);
   nt("/materials/{}/extensions/KHR_materials_diffuse_transmission/diffuseTransmissionFactor", [
-    new cr(_e.ANIMATIONTYPE_FLOAT, "subSurface.translucencyIntensity", br, () => 1)
+    new hr(_e.ANIMATIONTYPE_FLOAT, "subSurface.translucencyIntensity", br, () => 1)
   ]);
   const jR = Fn("subSurface.translucencyIntensityTexture");
   nt("materials/{}/extensions/KHR_materials_diffuse_transmission/diffuseTransmissionTexture/extensions/KHR_texture_transform/scale", jR.scale);
   nt("materials/{}/extensions/KHR_materials_diffuse_transmission/diffuseTransmissionTexture/extensions/KHR_texture_transform/offset", jR.offset);
   nt("materials/{}/extensions/KHR_materials_diffuse_transmission/diffuseTransmissionTexture/extensions/KHR_texture_transform/rotation", jR.rotation);
   nt("/materials/{}/extensions/KHR_materials_diffuse_transmission/diffuseTransmissionColorFactor", [
-    new cr(_e.ANIMATIONTYPE_COLOR3, "subSurface.translucencyColor", Lu, () => 3)
+    new hr(_e.ANIMATIONTYPE_COLOR3, "subSurface.translucencyColor", Lu, () => 3)
   ]);
   const QR = Fn("subSurface.translucencyColorTexture");
   nt("materials/{}/extensions/KHR_materials_diffuse_transmission/diffuseTransmissionColorTexture/extensions/KHR_texture_transform/scale", QR.scale);
@@ -157054,15 +157054,15 @@ void main()
         return l.config || (l.config = {}), l.config.eventId = o.eventId, l.config.eventData = o.eventData, r;
       }
     },
-    "math/e": At("FlowGraphEBlock"),
-    "math/pi": At("FlowGraphPIBlock"),
-    "math/inf": At("FlowGraphInfBlock"),
-    "math/nan": At("FlowGraphNaNBlock"),
-    "math/abs": At("FlowGraphAbsBlock"),
-    "math/sign": At("FlowGraphSignBlock"),
-    "math/trunc": At("FlowGraphTruncBlock"),
-    "math/floor": At("FlowGraphFloorBlock"),
-    "math/ceil": At("FlowGraphCeilBlock"),
+    "math/e": Rt("FlowGraphEBlock"),
+    "math/pi": Rt("FlowGraphPIBlock"),
+    "math/inf": Rt("FlowGraphInfBlock"),
+    "math/nan": Rt("FlowGraphNaNBlock"),
+    "math/abs": Rt("FlowGraphAbsBlock"),
+    "math/sign": Rt("FlowGraphSignBlock"),
+    "math/trunc": Rt("FlowGraphTruncBlock"),
+    "math/floor": Rt("FlowGraphFloorBlock"),
+    "math/ceil": Rt("FlowGraphCeilBlock"),
     "math/round": {
       blocks: [
         "FlowGraphRoundBlock"
@@ -157086,13 +157086,13 @@ void main()
         return r[0].config = r[0].config || {}, r[0].config.roundHalfAwayFromZero = true, r;
       }
     },
-    "math/fract": At("FlowGraphFractBlock"),
-    "math/neg": At("FlowGraphNegationBlock"),
-    "math/add": At("FlowGraphAddBlock", [
+    "math/fract": Rt("FlowGraphFractBlock"),
+    "math/neg": Rt("FlowGraphNegationBlock"),
+    "math/add": Rt("FlowGraphAddBlock", [
       "a",
       "b"
     ], true),
-    "math/sub": At("FlowGraphSubtractBlock", [
+    "math/sub": Rt("FlowGraphSubtractBlock", [
       "a",
       "b"
     ], true),
@@ -157109,55 +157109,55 @@ void main()
         }), s !== -1 && (r[0].config.type = i.arrays.types[s].flowGraphType), r;
       }
     },
-    "math/div": At("FlowGraphDivideBlock", [
+    "math/div": Rt("FlowGraphDivideBlock", [
       "a",
       "b"
     ], true),
-    "math/rem": At("FlowGraphModuloBlock", [
+    "math/rem": Rt("FlowGraphModuloBlock", [
       "a",
       "b"
     ]),
-    "math/min": At("FlowGraphMinBlock", [
+    "math/min": Rt("FlowGraphMinBlock", [
       "a",
       "b"
     ]),
-    "math/max": At("FlowGraphMaxBlock", [
+    "math/max": Rt("FlowGraphMaxBlock", [
       "a",
       "b"
     ]),
-    "math/clamp": At("FlowGraphClampBlock", [
+    "math/clamp": Rt("FlowGraphClampBlock", [
       "a",
       "b",
       "c"
     ]),
-    "math/saturate": At("FlowGraphSaturateBlock"),
-    "math/mix": At("FlowGraphMathInterpolationBlock", [
+    "math/saturate": Rt("FlowGraphSaturateBlock"),
+    "math/mix": Rt("FlowGraphMathInterpolationBlock", [
       "a",
       "b",
       "c"
     ]),
-    "math/eq": At("FlowGraphEqualityBlock", [
+    "math/eq": Rt("FlowGraphEqualityBlock", [
       "a",
       "b"
     ]),
-    "math/lt": At("FlowGraphLessThanBlock", [
+    "math/lt": Rt("FlowGraphLessThanBlock", [
       "a",
       "b"
     ]),
-    "math/le": At("FlowGraphLessThanOrEqualBlock", [
+    "math/le": Rt("FlowGraphLessThanOrEqualBlock", [
       "a",
       "b"
     ]),
-    "math/gt": At("FlowGraphGreaterThanBlock", [
+    "math/gt": Rt("FlowGraphGreaterThanBlock", [
       "a",
       "b"
     ]),
-    "math/ge": At("FlowGraphGreaterThanOrEqualBlock", [
+    "math/ge": Rt("FlowGraphGreaterThanOrEqualBlock", [
       "a",
       "b"
     ]),
-    "math/isnan": At("FlowGraphIsNaNBlock"),
-    "math/isinf": At("FlowGraphIsInfBlock"),
+    "math/isnan": Rt("FlowGraphIsNaNBlock"),
+    "math/isinf": Rt("FlowGraphIsInfBlock"),
     "math/select": {
       blocks: [
         "FlowGraphConditionalBlock"
@@ -157195,47 +157195,47 @@ void main()
         }
       }
     },
-    "math/sin": At("FlowGraphSinBlock"),
-    "math/cos": At("FlowGraphCosBlock"),
-    "math/tan": At("FlowGraphTanBlock"),
-    "math/asin": At("FlowGraphASinBlock"),
-    "math/acos": At("FlowGraphACosBlock"),
-    "math/atan": At("FlowGraphATanBlock"),
-    "math/atan2": At("FlowGraphATan2Block", [
+    "math/sin": Rt("FlowGraphSinBlock"),
+    "math/cos": Rt("FlowGraphCosBlock"),
+    "math/tan": Rt("FlowGraphTanBlock"),
+    "math/asin": Rt("FlowGraphASinBlock"),
+    "math/acos": Rt("FlowGraphACosBlock"),
+    "math/atan": Rt("FlowGraphATanBlock"),
+    "math/atan2": Rt("FlowGraphATan2Block", [
       "a",
       "b"
     ]),
-    "math/sinh": At("FlowGraphSinhBlock"),
-    "math/cosh": At("FlowGraphCoshBlock"),
-    "math/tanh": At("FlowGraphTanhBlock"),
-    "math/asinh": At("FlowGraphASinhBlock"),
-    "math/acosh": At("FlowGraphACoshBlock"),
-    "math/atanh": At("FlowGraphATanhBlock"),
-    "math/exp": At("FlowGraphExponentialBlock"),
-    "math/log": At("FlowGraphLogBlock"),
-    "math/log2": At("FlowGraphLog2Block"),
-    "math/log10": At("FlowGraphLog10Block"),
-    "math/sqrt": At("FlowGraphSquareRootBlock"),
-    "math/cbrt": At("FlowGraphCubeRootBlock"),
-    "math/pow": At("FlowGraphPowerBlock", [
+    "math/sinh": Rt("FlowGraphSinhBlock"),
+    "math/cosh": Rt("FlowGraphCoshBlock"),
+    "math/tanh": Rt("FlowGraphTanhBlock"),
+    "math/asinh": Rt("FlowGraphASinhBlock"),
+    "math/acosh": Rt("FlowGraphACoshBlock"),
+    "math/atanh": Rt("FlowGraphATanhBlock"),
+    "math/exp": Rt("FlowGraphExponentialBlock"),
+    "math/log": Rt("FlowGraphLogBlock"),
+    "math/log2": Rt("FlowGraphLog2Block"),
+    "math/log10": Rt("FlowGraphLog10Block"),
+    "math/sqrt": Rt("FlowGraphSquareRootBlock"),
+    "math/cbrt": Rt("FlowGraphCubeRootBlock"),
+    "math/pow": Rt("FlowGraphPowerBlock", [
       "a",
       "b"
     ]),
-    "math/length": At("FlowGraphLengthBlock"),
-    "math/normalize": At("FlowGraphNormalizeBlock"),
-    "math/dot": At("FlowGraphDotBlock", [
+    "math/length": Rt("FlowGraphLengthBlock"),
+    "math/normalize": Rt("FlowGraphNormalizeBlock"),
+    "math/dot": Rt("FlowGraphDotBlock", [
       "a",
       "b"
     ]),
-    "math/cross": At("FlowGraphCrossBlock", [
+    "math/cross": Rt("FlowGraphCrossBlock", [
       "a",
       "b"
     ]),
-    "math/rotate2d": At("FlowGraphRotate2DBlock", [
+    "math/rotate2d": Rt("FlowGraphRotate2DBlock", [
       "a",
       "b"
     ]),
-    "math/rotate3d": At("FlowGraphRotate3DBlock", [
+    "math/rotate3d": Rt("FlowGraphRotate3DBlock", [
       "a",
       "b",
       "c"
@@ -157424,10 +157424,10 @@ void main()
         }
       }
     },
-    "math/transpose": At("FlowGraphTransposeBlock"),
-    "math/determinant": At("FlowGraphDeterminantBlock"),
-    "math/inverse": At("FlowGraphInvertMatrixBlock"),
-    "math/matmul": At("FlowGraphMatrixMultiplicationBlock", [
+    "math/transpose": Rt("FlowGraphTransposeBlock"),
+    "math/determinant": Rt("FlowGraphDeterminantBlock"),
+    "math/inverse": Rt("FlowGraphInvertMatrixBlock"),
+    "math/matmul": Rt("FlowGraphMatrixMultiplicationBlock", [
       "a",
       "b"
     ]),
@@ -157966,25 +157966,25 @@ void main()
         return r[0].config.valueType = ((_a2 = s._connectionValues[n.uniqueId]) == null ? void 0 : _a2.type) ?? ((_b2 = s._connectionValues[o.uniqueId]) == null ? void 0 : _b2.type) ?? "FlowGraphInteger", r;
       }
     },
-    "math/asr": At("FlowGraphBitwiseRightShiftBlock", [
+    "math/asr": Rt("FlowGraphBitwiseRightShiftBlock", [
       "a",
       "b"
     ]),
-    "math/lsl": At("FlowGraphBitwiseLeftShiftBlock", [
+    "math/lsl": Rt("FlowGraphBitwiseLeftShiftBlock", [
       "a",
       "b"
     ]),
-    "math/clz": At("FlowGraphLeadingZerosBlock"),
-    "math/ctz": At("FlowGraphTrailingZerosBlock"),
-    "math/popcnt": At("FlowGraphOneBitsCounterBlock"),
-    "math/rad": At("FlowGraphDegToRadBlock"),
-    "math/deg": At("FlowGraphRadToDegBlock"),
-    "type/boolToInt": At("FlowGraphBooleanToInt"),
-    "type/boolToFloat": At("FlowGraphBooleanToFloat"),
-    "type/intToBool": At("FlowGraphIntToBoolean"),
-    "type/intToFloat": At("FlowGraphIntToFloat"),
-    "type/floatToInt": At("FlowGraphFloatToInt"),
-    "type/floatToBool": At("FlowGraphFloatToBoolean"),
+    "math/clz": Rt("FlowGraphLeadingZerosBlock"),
+    "math/ctz": Rt("FlowGraphTrailingZerosBlock"),
+    "math/popcnt": Rt("FlowGraphOneBitsCounterBlock"),
+    "math/rad": Rt("FlowGraphDegToRadBlock"),
+    "math/deg": Rt("FlowGraphRadToDegBlock"),
+    "type/boolToInt": Rt("FlowGraphBooleanToInt"),
+    "type/boolToFloat": Rt("FlowGraphBooleanToFloat"),
+    "type/intToBool": Rt("FlowGraphIntToBoolean"),
+    "type/intToFloat": Rt("FlowGraphIntToFloat"),
+    "type/floatToInt": Rt("FlowGraphFloatToInt"),
+    "type/floatToBool": Rt("FlowGraphFloatToBoolean"),
     "flow/sequence": {
       blocks: [
         "FlowGraphSequenceBlock"
@@ -158733,7 +158733,7 @@ void main()
       }
     }
   };
-  function At(a, e = [
+  function Rt(a, e = [
     "a"
   ], t) {
     return {
@@ -159163,7 +159163,7 @@ void main()
     });
   }
   SZ(bg, "FlowGraphGLTFDataProvider", async () => (await Y(async () => {
-    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-CHzrvioO.js").then(async (m) => {
+    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-B3xp1Z8c.js").then(async (m) => {
       await m.__tla;
       return m;
     });
@@ -161355,55 +161355,55 @@ void main()
         const me = Math.round(ye * ($.length - 6));
         for (var Nt = 0; Nt < $.length; Nt++) Nt >= me && Nt < me + 6 ? $[Nt].scene.spritesEnabled = true : $[Nt].scene.spritesEnabled = false;
       }), t.addControl(fe), X.isVertical = false;
-      var ie = Rt.CreateSimpleButton("btn1", "None");
+      var ie = At.CreateSimpleButton("btn1", "None");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         u = "None";
       }), Se.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Angle");
+      var ie = At.CreateSimpleButton("btn1", "Angle");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         u = "Angle", L();
       }), Se.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Angle2");
+      var ie = At.CreateSimpleButton("btn1", "Angle2");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         u = "Angle2", L();
       }), Se.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Move");
+      var ie = At.CreateSimpleButton("btn1", "Move");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         u = "Move", L();
       }), Se.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "None");
+      var ie = At.CreateSimpleButton("btn1", "None");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         f = "None", B(f);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Change Target Arm/Legs");
+      var ie = At.CreateSimpleButton("btn1", "Change Target Arm/Legs");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         h += 1, h == 3 && (h = 0);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Body Head Angle Moving");
+      var ie = At.CreateSimpleButton("btn1", "Body Head Angle Moving");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         f = "angleMoving", B(f);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Horizontal");
+      var ie = At.CreateSimpleButton("btn1", "Horizontal");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         f = "Horizontal", B(f);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Vertical");
+      var ie = At.CreateSimpleButton("btn1", "Vertical");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         f = "Vertical", B(f);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Circle");
+      var ie = At.CreateSimpleButton("btn1", "Circle");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         f = "Circle", B(f);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Moving Size Down");
+      var ie = At.CreateSimpleButton("btn1", "Moving Size Down");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         V(true);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Moving Size Up");
+      var ie = At.CreateSimpleButton("btn1", "Moving Size Up");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         V(false);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Frame Capture");
+      var ie = At.CreateSimpleButton("btn1", "Frame Capture");
       ie.width = "100px", ie.height = "100px", ie.background = "green";
       let F = 0, $ = [];
       var le = function(ye, me) {
@@ -161432,7 +161432,7 @@ void main()
       };
       const Te = (ye) => {
         const me = le(a, ye);
-        var Nt = new O$("view", me), Yt = Rt.CreateSimpleButton("btn1", "None");
+        var Nt = new O$("view", me), Yt = At.CreateSimpleButton("btn1", "None");
         Yt.width = "300px", Yt.height = "300px", Yt.onPointerClickObservable.add(() => {
           const Ke = ye;
           if (r.positionValue = y.BodyMoving[Ke], r.angleValue = y.BodyAngleMoving[Ke], r.head.angleValue = y.HeadAngleMoving[Ke], r.ArmLTarget = [
@@ -161502,7 +161502,7 @@ void main()
         const ye = Math.round($.length - 6);
         for (var me = 0; me < $.length; me++) me >= ye && me < ye + 6 ? $[me].scene.spritesEnabled = true : $[me].scene.spritesEnabled = false;
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Frame Edit");
+      var ie = At.CreateSimpleButton("btn1", "Frame Edit");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         if (F > 0) {
           const ye = prompt("\uD574\uB2F9 \uB3D9\uC791\uC73C\uB85C \uC6C0\uC9C1\uC77C \uD504\uB808\uC784 \uAC1C\uC218\uB97C \uC785\uB825\uD558\uC138\uC694");
@@ -161526,7 +161526,7 @@ void main()
           y.RLegTargetVectorMoving[F]
         ], y.HeadMoving[F] = v.Zero(), y.HeadAngleMoving[F] = r.head.angleValue - 0;
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Frame Animation");
+      var ie = At.CreateSimpleButton("btn1", "Frame Animation");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         if (y.BodyMoving.length <= 0) return;
         const ye = prompt("\uCC98\uC74C \uC790\uC138\uB85C \uB3CC\uC544\uAC08 \uD504\uB808\uC784 \uAC1C\uC218\uB97C \uC785\uB825\uD558\uC138\uC694");
@@ -161557,7 +161557,7 @@ void main()
           r.Movings[me] = Nt;
         });
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Prev Frame");
+      var ie = At.CreateSimpleButton("btn1", "Prev Frame");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         if (!(y.BodyMoving.length <= 0)) {
           F == 0 && y.BodyMoving.length > 0 ? F = y.BodyMoving.length - 1 : F -= 1, r.Movings = {
@@ -161640,7 +161640,7 @@ void main()
           }
         }
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Next Frame");
+      var ie = At.CreateSimpleButton("btn1", "Next Frame");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         if (y.BodyMoving.length <= 0) return;
         F >= y.BodyMoving.length - 1 ? F = 0 : F += 1;
@@ -161702,7 +161702,7 @@ void main()
           ];
         }
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Frame Reset");
+      var ie = At.CreateSimpleButton("btn1", "Frame Reset");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         for (F = 0, y = {
           count: [],
@@ -161727,17 +161727,17 @@ void main()
           ye.camview.Dispose(), ye.scene.dispose(), ye.dispose(), delete C[ye.name];
         }
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Keep Animation");
+      var ie = At.CreateSimpleButton("btn1", "Keep Animation");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         const ye = prompt("Input Animation Name");
         P[ye] = Object.assign({}, r), A[ye] = Object.assign({}, r.Movings), console.log(P[ye]);
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Set Animation");
+      var ie = At.CreateSimpleButton("btn1", "Set Animation");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         const ye = prompt("Input Animation Name");
         r.Movings = A[ye], console.log(P[ye]), r.positionValue = P[ye].positionValue, r.angleValue = P[ye].angleValue, r.upper.head.angleValue = P[ye].upper.head.angleValue, r.ArmLTarget = P[ye].ArmLTarget, r.ArmRTarget = P[ye].ArmRTarget, r.LegLTarget = P[ye].LegLTarget, r.LegRTarget = P[ye].LegRTarget;
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Animation Merge");
+      var ie = At.CreateSimpleButton("btn1", "Animation Merge");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         const ye = prompt("Input Animation Name"), me = Number(prompt("Input Merging Frame"));
         let Nt = 0, Yt = 0;
@@ -161803,7 +161803,7 @@ void main()
           for (r.Movings[Ke].push(...A[ye][Ke]); r.Movings[Ke].length < Yt + Nt; ) Ke == "BodyAngleMoving" || Ke == "HeadAngleMoving" ? r.Movings[Ke].push(0) : r.Movings[Ke].push(v.Zero());
         });
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Animation Reset");
+      var ie = At.CreateSimpleButton("btn1", "Animation Reset");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         r.Movings = {
           LArmStartVectorMoving: [],
@@ -161824,11 +161824,11 @@ void main()
           HeadAngleMoving: []
         };
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Clothes");
+      var ie = At.CreateSimpleButton("btn1", "Clothes");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         r.upper.hair ? (r.upper.hair.dispose(), delete r.upper.hair, r.upper.cloth.dispose(), delete r.upper.cloth, r.upper.mouth.dispose(), delete r.upper.mouth, r.upper.Lhand.dispose(), delete r.upper.Lhand, r.upper.Rhand.dispose(), delete r.upper.Rhand) : (r.upper.hair = R(o, 10003), r.upper.cloth = R(o, 40002), r.upper.mouth = R(o, 30002), r.upper.Lhand = R(o, 90002), r.upper.Rhand = R(o, 90001));
       }), ce.addControl(ie);
-      var ie = Rt.CreateSimpleButton("btn1", "Show Onion");
+      var ie = At.CreateSimpleButton("btn1", "Show Onion");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
         if (y.BodyMoving.length > 1) {
           if (s) s.upper.deleteSelf(), s = void 0;
@@ -161877,7 +161877,7 @@ void main()
           }
         }
       }), ce.addControl(ie);
-      const pe = Rt.CreateSimpleButton("btn1", "Save");
+      const pe = At.CreateSimpleButton("btn1", "Save");
       pe.zIndex = 3, pe.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, pe.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, pe.width = "100px", pe.height = "100px", pe.background = "green", t.addControl(pe);
       const Je = (ye = null) => {
         const me = {
@@ -161898,7 +161898,7 @@ void main()
         re.Download(Ke, filename ?? "Move_result.json"), console.log(Yt, filename);
       };
       pe.onPointerClickObservable.add(Je);
-      const Ge = Rt.CreateSimpleButton("btn1", "Load");
+      const Ge = At.CreateSimpleButton("btn1", "Load");
       Ge.zIndex = 3, Ge.verticalAlignment = be.VERTICAL_ALIGNMENT_BOTTOM, Ge.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, Ge.width = "100px", Ge.height = "100px", Ge.background = "green", t.addControl(Ge);
       const pt = () => {
         const ye = document.createElement("input");
@@ -162265,7 +162265,7 @@ void main()
             break;
         }
       });
-      const E = Rt.CreateSimpleButton("btn1", "Save");
+      const E = At.CreateSimpleButton("btn1", "Save");
       E.zIndex = 3, E.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, E.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, E.width = "100px", E.height = "100px", E.background = "green", t.addControl(E);
       const A = () => {
         const te = [], K = [];
@@ -162318,7 +162318,7 @@ void main()
         }
       };
       E.onPointerClickObservable.add(A);
-      const P = Rt.CreateSimpleButton("btn1", "Load");
+      const P = At.CreateSimpleButton("btn1", "Load");
       P.zIndex = 3, P.verticalAlignment = be.VERTICAL_ALIGNMENT_BOTTOM, P.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, P.width = "100px", P.height = "100px", P.background = "green", t.addControl(P);
       const y = () => {
         const te = document.createElement("input");
@@ -162344,7 +162344,7 @@ void main()
                         const Te = new ls("");
                         Te.isVertical = false, Te.height = "100px", Fx.addControl(Te), Ko = Te;
                       }
-                      const le = Rt.CreateImageButton(`button-${F[0]}`, "", `danceVil/objects/${Ql[F[0]].Filename}`);
+                      const le = At.CreateImageButton(`button-${F[0]}`, "", `danceVil/objects/${Ql[F[0]].Filename}`);
                       le.width = "100px", le.height = "100px", le.image.width = "95px", le.image.height = "95px", le.image.stretch = Wi.STRETCH_UNIFORM, le.objid = F[0], le.inMain = true, le.panel = Ko, le.mainpanel = Ko, Ko.addControl(le), Jf += 1, Jf == 3 && (Jf = 0, Ko = null), le.onPointerClickObservable.add(function() {
                         if (Bx) if (le.inMain) {
                           if (In.length > 0) {
@@ -162394,7 +162394,7 @@ void main()
         height: 80
       }, i);
       fd.tile2 = D, D.isPickable = true, D.idnumber = "tile2", D.renderingGroupId = 4;
-      const B = Rt.CreateSimpleButton("btn1", "Open Folder");
+      const B = At.CreateSimpleButton("btn1", "Open Folder");
       B.zIndex = 3, B.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, B.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, B.width = "100px", B.height = "100px", B.background = "green", t.addControl(B), B.onPointerClickObservable.add(() => {
         const te = document.createElement("input");
         te.type = "file", te.accept = ".png", te.multiple = true, te.click();
@@ -162424,7 +162424,7 @@ void main()
                 const pe = new ls("");
                 pe.isVertical = false, pe.height = "100px", Fx.addControl(pe), Ko = pe;
               }
-              const ie = Rt.CreateImageButton(`button-${F}`, "", "");
+              const ie = At.CreateImageButton(`button-${F}`, "", "");
               ie.image.domImage = Te.image, ie.width = "100px", ie.height = "100px", ie.image.width = "95px", ie.image.height = "95px", ie.image.stretch = Wi.STRETCH_UNIFORM, ie.objid = F, ie.inMain = true, ie.panel = Ko, ie.mainpanel = Ko, Ko.addControl(ie), Jf += 1, Jf == 3 && (Jf = 0, Ko = null), ie.onPointerClickObservable.add(function() {
                 if (Bx) if (ie.inMain) {
                   if (In.length > 0) {
@@ -162663,19 +162663,19 @@ void main()
       Qo = new Ll("scrollType"), Qo.width = "310px", Qo.height = "100%", Qo.background = "green", Qo.thickness = 0, Qo.barSize = 10, Qo.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, Qo.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, Qo.wheelPrecision = 5e-3, Qo.thumbLength = 0.1, t.addControl(Qo), Fx = new ls(""), Qo.addControl(Fx);
       var m = new ls("");
       m.isVertical = false, m.width = "310px", m.left = "325px", m.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, m.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, m.height = "100px", t.addControl(m);
-      var x = Rt.CreateSimpleButton("btn1", "Edit");
+      var x = At.CreateSimpleButton("btn1", "Edit");
       x.width = "75px", x.height = "100px", x.background = "green", x.onPointerClickObservable.add(() => {
         h();
       }), m.addControl(x);
-      var x = Rt.CreateSimpleButton("btn1", "Save");
+      var x = At.CreateSimpleButton("btn1", "Save");
       x.width = "75px", x.height = "100px", x.background = "green", x.onPointerClickObservable.add(() => {
         u();
       }), m.addControl(x);
-      var x = Rt.CreateSimpleButton("btn1", "Next");
+      var x = At.CreateSimpleButton("btn1", "Next");
       x.width = "75px", x.height = "100px", x.background = "green", x.onPointerClickObservable.add(() => {
         f();
       }), m.addControl(x);
-      var x = Rt.CreateSimpleButton("btn1", "Prev");
+      var x = At.CreateSimpleButton("btn1", "Prev");
       x.width = "75px", x.height = "100px", x.background = "green", x.onPointerClickObservable.add(() => {
         p();
       }), m.addControl(x);
@@ -162692,7 +162692,7 @@ void main()
     file_name: "Filename",
     width: "Width",
     height: "Height"
-  }, dr = {}, EC = {
+  }, ar = {}, EC = {
     hat: {
       x: 0,
       y: 0.6,
@@ -162823,9 +162823,9 @@ void main()
     for (let r = 1; r < t.length; r++) {
       let s = {}, n = t[r].split(",");
       for (let o = 0; o < i.length; o++) i[o] == "attributes" ? s[i[o]] = t[r].indexOf(',"') > 0 ? JSON.parse(t[r].slice(t[r].indexOf(',"') + 2, -1)) : null : s[I1[i[o]] ? I1[i[o]] : i[o]] = n[o];
-      s.attributes == null && (s.attributes = EC[s.Type] ? EC[s.Type] : {}), dr[n[0]] = s;
+      s.attributes == null && (s.attributes = EC[s.Type] ? EC[s.Type] : {}), ar[n[0]] = s;
     }
-    delete dr[""];
+    delete ar[""];
   });
   const yC = {}, ICe = {};
   let qo, Cy, r_ = null, Ay = 0, Mt = 0, qh = {}, zx = {}, P1 = {}, cd = {
@@ -162921,7 +162921,7 @@ void main()
         }
       });
       let x = "none";
-      const S = Rt.CreateSimpleButton("btn1", "Save");
+      const S = At.CreateSimpleButton("btn1", "Save");
       S.zIndex = 3, S.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, S.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, S.width = "100px", S.height = "100px", S.background = "green", t.addControl(S), S.onPointerClickObservable.add(() => {
         const R = [];
         Object.keys(qh).forEach((V) => {
@@ -162940,7 +162940,7 @@ void main()
         });
         re.Download(B, "npc_data.json");
       });
-      const E = Rt.CreateSimpleButton("btn1", "Load");
+      const E = At.CreateSimpleButton("btn1", "Load");
       E.zIndex = 3, E.verticalAlignment = be.VERTICAL_ALIGNMENT_BOTTOM, E.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, E.width = "100px", E.height = "100px", E.background = "green", t.addControl(E), E.onPointerClickObservable.add(() => {
         const R = document.createElement("input");
         R.type = "file", R.accept = ".json", R.click(), R.onchange = (D) => {
@@ -162953,9 +162953,9 @@ void main()
                 try {
                   ee.forEach((q) => {
                     if (!yC[q[0]]) {
-                      const de = new Cs(`manager-${q[0]}`, `danceVil/objects/${dr[q[0]].Filename}`, 5e3, {
-                        width: dr[q[0]].Width,
-                        height: dr[q[0]].Height
+                      const de = new Cs(`manager-${q[0]}`, `danceVil/objects/${ar[q[0]].Filename}`, 5e3, {
+                        width: ar[q[0]].Width,
+                        height: ar[q[0]].Height
                       }, i);
                       yC[q[0]] = de;
                     }
@@ -163008,9 +163008,9 @@ void main()
     };
     const c = l(a), h = () => {
       ri[Mt + 1] ? (Object.keys(ri[Mt]).forEach((f) => {
-        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(dr[ri[Mt][f][0]].Type), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "green");
+        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(ar[ri[Mt][f][0]].Type), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "green");
       }), Mt += 1, Object.keys(ri[Mt]).forEach((f) => {
-        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(dr[ri[Mt][f][0]].Type), o.equip(ri[Mt][f][0]), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "white");
+        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(ar[ri[Mt][f][0]].Type), o.equip(ri[Mt][f][0]), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "white");
       })) : (ri.push({
         body: [
           "5001",
@@ -163051,42 +163051,42 @@ void main()
           }
         ]
       }), Object.keys(ri[Mt]).forEach((f) => {
-        f == "body" || f == "head" ? (o.body.color = new ue(1, 1, 1), o.head.color = new ue(1, 1, 1)) : o.unequip(dr[ri[Mt][f][0]].Type);
+        f == "body" || f == "head" ? (o.body.color = new ue(1, 1, 1), o.head.color = new ue(1, 1, 1)) : o.unequip(ar[ri[Mt][f][0]].Type);
       }), Mt += 1, cd[Mt] = {
         name: "Idle.json",
         data: sS
       }, dd(sS, o));
     }, u = () => {
       Mt == 0 ? ri.length > 1 && (Object.keys(ri[Mt]).forEach((f) => {
-        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(dr[ri[Mt][f][0]].Type), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "green");
+        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(ar[ri[Mt][f][0]].Type), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "green");
       }), Mt = ri.length - 1, Object.keys(ri[Mt]).forEach((f) => {
-        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(dr[ri[Mt][f][0]].Type), o.equip(ri[Mt][f][0]), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "white");
+        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(ar[ri[Mt][f][0]].Type), o.equip(ri[Mt][f][0]), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "white");
       }), dd(cd[Mt].data, o)) : (Object.keys(ri[Mt]).forEach((f) => {
-        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(dr[ri[Mt][f][0]].Type), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "green");
+        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(ar[ri[Mt][f][0]].Type), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "green");
       }), Mt -= 1, Object.keys(ri[Mt]).forEach((f) => {
-        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(dr[ri[Mt][f][0]].Type), o.equip(ri[Mt][f][0]), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "white");
+        f == "body" || f == "head" ? (o.body.color = ri[Mt].body[2], o.head.color = ri[Mt].head[2]) : (o.unequip(ar[ri[Mt][f][0]].Type), o.equip(ri[Mt][f][0]), t.getControlByName(`button-${ri[Mt][f][0]}`).background = "white");
       }), console.log(cd, Mt), dd(cd[Mt].data, o));
     };
     return ea.useEffect(() => {
       qo = new Ll("scrollType"), qo.width = "330px", qo.height = "100%", qo.background = "green", qo.thickness = 0, qo.barSize = 25, qo.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, qo.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, qo.wheelPrecision = 0.05, qo.thumbLength = 0.1, t.addControl(qo), Cy = new ls(""), qo.addControl(Cy);
       var f = new ls("");
       f.isVertical = false, f.width = "550px", f.left = "325px", f.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, f.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, f.height = "100px", t.addControl(f);
-      var C = Rt.CreateSimpleButton("btn1", "Next");
+      var C = At.CreateSimpleButton("btn1", "Next");
       C.width = "75px", C.height = "100px", C.background = "yellow", C.onPointerClickObservable.add(() => {
         h(), p.textBlock.text = `${Mt}`;
       }), f.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "Prev");
+      var C = At.CreateSimpleButton("btn1", "Prev");
       C.width = "75px", C.height = "100px", C.background = "yellow", C.onPointerClickObservable.add(() => {
         u(), p.textBlock.text = `${Mt}`;
       }), f.addControl(C);
-      const p = Rt.CreateSimpleButton("btn1", `${Mt}`);
+      const p = At.CreateSimpleButton("btn1", `${Mt}`);
       p.width = "75px", p.height = "100px", p.background = "white", p.onPointerClickObservable.add(() => {
         const R = prompt("Input Color Hex String(ex. #fef0e5, default = #000000)");
         if (!R) return;
         const D = ue.FromHexString(R);
         console.log(D), o.body.color = D.toColor4(), o.head.color = D.toColor4(), ri[Mt].body[2] = D.toColor4(), ri[Mt].head[2] = D.toColor4();
       }), f.addControl(p);
-      var C = Rt.CreateSimpleButton("btn1", "Anime");
+      var C = At.CreateSimpleButton("btn1", "Anime");
       C.width = "75px", C.height = "100px", C.background = "yellow", C.onPointerClickObservable.add(() => {
         const R = document.createElement("input");
         R.type = "file", R.accept = ".json", R.click(), R.onchange = (D) => {
@@ -163111,7 +163111,7 @@ void main()
           }
         };
       }), f.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "Add");
+      var C = At.CreateSimpleButton("btn1", "Add");
       C.width = "75px", C.height = "100px", C.background = "yellow", C.onPointerClickObservable.add(() => {
         if (qh[Mt]) return;
         const R = A1(i, ri[Mt], true);
@@ -163122,7 +163122,7 @@ void main()
           memo: B
         };
       }), f.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "Del");
+      var C = At.CreateSimpleButton("btn1", "Del");
       C.width = "75px", C.height = "100px", C.background = "yellow", C.onPointerClickObservable.add(() => {
         qh[Mt] && (qh[Mt].deleteSelf(), delete qh[Mt], delete zx[Mt]);
       }), f.addControl(C);
@@ -163137,101 +163137,110 @@ void main()
       const E = new ls("Buttons1");
       E.verticalAlignment = be.VERTICAL_ALIGNMENT_BOTTOM, E.adaptHeightToChildren = true, E.adaptWidthToChildren = true, t.addControl(E), E.isVertical = false;
       let A = null;
-      const P = (R) => ({
-        x: R.offsets.x,
-        y: R.offsets.y,
-        z: R.offsets.z,
-        ...R.color,
-        f: R.invertU ? 1 : 0,
-        angle: R.angle
-      }), y = (R) => {
+      const P = (R) => {
+        const D = R.color, B = R.offsets;
+        return R.angleoffset = Math.round(R.angleoffset * 1e5) / 1e5, D.r = Math.round(D.r * 1e5) / 1e5, D.g = Math.round(D.g * 1e5) / 1e5, D.b = Math.round(D.b * 1e5) / 1e5, B.x = Math.round(B.x * 1e5) / 1e5, B.y = Math.round(B.y * 1e5) / 1e5, B.z = Math.round(B.z * 1e5) / 1e5, {
+          x: R.offsets.x,
+          y: R.offsets.y,
+          z: R.offsets.z,
+          ...R.color,
+          f: R.invertU ? 1 : 0,
+          angle: R.angleoffset
+        };
+      }, y = (R) => {
         console.log('"' + JSON.stringify(P(R)).replace(/"/g, '""') + '"'), window.navigator.clipboard.writeText('"' + JSON.stringify(P(R)).replace(/"/g, '""') + '"');
       };
-      var C = Rt.CreateSimpleButton("btn1", "x right");
+      var C = At.CreateSimpleButton("btn1", "x right");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[dr[A].Type].offsets;
+        const D = o[ar[A].Type].offsets;
         D.x += 5e-3;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "x left");
+      var C = At.CreateSimpleButton("btn1", "x left");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[dr[A].Type].offsets;
+        const D = o[ar[A].Type].offsets;
         D.x -= 5e-3;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "y up");
+      var C = At.CreateSimpleButton("btn1", "y up");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[dr[A].Type].offsets;
+        const D = o[ar[A].Type].offsets;
         D.y += 5e-3;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "y down");
+      var C = At.CreateSimpleButton("btn1", "y down");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[dr[A].Type].offsets;
+        const D = o[ar[A].Type].offsets;
         D.y -= 5e-3;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "z front");
+      var C = At.CreateSimpleButton("btn1", "z front");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[dr[A].Type].offsets;
+        const D = o[ar[A].Type].offsets;
         D.z -= 5e-3;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "z back");
+      var C = At.CreateSimpleButton("btn1", "z back");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[dr[A].Type].offsets;
+        const D = o[ar[A].Type].offsets;
         D.z += 5e-3;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "rotate left");
+      var C = At.CreateSimpleButton("btn1", "rotate left");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[dr[A].Type];
-        R.angleoffset += Math.PI / 32, R.angleoffset %= 2 * Math.PI;
+        const R = o[ar[A].Type];
+        R.angleoffset += Math.PI / 32, R.angleoffset %= 2 * Math.PI, R.angleoffset = Math.round(R.angleoffset * 1e5) / 1e5;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "rotate right");
+      var C = At.CreateSimpleButton("btn1", "rotate right");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[dr[A].Type];
-        R.angleoffset -= Math.PI / 32, R.angleoffset %= 2 * Math.PI;
+        const R = o[ar[A].Type];
+        R.angleoffset -= Math.PI / 32, R.angleoffset %= 2 * Math.PI, R.angleoffset = Math.round(R.angleoffset * 1e5) / 1e5;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "flip");
+      var C = At.CreateSimpleButton("btn1", "flip");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[dr[A].Type];
+        const R = o[ar[A].Type];
         R.invertU = !R.invertU;
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "Color");
+      var C = At.CreateSimpleButton("btn1", "Color");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[dr[A].Type];
+        const R = o[ar[A].Type];
         try {
           const D = prompt("Input R (0-255)"), B = prompt("Input G (0-255)"), V = prompt("Input B (0-255)"), L = Me.FromInts(D, B, V, 255);
-          R.color = L;
+          L.r = Math.round(L.r * 1e5) / 1e5, L.g = Math.round(L.g * 1e5) / 1e5, L.b = Math.round(L.b * 1e5) / 1e5, R.color = L;
         } catch (D) {
           alert(D);
         }
       }), E.addControl(C);
-      var C = Rt.CreateSimpleButton("btn1", "Save");
+      var C = At.CreateSimpleButton("btn1", "Check");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[dr[A].Type];
-        console.log(R), y(R);
-      }), E.addControl(C), Object.keys(dr).forEach((R) => {
+        const R = o[ar[A].Type];
+        alert(JSON.stringify(P(R)));
+      }), E.addControl(C);
+      var C = At.CreateSimpleButton("btn1", "Save");
+      C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
+        if (!A) return;
+        const R = o[ar[A].Type], D = R.offsets;
+        D.x = Math.round(D.x * 1e5) / 1e5, D.y = Math.round(D.y * 1e5) / 1e5, D.z = Math.round(D.z * 1e5) / 1e5, console.log(R), y(R);
+      }), E.addControl(C), Object.keys(ar).forEach((R) => {
         if (Number(R) < 1e5 && Number(R) > 9e3 && !t.getControlByName(`button-${R}`)) {
           if (r_ == null) {
             const B = new ls("");
             B.isVertical = false, B.height = "100px", Cy.addControl(B), r_ = B;
           }
-          const D = Rt.CreateImageButton(`button-${R}`, "", `danceVil/Avatar/${dr[R].Filename}`);
+          const D = At.CreateImageButton(`button-${R}`, "", `danceVil/Avatar/${ar[R].Filename}`);
           D.width = "100px", D.height = "100px", D.image.width = "95px", D.image.height = "95px", D.image.stretch = Wi.STRETCH_UNIFORM, D.objid = R, D.inMain = true, D.panel = r_, D.mainpanel = r_, D.color = "black", r_.addControl(D), Ay += 1, Ay == 3 && (Ay = 0, r_ = null), D.onPointerClickObservable.add(function() {
             if (ri.length > 0) {
               const B = ri[Mt];
-              if (B[dr[D.objid].Type] && B[dr[D.objid].Type][0] == D.objid) o.unequip(dr[D.objid].Type), delete B[dr[D.objid].Type], A = null;
+              if (B[ar[D.objid].Type] && B[ar[D.objid].Type][0] == D.objid) o.unequip(ar[D.objid].Type), delete B[ar[D.objid].Type], A = null;
               else {
-                o.unequip(dr[D.objid].Type), o.equip(D.objid), A = D.objid;
-                const V = dr[D.objid].attributes ?? EC[dr[D.objid].Type] ?? {};
-                ri[Mt][dr[D.objid].Type] = [
+                o.unequip(ar[D.objid].Type), o.equip(D.objid), A = D.objid;
+                const V = ar[D.objid].attributes ?? EC[ar[D.objid].Type] ?? {};
+                ri[Mt][ar[D.objid].Type] = [
                   D.objid,
                   {
                     x: V.x,
@@ -163291,19 +163300,19 @@ void main()
       f.zIndex = 1, f.stretch = Wi.STRETCH_UNIFORM, u.color = "black", u.background = "white", i.current = h, u.addControl(f), u.height = `${o.height}px`, window.innerHeight * 0.615 < window.innerWidth ? u.width = `${Math.min(o.height * 0.615, o.width)}px` : u.width = `${o.height * 0.615}px`, h.addControl(u), t.current = c;
       const p = new fl("light1", v.Forward(), c);
       p.intensity = 0.7, new wi("arcRotateCamera", -Math.PI / 2, Math.PI / 2, 5, new v(0, 0, 0), c);
-      const m = Rt.CreateSimpleButton("btn1", "Move Editor");
+      const m = At.CreateSimpleButton("btn1", "Move Editor");
       m.zIndex = 3, m.left = "-20%", m.top = "0%", m.width = "20%", m.height = "10%", m.background = "white", m.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, i.current.addControl(m), m.onPointerClickObservable.add(() => {
         c.dispose(), n("MoveEditor");
       });
-      const x = Rt.CreateSimpleButton("btn2", "Map Editor");
+      const x = At.CreateSimpleButton("btn2", "Map Editor");
       x.zIndex = 3, x.left = "20%", x.top = "0%", x.width = "20%", x.height = "10%", x.background = "white", x.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, i.current.addControl(x), x.onPointerClickObservable.add(() => {
         c.dispose(), n("MapEditorLabel");
       });
-      const S = Rt.CreateSimpleButton("btn3", "Npc Editor");
+      const S = At.CreateSimpleButton("btn3", "Npc Editor");
       S.zIndex = 3, S.left = "0%", S.top = "0%", S.width = "10%", S.height = "10%", S.background = "white", S.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, i.current.addControl(S), S.onPointerClickObservable.add(() => {
         c.dispose(), n("NpcEditor");
       });
-      const E = Rt.CreateSimpleButton("btn4", "Test");
+      const E = At.CreateSimpleButton("btn4", "Test");
       return E.zIndex = 3, E.left = "0%", E.top = "15%", E.width = "10%", E.height = "10%", E.background = "white", E.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, i.current.addControl(E), E.onPointerClickObservable.add(async () => {
         const A = [
           "create",
@@ -163397,7 +163406,7 @@ export {
   re as b,
   DCe as c,
   _re as d,
-  ar as e,
+  or as e,
   G as f,
   tR as g,
   kce as h,
