@@ -390,9 +390,9 @@ let __tla = (async () => {
         return pt;
       })) : Te != null && (V(Te) && (Te = B(Te, $ + (Te.key == null || X && X.key === Te.key ? "" : ("" + Te.key).replace(ee, "$&/") + "/") + pe)), F.push(Te)), 1;
       pe = 0;
-      var Je = le === "" ? "." : le + ":";
-      if (y(X)) for (var Ge = 0; Ge < X.length; Ge++) le = X[Ge], ie = Je + q(le, Ge), pe += te(le, F, $, ie, Te);
-      else if (Ge = f(X), typeof Ge == "function") for (X = Ge.call(X), Ge = 0; !(le = X.next()).done; ) le = le.value, ie = Je + q(le, Ge++), pe += te(le, F, $, ie, Te);
+      var Ze = le === "" ? "." : le + ":";
+      if (y(X)) for (var Ge = 0; Ge < X.length; Ge++) le = X[Ge], ie = Ze + q(le, Ge), pe += te(le, F, $, ie, Te);
+      else if (Ge = f(X), typeof Ge == "function") for (X = Ge.call(X), Ge = 0; !(le = X.next()).done; ) le = le.value, ie = Ze + q(le, Ge++), pe += te(le, F, $, ie, Te);
       else if (ie === "object") {
         if (typeof X.then == "function") return te(se(X), F, $, le, Te);
         throw F = String(X), Error("Objects are not valid as a React child (found: " + (F === "[object Object]" ? "object with keys {" + Object.keys(X).join(", ") + "}" : F) + "). If you meant to render a collection of children, use an array instead.");
@@ -470,8 +470,8 @@ let __tla = (async () => {
       var pe = arguments.length - 2;
       if (pe === 1) le.children = $;
       else if (1 < pe) {
-        for (var Je = Array(pe), Ge = 0; Ge < pe; Ge++) Je[Ge] = arguments[Ge + 2];
-        le.children = Je;
+        for (var Ze = Array(pe), Ge = 0; Ge < pe; Ge++) Ze[Ge] = arguments[Ge + 2];
+        le.children = Ze;
       }
       return D(X.type, Te, void 0, void 0, ie, le);
     }, Ci.createContext = function(X) {
@@ -492,8 +492,8 @@ let __tla = (async () => {
       var pe = arguments.length - 2;
       if (pe === 1) Te.children = $;
       else if (1 < pe) {
-        for (var Je = Array(pe), Ge = 0; Ge < pe; Ge++) Je[Ge] = arguments[Ge + 2];
-        Te.children = Je;
+        for (var Ze = Array(pe), Ge = 0; Ge < pe; Ge++) Ze[Ge] = arguments[Ge + 2];
+        Te.children = Ze;
       }
       if (X && X.defaultProps) for (le in pe = X.defaultProps, pe) Te[le] === void 0 && (Te[le] = pe[le]);
       return D(X, ie, void 0, void 0, null, Te);
@@ -994,21 +994,21 @@ Error generating stack: ` + g.message + `
       data: null,
       method: null,
       action: null
-    }, pe = [], Je = -1;
+    }, pe = [], Ze = -1;
     function Ge(d) {
       return {
         current: d
       };
     }
     function pt(d) {
-      0 > Je || (d.current = pe[Je], pe[Je] = null, Je--);
+      0 > Ze || (d.current = pe[Ze], pe[Ze] = null, Ze--);
     }
     function De(d, _) {
-      Je++, pe[Je] = d.current, d.current = _;
+      Ze++, pe[Ze] = d.current, d.current = _;
     }
-    var Qe = Ge(null), ge = Ge(null), dt = Ge(null), ei = Ge(null);
-    function wt(d, _) {
-      switch (De(dt, _), De(ge, d), De(Qe, null), d = _.nodeType, d) {
+    var Qe = Ge(null), me = Ge(null), dt = Ge(null), ei = Ge(null);
+    function Nt(d, _) {
+      switch (De(dt, _), De(me, d), De(Qe, null), d = _.nodeType, d) {
         case 9:
         case 11:
           _ = (_ = _.documentElement) && (_ = _.namespaceURI) ? eO(_) : 0;
@@ -1029,17 +1029,17 @@ Error generating stack: ` + g.message + `
       pt(Qe), De(Qe, _);
     }
     function ye() {
-      pt(Qe), pt(ge), pt(dt);
+      pt(Qe), pt(me), pt(dt);
     }
-    function me(d) {
+    function ge(d) {
       d.memoizedState !== null && De(ei, d);
       var _ = Qe.current, g = tO(_, d.type);
-      _ !== g && (De(ge, d), De(Qe, g));
+      _ !== g && (De(me, d), De(Qe, g));
     }
-    function Nt(d) {
-      ge.current === d && (pt(Qe), pt(ge)), ei.current === d && (pt(ei), am._currentValue = ie);
+    function Dt(d) {
+      me.current === d && (pt(Qe), pt(me)), ei.current === d && (pt(ei), am._currentValue = ie);
     }
-    var Yt = Object.prototype.hasOwnProperty, Ke = a.unstable_scheduleCallback, qe = a.unstable_cancelCallback, Ft = a.unstable_shouldYield, Er = a.unstable_requestPaint, Rr = a.unstable_now, ka = a.unstable_getCurrentPriorityLevel, yn = a.unstable_ImmediatePriority, zs = a.unstable_UserBlockingPriority, pr = a.unstable_NormalPriority, ji = a.unstable_LowPriority, Xi = a.unstable_IdlePriority, qt = a.log, Mi = a.unstable_setDisableYieldValue, ir = null, Ti = null;
+    var Qt = Object.prototype.hasOwnProperty, Je = a.unstable_scheduleCallback, Ke = a.unstable_cancelCallback, Ft = a.unstable_shouldYield, Er = a.unstable_requestPaint, Rr = a.unstable_now, ka = a.unstable_getCurrentPriorityLevel, yn = a.unstable_ImmediatePriority, zs = a.unstable_UserBlockingPriority, pr = a.unstable_NormalPriority, ji = a.unstable_LowPriority, Xi = a.unstable_IdlePriority, qt = a.log, Mi = a.unstable_setDisableYieldValue, ir = null, Ti = null;
     function Ir(d) {
       if (Ti && typeof Ti.onCommitFiberRoot == "function") try {
         Ti.onCommitFiberRoot(ir, d, void 0, (d.current.flags & 128) === 128);
@@ -1270,7 +1270,7 @@ Error generating stack: ` + g.message + `
     }
     var Cc = !(typeof window > "u" || typeof window.document > "u" || typeof window.document.createElement > "u"), w$ = RegExp("^[:A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD][:A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040]*$"), tI = {}, iI = {};
     function N$(d) {
-      return Yt.call(iI, d) ? true : Yt.call(tI, d) ? false : w$.test(d) ? iI[d] = true : (tI[d] = true, false);
+      return Qt.call(iI, d) ? true : Qt.call(tI, d) ? false : w$.test(d) ? iI[d] = true : (tI[d] = true, false);
     }
     function cv(d, _, g) {
       if (N$(_)) if (g === null) d.removeAttribute(_);
@@ -2228,7 +2228,7 @@ Error generating stack: ` + g.message + `
       if (g.length !== b.length) return false;
       for (b = 0; b < g.length; b++) {
         var M = g[b];
-        if (!Yt.call(_, M) || !fo(d[M], _[M])) return false;
+        if (!Qt.call(_, M) || !fo(d[M], _[M])) return false;
       }
       return true;
     }
@@ -4285,14 +4285,14 @@ Error generating stack: ` + g.message + `
     function UY(d, _, g) {
       switch (_.tag) {
         case 3:
-          wt(_, _.stateNode.containerInfo), Dh(_, An, d.memoizedState.cache), Mp();
+          Nt(_, _.stateNode.containerInfo), Dh(_, An, d.memoizedState.cache), Mp();
           break;
         case 27:
         case 5:
-          me(_);
+          ge(_);
           break;
         case 4:
-          wt(_, _.stateNode.containerInfo);
+          Nt(_, _.stateNode.containerInfo);
           break;
         case 10:
           Dh(_, _.type, _.memoizedProps.value);
@@ -4351,7 +4351,7 @@ Error generating stack: ` + g.message + `
           return b = _.type, M = qu(b, _.pendingProps), eM(d, _, b, M, g);
         case 3:
           e: {
-            if (wt(_, _.stateNode.containerInfo), d === null) throw Error(i(387));
+            if (Nt(_, _.stateNode.containerInfo), d === null) throw Error(i(387));
             var N = _.pendingProps;
             M = _.memoizedState, b = M.element, UE(d, _), Xp(_, N, null, g);
             var H = _.memoizedState;
@@ -4381,15 +4381,15 @@ Error generating stack: ` + g.message + `
         case 26:
           return Gp(d, _), d === null ? (g = lO(_.type, null, _.pendingProps, null)) ? _.memoizedState = g : mr || (g = _.type, d = _.pendingProps, b = rx(dt.current).createElement(g), b[jr] = _, b[Bn] = d, Kn(b, g, d), Vn(b), _.stateNode = b) : _.memoizedState = lO(_.type, d.memoizedProps, _.pendingProps, d.memoizedState), null;
         case 27:
-          return me(_), d === null && mr && (b = _.stateNode = nO(_.type, _.pendingProps, dt.current), ba = _, Wl = true, jn = xl(b.firstChild)), b = _.pendingProps.children, d !== null || mr ? Qn(d, _, b, g) : _.child = $u(_, null, b, g), Gp(d, _), _.child;
+          return ge(_), d === null && mr && (b = _.stateNode = nO(_.type, _.pendingProps, dt.current), ba = _, Wl = true, jn = xl(b.firstChild)), b = _.pendingProps.children, d !== null || mr ? Qn(d, _, b, g) : _.child = $u(_, null, b, g), Gp(d, _), _.child;
         case 5:
-          return d === null && mr && ((M = b = jn) && (b = p8(b, _.type, _.pendingProps, Wl), b !== null ? (_.stateNode = b, ba = _, jn = xl(b.firstChild), Wl = false, M = true) : M = false), M || Xu(_)), me(_), M = _.type, N = _.pendingProps, H = d !== null ? d.memoizedProps : null, b = N.children, S0(M, N) ? b = null : H !== null && S0(M, H) && (_.flags |= 32), _.memoizedState !== null && (M = lE(d, _, DY, null, null, g), am._currentValue = M), Gp(d, _), Qn(d, _, b, g), _.child;
+          return d === null && mr && ((M = b = jn) && (b = p8(b, _.type, _.pendingProps, Wl), b !== null ? (_.stateNode = b, ba = _, jn = xl(b.firstChild), Wl = false, M = true) : M = false), M || Xu(_)), ge(_), M = _.type, N = _.pendingProps, H = d !== null ? d.memoizedProps : null, b = N.children, S0(M, N) ? b = null : H !== null && S0(M, H) && (_.flags |= 32), _.memoizedState !== null && (M = lE(d, _, DY, null, null, g), am._currentValue = M), Gp(d, _), Qn(d, _, b, g), _.child;
         case 6:
           return d === null && mr && ((d = g = jn) && (g = m8(g, _.pendingProps, Wl), g !== null ? (_.stateNode = g, ba = _, jn = null, d = true) : d = false), d || Xu(_)), null;
         case 13:
           return iM(d, _, g);
         case 4:
-          return wt(_, _.stateNode.containerInfo), b = _.pendingProps, d === null ? _.child = $u(_, null, b, g) : Qn(d, _, b, g), _.child;
+          return Nt(_, _.stateNode.containerInfo), b = _.pendingProps, d === null ? _.child = $u(_, null, b, g) : Qn(d, _, b, g), _.child;
         case 11:
           return jP(d, _, _.type, _.pendingProps, g);
         case 7:
@@ -5760,7 +5760,7 @@ Error generating stack: ` + g.message + `
         case 26:
           return g = _.memoizedState, d === null ? (Bc(_), g !== null ? (Ms(_), PM(_, g)) : (Ms(_), _.flags &= -16777217)) : g ? g !== d.memoizedState ? (Bc(_), Ms(_), PM(_, g)) : (Ms(_), _.flags &= -16777217) : (d.memoizedProps !== b && Bc(_), Ms(_), _.flags &= -16777217), null;
         case 27:
-          Nt(_), g = dt.current;
+          Dt(_), g = dt.current;
           var M = _.type;
           if (d !== null && _.stateNode != null) d.memoizedProps !== b && Bc(_);
           else {
@@ -5772,7 +5772,7 @@ Error generating stack: ` + g.message + `
           }
           return Ms(_), null;
         case 5:
-          if (Nt(_), g = _.type, d !== null && _.stateNode != null) d.memoizedProps !== b && Bc(_);
+          if (Dt(_), g = _.type, d !== null && _.stateNode != null) d.memoizedProps !== b && Bc(_);
           else {
             if (!b) {
               if (_.stateNode === null) throw Error(i(166));
@@ -5917,7 +5917,7 @@ Error generating stack: ` + g.message + `
         case 26:
         case 27:
         case 5:
-          return Nt(_), null;
+          return Dt(_), null;
         case 13:
           if (Pc(_), d = _.memoizedState, d !== null && d.dehydrated !== null) {
             if (_.alternate === null) throw Error(i(340));
@@ -5949,7 +5949,7 @@ Error generating stack: ` + g.message + `
         case 26:
         case 27:
         case 5:
-          Nt(_);
+          Dt(_);
           break;
         case 4:
           ye();
@@ -6442,7 +6442,7 @@ Error generating stack: ` + g.message + `
       b !== null && b.delete(_), WM(d, g);
     }
     function t8(d, _) {
-      return Ke(d, _);
+      return Je(d, _);
     }
     var Zv = null, Ff = null, c0 = false, Jv = false, h0 = false, sd = 0;
     function Yl(d) {
@@ -6483,10 +6483,10 @@ Error generating stack: ` + g.message + `
         var H = 31 - Ni(N), ne = 1 << H, ve = M[H];
         ve === -1 ? ((ne & g) === 0 || (ne & b) !== 0) && (M[H] = af(ne, _)) : ve <= _ && (d.expiredLanes |= ne), N &= ~ne;
       }
-      if (_ = ts, g = sr, g = Ga(d, d === _ ? g : 0), b = d.callbackNode, g === 0 || d === _ && is === 2 || d.cancelPendingCommit !== null) return b !== null && b !== null && qe(b), d.callbackNode = null, d.callbackPriority = 0;
+      if (_ = ts, g = sr, g = Ga(d, d === _ ? g : 0), b = d.callbackNode, g === 0 || d === _ && is === 2 || d.cancelPendingCommit !== null) return b !== null && b !== null && Ke(b), d.callbackNode = null, d.callbackPriority = 0;
       if ((g & 3) === 0 || Ta(d, g)) {
         if (_ = g & -g, _ === d.callbackPriority) return _;
-        switch (b !== null && qe(b), Bt(g)) {
+        switch (b !== null && Ke(b), Bt(g)) {
           case 2:
           case 8:
             g = zs;
@@ -6500,9 +6500,9 @@ Error generating stack: ` + g.message + `
           default:
             g = pr;
         }
-        return b = XM.bind(null, d), g = Ke(g, b), d.callbackPriority = _, d.callbackNode = g, _;
+        return b = XM.bind(null, d), g = Je(g, b), d.callbackPriority = _, d.callbackNode = g, _;
       }
-      return b !== null && b !== null && qe(b), d.callbackPriority = 2, d.callbackNode = null, 2;
+      return b !== null && b !== null && Ke(b), d.callbackPriority = 2, d.callbackNode = null, 2;
     }
     function XM(d, _) {
       var g = d.callbackNode;
@@ -6516,7 +6516,7 @@ Error generating stack: ` + g.message + `
     }
     function r8(d) {
       f8(function() {
-        (Os & 6) !== 0 ? Ke(yn, d) : d();
+        (Os & 6) !== 0 ? Je(yn, d) : d();
       });
     }
     function u0() {
@@ -10429,8 +10429,8 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
       if (this._isIdentity === true) return z.IdentityToRef(e), e;
       const t = this._m, i = t[0], r = t[1], s = t[2], n = t[3], o = t[4], l = t[5], c = t[6], h = t[7], u = t[8], f = t[9], p = t[10], m = t[11], x = t[12], S = t[13], E = t[14], A = t[15], P = p * A - E * m, y = f * A - S * m, C = f * E - S * p, R = u * A - x * m, D = u * E - p * x, B = u * S - x * f, V = +(l * P - c * y + h * C), L = -(o * P - c * R + h * D), ee = +(o * y - l * R + h * B), q = -(o * C - l * D + c * B), de = i * V + r * L + s * ee + n * q;
       if (de === 0) return e.copyFrom(this), e;
-      const se = 1 / de, te = c * A - E * h, K = l * A - S * h, Se = l * E - S * c, ce = o * A - x * h, fe = o * E - x * c, X = o * S - x * l, F = c * m - p * h, $ = l * m - f * h, le = l * p - f * c, Te = o * m - u * h, ie = o * p - u * c, pe = o * f - u * l, Je = -(r * P - s * y + n * C), Ge = +(i * P - s * R + n * D), pt = -(i * y - r * R + n * B), De = +(i * C - r * D + s * B), Qe = +(r * te - s * K + n * Se), ge = -(i * te - s * ce + n * fe), dt = +(i * K - r * ce + n * X), ei = -(i * Se - r * fe + s * X), wt = -(r * F - s * $ + n * le), ye = +(i * F - s * Te + n * ie), me = -(i * $ - r * Te + n * pe), Nt = +(i * le - r * ie + s * pe);
-      return z.FromValuesToRef(V * se, Je * se, Qe * se, wt * se, L * se, Ge * se, ge * se, ye * se, ee * se, pt * se, dt * se, me * se, q * se, De * se, ei * se, Nt * se, e), e;
+      const se = 1 / de, te = c * A - E * h, K = l * A - S * h, Se = l * E - S * c, ce = o * A - x * h, fe = o * E - x * c, X = o * S - x * l, F = c * m - p * h, $ = l * m - f * h, le = l * p - f * c, Te = o * m - u * h, ie = o * p - u * c, pe = o * f - u * l, Ze = -(r * P - s * y + n * C), Ge = +(i * P - s * R + n * D), pt = -(i * y - r * R + n * B), De = +(i * C - r * D + s * B), Qe = +(r * te - s * K + n * Se), me = -(i * te - s * ce + n * fe), dt = +(i * K - r * ce + n * X), ei = -(i * Se - r * fe + s * X), Nt = -(r * F - s * $ + n * le), ye = +(i * F - s * Te + n * ie), ge = -(i * $ - r * Te + n * pe), Dt = +(i * le - r * ie + s * pe);
+      return z.FromValuesToRef(V * se, Ze * se, Qe * se, Nt * se, L * se, Ge * se, me * se, ye * se, ee * se, pt * se, dt * se, ge * se, q * se, De * se, ei * se, Dt * se, e), e;
     }
     addAtIndex(e, t) {
       return this._m[e] += t, this.markAsUpdated(), this;
@@ -16382,31 +16382,31 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
     return lS.delete(a);
   }
   function LC(a, e) {
-    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-L-k4J25v.js").then(async (m) => {
+    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-Dc2Cp5Bc.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-CZtClXLf.js").then(async (m) => {
+    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-Bn85fpw6.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-mu9WarnK.js").then(async (m) => {
+    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-DBNQkmsH.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-B3dVIO_e.js").then(async (m) => {
+    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-Be_yJWxv.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-d_ruS0YQ.js").then(async (m) => {
+    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-D0tMAt2r.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-21XZtYPF.js").then(async (m) => {
+    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-B0C9-83p.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-21XZtYPF.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-B0C9-83p.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-m71k-4zF.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-BvLxeTnN.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-Cs6S4N-R.js").then(async (m) => {
+    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-YFbwKmkt.js").then(async (m) => {
       await m.__tla;
       return m;
     }), []).then((i) => new i._ExrTextureLoader())));
@@ -18062,9 +18062,9 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
   function fF(a, e) {
     e.COLORGRADING && a.push("txColorTransform");
   }
-  class Qt {
+  class jt {
     constructor() {
-      this.colorCurves = new Br(), this._colorCurvesEnabled = false, this._colorGradingEnabled = false, this._colorGradingWithGreenDepth = true, this._colorGradingBGR = true, this._exposure = 1, this._toneMappingEnabled = false, this._toneMappingType = Qt.TONEMAPPING_STANDARD, this._contrast = 1, this.vignetteStretch = 0, this.vignetteCenterX = 0, this.vignetteCenterY = 0, this.vignetteWeight = 1.5, this.vignetteColor = new Me(0, 0, 0, 0), this.vignetteCameraFov = 0.5, this._vignetteBlendMode = Qt.VIGNETTEMODE_MULTIPLY, this._vignetteEnabled = false, this._ditheringEnabled = false, this._ditheringIntensity = 1 / 255, this._skipFinalColorClamp = false, this._applyByPostProcess = false, this._isEnabled = true, this.onUpdateParameters = new J();
+      this.colorCurves = new Br(), this._colorCurvesEnabled = false, this._colorGradingEnabled = false, this._colorGradingWithGreenDepth = true, this._colorGradingBGR = true, this._exposure = 1, this._toneMappingEnabled = false, this._toneMappingType = jt.TONEMAPPING_STANDARD, this._contrast = 1, this.vignetteStretch = 0, this.vignetteCenterX = 0, this.vignetteCenterY = 0, this.vignetteWeight = 1.5, this.vignetteColor = new Me(0, 0, 0, 0), this.vignetteCameraFov = 0.5, this._vignetteBlendMode = jt.VIGNETTEMODE_MULTIPLY, this._vignetteEnabled = false, this._ditheringEnabled = false, this._ditheringIntensity = 1 / 255, this._skipFinalColorClamp = false, this._applyByPostProcess = false, this._isEnabled = true, this.onUpdateParameters = new J();
     }
     get colorCurvesEnabled() {
       return this._colorCurvesEnabled;
@@ -18185,12 +18185,12 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
         e.VIGNETTE = false, e.TONEMAPPING = 0, e.CONTRAST = false, e.EXPOSURE = false, e.COLORCURVES = false, e.COLORGRADING = false, e.COLORGRADING3D = false, e.DITHER = false, e.IMAGEPROCESSING = false, e.SKIPFINALCOLORCLAMP = this.skipFinalColorClamp, e.IMAGEPROCESSINGPOSTPROCESS = this.applyByPostProcess && this._isEnabled;
         return;
       }
-      if (e.VIGNETTE = this.vignetteEnabled, e.VIGNETTEBLENDMODEMULTIPLY = this.vignetteBlendMode === Qt._VIGNETTEMODE_MULTIPLY, e.VIGNETTEBLENDMODEOPAQUE = !e.VIGNETTEBLENDMODEMULTIPLY, !this._toneMappingEnabled) e.TONEMAPPING = 0;
+      if (e.VIGNETTE = this.vignetteEnabled, e.VIGNETTEBLENDMODEMULTIPLY = this.vignetteBlendMode === jt._VIGNETTEMODE_MULTIPLY, e.VIGNETTEBLENDMODEOPAQUE = !e.VIGNETTEBLENDMODEMULTIPLY, !this._toneMappingEnabled) e.TONEMAPPING = 0;
       else switch (this._toneMappingType) {
-        case Qt.TONEMAPPING_KHR_PBR_NEUTRAL:
+        case jt.TONEMAPPING_KHR_PBR_NEUTRAL:
           e.TONEMAPPING = 3;
           break;
-        case Qt.TONEMAPPING_ACES:
+        case jt.TONEMAPPING_ACES:
           e.TONEMAPPING = 2;
           break;
         default:
@@ -18221,13 +18221,13 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
       }
     }
     clone() {
-      return Ve.Clone(() => new Qt(), this);
+      return Ve.Clone(() => new jt(), this);
     }
     serialize() {
       return Ve.Serialize(this);
     }
     static Parse(e) {
-      const t = Ve.Parse(() => new Qt(), e, null, null);
+      const t = Ve.Parse(() => new jt(), e, null, null);
       return e.vignetteCentreX !== void 0 && (t.vignetteCenterX = e.vignetteCentreX), e.vignetteCentreY !== void 0 && (t.vignetteCenterY = e.vignetteCentreY), t;
     }
     static get VIGNETTEMODE_MULTIPLY() {
@@ -18237,84 +18237,84 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
       return this._VIGNETTEMODE_OPAQUE;
     }
   }
-  Qt.TONEMAPPING_STANDARD = 0;
-  Qt.TONEMAPPING_ACES = 1;
-  Qt.TONEMAPPING_KHR_PBR_NEUTRAL = 2;
-  Qt.PrepareUniforms = dF;
-  Qt.PrepareSamplers = fF;
-  Qt._VIGNETTEMODE_MULTIPLY = 0;
-  Qt._VIGNETTEMODE_OPAQUE = 1;
+  jt.TONEMAPPING_STANDARD = 0;
+  jt.TONEMAPPING_ACES = 1;
+  jt.TONEMAPPING_KHR_PBR_NEUTRAL = 2;
+  jt.PrepareUniforms = dF;
+  jt.PrepareSamplers = fF;
+  jt._VIGNETTEMODE_MULTIPLY = 0;
+  jt._VIGNETTEMODE_OPAQUE = 1;
   T([
     Rj()
-  ], Qt.prototype, "colorCurves", void 0);
+  ], jt.prototype, "colorCurves", void 0);
   T([
     I()
-  ], Qt.prototype, "_colorCurvesEnabled", void 0);
+  ], jt.prototype, "_colorCurvesEnabled", void 0);
   T([
     Kt("colorGradingTexture")
-  ], Qt.prototype, "_colorGradingTexture", void 0);
+  ], jt.prototype, "_colorGradingTexture", void 0);
   T([
     I()
-  ], Qt.prototype, "_colorGradingEnabled", void 0);
+  ], jt.prototype, "_colorGradingEnabled", void 0);
   T([
     I()
-  ], Qt.prototype, "_colorGradingWithGreenDepth", void 0);
+  ], jt.prototype, "_colorGradingWithGreenDepth", void 0);
   T([
     I()
-  ], Qt.prototype, "_colorGradingBGR", void 0);
+  ], jt.prototype, "_colorGradingBGR", void 0);
   T([
     I()
-  ], Qt.prototype, "_exposure", void 0);
+  ], jt.prototype, "_exposure", void 0);
   T([
     I()
-  ], Qt.prototype, "_toneMappingEnabled", void 0);
+  ], jt.prototype, "_toneMappingEnabled", void 0);
   T([
     I()
-  ], Qt.prototype, "_toneMappingType", void 0);
+  ], jt.prototype, "_toneMappingType", void 0);
   T([
     I()
-  ], Qt.prototype, "_contrast", void 0);
+  ], jt.prototype, "_contrast", void 0);
   T([
     I()
-  ], Qt.prototype, "vignetteStretch", void 0);
+  ], jt.prototype, "vignetteStretch", void 0);
   T([
     I()
-  ], Qt.prototype, "vignetteCenterX", void 0);
+  ], jt.prototype, "vignetteCenterX", void 0);
   T([
     I()
-  ], Qt.prototype, "vignetteCenterY", void 0);
+  ], jt.prototype, "vignetteCenterY", void 0);
   T([
     I()
-  ], Qt.prototype, "vignetteWeight", void 0);
+  ], jt.prototype, "vignetteWeight", void 0);
   T([
     Ag()
-  ], Qt.prototype, "vignetteColor", void 0);
+  ], jt.prototype, "vignetteColor", void 0);
   T([
     I()
-  ], Qt.prototype, "vignetteCameraFov", void 0);
+  ], jt.prototype, "vignetteCameraFov", void 0);
   T([
     I()
-  ], Qt.prototype, "_vignetteBlendMode", void 0);
+  ], jt.prototype, "_vignetteBlendMode", void 0);
   T([
     I()
-  ], Qt.prototype, "_vignetteEnabled", void 0);
+  ], jt.prototype, "_vignetteEnabled", void 0);
   T([
     I()
-  ], Qt.prototype, "_ditheringEnabled", void 0);
+  ], jt.prototype, "_ditheringEnabled", void 0);
   T([
     I()
-  ], Qt.prototype, "_ditheringIntensity", void 0);
+  ], jt.prototype, "_ditheringIntensity", void 0);
   T([
     I()
-  ], Qt.prototype, "_skipFinalColorClamp", void 0);
+  ], jt.prototype, "_skipFinalColorClamp", void 0);
   T([
     I()
-  ], Qt.prototype, "_applyByPostProcess", void 0);
+  ], jt.prototype, "_applyByPostProcess", void 0);
   T([
     I()
-  ], Qt.prototype, "_isEnabled", void 0);
-  Ve._ImageProcessingConfigurationParser = Qt.Parse;
-  W("BABYLON.ImageProcessingConfiguration", Qt);
+  ], jt.prototype, "_isEnabled", void 0);
+  Ve._ImageProcessingConfigurationParser = jt.Parse;
+  W("BABYLON.ImageProcessingConfiguration", jt);
   class it {
     constructor(e, t, i, r, s = false) {
       this._valueCache = {}, this._engine = e, this._noUBO = !e.supportsUniformBuffers || s, this._dynamic = i, this._name = r ?? "no-name", this._data = t || [], this._uniformLocations = {}, this._uniformSizes = {}, this._uniformArraySizes = {}, this._uniformLocationPointer = 0, this._needSync = false, this._engine._features.trackUbosInFrame && (this._buffers = [], this._bufferIndex = -1, this._createBufferOnWrite = false, this._currentFrameId = 0), this._noUBO ? (this.updateMatrix3x3 = this._updateMatrix3x3ForEffect, this.updateMatrix2x2 = this._updateMatrix2x2ForEffect, this.updateFloat = this._updateFloatForEffect, this.updateFloat2 = this._updateFloat2ForEffect, this.updateFloat3 = this._updateFloat3ForEffect, this.updateFloat4 = this._updateFloat4ForEffect, this.updateFloatArray = this._updateFloatArrayForEffect, this.updateArray = this._updateArrayForEffect, this.updateIntArray = this._updateIntArrayForEffect, this.updateUIntArray = this._updateUIntArrayForEffect, this.updateMatrix = this._updateMatrixForEffect, this.updateMatrices = this._updateMatricesForEffect, this.updateVector3 = this._updateVector3ForEffect, this.updateVector4 = this._updateVector4ForEffect, this.updateColor3 = this._updateColor3ForEffect, this.updateColor4 = this._updateColor4ForEffect, this.updateDirectColor4 = this._updateDirectColor4ForEffect, this.updateInt = this._updateIntForEffect, this.updateInt2 = this._updateInt2ForEffect, this.updateInt3 = this._updateInt3ForEffect, this.updateInt4 = this._updateInt4ForEffect, this.updateUInt = this._updateUIntForEffect, this.updateUInt2 = this._updateUInt2ForEffect, this.updateUInt3 = this._updateUInt3ForEffect, this.updateUInt4 = this._updateUInt4ForEffect) : (this._engine._uniformBuffers.push(this), this.updateMatrix3x3 = this._updateMatrix3x3ForUniform, this.updateMatrix2x2 = this._updateMatrix2x2ForUniform, this.updateFloat = this._updateFloatForUniform, this.updateFloat2 = this._updateFloat2ForUniform, this.updateFloat3 = this._updateFloat3ForUniform, this.updateFloat4 = this._updateFloat4ForUniform, this.updateFloatArray = this._updateFloatArrayForUniform, this.updateArray = this._updateArrayForUniform, this.updateIntArray = this._updateIntArrayForUniform, this.updateUIntArray = this._updateUIntArrayForUniform, this.updateMatrix = this._updateMatrixForUniform, this.updateMatrices = this._updateMatricesForUniform, this.updateVector3 = this._updateVector3ForUniform, this.updateVector4 = this._updateVector4ForUniform, this.updateColor3 = this._updateColor3ForUniform, this.updateColor4 = this._updateColor4ForUniform, this.updateDirectColor4 = this._updateDirectColor4ForUniform, this.updateInt = this._updateIntForUniform, this.updateInt2 = this._updateInt2ForUniform, this.updateInt3 = this._updateInt3ForUniform, this.updateInt4 = this._updateInt4ForUniform, this.updateUInt = this._updateUIntForUniform, this.updateUInt2 = this._updateUInt2ForUniform, this.updateUInt3 = this._updateUInt3ForUniform, this.updateUInt4 = this._updateUInt4ForUniform);
@@ -20576,7 +20576,7 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
   (function(a) {
     a[a.BackwardCompatible = 0] = "BackwardCompatible", a[a.Intermediate = 1] = "Intermediate", a[a.Aggressive = 2] = "Aggressive";
   })(sD || (sD = {}));
-  class Ze {
+  class qe {
     static DefaultMaterialFactory(e) {
       throw xt("StandardMaterial");
     }
@@ -20807,7 +20807,7 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
       e !== this._activeCamera && (this._activeCamera = e, this.onActiveCameraChanged.notifyObservers(this));
     }
     get defaultMaterial() {
-      return this._defaultMaterial || (this._defaultMaterial = Ze.DefaultMaterialFactory(this)), this._defaultMaterial;
+      return this._defaultMaterial || (this._defaultMaterial = qe.DefaultMaterialFactory(this)), this._defaultMaterial;
     }
     set defaultMaterial(e) {
       this._defaultMaterial = e;
@@ -20835,7 +20835,7 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
       return this._skeletonsEnabled;
     }
     get collisionCoordinator() {
-      return this._collisionCoordinator || (this._collisionCoordinator = Ze.CollisionCoordinatorFactory(), this._collisionCoordinator.init(this)), this._collisionCoordinator;
+      return this._collisionCoordinator || (this._collisionCoordinator = qe.CollisionCoordinatorFactory(), this._collisionCoordinator.init(this)), this._collisionCoordinator;
     }
     get renderingManager() {
       return this._renderingManager;
@@ -20859,7 +20859,7 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
       return null;
     }
     constructor(e, t) {
-      this._inputManager = new os(this), this.cameraToUseForPointers = null, this._isScene = true, this._blockEntityCollection = false, this.autoClear = true, this.autoClearDepthAndStencil = true, this._clearColor = new Me(0.2, 0.2, 0.3, 1), this.onClearColorChangedObservable = new J(), this.ambientColor = new ue(0, 0, 0), this.environmentIntensity = 1, this._performancePriority = 0, this.onScenePerformancePriorityChangedObservable = new J(), this._forceWireframe = false, this._skipFrustumClipping = false, this._forcePointsCloud = false, this.rootNodes = [], this.cameras = [], this.lights = [], this.meshes = [], this.skeletons = [], this.particleSystems = [], this.animations = [], this.animationGroups = [], this.multiMaterials = [], this.materials = [], this.morphTargetManagers = [], this.geometries = [], this.transformNodes = [], this.actionManagers = [], this.textures = [], this._environmentTexture = null, this.postProcesses = [], this.effectLayers = [], this.sounds = null, this.layers = [], this.lensFlareSystems = [], this.proceduralTextures = [], this.animationsEnabled = true, this._animationPropertiesOverride = null, this.useConstantAnimationDeltaTime = false, this.constantlyUpdateMeshUnderPointer = false, this.hoverCursor = "pointer", this.defaultCursor = "", this.doNotHandleCursors = false, this.preventDefaultOnPointerDown = true, this.preventDefaultOnPointerUp = true, this.metadata = null, this.reservedDataStore = null, this.disableOfflineSupportExceptionRules = [], this.onDisposeObservable = new J(), this._onDisposeObserver = null, this.onBeforeRenderObservable = new J(), this._onBeforeRenderObserver = null, this.onAfterRenderObservable = new J(), this.onAfterRenderCameraObservable = new J(), this._onAfterRenderObserver = null, this.onBeforeAnimationsObservable = new J(), this.onAfterAnimationsObservable = new J(), this.onBeforeDrawPhaseObservable = new J(), this.onAfterDrawPhaseObservable = new J(), this.onReadyObservable = new J(), this.onBeforeCameraRenderObservable = new J(), this._onBeforeCameraRenderObserver = null, this.onAfterCameraRenderObservable = new J(), this._onAfterCameraRenderObserver = null, this.onBeforeActiveMeshesEvaluationObservable = new J(), this.onAfterActiveMeshesEvaluationObservable = new J(), this.onBeforeParticlesRenderingObservable = new J(), this.onAfterParticlesRenderingObservable = new J(), this.onDataLoadedObservable = new J(), this.onNewCameraAddedObservable = new J(), this.onCameraRemovedObservable = new J(), this.onNewLightAddedObservable = new J(), this.onLightRemovedObservable = new J(), this.onNewGeometryAddedObservable = new J(), this.onGeometryRemovedObservable = new J(), this.onNewTransformNodeAddedObservable = new J(), this.onTransformNodeRemovedObservable = new J(), this.onNewMeshAddedObservable = new J(), this.onMeshRemovedObservable = new J(), this.onNewSkeletonAddedObservable = new J(), this.onSkeletonRemovedObservable = new J(), this.onNewMaterialAddedObservable = new J(), this.onNewMultiMaterialAddedObservable = new J(), this.onMaterialRemovedObservable = new J(), this.onMultiMaterialRemovedObservable = new J(), this.onNewTextureAddedObservable = new J(), this.onTextureRemovedObservable = new J(), this.onBeforeRenderTargetsRenderObservable = new J(), this.onAfterRenderTargetsRenderObservable = new J(), this.onBeforeStepObservable = new J(), this.onAfterStepObservable = new J(), this.onActiveCameraChanged = new J(), this.onActiveCamerasChanged = new J(), this.onBeforeRenderingGroupObservable = new J(), this.onAfterRenderingGroupObservable = new J(), this.onMeshImportedObservable = new J(), this.onAnimationFileImportedObservable = new J(), this.onEnvironmentTextureChangedObservable = new J(), this.onMeshUnderPointerUpdatedObservable = new J(), this._registeredForLateAnimationBindings = new Zh(256), this._pointerPickingConfiguration = new DQ(), this.onPrePointerObservable = new J(), this.onPointerObservable = new J(), this.onPreKeyboardObservable = new J(), this.onKeyboardObservable = new J(), this._useRightHandedSystem = false, this._timeAccumulator = 0, this._currentStepId = 0, this._currentInternalStep = 0, this._fogEnabled = true, this._fogMode = Ze.FOGMODE_NONE, this.fogColor = new ue(0.2, 0.2, 0.3), this.fogDensity = 0.1, this.fogStart = 0, this.fogEnd = 1e3, this.needsPreviousWorldMatrices = false, this._shadowsEnabled = true, this._lightsEnabled = true, this._unObserveActiveCameras = null, this._texturesEnabled = true, this._frameGraph = null, this.physicsEnabled = true, this.particlesEnabled = true, this.spritesEnabled = true, this._skeletonsEnabled = true, this.lensFlaresEnabled = true, this.collisionsEnabled = true, this.gravity = new v(0, -9.807, 0), this.postProcessesEnabled = true, this.renderTargetsEnabled = true, this.dumpNextRenderTargets = false, this.customRenderTargets = [], this.importedMeshesFiles = [], this.probesEnabled = true, this._meshesForIntersections = new Zh(256), this.proceduralTexturesEnabled = true, this._totalVertices = new so(), this._activeIndices = new so(), this._activeParticles = new so(), this._activeBones = new so(), this._animationTime = 0, this.animationTimeScale = 1, this._renderId = 0, this._frameId = 0, this._executeWhenReadyTimeoutId = null, this._intermediateRendering = false, this._defaultFrameBufferCleared = false, this._viewUpdateFlag = -1, this._projectionUpdateFlag = -1, this._toBeDisposed = new Array(256), this._activeRequests = new Array(), this._pendingData = new Array(), this._isDisposed = false, this.dispatchAllSubMeshesOfActiveMeshes = false, this._activeMeshes = new bs(256), this._processedMaterials = new bs(256), this._renderTargets = new Zh(256), this._materialsRenderTargets = new Zh(256), this._activeParticleSystems = new bs(256), this._activeSkeletons = new Zh(32), this._softwareSkinnedMeshes = new Zh(32), this._activeAnimatables = new Array(), this._transformMatrix = z.Zero(), this.requireLightSorting = false, this._components = [], this._serializableComponents = [], this._transientComponents = [], this._beforeCameraUpdateStage = rs.Create(), this._beforeClearStage = rs.Create(), this._beforeRenderTargetClearStage = rs.Create(), this._gatherRenderTargetsStage = rs.Create(), this._gatherActiveCameraRenderTargetsStage = rs.Create(), this._isReadyForMeshStage = rs.Create(), this._beforeEvaluateActiveMeshStage = rs.Create(), this._evaluateSubMeshStage = rs.Create(), this._preActiveMeshStage = rs.Create(), this._cameraDrawRenderTargetStage = rs.Create(), this._beforeCameraDrawStage = rs.Create(), this._beforeRenderTargetDrawStage = rs.Create(), this._beforeRenderingGroupDrawStage = rs.Create(), this._beforeRenderingMeshStage = rs.Create(), this._afterRenderingMeshStage = rs.Create(), this._afterRenderingGroupDrawStage = rs.Create(), this._afterCameraDrawStage = rs.Create(), this._afterCameraPostProcessStage = rs.Create(), this._afterRenderTargetDrawStage = rs.Create(), this._afterRenderTargetPostProcessStage = rs.Create(), this._afterRenderStage = rs.Create(), this._pointerMoveStage = rs.Create(), this._pointerDownStage = rs.Create(), this._pointerUpStage = rs.Create(), this._geometriesByUniqueId = null, this._defaultMeshCandidates = {
+      this._inputManager = new os(this), this.cameraToUseForPointers = null, this._isScene = true, this._blockEntityCollection = false, this.autoClear = true, this.autoClearDepthAndStencil = true, this._clearColor = new Me(0.2, 0.2, 0.3, 1), this.onClearColorChangedObservable = new J(), this.ambientColor = new ue(0, 0, 0), this.environmentIntensity = 1, this._performancePriority = 0, this.onScenePerformancePriorityChangedObservable = new J(), this._forceWireframe = false, this._skipFrustumClipping = false, this._forcePointsCloud = false, this.rootNodes = [], this.cameras = [], this.lights = [], this.meshes = [], this.skeletons = [], this.particleSystems = [], this.animations = [], this.animationGroups = [], this.multiMaterials = [], this.materials = [], this.morphTargetManagers = [], this.geometries = [], this.transformNodes = [], this.actionManagers = [], this.textures = [], this._environmentTexture = null, this.postProcesses = [], this.effectLayers = [], this.sounds = null, this.layers = [], this.lensFlareSystems = [], this.proceduralTextures = [], this.animationsEnabled = true, this._animationPropertiesOverride = null, this.useConstantAnimationDeltaTime = false, this.constantlyUpdateMeshUnderPointer = false, this.hoverCursor = "pointer", this.defaultCursor = "", this.doNotHandleCursors = false, this.preventDefaultOnPointerDown = true, this.preventDefaultOnPointerUp = true, this.metadata = null, this.reservedDataStore = null, this.disableOfflineSupportExceptionRules = [], this.onDisposeObservable = new J(), this._onDisposeObserver = null, this.onBeforeRenderObservable = new J(), this._onBeforeRenderObserver = null, this.onAfterRenderObservable = new J(), this.onAfterRenderCameraObservable = new J(), this._onAfterRenderObserver = null, this.onBeforeAnimationsObservable = new J(), this.onAfterAnimationsObservable = new J(), this.onBeforeDrawPhaseObservable = new J(), this.onAfterDrawPhaseObservable = new J(), this.onReadyObservable = new J(), this.onBeforeCameraRenderObservable = new J(), this._onBeforeCameraRenderObserver = null, this.onAfterCameraRenderObservable = new J(), this._onAfterCameraRenderObserver = null, this.onBeforeActiveMeshesEvaluationObservable = new J(), this.onAfterActiveMeshesEvaluationObservable = new J(), this.onBeforeParticlesRenderingObservable = new J(), this.onAfterParticlesRenderingObservable = new J(), this.onDataLoadedObservable = new J(), this.onNewCameraAddedObservable = new J(), this.onCameraRemovedObservable = new J(), this.onNewLightAddedObservable = new J(), this.onLightRemovedObservable = new J(), this.onNewGeometryAddedObservable = new J(), this.onGeometryRemovedObservable = new J(), this.onNewTransformNodeAddedObservable = new J(), this.onTransformNodeRemovedObservable = new J(), this.onNewMeshAddedObservable = new J(), this.onMeshRemovedObservable = new J(), this.onNewSkeletonAddedObservable = new J(), this.onSkeletonRemovedObservable = new J(), this.onNewMaterialAddedObservable = new J(), this.onNewMultiMaterialAddedObservable = new J(), this.onMaterialRemovedObservable = new J(), this.onMultiMaterialRemovedObservable = new J(), this.onNewTextureAddedObservable = new J(), this.onTextureRemovedObservable = new J(), this.onBeforeRenderTargetsRenderObservable = new J(), this.onAfterRenderTargetsRenderObservable = new J(), this.onBeforeStepObservable = new J(), this.onAfterStepObservable = new J(), this.onActiveCameraChanged = new J(), this.onActiveCamerasChanged = new J(), this.onBeforeRenderingGroupObservable = new J(), this.onAfterRenderingGroupObservable = new J(), this.onMeshImportedObservable = new J(), this.onAnimationFileImportedObservable = new J(), this.onEnvironmentTextureChangedObservable = new J(), this.onMeshUnderPointerUpdatedObservable = new J(), this._registeredForLateAnimationBindings = new Zh(256), this._pointerPickingConfiguration = new DQ(), this.onPrePointerObservable = new J(), this.onPointerObservable = new J(), this.onPreKeyboardObservable = new J(), this.onKeyboardObservable = new J(), this._useRightHandedSystem = false, this._timeAccumulator = 0, this._currentStepId = 0, this._currentInternalStep = 0, this._fogEnabled = true, this._fogMode = qe.FOGMODE_NONE, this.fogColor = new ue(0.2, 0.2, 0.3), this.fogDensity = 0.1, this.fogStart = 0, this.fogEnd = 1e3, this.needsPreviousWorldMatrices = false, this._shadowsEnabled = true, this._lightsEnabled = true, this._unObserveActiveCameras = null, this._texturesEnabled = true, this._frameGraph = null, this.physicsEnabled = true, this.particlesEnabled = true, this.spritesEnabled = true, this._skeletonsEnabled = true, this.lensFlaresEnabled = true, this.collisionsEnabled = true, this.gravity = new v(0, -9.807, 0), this.postProcessesEnabled = true, this.renderTargetsEnabled = true, this.dumpNextRenderTargets = false, this.customRenderTargets = [], this.importedMeshesFiles = [], this.probesEnabled = true, this._meshesForIntersections = new Zh(256), this.proceduralTexturesEnabled = true, this._totalVertices = new so(), this._activeIndices = new so(), this._activeParticles = new so(), this._activeBones = new so(), this._animationTime = 0, this.animationTimeScale = 1, this._renderId = 0, this._frameId = 0, this._executeWhenReadyTimeoutId = null, this._intermediateRendering = false, this._defaultFrameBufferCleared = false, this._viewUpdateFlag = -1, this._projectionUpdateFlag = -1, this._toBeDisposed = new Array(256), this._activeRequests = new Array(), this._pendingData = new Array(), this._isDisposed = false, this.dispatchAllSubMeshesOfActiveMeshes = false, this._activeMeshes = new bs(256), this._processedMaterials = new bs(256), this._renderTargets = new Zh(256), this._materialsRenderTargets = new Zh(256), this._activeParticleSystems = new bs(256), this._activeSkeletons = new Zh(32), this._softwareSkinnedMeshes = new Zh(32), this._activeAnimatables = new Array(), this._transformMatrix = z.Zero(), this.requireLightSorting = false, this._components = [], this._serializableComponents = [], this._transientComponents = [], this._beforeCameraUpdateStage = rs.Create(), this._beforeClearStage = rs.Create(), this._beforeRenderTargetClearStage = rs.Create(), this._gatherRenderTargetsStage = rs.Create(), this._gatherActiveCameraRenderTargetsStage = rs.Create(), this._isReadyForMeshStage = rs.Create(), this._beforeEvaluateActiveMeshStage = rs.Create(), this._evaluateSubMeshStage = rs.Create(), this._preActiveMeshStage = rs.Create(), this._cameraDrawRenderTargetStage = rs.Create(), this._beforeCameraDrawStage = rs.Create(), this._beforeRenderTargetDrawStage = rs.Create(), this._beforeRenderingGroupDrawStage = rs.Create(), this._beforeRenderingMeshStage = rs.Create(), this._afterRenderingMeshStage = rs.Create(), this._afterRenderingGroupDrawStage = rs.Create(), this._afterCameraDrawStage = rs.Create(), this._afterCameraPostProcessStage = rs.Create(), this._afterRenderTargetDrawStage = rs.Create(), this._afterRenderTargetPostProcessStage = rs.Create(), this._afterRenderStage = rs.Create(), this._pointerMoveStage = rs.Create(), this._pointerDownStage = rs.Create(), this._pointerUpStage = rs.Create(), this._geometriesByUniqueId = null, this._defaultMeshCandidates = {
         data: [],
         length: 0
       }, this._defaultSubMeshCandidates = {
@@ -20873,7 +20873,7 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
         virtual: false,
         ...t
       };
-      e = this._engine = e || Xe.LastCreatedEngine, i.virtual ? e._virtualScenes.push(this) : (Xe._LastCreatedScene = this, e.scenes.push(this)), this._uid = null, this._renderingManager = new ln(this), hS && (this.postProcessManager = new hS(this)), Fs() && this.attachControl(), this._createUbo(), Qt && (this._imageProcessingConfiguration = new Qt()), this.setDefaultCandidateProviders(), i.useGeometryUniqueIdsMap && (this._geometriesByUniqueId = {}), this.useMaterialMeshMap = i.useMaterialMeshMap, this.useClonedMeshMap = i.useClonedMeshMap, (!t || !t.virtual) && e.onNewSceneAddedObservable.notifyObservers(this);
+      e = this._engine = e || Xe.LastCreatedEngine, i.virtual ? e._virtualScenes.push(this) : (Xe._LastCreatedScene = this, e.scenes.push(this)), this._uid = null, this._renderingManager = new ln(this), hS && (this.postProcessManager = new hS(this)), Fs() && this.attachControl(), this._createUbo(), jt && (this._imageProcessingConfiguration = new jt()), this.setDefaultCandidateProviders(), i.useGeometryUniqueIdsMap && (this._geometriesByUniqueId = {}), this.useMaterialMeshMap = i.useMaterialMeshMap, this.useClonedMeshMap = i.useClonedMeshMap, (!t || !t.virtual) && e.onNewSceneAddedObservable.notifyObservers(this);
     }
     getClassName() {
       return "Scene";
@@ -21715,7 +21715,7 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
     }
     animate() {
       if (this._engine.isDeterministicLockStep()) {
-        let e = Math.max(Ze.MinDeltaTime, Math.min(this._engine.getDeltaTime(), Ze.MaxDeltaTime)) + this._timeAccumulator;
+        let e = Math.max(qe.MinDeltaTime, Math.min(this._engine.getDeltaTime(), qe.MaxDeltaTime)) + this._timeAccumulator;
         const t = this._engine.getTimeStep(), i = 1e3 / t / 1e3;
         let r = 0;
         const s = this._engine.getLockstepMaxSteps();
@@ -21723,7 +21723,7 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
         for (n = Math.min(n, s); e > 0 && r < n; ) this.onBeforeStepObservable.notifyObservers(this), this._animationRatio = t * i, this._animate(t), this.onAfterAnimationsObservable.notifyObservers(this), this.physicsEnabled && this._advancePhysicsEngineStep(t), this.onAfterStepObservable.notifyObservers(this), this._currentStepId++, r++, e -= t;
         this._timeAccumulator = e < 0 ? 0 : e;
       } else {
-        const e = this.useConstantAnimationDeltaTime ? 16 : Math.max(Ze.MinDeltaTime, Math.min(this._engine.getDeltaTime(), Ze.MaxDeltaTime));
+        const e = this.useConstantAnimationDeltaTime ? 16 : Math.max(qe.MinDeltaTime, Math.min(this._engine.getDeltaTime(), qe.MaxDeltaTime));
         this._animationRatio = e * (60 / 1e3), this._animate(), this.onAfterAnimationsObservable.notifyObservers(this), this.physicsEnabled && this._advancePhysicsEngineStep(e);
       }
     }
@@ -22080,14 +22080,14 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
       return this.getLastSkeletonById(e);
     }
   }
-  Ze.FOGMODE_NONE = 0;
-  Ze.FOGMODE_EXP = 1;
-  Ze.FOGMODE_EXP2 = 2;
-  Ze.FOGMODE_LINEAR = 3;
-  Ze.MinDeltaTime = 1;
-  Ze.MaxDeltaTime = 1e3;
-  W("BABYLON.Scene", Ze);
-  Bj(Ze, zi);
+  qe.FOGMODE_NONE = 0;
+  qe.FOGMODE_EXP = 1;
+  qe.FOGMODE_EXP2 = 2;
+  qe.FOGMODE_LINEAR = 3;
+  qe.MinDeltaTime = 1;
+  qe.MaxDeltaTime = 1e3;
+  W("BABYLON.Scene", qe);
+  Bj(qe, zi);
   var nD;
   (function(a) {
     a[a.CW = 0] = "CW", a[a.CCW = 1] = "CCW";
@@ -24300,8 +24300,8 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
       const X = t.length / 3 | 0;
       for (s = 0; s < X; s++) {
         if (S = t[s * 3] * 3, E = S + 1, A = S + 2, P = t[s * 3 + 1] * 3, y = P + 1, C = P + 2, R = t[s * 3 + 2] * 3, D = R + 1, B = R + 2, n = e[S] - e[P], o = e[E] - e[y], l = e[A] - e[C], c = e[R] - e[P], h = e[D] - e[y], u = e[B] - e[C], f = de * (o * u - l * h), p = de * (l * c - n * u), m = de * (n * h - o * c), x = Math.sqrt(f * f + p * p + m * m), x = x === 0 ? 1 : x, f /= x, p /= x, m /= x, V && r && (r.facetNormals[s].x = f, r.facetNormals[s].y = p, r.facetNormals[s].z = m), L && r && (r.facetPositions[s].x = (e[S] + e[P] + e[R]) / 3, r.facetPositions[s].y = (e[E] + e[y] + e[D]) / 3, r.facetPositions[s].z = (e[A] + e[C] + e[B]) / 3), ee && r) {
-          const F = Math.floor((r.facetPositions[s].x - r.bInfo.minimum.x * se) * K), $ = Math.floor((r.facetPositions[s].y - r.bInfo.minimum.y * se) * Se), le = Math.floor((r.facetPositions[s].z - r.bInfo.minimum.z * se) * ce), Te = Math.floor((e[S] - r.bInfo.minimum.x * se) * K), ie = Math.floor((e[E] - r.bInfo.minimum.y * se) * Se), pe = Math.floor((e[A] - r.bInfo.minimum.z * se) * ce), Je = Math.floor((e[P] - r.bInfo.minimum.x * se) * K), Ge = Math.floor((e[y] - r.bInfo.minimum.y * se) * Se), pt = Math.floor((e[C] - r.bInfo.minimum.z * se) * ce), De = Math.floor((e[R] - r.bInfo.minimum.x * se) * K), Qe = Math.floor((e[D] - r.bInfo.minimum.y * se) * Se), ge = Math.floor((e[B] - r.bInfo.minimum.z * se) * ce), dt = Te + r.subDiv.max * ie + fe * pe, ei = Je + r.subDiv.max * Ge + fe * pt, wt = De + r.subDiv.max * Qe + fe * ge, ye = F + r.subDiv.max * $ + fe * le;
-          r.facetPartitioning[ye] = r.facetPartitioning[ye] ? r.facetPartitioning[ye] : new Array(), r.facetPartitioning[dt] = r.facetPartitioning[dt] ? r.facetPartitioning[dt] : new Array(), r.facetPartitioning[ei] = r.facetPartitioning[ei] ? r.facetPartitioning[ei] : new Array(), r.facetPartitioning[wt] = r.facetPartitioning[wt] ? r.facetPartitioning[wt] : new Array(), r.facetPartitioning[dt].push(s), ei != dt && r.facetPartitioning[ei].push(s), wt == ei || wt == dt || r.facetPartitioning[wt].push(s), ye == dt || ye == ei || ye == wt || r.facetPartitioning[ye].push(s);
+          const F = Math.floor((r.facetPositions[s].x - r.bInfo.minimum.x * se) * K), $ = Math.floor((r.facetPositions[s].y - r.bInfo.minimum.y * se) * Se), le = Math.floor((r.facetPositions[s].z - r.bInfo.minimum.z * se) * ce), Te = Math.floor((e[S] - r.bInfo.minimum.x * se) * K), ie = Math.floor((e[E] - r.bInfo.minimum.y * se) * Se), pe = Math.floor((e[A] - r.bInfo.minimum.z * se) * ce), Ze = Math.floor((e[P] - r.bInfo.minimum.x * se) * K), Ge = Math.floor((e[y] - r.bInfo.minimum.y * se) * Se), pt = Math.floor((e[C] - r.bInfo.minimum.z * se) * ce), De = Math.floor((e[R] - r.bInfo.minimum.x * se) * K), Qe = Math.floor((e[D] - r.bInfo.minimum.y * se) * Se), me = Math.floor((e[B] - r.bInfo.minimum.z * se) * ce), dt = Te + r.subDiv.max * ie + fe * pe, ei = Ze + r.subDiv.max * Ge + fe * pt, Nt = De + r.subDiv.max * Qe + fe * me, ye = F + r.subDiv.max * $ + fe * le;
+          r.facetPartitioning[ye] = r.facetPartitioning[ye] ? r.facetPartitioning[ye] : new Array(), r.facetPartitioning[dt] = r.facetPartitioning[dt] ? r.facetPartitioning[dt] : new Array(), r.facetPartitioning[ei] = r.facetPartitioning[ei] ? r.facetPartitioning[ei] : new Array(), r.facetPartitioning[Nt] = r.facetPartitioning[Nt] ? r.facetPartitioning[Nt] : new Array(), r.facetPartitioning[dt].push(s), ei != dt && r.facetPartitioning[ei].push(s), Nt == ei || Nt == dt || r.facetPartitioning[Nt].push(s), ye == dt || ye == ei || ye == Nt || r.facetPartitioning[ye].push(s);
         }
         if (q && r && r.facetPositions) {
           const F = r.depthSortedFacets[s];
@@ -30211,7 +30211,7 @@ Bad Bone Indices = ` + m;
     }
     r = [];
   });
-  Object.defineProperty(Ze.prototype, "mainSoundTrack", {
+  Object.defineProperty(qe.prototype, "mainSoundTrack", {
     get: function() {
       let a = this._getComponent(Ne.NAME_AUDIO);
       return a || (a = new wa(this), this._addComponent(a)), this._mainSoundTrack || (this._mainSoundTrack = new n7(this, {
@@ -30221,7 +30221,7 @@ Bad Bone Indices = ` + m;
     enumerable: true,
     configurable: true
   });
-  Ze.prototype.getSoundByName = function(a) {
+  qe.prototype.getSoundByName = function(a) {
     let e;
     for (e = 0; e < this.mainSoundTrack.soundCollection.length; e++) if (this.mainSoundTrack.soundCollection[e].name === a) return this.mainSoundTrack.soundCollection[e];
     if (this.soundTracks) {
@@ -30229,7 +30229,7 @@ Bad Bone Indices = ` + m;
     }
     return null;
   };
-  Object.defineProperty(Ze.prototype, "audioEnabled", {
+  Object.defineProperty(qe.prototype, "audioEnabled", {
     get: function() {
       let a = this._getComponent(Ne.NAME_AUDIO);
       return a || (a = new wa(this), this._addComponent(a)), a.audioEnabled;
@@ -30241,7 +30241,7 @@ Bad Bone Indices = ` + m;
     enumerable: true,
     configurable: true
   });
-  Object.defineProperty(Ze.prototype, "headphone", {
+  Object.defineProperty(qe.prototype, "headphone", {
     get: function() {
       let a = this._getComponent(Ne.NAME_AUDIO);
       return a || (a = new wa(this), this._addComponent(a)), a.headphone;
@@ -30253,7 +30253,7 @@ Bad Bone Indices = ` + m;
     enumerable: true,
     configurable: true
   });
-  Object.defineProperty(Ze.prototype, "audioListenerPositionProvider", {
+  Object.defineProperty(qe.prototype, "audioListenerPositionProvider", {
     get: function() {
       let a = this._getComponent(Ne.NAME_AUDIO);
       return a || (a = new wa(this), this._addComponent(a)), a.audioListenerPositionProvider;
@@ -30266,7 +30266,7 @@ Bad Bone Indices = ` + m;
     enumerable: true,
     configurable: true
   });
-  Object.defineProperty(Ze.prototype, "audioListenerRotationProvider", {
+  Object.defineProperty(qe.prototype, "audioListenerRotationProvider", {
     get: function() {
       let a = this._getComponent(Ne.NAME_AUDIO);
       return a || (a = new wa(this), this._addComponent(a)), a.audioListenerRotationProvider;
@@ -30279,7 +30279,7 @@ Bad Bone Indices = ` + m;
     enumerable: true,
     configurable: true
   });
-  Object.defineProperty(Ze.prototype, "audioPositioningRefreshRate", {
+  Object.defineProperty(qe.prototype, "audioPositioningRefreshRate", {
     get: function() {
       let a = this._getComponent(Ne.NAME_AUDIO);
       return a || (a = new wa(this), this._addComponent(a)), a.audioPositioningRefreshRate;
@@ -32124,29 +32124,29 @@ Bad Bone Indices = ` + m;
       return ST(this, t, i, r, s, n);
     });
   }
-  g7(Ze, tt);
-  Ze.prototype.createPickingRayToRef = function(a, e, t, i, r, s = false, n = false) {
+  g7(qe, tt);
+  qe.prototype.createPickingRayToRef = function(a, e, t, i, r, s = false, n = false) {
     return TT(this, a, e, t, i, r, s, n);
   };
-  Ze.prototype.createPickingRayInCameraSpace = function(a, e, t) {
+  qe.prototype.createPickingRayInCameraSpace = function(a, e, t) {
     return DF(this, a, e, t);
   };
-  Ze.prototype.createPickingRayInCameraSpaceToRef = function(a, e, t, i) {
+  qe.prototype.createPickingRayInCameraSpaceToRef = function(a, e, t, i) {
     return bT(this, a, e, t, i);
   };
-  Ze.prototype.pickWithBoundingInfo = function(a, e, t, i, r) {
+  qe.prototype.pickWithBoundingInfo = function(a, e, t, i, r) {
     return d7(this, a, e, t, i, r);
   };
-  Ze.prototype.pick = function(a, e, t, i, r, s, n = false) {
+  qe.prototype.pick = function(a, e, t, i, r, s, n = false) {
     return f7(this, a, e, t, i, r, s, n);
   };
-  Ze.prototype.pickWithRay = function(a, e, t, i) {
+  qe.prototype.pickWithRay = function(a, e, t, i) {
     return _7(this, a, e, t, i);
   };
-  Ze.prototype.multiPick = function(a, e, t, i, r) {
+  qe.prototype.multiPick = function(a, e, t, i, r) {
     return p7(this, a, e, t, i, r);
   };
-  Ze.prototype.multiPickWithRay = function(a, e, t) {
+  qe.prototype.multiPickWithRay = function(a, e, t) {
     return m7(this, a, e, t);
   };
   function LF(a) {
@@ -35527,7 +35527,7 @@ Bad Bone Indices = ` + m;
       }
     }
   }
-  Object.defineProperty(Ze.prototype, "gamepadManager", {
+  Object.defineProperty(qe.prototype, "gamepadManager", {
     get: function() {
       if (!this._gamepadManager) {
         this._gamepadManager = new R7(this);
@@ -40151,19 +40151,19 @@ void main(void)
     const t = new it(a, void 0, true, e);
     return t.addUniform("viewProjection", 16), t.addUniform("viewProjectionR", 16), t.addUniform("view", 16), t.addUniform("projection", 16), t.addUniform("vEyePosition", 4), t;
   }
-  const J7 = Ze.prototype.createSceneUniformBuffer;
-  Ze.prototype._transformMatrixR = z.Zero();
-  Ze.prototype._multiviewSceneUbo = null;
-  Ze.prototype._createMultiviewUbo = function() {
+  const J7 = qe.prototype.createSceneUniformBuffer;
+  qe.prototype._transformMatrixR = z.Zero();
+  qe.prototype._multiviewSceneUbo = null;
+  qe.prototype._createMultiviewUbo = function() {
     this._multiviewSceneUbo = nB(this.getEngine(), "scene_multiview");
   };
-  Ze.prototype.createSceneUniformBuffer = function(a) {
+  qe.prototype.createSceneUniformBuffer = function(a) {
     return this._multiviewSceneUbo ? nB(this.getEngine(), a) : J7.bind(this)(a);
   };
-  Ze.prototype._updateMultiviewUbo = function(a, e) {
+  qe.prototype._updateMultiviewUbo = function(a, e) {
     a && e && a.multiplyToRef(e, this._transformMatrixR), a && e && (a.multiplyToRef(e, Q.Matrix[0]), Eo.GetRightPlaneToRef(Q.Matrix[0], this._frustumPlanes[3])), this._multiviewSceneUbo && (this._multiviewSceneUbo.updateMatrix("viewProjection", this.getTransformMatrix()), this._multiviewSceneUbo.updateMatrix("viewProjectionR", this._transformMatrixR), this._multiviewSceneUbo.updateMatrix("view", this._viewMatrix), this._multiviewSceneUbo.updateMatrix("projection", this._projectionMatrix));
   };
-  Ze.prototype._renderMultiviewToSingleView = function(a) {
+  qe.prototype._renderMultiviewToSingleView = function(a) {
     a._resizeOrCreateMultiviewTexture(a._rigPostProcess && a._rigPostProcess && a._rigPostProcess.width > 0 ? a._rigPostProcess.width : this.getEngine().getRenderWidth(true), a._rigPostProcess && a._rigPostProcess && a._rigPostProcess.height > 0 ? a._rigPostProcess.height : this.getEngine().getRenderHeight(true)), this._multiviewSceneUbo || this._createMultiviewUbo(), a.outputRenderTarget = a._multiviewTexture, this._renderForCamera(a), a.outputRenderTarget = null;
     for (let e = 0; e < a._rigCameras.length; e++) {
       const t = this.getEngine();
@@ -41396,7 +41396,7 @@ void main(void)
           maxSimultaneousLights: this._maxSimultaneousLights,
           maxSimultaneousMorphTargets: n.NUM_MORPH_INFLUENCERS
         };
-        this._eventInfo.fallbacks = u, this._eventInfo.fallbackRank = 0, this._eventInfo.defines = n, this._eventInfo.uniforms = m, this._eventInfo.attributes = f, this._eventInfo.samplers = x, this._eventInfo.uniformBuffersNames = S, this._eventInfo.customCode = void 0, this._eventInfo.mesh = e, this._eventInfo.indexParameters = E, this._callbackPluginEventGeneric(128, this._eventInfo), Mr.AddUniformsAndSamplers(m, x), dS.AddUniforms(m), Qt && (Qt.PrepareUniforms(m, n), Qt.PrepareSamplers(x, n)), Po({
+        this._eventInfo.fallbacks = u, this._eventInfo.fallbackRank = 0, this._eventInfo.defines = n, this._eventInfo.uniforms = m, this._eventInfo.attributes = f, this._eventInfo.samplers = x, this._eventInfo.uniformBuffersNames = S, this._eventInfo.customCode = void 0, this._eventInfo.mesh = e, this._eventInfo.indexParameters = E, this._callbackPluginEventGeneric(128, this._eventInfo), Mr.AddUniformsAndSamplers(m, x), dS.AddUniforms(m), jt && (jt.PrepareUniforms(m, n), jt.PrepareSamplers(x, n)), Po({
           uniformsNames: m,
           uniformBuffersNames: S,
           samplers: x,
@@ -41471,7 +41471,7 @@ void main(void)
         }
         r.texturesEnabled && (this._diffuseTexture && ze.DiffuseTextureEnabled && n.setTexture("diffuseSampler", this._diffuseTexture), this._ambientTexture && ze.AmbientTextureEnabled && n.setTexture("ambientSampler", this._ambientTexture), this._opacityTexture && ze.OpacityTextureEnabled && n.setTexture("opacitySampler", this._opacityTexture), this._reflectionTexture && ze.ReflectionTextureEnabled && (this._reflectionTexture.isCube ? n.setTexture("reflectionCubeSampler", this._reflectionTexture) : n.setTexture("reflection2DSampler", this._reflectionTexture)), this._emissiveTexture && ze.EmissiveTextureEnabled && n.setTexture("emissiveSampler", this._emissiveTexture), this._lightmapTexture && ze.LightmapTextureEnabled && n.setTexture("lightmapSampler", this._lightmapTexture), this._specularTexture && ze.SpecularTextureEnabled && n.setTexture("specularSampler", this._specularTexture), this._bumpTexture && r.getEngine().getCaps().standardDerivatives && ze.BumpTextureEnabled && n.setTexture("bumpSampler", this._bumpTexture), this._refractionTexture && ze.RefractionTextureEnabled && (this._refractionTexture.isCube ? n.setTexture("refractionCubeSampler", this._refractionTexture) : n.setTexture("refraction2DSampler", this._refractionTexture))), this.getScene().useOrderIndependentTransparency && this.needAlphaBlendingForMesh(t) && this.getScene().depthPeelingRenderer.bind(n), this._eventInfo.subMesh = i, this._callbackPluginEventBindForSubMesh(this._eventInfo), Io(n, this, r), this.bindEyePosition(n);
       } else r.getEngine()._features.needToAlwaysBindUniformBuffers && (this._needToBindSceneUbo = true);
-      (o || !this.isFrozen) && (r.lightsEnabled && !this._disableLighting && Mg(r, t, n, s, this._maxSimultaneousLights), (r.fogEnabled && t.applyFog && r.fogMode !== Ze.FOGMODE_NONE || this._reflectionTexture || this._refractionTexture || t.receiveShadows || s.PREPASS) && this.bindView(n), Hd(r, t, n), s.NUM_MORPH_INFLUENCERS && Tc(t, n), s.BAKED_VERTEX_ANIMATION_TEXTURE && ((_a2 = t.bakedVertexAnimationManager) == null ? void 0 : _a2.bind(n, s.INSTANCES)), this.useLogarithmicDepth && gh(s, n, r), this._imageProcessingConfiguration && !this._imageProcessingConfiguration.applyByPostProcess && this._imageProcessingConfiguration.bind(this._activeEffect)), this._afterBind(t, this._activeEffect, i), l.update();
+      (o || !this.isFrozen) && (r.lightsEnabled && !this._disableLighting && Mg(r, t, n, s, this._maxSimultaneousLights), (r.fogEnabled && t.applyFog && r.fogMode !== qe.FOGMODE_NONE || this._reflectionTexture || this._refractionTexture || t.receiveShadows || s.PREPASS) && this.bindView(n), Hd(r, t, n), s.NUM_MORPH_INFLUENCERS && Tc(t, n), s.BAKED_VERTEX_ANIMATION_TEXTURE && ((_a2 = t.bakedVertexAnimationManager) == null ? void 0 : _a2.bind(n, s.INSTANCES)), this.useLogarithmicDepth && gh(s, n, r), this._imageProcessingConfiguration && !this._imageProcessingConfiguration.applyByPostProcess && this._imageProcessingConfiguration.bind(this._activeEffect)), this._afterBind(t, this._activeEffect, i), l.update();
     }
     getAnimatables() {
       const e = super.getAnimatables();
@@ -41792,7 +41792,7 @@ void main(void)
     Re("_markAllSubMeshesAsMiscDirty")
   ], ze.prototype, "applyDecalMapAfterDetailMap", void 0);
   W("BABYLON.StandardMaterial", ze);
-  Ze.DefaultMaterialFactory = (a) => new ze("default material", a);
+  qe.DefaultMaterialFactory = (a) => new ze("default material", a);
   ut.prototype.createDynamicTexture = function(a, e, t, i) {
     const r = new mi(this, 4);
     return r.baseWidth = a, r.baseHeight = e, t && (a = this.needPOTTextures ? Da(a, this._caps.maxTextureSize) : a, e = this.needPOTTextures ? Da(e, this._caps.maxTextureSize) : e), r.width = a, r.height = e, r.isReady = false, r.generateMipMaps = t, r.samplingMode = i, this.updateTextureSamplingMode(i, r), this._internalTexturesCache.push(r), r;
@@ -42740,7 +42740,7 @@ void main(void)
           }
         }
         e.floorMeshName && (this._floorMeshName = e.floorMeshName), e.floorMeshes && (this._floorMeshesCollection = e.floorMeshes), e.teleportationMode && (this._teleportationMode = e.teleportationMode), e.teleportationTime && e.teleportationTime > 0 && (this._teleportationTime = e.teleportationTime), e.teleportationSpeed && e.teleportationSpeed > 0 && (this._teleportationSpeed = e.teleportationSpeed), e.easingFunction !== void 0 && (this._teleportationEasing = e.easingFunction);
-        const t = new Qt();
+        const t = new jt();
         t.vignetteColor = new Me(0, 0, 0, 0), t.vignetteEnabled = true, this._teleportationInitialized = true, this._isDefaultTeleportationTarget && this._createTeleportationCircles();
       }
     }
@@ -43057,7 +43057,7 @@ void main(void)
       i._retry++, this._collideWithWorld(e, t, i, r, s, n);
     }
   }
-  Ze.CollisionCoordinatorFactory = () => new _9();
+  qe.CollisionCoordinatorFactory = () => new _9();
   const j0 = {
     effect: null,
     subMesh: null
@@ -43230,7 +43230,7 @@ void main(void)
         C && C.isEnabled && (o.push("#define BAKED_VERTEX_ANIMATION_TEXTURE"), u.indexOf("bakedVertexAnimationSettings") === -1 && u.push("bakedVertexAnimationSettings"), u.indexOf("bakedVertexAnimationTextureSizeInverted") === -1 && u.push("bakedVertexAnimationTextureSizeInverted"), u.indexOf("bakedVertexAnimationTime") === -1 && u.push("bakedVertexAnimationTime"), this._options.samplers.indexOf("bakedVertexAnimationTexture") === -1 && this._options.samplers.push("bakedVertexAnimationTexture")), WC(l, e, o);
       }
       for (const C in this._textures) if (!this._textures[C].isReady()) return false;
-      e && this.needAlphaTestingForMesh(e) && o.push("#define ALPHATEST"), this._options.useClipPlane !== false && (hl(u), Eu(this, s, o)), s.fogEnabled && (e == null ? void 0 : e.applyFog) && s.fogMode !== Ze.FOGMODE_NONE && (o.push("#define FOG"), u.indexOf("view") === -1 && u.push("view"), u.indexOf("vFogInfos") === -1 && u.push("vFogInfos"), u.indexOf("vFogColor") === -1 && u.push("vFogColor")), this._useLogarithmicDepth && (o.push("#define LOGARITHMICDEPTH"), u.indexOf("logarithmicDepthConstant") === -1 && u.push("logarithmicDepthConstant")), this.customShaderNameResolve && (u = u.slice(), f = f.slice(), p = p.slice(), h = this.customShaderNameResolve(this.name, u, f, p, o, l));
+      e && this.needAlphaTestingForMesh(e) && o.push("#define ALPHATEST"), this._options.useClipPlane !== false && (hl(u), Eu(this, s, o)), s.fogEnabled && (e == null ? void 0 : e.applyFog) && s.fogMode !== qe.FOGMODE_NONE && (o.push("#define FOG"), u.indexOf("view") === -1 && u.push("view"), u.indexOf("vFogInfos") === -1 && u.push("vFogInfos"), u.indexOf("vFogColor") === -1 && u.push("vFogColor")), this._useLogarithmicDepth && (o.push("#define LOGARITHMICDEPTH"), u.indexOf("logarithmicDepthConstant") === -1 && u.push("logarithmicDepthConstant")), this.customShaderNameResolve && (u = u.slice(), f = f.slice(), p = p.slice(), h = this.customShaderNameResolve(this.name, u, f, p, o, l));
       const S = r ? i._getDrawWrapper(void 0, true) : this._drawWrapper, E = (S == null ? void 0 : S.effect) ?? null, A = (S == null ? void 0 : S.defines) ?? null, P = o.join(`
 `);
       let y = E;
@@ -44815,13 +44815,13 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
   P_.CreationFuncForSubMeshes = (a, e) => {
     a.getBoundingInfo().boundingBox.intersectsMinMax(e.minPoint, e.maxPoint) && e.entries.push(a);
   };
-  Ze.prototype.createOrUpdateSelectionOctree = function(a = 64, e = 2) {
+  qe.prototype.createOrUpdateSelectionOctree = function(a = 64, e = 2) {
     let t = this._getComponent(Ne.NAME_OCTREE);
     t || (t = new NB(this), this._addComponent(t)), this._selectionOctree || (this._selectionOctree = new P_(P_.CreationFuncForMeshes, a, e));
     const i = this.getWorldExtends();
     return this._selectionOctree.update(i.min, i.max, this.meshes), this._selectionOctree;
   };
-  Object.defineProperty(Ze.prototype, "selectionOctree", {
+  Object.defineProperty(qe.prototype, "selectionOctree", {
     get: function() {
       return this._selectionOctree;
     },
@@ -44891,32 +44891,32 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
     }
     const Te = c !== 1 && o ? r + 4 : r;
     for (Se = 0, F = 0; F < s; F++) {
-      let Je = 0, Ge = 0, pt = 0, De = 0;
-      for (ce = 0; ce < r; ce++) Je = Se * (Te + 1) + ce, Ge = (Se + 1) * (Te + 1) + ce, pt = Se * (Te + 1) + (ce + 1), De = (Se + 1) * (Te + 1) + (ce + 1), E.push(Je, Ge, pt), E.push(De, pt, Ge);
-      c !== 1 && o && (E.push(Je + 2, Ge + 2, pt + 2), E.push(De + 2, pt + 2, Ge + 2), E.push(Je + 4, Ge + 4, pt + 4), E.push(De + 4, pt + 4, Ge + 4)), Se = n ? Se + 2 : Se + 1;
+      let Ze = 0, Ge = 0, pt = 0, De = 0;
+      for (ce = 0; ce < r; ce++) Ze = Se * (Te + 1) + ce, Ge = (Se + 1) * (Te + 1) + ce, pt = Se * (Te + 1) + (ce + 1), De = (Se + 1) * (Te + 1) + (ce + 1), E.push(Ze, Ge, pt), E.push(De, pt, Ge);
+      c !== 1 && o && (E.push(Ze + 2, Ge + 2, pt + 2), E.push(De + 2, pt + 2, Ge + 2), E.push(Ze + 4, Ge + 4, pt + 4), E.push(De + 4, pt + 4, Ge + 4)), Se = n ? Se + 2 : Se + 1;
     }
-    const ie = (Je) => {
-      const Ge = Je ? t / 2 : i / 2;
+    const ie = (Ze) => {
+      const Ge = Ze ? t / 2 : i / 2;
       if (Ge === 0) return;
       let pt, De, Qe;
-      const ge = Je ? u[x - 1] : u[0];
+      const me = Ze ? u[x - 1] : u[0];
       let dt = null;
-      f && (dt = Je ? f[x - 1] : f[0]);
-      const ei = A.length / 3, wt = Je ? e / 2 : -e / 2, ye = new v(0, wt, 0);
-      A.push(ye.x, ye.y, ye.z), P.push(0, Je ? 1 : -1, 0);
-      const me = ge.y + (ge.w - ge.y) * 0.5;
-      y.push(ge.x + (ge.z - ge.x) * 0.5, me), dt && C.push(dt.r, dt.g, dt.b, dt.a);
-      const Nt = new he(0.5, 0.5);
+      f && (dt = Ze ? f[x - 1] : f[0]);
+      const ei = A.length / 3, Nt = Ze ? e / 2 : -e / 2, ye = new v(0, Nt, 0);
+      A.push(ye.x, ye.y, ye.z), P.push(0, Ze ? 1 : -1, 0);
+      const ge = me.y + (me.w - me.y) * 0.5;
+      y.push(me.x + (me.z - me.x) * 0.5, ge), dt && C.push(dt.r, dt.g, dt.b, dt.a);
+      const Dt = new he(0.5, 0.5);
       for (Qe = 0; Qe <= r; Qe++) {
         pt = Math.PI * 2 * Qe * c / r;
-        const Yt = Math.cos(-pt), Ke = Math.sin(-pt);
-        De = new v(Yt * Ge, wt, Ke * Ge);
-        const qe = new he(Yt * Nt.x + 0.5, Ke * Nt.y + 0.5);
-        A.push(De.x, De.y, De.z), P.push(0, Je ? 1 : -1, 0);
-        const Ft = ge.y + (ge.w - ge.y) * qe.y;
-        y.push(ge.x + (ge.z - ge.x) * qe.x, Ft), dt && C.push(dt.r, dt.g, dt.b, dt.a);
+        const Qt = Math.cos(-pt), Je = Math.sin(-pt);
+        De = new v(Qt * Ge, Nt, Je * Ge);
+        const Ke = new he(Qt * Dt.x + 0.5, Je * Dt.y + 0.5);
+        A.push(De.x, De.y, De.z), P.push(0, Ze ? 1 : -1, 0);
+        const Ft = me.y + (me.w - me.y) * Ke.y;
+        y.push(me.x + (me.z - me.x) * Ke.x, Ft), dt && C.push(dt.r, dt.g, dt.b, dt.a);
       }
-      for (Qe = 0; Qe < r; Qe++) Je ? (E.push(ei), E.push(ei + (Qe + 2)), E.push(ei + (Qe + 1))) : (E.push(ei), E.push(ei + (Qe + 1)), E.push(ei + (Qe + 2)));
+      for (Qe = 0; Qe < r; Qe++) Ze ? (E.push(ei), E.push(ei + (Qe + 2)), E.push(ei + (Qe + 1))) : (E.push(ei), E.push(ei + (Qe + 1)), E.push(ei + (Qe + 2)));
     };
     (l === oe.CAP_START || l === oe.CAP_ALL) && ie(false), (l === oe.CAP_END || l === oe.CAP_ALL) && ie(true), we._ComputeSides(h, A, E, P, y, a.frontUVs, a.backUVs);
     const pe = new we();
@@ -44927,7 +44927,7 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
     return e.sideOrientation = oe._GetDefaultSideOrientation(e.sideOrientation), i._originalBuilderSideOrientation = e.sideOrientation, hA(e).applyToMesh(i, e.updatable), i;
   }
   we.CreateCylinder = hA;
-  oe.CreateCylinder = (a, e, t, i, r, s, n, o, l) => ((n === void 0 || !(n instanceof Ze)) && (n !== void 0 && (l = o || oe.DEFAULTSIDE, o = n), n = s, s = 1), UT(a, {
+  oe.CreateCylinder = (a, e, t, i, r, s, n, o, l) => ((n === void 0 || !(n instanceof qe)) && (n !== void 0 && (l = o || oe.DEFAULTSIDE, o = n), n = s, s = 1), UT(a, {
     height: e,
     diameterTop: t,
     diameterBottom: i,
@@ -45006,7 +45006,7 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
       })), as._DefaultKeepDepthUtilityLayer;
     }
     constructor(e, t = true, i = false) {
-      this.originalScene = e, this.handleEvents = t, this._pointerCaptures = {}, this._lastPointerEvents = {}, this._sharedGizmoLight = null, this._renderCamera = null, this.pickUtilitySceneFirst = true, this.shouldRender = true, this.onlyCheckPointerDownEvents = true, this.processAllEvents = false, this.pickingEnabled = true, this.onPointerOutObservable = new J(), this.utilityLayerScene = new Ze(e.getEngine(), {
+      this.originalScene = e, this.handleEvents = t, this._pointerCaptures = {}, this._lastPointerEvents = {}, this._sharedGizmoLight = null, this._renderCamera = null, this.pickUtilitySceneFirst = true, this.shouldRender = true, this.onlyCheckPointerDownEvents = true, this.processAllEvents = false, this.pickingEnabled = true, this.onPointerOutObservable = new J(), this.utilityLayerScene = new qe(e.getEngine(), {
         virtual: true
       }), this.utilityLayerScene.useRightHandedSystem = e.useRightHandedSystem, this.utilityLayerScene._allowPostProcessClearColor = false, this.utilityLayerScene.postProcessesEnabled = false, this.utilityLayerScene.detachControl(), t && (this._originalPointerObserver = e.onPrePointerObservable.add((r) => {
         var _a2;
@@ -45068,7 +45068,7 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
   (function(a) {
     a[a.World = 0] = "World", a[a.Local = 1] = "Local";
   })(PD || (PD = {}));
-  Object.defineProperty(Ze.prototype, "debugLayer", {
+  Object.defineProperty(qe.prototype, "debugLayer", {
     get: function() {
       return this._debugLayer || (this._debugLayer = new M_(this)), this._debugLayer;
     },
@@ -45934,8 +45934,8 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
       K += l * x / p;
       const $ = Math.cos(F), le = Math.sin(F), Te = $ * l;
       for (B = 0; B <= n; B++) {
-        const ie = B / n, pe = ie * f + u, Je = Math.sin(pe), Ge = Math.cos(pe);
-        ee.x = Te * Je, ee.y = R + le * l, ee.z = Te * Ge, E.push(ee.x, ee.y, ee.z), L.set($ * Je, le, $ * Ge), A.push(L.x, L.y, L.z), P.push(ie, 1 - K / te), X.push(y), y++;
+        const ie = B / n, pe = ie * f + u, Ze = Math.sin(pe), Ge = Math.cos(pe);
+        ee.x = Te * Ze, ee.y = R + le * l, ee.z = Te * Ge, E.push(ee.x, ee.y, ee.z), L.set($ * Ze, le, $ * Ge), A.push(L.x, L.y, L.z), P.push(ie, 1 - K / te), X.push(y), y++;
       }
       C.push(X);
     }
@@ -45955,8 +45955,8 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
       K += c * x / m;
       const $ = Math.cos(F), le = Math.sin(F), Te = $ * c;
       for (B = 0; B <= n; B++) {
-        const ie = B / n, pe = ie * f + u, Je = Math.sin(pe), Ge = Math.cos(pe);
-        ee.x = Te * Je, ee.y = -R + le * c, ee.z = Te * Ge, E.push(ee.x, ee.y, ee.z), L.set($ * Je, le, $ * Ge), A.push(L.x, L.y, L.z), P.push(ie, 1 - K / te), X.push(y), y++;
+        const ie = B / n, pe = ie * f + u, Ze = Math.sin(pe), Ge = Math.cos(pe);
+        ee.x = Te * Ze, ee.y = -R + le * c, ee.z = Te * Ge, E.push(ee.x, ee.y, ee.z), L.set($ * Ze, le, $ * Ge), A.push(L.x, L.y, L.z), P.push(ie, 1 - K / te), X.push(y), y++;
       }
       C.push(X);
     }
@@ -45997,10 +45997,10 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
     const P = [], y = [];
     let C, R, D;
     if (e.length < 2) {
-      const ge = [], dt = [];
-      for (R = 0; R < e[0].length - n; R++) ge.push(e[0][R]), dt.push(e[0][R + n]);
+      const me = [], dt = [];
+      for (R = 0; R < e[0].length - n; R++) me.push(e[0][R]), dt.push(e[0][R + n]);
       e = [
-        ge,
+        me,
         dt
       ];
     }
@@ -46027,29 +46027,29 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
     const pe = P.length - 1;
     for (; F <= Te && C < pe; ) u.push(F, F + ie, F + 1), u.push(F + ie + 1, F + 1, F + ie), F += 1, F === Te && (C++, ie = y[C + 1] - y[C], $ = P[C] - 1, le = P[C + 1] - 1, F = y[C], Te = $ < le ? $ + F : le + F);
     if (we.ComputeNormals(h, u, f), i) {
-      let ge = 0, dt = 0;
+      let me = 0, dt = 0;
       for (C = 0; C < e.length; C++) {
-        ge = y[C] * 3, C + 1 < e.length ? dt = (y[C + 1] - 1) * 3 : dt = f.length - 3, f[ge] = (f[ge] + f[dt]) * 0.5, f[ge + 1] = (f[ge + 1] + f[dt + 1]) * 0.5, f[ge + 2] = (f[ge + 2] + f[dt + 2]) * 0.5;
-        const ei = Math.sqrt(f[ge] * f[ge] + f[ge + 1] * f[ge + 1] + f[ge + 2] * f[ge + 2]);
-        f[ge] /= ei, f[ge + 1] /= ei, f[ge + 2] /= ei, f[dt] = f[ge], f[dt + 1] = f[ge + 1], f[dt + 2] = f[ge + 2];
+        me = y[C] * 3, C + 1 < e.length ? dt = (y[C + 1] - 1) * 3 : dt = f.length - 3, f[me] = (f[me] + f[dt]) * 0.5, f[me + 1] = (f[me + 1] + f[dt + 1]) * 0.5, f[me + 2] = (f[me + 2] + f[dt + 2]) * 0.5;
+        const ei = Math.sqrt(f[me] * f[me] + f[me + 1] * f[me + 1] + f[me + 2] * f[me + 2]);
+        f[me] /= ei, f[me + 1] /= ei, f[me + 2] /= ei, f[dt] = f[me], f[dt + 1] = f[me + 1], f[dt + 2] = f[me + 2];
       }
     }
     if (t) {
-      let ge = y[0] * 3, dt = y[e.length] * 3;
+      let me = y[0] * 3, dt = y[e.length] * 3;
       for (R = 0; R < A + V; R++) {
-        f[ge] = (f[ge] + f[dt]) * 0.5, f[ge + 1] = (f[ge + 1] + f[dt + 1]) * 0.5, f[ge + 2] = (f[ge + 2] + f[dt + 2]) * 0.5;
-        const ei = Math.sqrt(f[ge] * f[ge] + f[ge + 1] * f[ge + 1] + f[ge + 2] * f[ge + 2]);
-        f[ge] /= ei, f[ge + 1] /= ei, f[ge + 2] /= ei, f[dt] = f[ge], f[dt + 1] = f[ge + 1], f[dt + 2] = f[ge + 2], ge += 3, dt += 3;
+        f[me] = (f[me] + f[dt]) * 0.5, f[me + 1] = (f[me + 1] + f[dt + 1]) * 0.5, f[me + 2] = (f[me + 2] + f[dt + 2]) * 0.5;
+        const ei = Math.sqrt(f[me] * f[me] + f[me + 1] * f[me + 1] + f[me + 2] * f[me + 2]);
+        f[me] /= ei, f[me + 1] /= ei, f[me + 2] /= ei, f[dt] = f[me], f[dt + 1] = f[me + 1], f[dt + 2] = f[me + 2], me += 3, dt += 3;
       }
     }
     we._ComputeSides(o, h, u, f, p, a.frontUVs, a.backUVs);
-    let Je = null;
+    let Ze = null;
     if (c) {
-      Je = new Float32Array(c.length * 4);
-      for (let ge = 0; ge < c.length; ge++) Je[ge * 4] = c[ge].r, Je[ge * 4 + 1] = c[ge].g, Je[ge * 4 + 2] = c[ge].b, Je[ge * 4 + 3] = c[ge].a;
+      Ze = new Float32Array(c.length * 4);
+      for (let me = 0; me < c.length; me++) Ze[me * 4] = c[me].r, Ze[me * 4 + 1] = c[me].g, Ze[me * 4 + 2] = c[me].b, Ze[me * 4 + 3] = c[me].a;
     }
     const Ge = new we(), pt = new Float32Array(h), De = new Float32Array(f), Qe = new Float32Array(p);
-    return Ge.indices = u, Ge.positions = pt, Ge.normals = De, Ge.uvs = Qe, Je && Ge.set(Je, w.ColorKind), i && (Ge._idx = y), Ge;
+    return Ge.indices = u, Ge.positions = pt, Ge.normals = De, Ge.uvs = Qe, Ze && Ge.set(Ze, w.ColorKind), i && (Ge._idx = y), Ge;
   }
   function Bd(a, e, t = null) {
     const i = e.pathArray, r = e.closeArray, s = e.closePath, n = oe._GetDefaultSideOrientation(e.sideOrientation), o = e.instance, l = e.updatable;
@@ -47067,29 +47067,29 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
     const y = (V, L, ee, q, de, se, te, K, Se, ce, fe) => {
       const X = ee.getTangents(), F = ee.getNormals(), $ = ee.getBinormals(), le = ee.getDistances();
       if (fe) {
-        for (let ge = 0; ge < X.length; ge++) if (X[ge].x == 0 && X[ge].y == 0 && X[ge].z == 0 && X[ge].copyFrom(X[ge - 1]), F[ge].x == 0 && F[ge].y == 0 && F[ge].z == 0 && F[ge].copyFrom(F[ge - 1]), $[ge].x == 0 && $[ge].y == 0 && $[ge].z == 0 && $[ge].copyFrom($[ge - 1]), ge > 0) {
-          let dt = X[ge - 1];
-          v.Dot(dt, X[ge]) < 0 && X[ge].scaleInPlace(-1), dt = F[ge - 1], v.Dot(dt, F[ge]) < 0 && F[ge].scaleInPlace(-1), dt = $[ge - 1], v.Dot(dt, $[ge]) < 0 && $[ge].scaleInPlace(-1);
+        for (let me = 0; me < X.length; me++) if (X[me].x == 0 && X[me].y == 0 && X[me].z == 0 && X[me].copyFrom(X[me - 1]), F[me].x == 0 && F[me].y == 0 && F[me].z == 0 && F[me].copyFrom(F[me - 1]), $[me].x == 0 && $[me].y == 0 && $[me].z == 0 && $[me].copyFrom($[me - 1]), me > 0) {
+          let dt = X[me - 1];
+          v.Dot(dt, X[me]) < 0 && X[me].scaleInPlace(-1), dt = F[me - 1], v.Dot(dt, F[me]) < 0 && F[me].scaleInPlace(-1), dt = $[me - 1], v.Dot(dt, $[me]) < 0 && $[me].scaleInPlace(-1);
         }
       }
       let Te = 0;
-      const ie = () => de !== null ? de : 1, Je = ce && K ? K : () => se !== null ? se : 0, Ge = ce && te ? te : ie;
+      const ie = () => de !== null ? de : 1, Ze = ce && K ? K : () => se !== null ? se : 0, Ge = ce && te ? te : ie;
       let pt = Se === oe.NO_CAP || Se === oe.CAP_END ? 0 : 2;
       const De = Q.Matrix[0];
-      for (let ge = 0; ge < L.length; ge++) {
-        const dt = [], ei = Je(ge, le[ge]), wt = Ge(ge, le[ge]);
-        z.RotationAxisToRef(X[ge], Te, De);
+      for (let me = 0; me < L.length; me++) {
+        const dt = [], ei = Ze(me, le[me]), Nt = Ge(me, le[me]);
+        z.RotationAxisToRef(X[me], Te, De);
         for (let ye = 0; ye < V.length; ye++) {
-          const me = X[ge].scale(V[ye].z).add(F[ge].scale(V[ye].x)).add($[ge].scale(V[ye].y)), Nt = v.Zero();
-          v.TransformCoordinatesToRef(me, De, Nt), Nt.scaleInPlace(wt).addInPlace(L[ge]), dt[ye] = Nt;
+          const ge = X[me].scale(V[ye].z).add(F[me].scale(V[ye].x)).add($[me].scale(V[ye].y)), Dt = v.Zero();
+          v.TransformCoordinatesToRef(ge, De, Dt), Dt.scaleInPlace(Nt).addInPlace(L[me]), dt[ye] = Dt;
         }
         q[pt] = dt, Te += ei, pt++;
       }
-      const Qe = (ge) => {
+      const Qe = (me) => {
         const dt = Array(), ei = v.Zero();
-        let wt;
-        for (wt = 0; wt < ge.length; wt++) ei.addInPlace(ge[wt]);
-        for (ei.scaleInPlace(1 / ge.length), wt = 0; wt < ge.length; wt++) dt.push(ei);
+        let Nt;
+        for (Nt = 0; Nt < me.length; Nt++) ei.addInPlace(me[Nt]);
+        for (ei.scaleInPlace(1 / me.length), Nt = 0; Nt < me.length; Nt++) dt.push(ei);
         return dt;
       };
       switch (Se) {
@@ -49325,8 +49325,8 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
         F.normalize();
         let $;
         if (i) {
-          const pe = v.Lerp(V[0], V[2], ce / r), Je = v.Lerp(V[1], V[2], ce / r);
-          $ = v.Lerp(pe, Je, Se / (r - ce));
+          const pe = v.Lerp(V[0], V[2], ce / r), Ze = v.Lerp(V[1], V[2], ce / r);
+          $ = v.Lerp(pe, Ze, Se / (r - ce));
         } else $ = new v(F.x, F.y, F.z);
         $.x /= s, $.y /= n, $.z /= o, $.normalize();
         const le = he.Lerp(L[0], L[2], K / r), Te = he.Lerp(L[1], L[2], K / r), ie = r === K ? L[2] : he.Lerp(le, Te, te / (r - K));
@@ -49413,35 +49413,35 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
           const Xi = pe[0] + pe[1] + pe[2] + pe[3];
           pe[0] /= Xi, pe[1] /= Xi, pe[2] /= Xi, pe[3] /= Xi;
         }
-        const Je = $.localPositionOverride ? $.localPositionOverride[0] : (l == null ? void 0 : l[$.vertexIdx]) ?? 0, Ge = $.localPositionOverride ? $.localPositionOverride[1] : (l == null ? void 0 : l[$.vertexIdx + 1]) ?? 0, pt = $.localPositionOverride ? $.localPositionOverride[2] : (l == null ? void 0 : l[$.vertexIdx + 2]) ?? 0, De = le.localPositionOverride ? le.localPositionOverride[0] : (l == null ? void 0 : l[le.vertexIdx]) ?? 0, Qe = le.localPositionOverride ? le.localPositionOverride[1] : (l == null ? void 0 : l[le.vertexIdx + 1]) ?? 0, ge = le.localPositionOverride ? le.localPositionOverride[2] : (l == null ? void 0 : l[le.vertexIdx + 2]) ?? 0, dt = $.localNormalOverride ? $.localNormalOverride[0] : (c == null ? void 0 : c[$.vertexIdx]) ?? 0, ei = $.localNormalOverride ? $.localNormalOverride[1] : (c == null ? void 0 : c[$.vertexIdx + 1]) ?? 0, wt = $.localNormalOverride ? $.localNormalOverride[2] : (c == null ? void 0 : c[$.vertexIdx + 2]) ?? 0, ye = le.localNormalOverride ? le.localNormalOverride[0] : (c == null ? void 0 : c[le.vertexIdx]) ?? 0, me = le.localNormalOverride ? le.localNormalOverride[1] : (c == null ? void 0 : c[le.vertexIdx + 1]) ?? 0, Nt = le.localNormalOverride ? le.localNormalOverride[2] : (c == null ? void 0 : c[le.vertexIdx + 2]) ?? 0, Yt = dt + (ye - dt) * Te, Ke = ei + (me - ei) * Te, qe = wt + (Nt - wt) * Te, Ft = Math.sqrt(Yt * Yt + Ke * Ke + qe * qe);
+        const Ze = $.localPositionOverride ? $.localPositionOverride[0] : (l == null ? void 0 : l[$.vertexIdx]) ?? 0, Ge = $.localPositionOverride ? $.localPositionOverride[1] : (l == null ? void 0 : l[$.vertexIdx + 1]) ?? 0, pt = $.localPositionOverride ? $.localPositionOverride[2] : (l == null ? void 0 : l[$.vertexIdx + 2]) ?? 0, De = le.localPositionOverride ? le.localPositionOverride[0] : (l == null ? void 0 : l[le.vertexIdx]) ?? 0, Qe = le.localPositionOverride ? le.localPositionOverride[1] : (l == null ? void 0 : l[le.vertexIdx + 1]) ?? 0, me = le.localPositionOverride ? le.localPositionOverride[2] : (l == null ? void 0 : l[le.vertexIdx + 2]) ?? 0, dt = $.localNormalOverride ? $.localNormalOverride[0] : (c == null ? void 0 : c[$.vertexIdx]) ?? 0, ei = $.localNormalOverride ? $.localNormalOverride[1] : (c == null ? void 0 : c[$.vertexIdx + 1]) ?? 0, Nt = $.localNormalOverride ? $.localNormalOverride[2] : (c == null ? void 0 : c[$.vertexIdx + 2]) ?? 0, ye = le.localNormalOverride ? le.localNormalOverride[0] : (c == null ? void 0 : c[le.vertexIdx]) ?? 0, ge = le.localNormalOverride ? le.localNormalOverride[1] : (c == null ? void 0 : c[le.vertexIdx + 1]) ?? 0, Dt = le.localNormalOverride ? le.localNormalOverride[2] : (c == null ? void 0 : c[le.vertexIdx + 2]) ?? 0, Qt = dt + (ye - dt) * Te, Je = ei + (ge - ei) * Te, Ke = Nt + (Dt - Nt) * Te, Ft = Math.sqrt(Qt * Qt + Je * Je + Ke * Ke);
         return new pS(v.Lerp($.position, le.position, Te), v.Lerp($.normal, le.normal, Te).normalize(), he.Lerp($.uv, le.uv, Te), -1, -1, l ? [
-          Je + (De - Je) * Te,
+          Ze + (De - Ze) * Te,
           Ge + (Qe - Ge) * Te,
-          pt + (ge - pt) * Te
+          pt + (me - pt) * Te
         ] : null, c ? [
-          Yt / Ft,
-          Ke / Ft,
-          qe / Ft
+          Qt / Ft,
+          Je / Ft,
+          Ke / Ft
         ] : null, ie, pe);
       };
       let F = null;
       K.length > 3 && (F = []);
       for (let $ = 0; $ < K.length; $ += 3) {
-        let le = 0, Te = null, ie = null, pe = null, Je = null;
-        const Ge = v.Dot(K[$].position, Se) - ce, pt = v.Dot(K[$ + 1].position, Se) - ce, De = v.Dot(K[$ + 2].position, Se) - ce, Qe = Ge > 0, ge = pt > 0, dt = De > 0;
-        switch (le = (Qe ? 1 : 0) + (ge ? 1 : 0) + (dt ? 1 : 0), le) {
+        let le = 0, Te = null, ie = null, pe = null, Ze = null;
+        const Ge = v.Dot(K[$].position, Se) - ce, pt = v.Dot(K[$ + 1].position, Se) - ce, De = v.Dot(K[$ + 2].position, Se) - ce, Qe = Ge > 0, me = pt > 0, dt = De > 0;
+        switch (le = (Qe ? 1 : 0) + (me ? 1 : 0) + (dt ? 1 : 0), le) {
           case 0:
             K.length > 3 ? (F.push(K[$]), F.push(K[$ + 1]), F.push(K[$ + 2])) : F = K;
             break;
           case 1:
-            if (F = F ?? new Array(), Qe && (Te = K[$ + 1], ie = K[$ + 2], pe = X(K[$], Te), Je = X(K[$], ie)), ge) {
-              Te = K[$], ie = K[$ + 2], pe = X(K[$ + 1], Te), Je = X(K[$ + 1], ie), F.push(pe), F.push(ie.clone()), F.push(Te.clone()), F.push(ie.clone()), F.push(pe.clone()), F.push(Je);
+            if (F = F ?? new Array(), Qe && (Te = K[$ + 1], ie = K[$ + 2], pe = X(K[$], Te), Ze = X(K[$], ie)), me) {
+              Te = K[$], ie = K[$ + 2], pe = X(K[$ + 1], Te), Ze = X(K[$ + 1], ie), F.push(pe), F.push(ie.clone()), F.push(Te.clone()), F.push(ie.clone()), F.push(pe.clone()), F.push(Ze);
               break;
             }
-            dt && (Te = K[$], ie = K[$ + 1], pe = X(K[$ + 2], Te), Je = X(K[$ + 2], ie)), Te && ie && pe && Je && (F.push(Te.clone()), F.push(ie.clone()), F.push(pe), F.push(Je), F.push(pe.clone()), F.push(ie.clone()));
+            dt && (Te = K[$], ie = K[$ + 1], pe = X(K[$ + 2], Te), Ze = X(K[$ + 2], ie)), Te && ie && pe && Ze && (F.push(Te.clone()), F.push(ie.clone()), F.push(pe), F.push(Ze), F.push(pe.clone()), F.push(ie.clone()));
             break;
           case 2:
-            F = F ?? new Array(), Qe || (Te = K[$].clone(), ie = X(Te, K[$ + 1]), pe = X(Te, K[$ + 2]), F.push(Te), F.push(ie), F.push(pe)), ge || (Te = K[$ + 1].clone(), ie = X(Te, K[$ + 2]), pe = X(Te, K[$]), F.push(Te), F.push(ie), F.push(pe)), dt || (Te = K[$ + 2].clone(), ie = X(Te, K[$]), pe = X(Te, K[$ + 1]), F.push(Te), F.push(ie), F.push(pe));
+            F = F ?? new Array(), Qe || (Te = K[$].clone(), ie = X(Te, K[$ + 1]), pe = X(Te, K[$ + 2]), F.push(Te), F.push(ie), F.push(pe)), me || (Te = K[$ + 1].clone(), ie = X(Te, K[$ + 2]), pe = X(Te, K[$]), F.push(Te), F.push(ie), F.push(pe)), dt || (Te = K[$ + 2].clone(), ie = X(Te, K[$]), pe = X(Te, K[$ + 1]), F.push(Te), F.push(ie), F.push(pe));
             break;
         }
       }
@@ -51191,14 +51191,14 @@ var worldPos=finalWorld*vec4f(positionUpdated.x,positionUpdated.y,positionUpdate
       (X === 1 && !this._caps.textureFloatLinearFiltering || X === 2 && !this._caps.textureHalfFloatLinearFiltering) && (fe = 1);
       const ie = this._getSamplingParameters(fe, i);
       X === 1 && !this._caps.textureFloat && (X = 0, G.Warn("Float textures are not supported. Render target forced to TEXTURETYPE_UNSIGNED_BYTE type")), F = F && this._caps.supportSRGBBuffers && (this.webGLVersion > 1 || this.isWebGPU);
-      const pe = this.webGLVersion > 1, Je = L[pe ? "COLOR_ATTACHMENT" + ce : "COLOR_ATTACHMENT" + ce + "_WEBGL"];
-      if (K.push(Je), le === -1 || B) continue;
+      const pe = this.webGLVersion > 1, Ze = L[pe ? "COLOR_ATTACHMENT" + ce : "COLOR_ATTACHMENT" + ce + "_WEBGL"];
+      if (K.push(Ze), le === -1 || B) continue;
       const Ge = new mi(this, 6);
       te[ce] = Ge, L.activeTexture(L["TEXTURE" + ce]), L.bindTexture(le, Ge._hardwareTexture.underlyingResource), L.texParameteri(le, L.TEXTURE_MAG_FILTER, ie.mag), L.texParameteri(le, L.TEXTURE_MIN_FILTER, ie.min), L.texParameteri(le, L.TEXTURE_WRAP_S, L.CLAMP_TO_EDGE), L.texParameteri(le, L.TEXTURE_WRAP_T, L.CLAMP_TO_EDGE);
       const pt = this._getRGBABufferInternalSizedFormat(X, $, F), De = this._getInternalFormat($), Qe = this._getWebGLTextureType(X);
       if (pe && (le === 35866 || le === 32879)) le === 35866 ? Ge.is2DArray = true : Ge.is3D = true, Ge.baseDepth = Ge.depth = Te, L.texImage3D(le, 0, pt, de, se, Te, 0, De, Qe, null);
       else if (le === 34067) {
-        for (let ge = 0; ge < 6; ge++) L.texImage2D(L.TEXTURE_CUBE_MAP_POSITIVE_X + ge, 0, pt, de, se, 0, De, Qe, null);
+        for (let me = 0; me < 6; me++) L.texImage2D(L.TEXTURE_CUBE_MAP_POSITIVE_X + me, 0, pt, de, se, 0, De, Qe, null);
         Ge.isCube = true;
       } else L.texImage2D(L.TEXTURE_2D, 0, pt, de, se, 0, De, Qe, null);
       i && L.generateMipmap(le), this._bindTextureDirectly(le, null), Ge.baseWidth = de, Ge.baseHeight = se, Ge.width = de, Ge.height = se, Ge.isReady = true, Ge.samples = 1, Ge.generateMipMaps = i, Ge.samplingMode = fe, Ge.type = X, Ge._useSRGBBuffer = F, Ge.format = $, Ge.label = D[ce] ?? V.label + "-Texture" + ce, this._internalTexturesCache.push(Ge);
@@ -62645,7 +62645,7 @@ Make sure timestamp query is supported and enabled in your browser.`);
         }, void 0)).FlowGraphArrayIndexBlock;
       case "FlowGraphCodeExecutionBlock":
         return async () => (await Y(async () => {
-          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-D-X7oj3H.js").then(async (m) => {
+          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-Mrckv_2i.js").then(async (m) => {
             await m.__tla;
             return m;
           });
@@ -73735,7 +73735,7 @@ discard;}}
           "Material",
           "Scene"
         ];
-        Qt && (Qt.PrepareUniforms(h, n), Qt.PrepareSamplers(u, n)), Po({
+        jt && (jt.PrepareUniforms(h, n), jt.PrepareSamplers(u, n)), Po({
           uniformsNames: h,
           uniformBuffersNames: f,
           samplers: u,
@@ -75345,7 +75345,7 @@ discard;}}
         maxSimultaneousLights: this._maxSimultaneousLights,
         maxSimultaneousMorphTargets: t.NUM_MORPH_INFLUENCERS
       };
-      this._eventInfo.fallbacks = h, this._eventInfo.fallbackRank = u, this._eventInfo.defines = t, this._eventInfo.uniforms = m, this._eventInfo.attributes = f, this._eventInfo.samplers = x, this._eventInfo.uniformBuffersNames = S, this._eventInfo.customCode = void 0, this._eventInfo.mesh = e, this._eventInfo.indexParameters = E, this._callbackPluginEventGeneric(128, this._eventInfo), Mr.AddUniformsAndSamplers(m, x), dS.AddUniforms(m), hl(m), Qt && (Qt.PrepareUniforms(m, t), Qt.PrepareSamplers(x, t)), Po({
+      this._eventInfo.fallbacks = h, this._eventInfo.fallbackRank = u, this._eventInfo.defines = t, this._eventInfo.uniforms = m, this._eventInfo.attributes = f, this._eventInfo.samplers = x, this._eventInfo.uniformBuffersNames = S, this._eventInfo.customCode = void 0, this._eventInfo.mesh = e, this._eventInfo.indexParameters = E, this._callbackPluginEventGeneric(128, this._eventInfo), Mr.AddUniformsAndSamplers(m, x), dS.AddUniforms(m), hl(m), jt && (jt.PrepareUniforms(m, t), jt.PrepareSamplers(x, t)), Po({
         uniformsNames: m,
         uniformBuffersNames: S,
         samplers: x,
@@ -75503,7 +75503,7 @@ discard;}}
         }
         this.getScene().useOrderIndependentTransparency && this.needAlphaBlendingForMesh(t) && this.getScene().depthPeelingRenderer.bind(n), this._eventInfo.subMesh = i, this._callbackPluginEventBindForSubMesh(this._eventInfo), Io(this._activeEffect, this, r), this.bindEyePosition(n);
       } else r.getEngine()._features.needToAlwaysBindUniformBuffers && (this._needToBindSceneUbo = true);
-      (l || !this.isFrozen) && (r.lightsEnabled && !this._disableLighting && Mg(r, t, this._activeEffect, s, this._maxSimultaneousLights), (r.fogEnabled && t.applyFog && r.fogMode !== Ze.FOGMODE_NONE || c || this.subSurface.refractionTexture || t.receiveShadows || s.PREPASS) && this.bindView(n), Hd(r, t, this._activeEffect, true), s.NUM_MORPH_INFLUENCERS && Tc(t, this._activeEffect), s.BAKED_VERTEX_ANIMATION_TEXTURE && ((_c2 = t.bakedVertexAnimationManager) == null ? void 0 : _c2.bind(n, s.INSTANCES)), this._imageProcessingConfiguration.bind(this._activeEffect), gh(s, this._activeEffect, r)), this._afterBind(t, this._activeEffect, i), h.update();
+      (l || !this.isFrozen) && (r.lightsEnabled && !this._disableLighting && Mg(r, t, this._activeEffect, s, this._maxSimultaneousLights), (r.fogEnabled && t.applyFog && r.fogMode !== qe.FOGMODE_NONE || c || this.subSurface.refractionTexture || t.receiveShadows || s.PREPASS) && this.bindView(n), Hd(r, t, this._activeEffect, true), s.NUM_MORPH_INFLUENCERS && Tc(t, this._activeEffect), s.BAKED_VERTEX_ANIMATION_TEXTURE && ((_c2 = t.bakedVertexAnimationManager) == null ? void 0 : _c2.bind(n, s.INSTANCES)), this._imageProcessingConfiguration.bind(this._activeEffect), gh(s, this._activeEffect, r)), this._afterBind(t, this._activeEffect, i), h.update();
     }
     getAnimatables() {
       const e = super.getAnimatables();
@@ -77080,7 +77080,7 @@ discard;}}
       re.Error("No engine available");
       return;
     }
-    await $A(a, e, new Ze(t), i, r, s, n, o, l);
+    await $A(a, e, new qe(t), i, r, s, n, o, l);
   }
   function rte(a, e, t, i, r, s, n) {
     return new Promise((o, l) => {
@@ -82662,11 +82662,11 @@ ${this._fragmentCompilationState.compilationString}`;
       this.baseExperience && this.baseExperience.dispose(), this.input && this.input.dispose(), this.enterExitUI && this.enterExitUI.dispose(), this.renderTarget && this.renderTarget.dispose();
     }
   }
-  Ze.prototype.createDefaultLight = function(a = false) {
+  qe.prototype.createDefaultLight = function(a = false) {
     if (a && this.lights) for (let e = 0; e < this.lights.length; e++) this.lights[e].dispose();
     this.lights.length === 0 && new fl("default light", v.Up(), this);
   };
-  Ze.prototype.createDefaultCamera = function(a = false, e = false, t = false) {
+  qe.prototype.createDefaultCamera = function(a = false, e = false, t = false) {
     if (e && this.activeCamera && (this.activeCamera.dispose(), this.activeCamera = null), !this.activeCamera) {
       const i = this.getWorldExtends((l) => l.isVisible && l.isEnabled()), r = i.max.subtract(i.min), s = i.min.add(r.scale(0.5));
       let n, o = r.length() * 1.5;
@@ -82680,10 +82680,10 @@ ${this._fragmentCompilationState.compilationString}`;
       n.minZ = o * 0.01, n.maxZ = o * 1e3, n.speed = o * 0.2, this.activeCamera = n, t && n.attachControl();
     }
   };
-  Ze.prototype.createDefaultCameraOrLight = function(a = false, e = false, t = false) {
+  qe.prototype.createDefaultCameraOrLight = function(a = false, e = false, t = false) {
     this.createDefaultLight(e), this.createDefaultCamera(a, e, t);
   };
-  Ze.prototype.createDefaultSkybox = function(a, e = false, t = 1e3, i = 0, r = true) {
+  qe.prototype.createDefaultSkybox = function(a, e = false, t = 1e3, i = 0, r = true) {
     if (!a) return G.Warn("Can not create default skybox without environment texture."), null;
     r && a && (this.environmentTexture = a);
     const s = kT("hdrSkyBox", {
@@ -82698,13 +82698,13 @@ ${this._fragmentCompilationState.compilationString}`;
     }
     return s.isPickable = false, s.infiniteDistance = true, s.ignoreCameraMaxZ = true, s;
   };
-  Ze.prototype.createDefaultEnvironment = function(a) {
+  qe.prototype.createDefaultEnvironment = function(a) {
     return Gd ? new Gd(a, this) : null;
   };
-  Ze.prototype.createDefaultVRExperience = function(a = {}) {
+  qe.prototype.createDefaultVRExperience = function(a = {}) {
     return new R_(this, a);
   };
-  Ze.prototype.createDefaultXRExperienceAsync = function(a = {}) {
+  qe.prototype.createDefaultXRExperienceAsync = function(a = {}) {
     return KA.CreateAsync(this, a).then((e) => e);
   };
   function NN(a) {
@@ -83098,11 +83098,11 @@ ${this._fragmentCompilationState.compilationString}`;
       }
     }
   });
-  Ze.prototype.removeEffectLayer = function(a) {
+  qe.prototype.removeEffectLayer = function(a) {
     const e = this.effectLayers.indexOf(a);
     return e !== -1 && this.effectLayers.splice(e, 1), e;
   };
-  Ze.prototype.addEffectLayer = function(a) {
+  qe.prototype.addEffectLayer = function(a) {
     this.effectLayers.push(a);
   };
   class xte {
@@ -83188,7 +83188,7 @@ ${this._fragmentCompilationState.compilationString}`;
     let e = a._getComponent(Ne.NAME_EFFECTLAYER);
     e || (e = new xte(a), a._addComponent(e));
   };
-  Ze.prototype.getGlowLayerByName = function(a) {
+  qe.prototype.getGlowLayerByName = function(a) {
     var _a2;
     for (let e = 0; e < ((_a2 = this.effectLayers) == null ? void 0 : _a2.length); e++) if (this.effectLayers[e].name === a && this.effectLayers[e].getEffectName() === cl.EffectName) return this.effectLayers[e];
     return null;
@@ -83417,7 +83417,7 @@ ${this._fragmentCompilationState.compilationString}`;
     I("options")
   ], cl.prototype, "_options", void 0);
   W("BABYLON.GlowLayer", cl);
-  Ze.prototype.getHighlightLayerByName = function(a) {
+  qe.prototype.getHighlightLayerByName = function(a) {
     var _a2;
     for (let e = 0; e < ((_a2 = this.effectLayers) == null ? void 0 : _a2.length); e++) if (this.effectLayers[e].name === a && this.effectLayers[e].getEffectName() === Nl.EffectName) return this.effectLayers[e];
     return null;
@@ -84715,22 +84715,22 @@ var shiftedPosition: vec2f=input.position*uniforms.scale+uniforms.offset;vertexO
       }
     }
   });
-  Ze.prototype.getLensFlareSystemByName = function(a) {
+  qe.prototype.getLensFlareSystemByName = function(a) {
     for (let e = 0; e < this.lensFlareSystems.length; e++) if (this.lensFlareSystems[e].name === a) return this.lensFlareSystems[e];
     return null;
   };
-  Ze.prototype.getLensFlareSystemById = function(a) {
+  qe.prototype.getLensFlareSystemById = function(a) {
     for (let e = 0; e < this.lensFlareSystems.length; e++) if (this.lensFlareSystems[e].id === a) return this.lensFlareSystems[e];
     return null;
   };
-  Ze.prototype.getLensFlareSystemByID = function(a) {
+  qe.prototype.getLensFlareSystemByID = function(a) {
     return this.getLensFlareSystemById(a);
   };
-  Ze.prototype.removeLensFlareSystem = function(a) {
+  qe.prototype.removeLensFlareSystem = function(a) {
     const e = this.lensFlareSystems.indexOf(a);
     return e !== -1 && this.lensFlareSystems.splice(e, 1), e;
   };
-  Ze.prototype.addLensFlareSystem = function(a) {
+  qe.prototype.addLensFlareSystem = function(a) {
     this.lensFlareSystems.push(a);
   };
   class Zte {
@@ -88000,12 +88000,12 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
   hc._DISABLE_COLLISION_FLAG = 4;
   hc._KINEMATIC_FLAG = 2;
   hc._DISABLE_DEACTIVATION_FLAG = 4;
-  Ze.prototype.removeReflectionProbe = function(a) {
+  qe.prototype.removeReflectionProbe = function(a) {
     if (!this.reflectionProbes) return -1;
     const e = this.reflectionProbes.indexOf(a);
     return e !== -1 && this.reflectionProbes.splice(e, 1), e;
   };
-  Ze.prototype.addReflectionProbe = function(a) {
+  qe.prototype.addReflectionProbe = function(a) {
     this.reflectionProbes || (this.reflectionProbes = []), this.reflectionProbes.push(a);
   };
   class qg {
@@ -88222,7 +88222,7 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
       return i.position = v.FromArray(e.position), i.color = Me.FromArray(e.color), i.width = e.width, i.height = e.height, i.angle = e.angle, i.cellIndex = e.cellIndex, i.cellRef = e.cellRef, i.invertU = e.invertU, i.invertV = e.invertV, i.disposeWhenFinishedAnimating = e.disposeWhenFinishedAnimating, i.isPickable = e.isPickable, i.isVisible = e.isVisible, i.useAlphaForPicking = e.useAlphaForPicking, i._fromIndex = e.fromIndex, i._toIndex = e.toIndex, i._loopAnimation = e.loopAnimation, i._delay = e.delay, e.animationStarted && i.playAnimation(i.fromIndex, i.toIndex, i.loopAnimation, i.delay), i;
     }
   }
-  Ze.prototype._internalPickSprites = function(a, e, t, i) {
+  qe.prototype._internalPickSprites = function(a, e, t, i) {
     if (!Vs) return null;
     let r = null;
     if (!i) {
@@ -88237,7 +88237,7 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
     }
     return r || new Vs();
   };
-  Ze.prototype._internalMultiPickSprites = function(a, e, t) {
+  qe.prototype._internalMultiPickSprites = function(a, e, t) {
     if (!Vs) return null;
     let i = [];
     if (!t) {
@@ -88252,13 +88252,13 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
     }
     return i;
   };
-  Ze.prototype.pickSprite = function(a, e, t, i, r) {
+  qe.prototype.pickSprite = function(a, e, t, i, r) {
     if (!this._tempSpritePickingRay) return null;
     bT(this, a, e, this._tempSpritePickingRay, r);
     const s = this._internalPickSprites(this._tempSpritePickingRay, t, i, r);
     return s && (s.ray = DF(this, a, e, r)), s;
   };
-  Ze.prototype.pickSpriteWithRay = function(a, e, t, i) {
+  qe.prototype.pickSpriteWithRay = function(a, e, t, i) {
     if (!this._tempSpritePickingRay) return null;
     if (!i) {
       if (!this.activeCamera) return null;
@@ -88268,10 +88268,10 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
     const r = this._internalPickSprites(this._tempSpritePickingRay, e, t, i);
     return r && (r.ray = a), r;
   };
-  Ze.prototype.multiPickSprite = function(a, e, t, i) {
+  qe.prototype.multiPickSprite = function(a, e, t, i) {
     return bT(this, a, e, this._tempSpritePickingRay, i), this._internalMultiPickSprites(this._tempSpritePickingRay, t, i);
   };
-  Ze.prototype.multiPickSpriteWithRay = function(a, e, t) {
+  qe.prototype.multiPickSpriteWithRay = function(a, e, t) {
     if (!this._tempSpritePickingRay) return null;
     if (!t) {
       if (!this.activeCamera) return null;
@@ -88279,10 +88279,10 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
     }
     return kt.TransformToRef(a, t.getViewMatrix(), this._tempSpritePickingRay), this._internalMultiPickSprites(this._tempSpritePickingRay, e, t);
   };
-  Ze.prototype.setPointerOverSprite = function(a) {
+  qe.prototype.setPointerOverSprite = function(a) {
     this._pointerOverSprite !== a && (this._pointerOverSprite && this._pointerOverSprite.actionManager && this._pointerOverSprite.actionManager.processTrigger(10, Pr.CreateNewFromSprite(this._pointerOverSprite, this)), this._pointerOverSprite = a, this._pointerOverSprite && this._pointerOverSprite.actionManager && this._pointerOverSprite.actionManager.processTrigger(9, Pr.CreateNewFromSprite(this._pointerOverSprite, this)));
   };
-  Ze.prototype.getPointerOverSprite = function() {
+  qe.prototype.getPointerOverSprite = function() {
     return this._pointerOverSprite;
   };
   class Sre {
@@ -114056,7 +114056,7 @@ vertexOutputs.grlCounters=input.grl_counters;vertexOutputs.position=grlMatrix*ve
       return n;
     }
   }
-  Object.defineProperty(Ze.prototype, "simplificationQueue", {
+  Object.defineProperty(qe.prototype, "simplificationQueue", {
     get: function() {
       if (!this._simplificationQueue) {
         this._simplificationQueue = new Ofe();
@@ -114983,8 +114983,8 @@ vertexOutputs.grlCounters=input.grl_counters;vertexOutputs.position=grlMatrix*ve
         for (let $ = 0; $ < 3; $++) if (se === "uvs" && !e.uvSmooth) jo(R[$], K, F + $, 2);
         else if (se === "normals") {
           jo(D[$], n, F + $, 3);
-          const le = Ca(D[$]), Te = l[le] || [], ie = Te.length, pe = 0.75 / ie, Je = 1 - pe * ie;
-          jo(R[$], K, F + $, 3), R[$].scaleInPlace(Je), Te.forEach((Ge) => {
+          const le = Ca(D[$]), Te = l[le] || [], ie = Te.length, pe = 0.75 / ie, Ze = 1 - pe * ie;
+          jo(R[$], K, F + $, 3), R[$].scaleInPlace(Ze), Te.forEach((Ge) => {
             jo(B, K, Ge, 3), B.scaleInPlace(pe), R[$].addInPlace(B);
           });
         } else {
@@ -114992,24 +114992,24 @@ vertexOutputs.grlCounters=input.grl_counters;vertexOutputs.position=grlMatrix*ve
           const le = Ca(D[$]), Te = c[le], ie = h[le];
           if (Te) {
             if (e.preserveEdges) {
-              const ge = u[le];
+              const me = u[le];
               let dt = true;
-              if (ge.forEach((ei) => {
+              if (me.forEach((ei) => {
                 h[ei] && h[ei].length % 2 !== 0 && (dt = false);
               }), !dt) continue;
             }
-            const Je = Object.keys(Te).length, Ge = 1 / Je * (5 / 8 - Math.pow(3 / 8 + 1 / 4 * Math.cos(2 * Math.PI / Je), 2)), pt = 1 / Je / Je, De = Jo.Lerp(pt, Ge, e.weight), Qe = 1 - De * Je;
+            const Ze = Object.keys(Te).length, Ge = 1 / Ze * (5 / 8 - Math.pow(3 / 8 + 1 / 4 * Math.cos(2 * Math.PI / Ze), 2)), pt = 1 / Ze / Ze, De = Jo.Lerp(pt, Ge, e.weight), Qe = 1 - De * Ze;
             R[$].scaleInPlace(Qe);
-            for (const ge in Te) {
-              const dt = Te[ge];
+            for (const me in Te) {
+              const dt = Te[me];
               B.set(0, 0, 0), dt.forEach((ei) => {
                 jo(V, te, ei, Se), B.addInPlace(V);
               }), B.scaleInPlace(1 / dt.length), B.scaleInPlace(De), R[$].addInPlace(B);
             }
           } else if (ie && ie.length === 2) {
-            const pe = ie.length, Je = 0.125, Ge = 1 - Je * pe;
+            const pe = ie.length, Ze = 0.125, Ge = 1 - Ze * pe;
             R[$].scaleInPlace(Ge), ie.forEach((pt) => {
-              jo(B, te, pt, Se), B.scaleInPlace(Je), R[$].addInPlace(B);
+              jo(B, te, pt, Se), B.scaleInPlace(Ze), R[$].addInPlace(B);
             });
           }
         }
@@ -120345,13 +120345,13 @@ vertexOutputs.grlCounters=input.grl_counters;vertexOutputs.position=grlMatrix*ve
     }
   }
   W("BABYLON.GeometryCrossBlock", C_e);
-  var jt;
+  var Yt;
   (function(a) {
     a[a.EaseInSine = 0] = "EaseInSine", a[a.EaseOutSine = 1] = "EaseOutSine", a[a.EaseInOutSine = 2] = "EaseInOutSine", a[a.EaseInQuad = 3] = "EaseInQuad", a[a.EaseOutQuad = 4] = "EaseOutQuad", a[a.EaseInOutQuad = 5] = "EaseInOutQuad", a[a.EaseInCubic = 6] = "EaseInCubic", a[a.EaseOutCubic = 7] = "EaseOutCubic", a[a.EaseInOutCubic = 8] = "EaseInOutCubic", a[a.EaseInQuart = 9] = "EaseInQuart", a[a.EaseOutQuart = 10] = "EaseOutQuart", a[a.EaseInOutQuart = 11] = "EaseInOutQuart", a[a.EaseInQuint = 12] = "EaseInQuint", a[a.EaseOutQuint = 13] = "EaseOutQuint", a[a.EaseInOutQuint = 14] = "EaseInOutQuint", a[a.EaseInExpo = 15] = "EaseInExpo", a[a.EaseOutExpo = 16] = "EaseOutExpo", a[a.EaseInOutExpo = 17] = "EaseInOutExpo", a[a.EaseInCirc = 18] = "EaseInCirc", a[a.EaseOutCirc = 19] = "EaseOutCirc", a[a.EaseInOutCirc = 20] = "EaseInOutCirc", a[a.EaseInBack = 21] = "EaseInBack", a[a.EaseOutBack = 22] = "EaseOutBack", a[a.EaseInOutBack = 23] = "EaseInOutBack", a[a.EaseInElastic = 24] = "EaseInElastic", a[a.EaseOutElastic = 25] = "EaseOutElastic", a[a.EaseInOutElastic = 26] = "EaseInOutElastic";
-  })(jt || (jt = {}));
+  })(Yt || (Yt = {}));
   class hW extends bt {
     constructor(e) {
-      super(e), this.type = jt.EaseInOutSine, this.registerInput("input", k.AutoDetect), this.registerOutput("output", k.BasedOnInput), this._outputs[0]._typeConnectionSource = this._inputs[0], this._inputs[0].excludedConnectionPointTypes.push(k.Matrix), this._inputs[0].excludedConnectionPointTypes.push(k.Int);
+      super(e), this.type = Yt.EaseInOutSine, this.registerInput("input", k.AutoDetect), this.registerOutput("output", k.BasedOnInput), this._outputs[0]._typeConnectionSource = this._inputs[0], this._inputs[0].excludedConnectionPointTypes.push(k.Matrix), this._inputs[0].excludedConnectionPointTypes.push(k.Int);
     }
     getClassName() {
       return "GeometryCurveBlock";
@@ -120369,103 +120369,103 @@ vertexOutputs.grlCounters=input.grl_counters;vertexOutputs.position=grlMatrix*ve
       }
       let e;
       switch (this.type) {
-        case jt.EaseInSine:
+        case Yt.EaseInSine:
           e = (t) => 1 - Math.cos(t * 3.1415 / 2);
           break;
-        case jt.EaseOutSine:
+        case Yt.EaseOutSine:
           e = (t) => Math.sin(t * 3.1415 / 2);
           break;
-        case jt.EaseInOutSine:
+        case Yt.EaseInOutSine:
           e = (t) => -(Math.cos(t * 3.1415) - 1) / 2;
           break;
-        case jt.EaseInQuad:
+        case Yt.EaseInQuad:
           e = (t) => t * t;
           break;
-        case jt.EaseOutQuad:
+        case Yt.EaseOutQuad:
           e = (t) => (1 - t) * (1 - t);
           break;
-        case jt.EaseInOutQuad: {
+        case Yt.EaseInOutQuad: {
           e = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
           break;
         }
-        case jt.EaseInCubic:
+        case Yt.EaseInCubic:
           e = (t) => t * t * t;
           break;
-        case jt.EaseOutCubic: {
+        case Yt.EaseOutCubic: {
           e = (t) => 1 - Math.pow(1 - t, 3);
           break;
         }
-        case jt.EaseInOutCubic: {
+        case Yt.EaseInOutCubic: {
           e = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
           break;
         }
-        case jt.EaseInQuart:
+        case Yt.EaseInQuart:
           e = (t) => t * t * t * t;
           break;
-        case jt.EaseOutQuart: {
+        case Yt.EaseOutQuart: {
           e = (t) => 1 - Math.pow(1 - t, 4);
           break;
         }
-        case jt.EaseInOutQuart: {
+        case Yt.EaseInOutQuart: {
           e = (t) => t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
           break;
         }
-        case jt.EaseInQuint:
+        case Yt.EaseInQuint:
           e = (t) => t * t * t * t * t;
           break;
-        case jt.EaseOutQuint: {
+        case Yt.EaseOutQuint: {
           e = (t) => 1 - Math.pow(1 - t, 5);
           break;
         }
-        case jt.EaseInOutQuint: {
+        case Yt.EaseInOutQuint: {
           e = (t) => t < 0.5 ? 16 * t * t * t * t * t : 1 - Math.pow(-2 * t + 2, 5) / 2;
           break;
         }
-        case jt.EaseInExpo: {
+        case Yt.EaseInExpo: {
           e = (t) => t === 0 ? 0 : Math.pow(2, 10 * t - 10);
           break;
         }
-        case jt.EaseOutExpo: {
+        case Yt.EaseOutExpo: {
           e = (t) => t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
           break;
         }
-        case jt.EaseInOutExpo: {
+        case Yt.EaseInOutExpo: {
           e = (t) => t === 0 ? 0 : t === 1 ? 1 : t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
           break;
         }
-        case jt.EaseInCirc: {
+        case Yt.EaseInCirc: {
           e = (t) => 1 - Math.sqrt(1 - Math.pow(t, 2));
           break;
         }
-        case jt.EaseOutCirc: {
+        case Yt.EaseOutCirc: {
           e = (t) => Math.sqrt(1 - Math.pow(t - 1, 2));
           break;
         }
-        case jt.EaseInOutCirc: {
+        case Yt.EaseInOutCirc: {
           e = (t) => t < 0.5 ? (1 - Math.sqrt(1 - Math.pow(2 * t, 2))) / 2 : (Math.sqrt(1 - Math.pow(-2 * t + 2, 2)) + 1) / 2;
           break;
         }
-        case jt.EaseInBack: {
+        case Yt.EaseInBack: {
           e = (t) => 2.70158 * t * t * t - 1.70158 * t * t;
           break;
         }
-        case jt.EaseOutBack: {
+        case Yt.EaseOutBack: {
           e = (t) => 2.70158 * Math.pow(t - 1, 3) + 1.70158 * Math.pow(t - 1, 2);
           break;
         }
-        case jt.EaseInOutBack: {
+        case Yt.EaseInOutBack: {
           e = (t) => t < 0.5 ? Math.pow(2 * t, 2) * (3.5949095 * 2 * t - 2.5949095) / 2 : (Math.pow(2 * t - 2, 2) * (3.5949095 * (t * 2 - 2) + 3.5949095) + 2) / 2;
           break;
         }
-        case jt.EaseInElastic: {
+        case Yt.EaseInElastic: {
           e = (t) => t === 0 ? 0 : t === 1 ? 1 : -Math.pow(2, 10 * t - 10) * Math.sin((t * 10 - 10.75) * (2 * 3.1415 / 3));
           break;
         }
-        case jt.EaseOutElastic: {
+        case Yt.EaseOutElastic: {
           e = (t) => t === 0 ? 0 : t === 1 ? 1 : Math.pow(2, -10 * t) * Math.sin((t * 10 - 0.75) * (2 * 3.1415 / 3)) + 1;
           break;
         }
-        case jt.EaseInOutElastic: {
+        case Yt.EaseInOutElastic: {
           e = (t) => t === 0 ? 0 : t == 1 ? 1 : t < 0.5 ? -(Math.pow(2, 20 * t - 10) * Math.sin((20 * t - 11.125) * (2 * 3.1415 / 4.5))) / 2 : Math.pow(2, -20 * t + 10) * Math.sin((20 * t - 11.125) * (2 * 3.1415 / 4.5)) / 2 + 1;
           break;
         }
@@ -120493,7 +120493,7 @@ vertexOutputs.grlCounters=input.grl_counters;vertexOutputs.position=grlMatrix*ve
       super._deserialize(e), this.type = e.curveType;
     }
     _dumpPropertiesCode() {
-      return super._dumpPropertiesCode() + `${this._codeVariableName}.type = BABYLON.GeometryCurveBlockTypes.${jt[this.type]};
+      return super._dumpPropertiesCode() + `${this._codeVariableName}.type = BABYLON.GeometryCurveBlockTypes.${Yt[this.type]};
 `;
     }
   }
@@ -120506,111 +120506,111 @@ vertexOutputs.grlCounters=input.grl_counters;vertexOutputs.position=grlMatrix*ve
       options: [
         {
           label: "EaseInSine",
-          value: jt.EaseInSine
+          value: Yt.EaseInSine
         },
         {
           label: "EaseOutSine",
-          value: jt.EaseOutSine
+          value: Yt.EaseOutSine
         },
         {
           label: "EaseInOutSine",
-          value: jt.EaseInOutSine
+          value: Yt.EaseInOutSine
         },
         {
           label: "EaseInQuad",
-          value: jt.EaseInQuad
+          value: Yt.EaseInQuad
         },
         {
           label: "EaseOutQuad",
-          value: jt.EaseOutQuad
+          value: Yt.EaseOutQuad
         },
         {
           label: "EaseInOutQuad",
-          value: jt.EaseInOutQuad
+          value: Yt.EaseInOutQuad
         },
         {
           label: "EaseInCubic",
-          value: jt.EaseInCubic
+          value: Yt.EaseInCubic
         },
         {
           label: "EaseOutCubic",
-          value: jt.EaseOutCubic
+          value: Yt.EaseOutCubic
         },
         {
           label: "EaseInOutCubic",
-          value: jt.EaseInOutCubic
+          value: Yt.EaseInOutCubic
         },
         {
           label: "EaseInQuart",
-          value: jt.EaseInQuart
+          value: Yt.EaseInQuart
         },
         {
           label: "EaseOutQuart",
-          value: jt.EaseOutQuart
+          value: Yt.EaseOutQuart
         },
         {
           label: "EaseInOutQuart",
-          value: jt.EaseInOutQuart
+          value: Yt.EaseInOutQuart
         },
         {
           label: "EaseInQuint",
-          value: jt.EaseInQuint
+          value: Yt.EaseInQuint
         },
         {
           label: "EaseOutQuint",
-          value: jt.EaseOutQuint
+          value: Yt.EaseOutQuint
         },
         {
           label: "EaseInOutQuint",
-          value: jt.EaseInOutQuint
+          value: Yt.EaseInOutQuint
         },
         {
           label: "EaseInExpo",
-          value: jt.EaseInExpo
+          value: Yt.EaseInExpo
         },
         {
           label: "EaseOutExpo",
-          value: jt.EaseOutExpo
+          value: Yt.EaseOutExpo
         },
         {
           label: "EaseInOutExpo",
-          value: jt.EaseInOutExpo
+          value: Yt.EaseInOutExpo
         },
         {
           label: "EaseInCirc",
-          value: jt.EaseInCirc
+          value: Yt.EaseInCirc
         },
         {
           label: "EaseOutCirc",
-          value: jt.EaseOutCirc
+          value: Yt.EaseOutCirc
         },
         {
           label: "EaseInOutCirc",
-          value: jt.EaseInOutCirc
+          value: Yt.EaseInOutCirc
         },
         {
           label: "EaseInBack",
-          value: jt.EaseInBack
+          value: Yt.EaseInBack
         },
         {
           label: "EaseOutBack",
-          value: jt.EaseOutBack
+          value: Yt.EaseOutBack
         },
         {
           label: "EaseInOutBack",
-          value: jt.EaseInOutBack
+          value: Yt.EaseInOutBack
         },
         {
           label: "EaseInElastic",
-          value: jt.EaseInElastic
+          value: Yt.EaseInElastic
         },
         {
           label: "EaseOutElastic",
-          value: jt.EaseOutElastic
+          value: Yt.EaseOutElastic
         },
         {
           label: "EaseInOutElastic",
-          value: jt.EaseInOutElastic
+          value: Yt.EaseInOutElastic
         }
       ]
     })
@@ -124426,7 +124426,7 @@ fn main(input: FragmentInputs)->FragmentOutputs {fragmentOutputs.color=textureSa
       }), this.datasetObservable.clear(), this.metadataObservable.clear(), this._isStarted = false, this.datasets = null;
     }
   }
-  Ze.prototype.getPerfCollector = function() {
+  qe.prototype.getPerfCollector = function() {
     return this._perfCollector || (this._perfCollector = new bl(this)), this._perfCollector;
   };
   function Bpe(a) {
@@ -126160,7 +126160,7 @@ vec4 worldPos=vec4(vPositionW,1.0);
       return hl(r), e && r.push("sheetInfos"), t && r.push("logarithmicDepthConstant"), i && (r.push("vFogInfos"), r.push("vFogColor")), r;
     }
     fillDefines(e, t = 0, i = true) {
-      if (this._scene && (Eu(this, this._scene, e), this.applyFog && this._scene.fogEnabled && this._scene.fogMode !== Ze.FOGMODE_NONE && e.push("#define FOG")), t === xr.BLENDMODE_MULTIPLY && e.push("#define BLENDMULTIPLYMODE"), this.isLocal && e.push("#define LOCAL"), this.useLogarithmicDepth && e.push("#define LOGARITHMICDEPTH"), this._isBillboardBased) switch (e.push("#define BILLBOARD"), this.billboardMode) {
+      if (this._scene && (Eu(this, this._scene, e), this.applyFog && this._scene.fogEnabled && this._scene.fogMode !== qe.FOGMODE_NONE && e.push("#define FOG")), t === xr.BLENDMODE_MULTIPLY && e.push("#define BLENDMULTIPLYMODE"), this.isLocal && e.push("#define LOCAL"), this.useLogarithmicDepth && e.push("#define LOGARITHMICDEPTH"), this._isBillboardBased) switch (e.push("#define BILLBOARD"), this.billboardMode) {
         case xr.BILLBOARDMODE_Y:
           e.push("#define BILLBOARDY");
           break;
@@ -126174,7 +126174,7 @@ vec4 worldPos=vec4(vPositionW,1.0);
       this._colorGradientsTexture && e.push("#define COLORGRADIENTS"), this.isAnimationSheetEnabled && e.push("#define ANIMATESHEET"), i && this._imageProcessingConfiguration && (this._imageProcessingConfiguration.prepareDefines(this._imageProcessingConfigurationDefines), e.push("" + this._imageProcessingConfigurationDefines.toString()));
     }
     fillUniformsAttributesAndSamplerNames(e, t, i) {
-      t.push(...c_._GetAttributeNamesOrOptions(!!this._colorGradientsTexture, this._isAnimationSheetEnabled, this._isBillboardBased, this._isBillboardBased && this.billboardMode === xr.BILLBOARDMODE_STRETCHED)), e.push(...c_._GetEffectCreationOptions(this._isAnimationSheetEnabled, this.useLogarithmicDepth, this.applyFog)), i.push("diffuseSampler", "colorGradientSampler"), this._imageProcessingConfiguration && (Qt.PrepareUniforms(e, this._imageProcessingConfigurationDefines), Qt.PrepareSamplers(i, this._imageProcessingConfigurationDefines));
+      t.push(...c_._GetAttributeNamesOrOptions(!!this._colorGradientsTexture, this._isAnimationSheetEnabled, this._isBillboardBased, this._isBillboardBased && this.billboardMode === xr.BILLBOARDMODE_STRETCHED)), e.push(...c_._GetEffectCreationOptions(this._isAnimationSheetEnabled, this.useLogarithmicDepth, this.applyFog)), i.push("diffuseSampler", "colorGradientSampler"), this._imageProcessingConfiguration && (jt.PrepareUniforms(e, this._imageProcessingConfigurationDefines), jt.PrepareSamplers(i, this._imageProcessingConfigurationDefines));
     }
     animate(e = false) {
       var _a2;
@@ -126502,8 +126502,8 @@ vec4 worldPos=vec4(vPositionW,1.0);
       let E = 0, A = 0, P = 0, y = 0, C = 0, R = 0, D = 0, B = 0, V = 0, L = 0, ee = 0, q = 0, de = 0;
       const se = v.Zero(), te = v.Zero(), K = v.Zero(), Se = v.Zero(), ce = v.Zero();
       let fe = 0, X = 0, F = 0, $ = 0, le = 0, Te = 0;
-      const ie = he.Zero(), pe = he.Zero(), Je = he.Zero(), Ge = he.Zero(), pt = he.Zero();
-      let De = 0, Qe = 0, ge = 0, dt = 0, ei = 0, wt = 0, ye = 0, me = 0, Nt = 0, Yt = 0, Ke = 0, qe = 0;
+      const ie = he.Zero(), pe = he.Zero(), Ze = he.Zero(), Ge = he.Zero(), pt = he.Zero();
+      let De = 0, Qe = 0, me = 0, dt = 0, ei = 0, Nt = 0, ye = 0, ge = 0, Dt = 0, Qt = 0, Je = 0, Ke = 0;
       const Ft = We.Zero(), Er = We.Zero(), Rr = We.Zero(), ka = We.Zero(), yn = We.Zero();
       let zs = 0, pr = 0;
       o = o || 0;
@@ -126511,7 +126511,7 @@ vec4 worldPos=vec4(vPositionW,1.0);
       const Sa = new kt(v.Zero(), new v(1, 0, 0));
       let zl, di = v.Zero();
       for (let ps = 0; ps < f.length / 3; ps++) {
-        A = f[3 * ps], P = f[3 * ps + 1], y = f[3 * ps + 2], C = u[3 * A], R = u[3 * A + 1], D = u[3 * A + 2], B = u[3 * P], V = u[3 * P + 1], L = u[3 * P + 2], ee = u[3 * y], q = u[3 * y + 1], de = u[3 * y + 2], se.set(C, R, D), te.set(B, V, L), K.set(ee, q, de), te.subtractToRef(se, Se), K.subtractToRef(te, ce), p && (fe = p[2 * A], X = p[2 * A + 1], F = p[2 * P], $ = p[2 * P + 1], le = p[2 * y], Te = p[2 * y + 1], ie.set(fe, X), pe.set(F, $), Je.set(le, Te), pe.subtractToRef(ie, Ge), Je.subtractToRef(pe, pt)), m && r && (De = m[4 * A], Qe = m[4 * A + 1], ge = m[4 * A + 2], dt = m[4 * A + 3], ei = m[4 * P], wt = m[4 * P + 1], ye = m[4 * P + 2], me = m[4 * P + 3], Nt = m[4 * y], Yt = m[4 * y + 1], Ke = m[4 * y + 2], qe = m[4 * y + 3], Ft.set(De, Qe, ge, dt), Er.set(ei, wt, ye, me), Rr.set(Nt, Yt, Ke, qe), Er.subtractToRef(Ft, ka), Rr.subtractToRef(Er, yn));
+        A = f[3 * ps], P = f[3 * ps + 1], y = f[3 * ps + 2], C = u[3 * A], R = u[3 * A + 1], D = u[3 * A + 2], B = u[3 * P], V = u[3 * P + 1], L = u[3 * P + 2], ee = u[3 * y], q = u[3 * y + 1], de = u[3 * y + 2], se.set(C, R, D), te.set(B, V, L), K.set(ee, q, de), te.subtractToRef(se, Se), K.subtractToRef(te, ce), p && (fe = p[2 * A], X = p[2 * A + 1], F = p[2 * P], $ = p[2 * P + 1], le = p[2 * y], Te = p[2 * y + 1], ie.set(fe, X), pe.set(F, $), Ze.set(le, Te), pe.subtractToRef(ie, Ge), Ze.subtractToRef(pe, pt)), m && r && (De = m[4 * A], Qe = m[4 * A + 1], me = m[4 * A + 2], dt = m[4 * A + 3], ei = m[4 * P], Nt = m[4 * P + 1], ye = m[4 * P + 2], ge = m[4 * P + 3], Dt = m[4 * y], Qt = m[4 * y + 1], Je = m[4 * y + 2], Ke = m[4 * y + 3], Ft.set(De, Qe, me, dt), Er.set(ei, Nt, ye, ge), Rr.set(Dt, Qt, Je, Ke), Er.subtractToRef(Ft, ka), Rr.subtractToRef(Er, yn));
         let Is, Ga, Ta, af, Fu, Ps, za, Wa;
         const yh = new ue(0, 0, 0), pl = new ue(0, 0, 0);
         let _t, Bt;
@@ -127106,10 +127106,10 @@ var worldPos: vec4f= vec4f(vertexOutputs.vPositionW,1.0);
   (function(a) {
     a[a.OK = 0] = "OK", a[a.FAILURE_3D = 1] = "FAILURE_3D", a[a.FAILURE_2D = 2] = "FAILURE_2D";
   })(NL || (NL = {}));
-  Ze.prototype.getPhysicsEngine = function() {
+  qe.prototype.getPhysicsEngine = function() {
     return this._physicsEngine;
   };
-  Ze.prototype.enablePhysics = function(a = null, e) {
+  qe.prototype.enablePhysics = function(a = null, e) {
     if (this._physicsEngine) return true;
     let t = this._getComponent(Ne.NAME_PHYSICSENGINE);
     t || (t = new Sme(this), this._addComponent(t));
@@ -127122,17 +127122,17 @@ var worldPos: vec4f= vec4f(vertexOutputs.vPositionW,1.0);
       return G.Error(i.message), false;
     }
   };
-  Ze.prototype.disablePhysicsEngine = function() {
+  qe.prototype.disablePhysicsEngine = function() {
     this._physicsEngine && (this._physicsEngine.dispose(), this._physicsEngine = null);
   };
-  Ze.prototype.isPhysicsEnabled = function() {
+  qe.prototype.isPhysicsEnabled = function() {
     return this._physicsEngine !== void 0;
   };
-  Ze.prototype.deleteCompoundImpostor = function(a) {
+  qe.prototype.deleteCompoundImpostor = function(a) {
     const e = a.parts[0].mesh;
     e.physicsImpostor && (e.physicsImpostor.dispose(), e.physicsImpostor = null);
   };
-  Ze.prototype._advancePhysicsEngineStep = function(a) {
+  qe.prototype._advancePhysicsEngineStep = function(a) {
     if (this._physicsEngine) {
       const e = this._physicsEngine.getSubTimeStep();
       if (e > 0) for (this._physicsTimeAccumulator += a; this._physicsTimeAccumulator > e; ) this.onBeforePhysicsObservable.notifyObservers(this), this._physicsEngine._step(e / 1e3), this.onAfterPhysicsObservable.notifyObservers(this), this._physicsTimeAccumulator -= e;
@@ -127902,7 +127902,7 @@ var worldPos: vec4f= vec4f(vertexOutputs.vPositionW,1.0);
             const n = r.scenes;
             i = n[n.length - 1];
           } else i = Xe.LastCreatedScene;
-          i ? this._imageProcessingConfiguration = i.imageProcessingConfiguration : this._imageProcessingConfiguration = new Qt();
+          i ? this._imageProcessingConfiguration = i.imageProcessingConfiguration : this._imageProcessingConfiguration = new jt();
         }
         this._imageProcessingConfiguration && (this._imageProcessingObserver = this._imageProcessingConfiguration.onUpdateParameters.add(() => {
           this._updateParameters();
@@ -128089,7 +128089,7 @@ var worldPos: vec4f= vec4f(vertexOutputs.vPositionW,1.0);
       ], i = [
         "scale"
       ];
-      Qt && (Qt.PrepareSamplers(t, this._defines), Qt.PrepareUniforms(i, this._defines)), this.updateEffect(e, i, t);
+      jt && (jt.PrepareSamplers(t, this._defines), jt.PrepareUniforms(i, this._defines)), this.updateEffect(e, i, t);
     }
     dispose(e) {
       super.dispose(e), this._imageProcessingConfiguration && this._imageProcessingObserver && this._imageProcessingConfiguration.onUpdateParameters.remove(this._imageProcessingObserver), this._imageProcessingConfiguration && (this.imageProcessingConfiguration.applyByPostProcess = false);
@@ -128745,7 +128745,7 @@ vAlbedoUV=vec2(albedoMatrix*vec4(uv2Updated,1.0,0.0));
       ];
     }
   }
-  Object.defineProperty(Ze.prototype, "geometryBufferRenderer", {
+  Object.defineProperty(qe.prototype, "geometryBufferRenderer", {
     get: function() {
       return this._geometryBufferRenderer;
     },
@@ -128755,10 +128755,10 @@ vAlbedoUV=vec2(albedoMatrix*vec4(uv2Updated,1.0,0.0));
     enumerable: true,
     configurable: true
   });
-  Ze.prototype.enableGeometryBufferRenderer = function(a = 1, e = 15, t) {
+  qe.prototype.enableGeometryBufferRenderer = function(a = 1, e = 15, t) {
     return this._geometryBufferRenderer ? this._geometryBufferRenderer : (this._geometryBufferRenderer = new ti(this, a, e, t), this._geometryBufferRenderer.isSupported || (this._geometryBufferRenderer = null), this._geometryBufferRenderer);
   };
-  Ze.prototype.disableGeometryBufferRenderer = function() {
+  qe.prototype.disableGeometryBufferRenderer = function() {
     this._geometryBufferRenderer && (this._geometryBufferRenderer.dispose(), this._geometryBufferRenderer = null);
   };
   class wme {
@@ -129122,7 +129122,7 @@ color*4.0;gl_FragColor=max(vec4(color.rgb*sharpnessAmounts.y,color.a)-(sharpness
       for (const e in this._renderPipelines) Object.prototype.hasOwnProperty.call(this._renderPipelines, e) && this._renderPipelines[e].dispose();
     }
   }
-  Object.defineProperty(Ze.prototype, "postProcessRenderPipelineManager", {
+  Object.defineProperty(qe.prototype, "postProcessRenderPipelineManager", {
     get: function() {
       if (!this._postProcessRenderPipelineManager) {
         let a = this._getComponent(Ne.NAME_POSTPROCESSRENDERPIPELINEMANAGER);
@@ -133678,7 +133678,7 @@ colour= vec3f(1.0,1.0,1.0)-exp2(-uniforms._ExposureAdjustment*colour);
 #endif
 fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
   U.ShadersStoreWGSL[Dxe] = wxe;
-  Object.defineProperty(Ze.prototype, "forceShowBoundingBoxes", {
+  Object.defineProperty(qe.prototype, "forceShowBoundingBoxes", {
     get: function() {
       return this._forceShowBoundingBoxes || false;
     },
@@ -133688,7 +133688,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
     enumerable: true,
     configurable: true
   });
-  Ze.prototype.getBoundingBoxRenderer = function() {
+  qe.prototype.getBoundingBoxRenderer = function() {
     return this._boundingBoxRenderer || (this._boundingBoxRenderer = new Fxe(this)), this._boundingBoxRenderer;
   };
   Object.defineProperty(ai.prototype, "showBoundingBox", {
@@ -133926,7 +133926,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
       e && (e.dispose(), this._vertexBuffers[w.PositionKind] = null), this.scene.getEngine()._releaseBuffer(this._indexBuffer), this._fillIndexBuffer && (this.scene.getEngine()._releaseBuffer(this._fillIndexBuffer), this._fillIndexBuffer = null), this._cleanupInstances();
     }
   }
-  Ze.prototype.enableDepthRenderer = function(a, e = false, t = false, i = 3, r = false) {
+  qe.prototype.enableDepthRenderer = function(a, e = false, t = false, i = 3, r = false) {
     if (a = a || this.activeCamera, !a) throw "No camera available to enable depth renderer";
     if (this._depthRenderer || (this._depthRenderer = {}), !this._depthRenderer[a.id]) {
       const s = !!this.getEngine().getCaps().textureFloatRender;
@@ -133935,7 +133935,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
     }
     return this._depthRenderer[a.id];
   };
-  Ze.prototype.disableDepthRenderer = function(a) {
+  qe.prototype.disableDepthRenderer = function(a) {
     a = a || this.activeCamera, !(!a || !this._depthRenderer || !this._depthRenderer[a.id]) && this._depthRenderer[a.id].dispose();
   };
   class Bxe {
@@ -134190,7 +134190,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
   ih._DEPTH_CLEAR_VALUE = -99999;
   ih._MIN_DEPTH = 0;
   ih._MAX_DEPTH = 1;
-  Object.defineProperty(Ze.prototype, "depthPeelingRenderer", {
+  Object.defineProperty(qe.prototype, "depthPeelingRenderer", {
     get: function() {
       if (!this._depthPeelingRenderer) {
         let a = this._getComponent(Ne.NAME_DEPTHPEELINGRENDERER);
@@ -134204,7 +134204,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
     enumerable: true,
     configurable: true
   });
-  Object.defineProperty(Ze.prototype, "useOrderIndependentTransparency", {
+  Object.defineProperty(qe.prototype, "useOrderIndependentTransparency", {
     get: function() {
       return this._useOrderIndependentTransparency;
     },
@@ -134544,7 +134544,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
       this._buffers[w.PositionKind] = new w(n, this._linesPositions, w.PositionKind, false), this._buffers[w.NormalKind] = new w(n, this._linesNormals, w.NormalKind, false, false, 4), this._ib = n.createIndexBuffer(this._linesIndices), this._indicesCount = this._linesIndices.length;
     }
   }
-  Object.defineProperty(Ze.prototype, "iblCdfGenerator", {
+  Object.defineProperty(qe.prototype, "iblCdfGenerator", {
     get: function() {
       return this._iblCdfGenerator;
     },
@@ -134554,10 +134554,10 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
     enumerable: true,
     configurable: true
   });
-  Ze.prototype.enableIblCdfGenerator = function() {
+  qe.prototype.enableIblCdfGenerator = function() {
     return this._iblCdfGenerator ? this._iblCdfGenerator : (this._iblCdfGenerator = new zd(this), this.environmentTexture && (this._iblCdfGenerator.iblSource = this.environmentTexture), this._iblCdfGenerator);
   };
-  Ze.prototype.disableIblCdfGenerator = function() {
+  qe.prototype.disableIblCdfGenerator = function() {
     this._iblCdfGenerator && (this._iblCdfGenerator.dispose(), this._iblCdfGenerator = null);
   };
   class zxe {
@@ -135136,7 +135136,7 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
       name: "prePass_VelocityLinear"
     }
   ];
-  Object.defineProperty(Ze.prototype, "prePassRenderer", {
+  Object.defineProperty(qe.prototype, "prePassRenderer", {
     get: function() {
       return this._prePassRenderer;
     },
@@ -135146,12 +135146,12 @@ fragmentOutputs.color= vec4f(colour.rgb,1.0);}`;
     enumerable: true,
     configurable: true
   });
-  Ze.prototype.enablePrePassRenderer = function() {
+  qe.prototype.enablePrePassRenderer = function() {
     return this._prePassRenderer ? this._prePassRenderer : (this._prePassRenderer = new Pn(this), this._prePassRenderer.isSupported || (this._prePassRenderer = null, G.Error(`PrePassRenderer needs WebGL 2 support.
 Maybe you tried to use the following features that need the PrePassRenderer :
  + Subsurface Scattering`)), this._prePassRenderer);
   };
-  Ze.prototype.disablePrePassRenderer = function() {
+  qe.prototype.disablePrePassRenderer = function() {
     this._prePassRenderer && (this._prePassRenderer.dispose(), this._prePassRenderer = null);
   };
   class Xxe {
@@ -135350,7 +135350,7 @@ totalWeight=max(totalWeight,HALF_MIN);gl_FragColor=vec4(inputColor.rgb+albedo*ma
       e.subSurfaceConfiguration.addDiffusionProfile(new ue(r.r, r.g, r.b));
     }
   });
-  Object.defineProperty(Ze.prototype, "subSurfaceConfiguration", {
+  Object.defineProperty(qe.prototype, "subSurfaceConfiguration", {
     get: function() {
       return this._subSurfaceConfiguration;
     },
@@ -135360,12 +135360,12 @@ totalWeight=max(totalWeight,HALF_MIN);gl_FragColor=vec4(inputColor.rgb+albedo*ma
     enumerable: true,
     configurable: true
   });
-  Ze.prototype.enableSubSurfaceForPrePass = function() {
+  qe.prototype.enableSubSurfaceForPrePass = function() {
     if (this._subSurfaceConfiguration) return this._subSurfaceConfiguration;
     const a = this.enablePrePassRenderer();
     return a ? (this._subSurfaceConfiguration = new av(this), a.addEffectConfiguration(this._subSurfaceConfiguration), this._subSurfaceConfiguration) : null;
   };
-  Ze.prototype.disableSubSurfaceForPrePass = function() {
+  qe.prototype.disableSubSurfaceForPrePass = function() {
     this._subSurfaceConfiguration && (this._subSurfaceConfiguration.dispose(), this._subSurfaceConfiguration = null);
   };
   class Jxe {
@@ -135398,7 +135398,7 @@ totalWeight=max(totalWeight,HALF_MIN);gl_FragColor=vec4(inputColor.rgb+albedo*ma
     let e = a._getComponent(Ne.NAME_SUBSURFACE);
     e || (e = new Jxe(a), a._addComponent(e));
   };
-  Ze.prototype.getOutlineRenderer = function() {
+  qe.prototype.getOutlineRenderer = function() {
     return this._outlineRenderer || (this._outlineRenderer = new xg(this)), this._outlineRenderer;
   };
   Object.defineProperty(oe.prototype, "renderOutline", {
@@ -136188,7 +136188,7 @@ totalWeight=max(totalWeight,HALF_MIN);gl_FragColor=vec4(inputColor.rgb+albedo*ma
       this._depthRTWrapper.dispose(), this._copyTextureToTexture.dispose();
     }
   }
-  Object.defineProperty(Ze.prototype, "fluidRenderer", {
+  Object.defineProperty(qe.prototype, "fluidRenderer", {
     get: function() {
       return this._fluidRenderer;
     },
@@ -136198,10 +136198,10 @@ totalWeight=max(totalWeight,HALF_MIN);gl_FragColor=vec4(inputColor.rgb+albedo*ma
     enumerable: true,
     configurable: true
   });
-  Ze.prototype.enableFluidRenderer = function() {
+  qe.prototype.enableFluidRenderer = function() {
     return this._fluidRenderer ? this._fluidRenderer : (this._fluidRenderer = new ER(this), this._fluidRenderer);
   };
-  Ze.prototype.disableFluidRenderer = function() {
+  qe.prototype.disableFluidRenderer = function() {
     var _a2;
     (_a2 = this._fluidRenderer) == null ? void 0 : _a2.dispose(), this._fluidRenderer = null;
   };
@@ -141827,15 +141827,15 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
     }
   }
   hq("NativeXRFrame", i0e);
-  class Dt {
-    constructor(e, t = Dt.UNITMODE_PIXEL, i = true) {
-      this.negativeValueAllowed = i, this._value = 1, this._unit = Dt.UNITMODE_PIXEL, this.ignoreAdaptiveScaling = false, this.onChangedObservable = new J(), this._value = e, this._unit = t, this._originalUnit = t;
+  class wt {
+    constructor(e, t = wt.UNITMODE_PIXEL, i = true) {
+      this.negativeValueAllowed = i, this._value = 1, this._unit = wt.UNITMODE_PIXEL, this.ignoreAdaptiveScaling = false, this.onChangedObservable = new J(), this._value = e, this._unit = t, this._originalUnit = t;
     }
     get isPercentage() {
-      return this._unit === Dt.UNITMODE_PERCENTAGE;
+      return this._unit === wt.UNITMODE_PERCENTAGE;
     }
     get isPixel() {
-      return this._unit === Dt.UNITMODE_PIXEL;
+      return this._unit === wt.UNITMODE_PIXEL;
     }
     get internalValue() {
       return this._value;
@@ -141855,11 +141855,11 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
     getValueInPixel(e, t) {
       return this.isPixel ? this.getValue(e) : this.getValue(e) * t;
     }
-    updateInPlace(e, t = Dt.UNITMODE_PIXEL) {
+    updateInPlace(e, t = wt.UNITMODE_PIXEL) {
       return (this.value !== e || this.unit !== t) && (this._value = e, this._unit = t, this.onChangedObservable.notifyObservers()), this;
     }
     getValue(e) {
-      if (e && !this.ignoreAdaptiveScaling && this.unit !== Dt.UNITMODE_PERCENTAGE) {
+      if (e && !this.ignoreAdaptiveScaling && this.unit !== wt.UNITMODE_PERCENTAGE) {
         let t = 0, i = 0;
         if (e.idealWidth && (t = Math.ceil(this._value * e.getSize().width / e.idealWidth)), e.idealHeight && (i = Math.ceil(this._value * e.getSize().height / e.idealHeight)), e.useSmallestIdeal && e.idealWidth && e.idealHeight) return window.innerWidth < window.innerHeight ? t : i;
         if (e.idealWidth) return t;
@@ -141869,11 +141869,11 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
     }
     toString(e, t) {
       switch (this._unit) {
-        case Dt.UNITMODE_PERCENTAGE: {
+        case wt.UNITMODE_PERCENTAGE: {
           const i = this.getValue(e) * 100;
           return (t ? i.toFixed(t) : i) + "%";
         }
-        case Dt.UNITMODE_PIXEL: {
+        case wt.UNITMODE_PIXEL: {
           const i = this.getValue(e);
           return (t ? i.toFixed(t) : i) + "px";
         }
@@ -141881,29 +141881,29 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       return this._unit.toString();
     }
     fromString(e) {
-      const t = Dt._Regex.exec(e.toString());
+      const t = wt._Regex.exec(e.toString());
       if (!t || t.length === 0) return false;
       let i = parseFloat(t[1]), r = this._originalUnit;
       if (this.negativeValueAllowed || i < 0 && (i = 0), t.length === 4) switch (t[3]) {
         case "px":
-          r = Dt.UNITMODE_PIXEL;
+          r = wt.UNITMODE_PIXEL;
           break;
         case "%":
-          r = Dt.UNITMODE_PERCENTAGE, i /= 100;
+          r = wt.UNITMODE_PERCENTAGE, i /= 100;
           break;
       }
       return i === this._value && r === this._unit ? false : (this._value = i, this._unit = r, this.onChangedObservable.notifyObservers(), true);
     }
     static get UNITMODE_PERCENTAGE() {
-      return Dt._UNITMODE_PERCENTAGE;
+      return wt._UNITMODE_PERCENTAGE;
     }
     static get UNITMODE_PIXEL() {
-      return Dt._UNITMODE_PIXEL;
+      return wt._UNITMODE_PIXEL;
     }
   }
-  Dt._Regex = /(^-?\d*(\.\d+)?)(%|px)?/;
-  Dt._UNITMODE_PERCENTAGE = 0;
-  Dt._UNITMODE_PIXEL = 1;
+  wt._Regex = /(^-?\d*(\.\d+)?)(%|px)?/;
+  wt._UNITMODE_PERCENTAGE = 0;
+  wt._UNITMODE_PIXEL = 1;
   const Zf = [
     new he(0, 0),
     new he(0, 0),
@@ -142418,7 +142418,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       e.key === "Enter" && this.onEnterPressedObservable.notifyObservers(this), this.onKeyboardEventProcessedObservable.notifyObservers(e, -1, this);
     }
     constructor(e) {
-      this.name = e, this._alpha = 1, this._alphaSet = false, this._zIndex = 0, this._currentMeasure = Ks.Empty(), this._tempPaddingMeasure = Ks.Empty(), this._fontFamily = "", this._fontStyle = "", this._fontWeight = "", this._fontSize = new Dt(18, Dt.UNITMODE_PIXEL, false), this._width = new Dt(1, Dt.UNITMODE_PERCENTAGE, false), this._height = new Dt(1, Dt.UNITMODE_PERCENTAGE, false), this._color = "", this._style = null, this._horizontalAlignment = be.HORIZONTAL_ALIGNMENT_CENTER, this._verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, this._isDirty = true, this._wasDirty = false, this._tempParentMeasure = Ks.Empty(), this._prevCurrentMeasureTransformedIntoGlobalSpace = Ks.Empty(), this._cachedParentMeasure = Ks.Empty(), this._descendantsOnlyPadding = false, this._paddingLeft = new Dt(0), this._paddingRight = new Dt(0), this._paddingTop = new Dt(0), this._paddingBottom = new Dt(0), this._left = new Dt(0), this._top = new Dt(0), this._scaleX = 1, this._scaleY = 1, this._rotation = 0, this._transformCenterX = 0.5, this._transformCenterY = 0.5, this._transformMatrix = Oi.Identity(), this._invertTransformMatrix = Oi.Identity(), this._transformedPosition = he.Zero(), this._isMatrixDirty = true, this._isVisible = true, this._isHighlighted = false, this._highlightColor = "#4affff", this._highlightLineWidth = 2, this._fontSet = false, this._dummyVector2 = he.Zero(), this._downCount = 0, this._enterCount = -1, this._doNotRender = false, this._downPointerIds = {}, this._evaluatedMeasure = new Ks(0, 0, 0, 0), this._evaluatedParentMeasure = new Ks(0, 0, 0, 0), this._isEnabled = true, this._disabledColor = "#9a9a9a", this._disabledColorItem = "#6a6a6a", this._isReadOnly = false, this._gradient = null, this._rebuildLayout = false, this.onEnabledStateChangedObservable = new J(), this._customData = {}, this._isClipped = false, this._automaticSize = false, this.metadata = null, this.isHitTestVisible = true, this.isPointerBlocker = false, this.isFocusInvisible = false, this._clipChildren = true, this._clipContent = true, this.useBitmapCache = false, this._shadowOffsetX = 0, this._shadowOffsetY = 0, this._shadowBlur = 0, this._previousShadowBlur = 0, this._shadowColor = "black", this.hoverCursor = "", this._linkOffsetX = new Dt(0), this._linkOffsetY = new Dt(0), this._accessibilityTag = null, this.onAccessibilityTagChangedObservable = new J(), this.onWheelObservable = new J(), this.onPointerMoveObservable = new J(), this.onPointerOutObservable = new J(), this.onPointerDownObservable = new J(), this.onPointerUpObservable = new J(), this.onPointerClickObservable = new J(), this.onEnterPressedObservable = new J(), this.onPointerEnterObservable = new J(), this.onDirtyObservable = new J(), this.onBeforeDrawObservable = new J(), this.onAfterDrawObservable = new J(), this.onDisposeObservable = new J(), this.onIsVisibleChangedObservable = new J(), this.isSerializable = true, this._fixedRatio = 0, this._fixedRatioMasterIsWidth = true, this.animations = null, this._focusedColor = null, this.tabIndex = -1, this._isFocused = false, this._unfocusedColor = null, this.onFocusObservable = new J(), this.onBlurObservable = new J(), this.onKeyboardEventProcessedObservable = new J(), this._tmpMeasureA = new Ks(0, 0, 0, 0);
+      this.name = e, this._alpha = 1, this._alphaSet = false, this._zIndex = 0, this._currentMeasure = Ks.Empty(), this._tempPaddingMeasure = Ks.Empty(), this._fontFamily = "", this._fontStyle = "", this._fontWeight = "", this._fontSize = new wt(18, wt.UNITMODE_PIXEL, false), this._width = new wt(1, wt.UNITMODE_PERCENTAGE, false), this._height = new wt(1, wt.UNITMODE_PERCENTAGE, false), this._color = "", this._style = null, this._horizontalAlignment = be.HORIZONTAL_ALIGNMENT_CENTER, this._verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, this._isDirty = true, this._wasDirty = false, this._tempParentMeasure = Ks.Empty(), this._prevCurrentMeasureTransformedIntoGlobalSpace = Ks.Empty(), this._cachedParentMeasure = Ks.Empty(), this._descendantsOnlyPadding = false, this._paddingLeft = new wt(0), this._paddingRight = new wt(0), this._paddingTop = new wt(0), this._paddingBottom = new wt(0), this._left = new wt(0), this._top = new wt(0), this._scaleX = 1, this._scaleY = 1, this._rotation = 0, this._transformCenterX = 0.5, this._transformCenterY = 0.5, this._transformMatrix = Oi.Identity(), this._invertTransformMatrix = Oi.Identity(), this._transformedPosition = he.Zero(), this._isMatrixDirty = true, this._isVisible = true, this._isHighlighted = false, this._highlightColor = "#4affff", this._highlightLineWidth = 2, this._fontSet = false, this._dummyVector2 = he.Zero(), this._downCount = 0, this._enterCount = -1, this._doNotRender = false, this._downPointerIds = {}, this._evaluatedMeasure = new Ks(0, 0, 0, 0), this._evaluatedParentMeasure = new Ks(0, 0, 0, 0), this._isEnabled = true, this._disabledColor = "#9a9a9a", this._disabledColorItem = "#6a6a6a", this._isReadOnly = false, this._gradient = null, this._rebuildLayout = false, this.onEnabledStateChangedObservable = new J(), this._customData = {}, this._isClipped = false, this._automaticSize = false, this.metadata = null, this.isHitTestVisible = true, this.isPointerBlocker = false, this.isFocusInvisible = false, this._clipChildren = true, this._clipContent = true, this.useBitmapCache = false, this._shadowOffsetX = 0, this._shadowOffsetY = 0, this._shadowBlur = 0, this._previousShadowBlur = 0, this._shadowColor = "black", this.hoverCursor = "", this._linkOffsetX = new wt(0), this._linkOffsetY = new wt(0), this._accessibilityTag = null, this.onAccessibilityTagChangedObservable = new J(), this.onWheelObservable = new J(), this.onPointerMoveObservable = new J(), this.onPointerOutObservable = new J(), this.onPointerDownObservable = new J(), this.onPointerUpObservable = new J(), this.onPointerClickObservable = new J(), this.onEnterPressedObservable = new J(), this.onPointerEnterObservable = new J(), this.onDirtyObservable = new J(), this.onBeforeDrawObservable = new J(), this.onAfterDrawObservable = new J(), this.onDisposeObservable = new J(), this.onIsVisibleChangedObservable = new J(), this.isSerializable = true, this._fixedRatio = 0, this._fixedRatioMasterIsWidth = true, this.animations = null, this._focusedColor = null, this.tabIndex = -1, this._isFocused = false, this._unfocusedColor = null, this.onFocusObservable = new J(), this.onBlurObservable = new J(), this.onKeyboardEventProcessedObservable = new J(), this._tmpMeasureA = new Ks(0, 0, 0, 0);
     }
     _getTypeName() {
       return "Control";
@@ -143355,7 +143355,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       this._forceResizeWidth !== e && (this._forceResizeWidth = e, this._markAsDirty());
     }
     constructor(e, t = "") {
-      super(e), this.name = e, this._text = "", this._textWrapping = 0, this._textHorizontalAlignment = be.HORIZONTAL_ALIGNMENT_CENTER, this._textVerticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, this._resizeToFit = false, this._lineSpacing = new Dt(0), this._outlineWidth = 0, this._outlineColor = "white", this._underline = false, this._lineThrough = false, this._wordDivider = " ", this._forceResizeWidth = false, this._applyOutlineToUnderline = false, this.onTextChangedObservable = new J(), this.onLinesReadyObservable = new J(), this.reuseHTMLForWordWrapping = false, this._linesTemp = [], this._htmlElement = null, this.text = t;
+      super(e), this.name = e, this._text = "", this._textWrapping = 0, this._textHorizontalAlignment = be.HORIZONTAL_ALIGNMENT_CENTER, this._textVerticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, this._resizeToFit = false, this._lineSpacing = new wt(0), this._outlineWidth = 0, this._outlineColor = "white", this._underline = false, this._lineThrough = false, this._wordDivider = " ", this._forceResizeWidth = false, this._applyOutlineToUnderline = false, this.onTextChangedObservable = new J(), this.onLinesReadyObservable = new J(), this.reuseHTMLForWordWrapping = false, this._linesTemp = [], this._htmlElement = null, this.text = t;
     }
     _getTypeName() {
       return "TextBlock";
@@ -143371,14 +143371,14 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       if (this._resizeToFit) {
         if (this._textWrapping === 0 || this._forceResizeWidth) {
           const s = Math.ceil(this._paddingLeftInPixels) + Math.ceil(this._paddingRightInPixels) + Math.ceil(i);
-          s !== this._width.getValueInPixel(this._host, this._tempParentMeasure.width) && (this._width.updateInPlace(s, Dt.UNITMODE_PIXEL), this._rebuildLayout = true);
+          s !== this._width.getValueInPixel(this._host, this._tempParentMeasure.width) && (this._width.updateInPlace(s, wt.UNITMODE_PIXEL), this._rebuildLayout = true);
         }
         let r = this._paddingTopInPixels + this._paddingBottomInPixels + this._fontOffset.height * this._lines.length | 0;
         if (this._lines.length > 0 && this._lineSpacing.internalValue !== 0) {
           let s = 0;
           this._lineSpacing.isPixel ? s = this._lineSpacing.getValue(this._host) : s = this._lineSpacing.getValue(this._host) * this._height.getValueInPixel(this._host, this._cachedParentMeasure.height), r += (this._lines.length - 1) * s;
         }
-        r !== this._height.internalValue && (this._height.updateInPlace(r, Dt.UNITMODE_PIXEL), this._rebuildLayout = true);
+        r !== this._height.internalValue && (this._height.updateInPlace(r, wt.UNITMODE_PIXEL), this._rebuildLayout = true);
       }
     }
     _drawText(e, t, i, r) {
@@ -144425,7 +144425,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       this._width.toString(this._host) === e && !this._autoStretchWidth || (this._width.fromString(e) && this._markAsDirty(), this.autoStretchWidth = false);
     }
     constructor(e, t = "") {
-      super(e), this.name = e, this._placeholderText = "", this._background = "#222222", this._focusedBackground = "#000000", this._placeholderColor = "gray", this._thickness = 1, this._margin = new Dt(10, Dt.UNITMODE_PIXEL), this._autoStretchWidth = true, this._maxWidth = new Dt(1, Dt.UNITMODE_PERCENTAGE, false), this._blinkIsEven = false, this._cursorOffset = 0, this._deadKey = false, this._addKey = true, this._currentKey = "", this._isTextHighlightOn = false, this._textHighlightColor = "#d5e0ff", this._highligherOpacity = 0.4, this._highlightedText = "", this._startHighlightIndex = 0, this._endHighlightIndex = 0, this._cursorIndex = -1, this._outlineWidth = 0, this._outlineColor = "white", this._onFocusSelectAll = false, this._isPointerDown = false, this.promptMessage = "Please enter text:", this.disableMobilePrompt = false, this.onTextChangedObservable = new J(), this.onBeforeKeyAddObservable = new J(), this.onTextHighlightObservable = new J(), this.onTextCopyObservable = new J(), this.onTextCutObservable = new J(), this.onTextPasteObservable = new J(), this.text = t, this.isPointerBlocker = true, this._focusedColor = "white";
+      super(e), this.name = e, this._placeholderText = "", this._background = "#222222", this._focusedBackground = "#000000", this._placeholderColor = "gray", this._thickness = 1, this._margin = new wt(10, wt.UNITMODE_PIXEL), this._autoStretchWidth = true, this._maxWidth = new wt(1, wt.UNITMODE_PERCENTAGE, false), this._blinkIsEven = false, this._cursorOffset = 0, this._deadKey = false, this._addKey = true, this._currentKey = "", this._isTextHighlightOn = false, this._textHighlightColor = "#d5e0ff", this._highligherOpacity = 0.4, this._highlightedText = "", this._startHighlightIndex = 0, this._endHighlightIndex = 0, this._cursorIndex = -1, this._outlineWidth = 0, this._outlineColor = "white", this._onFocusSelectAll = false, this._isPointerDown = false, this.promptMessage = "Please enter text:", this.disableMobilePrompt = false, this.onTextChangedObservable = new J(), this.onBeforeKeyAddObservable = new J(), this.onTextHighlightObservable = new J(), this.onTextCopyObservable = new J(), this.onTextCutObservable = new J(), this.onTextPasteObservable = new J(), this.text = t, this.isPointerBlocker = true, this._focusedColor = "white";
     }
     onBlur() {
       this._isFocused = false, this._scrollLeft = null, this._cursorOffset = 0, clearTimeout(this._blinkTimeout), this._markAsDirty(), this.onBlurObservable.notifyObservers(this), this._host.unRegisterClipboardEvents(), this._onClipboardObserver && this._host.onClipboardObservable.remove(this._onClipboardObserver);
@@ -144749,20 +144749,20 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       return e < 0 || e >= this._columnDefinitions.length ? null : this._columnDefinitions[e];
     }
     addRowDefinition(e, t = false) {
-      return this._rowDefinitions.push(new Dt(e, t ? Dt.UNITMODE_PIXEL : Dt.UNITMODE_PERCENTAGE)), this._rowDefinitionObservers.push(this._rowDefinitions[this.rowCount - 1].onChangedObservable.add(() => this._markAsDirty())), this._markAsDirty(), this;
+      return this._rowDefinitions.push(new wt(e, t ? wt.UNITMODE_PIXEL : wt.UNITMODE_PERCENTAGE)), this._rowDefinitionObservers.push(this._rowDefinitions[this.rowCount - 1].onChangedObservable.add(() => this._markAsDirty())), this._markAsDirty(), this;
     }
     addColumnDefinition(e, t = false) {
-      return this._columnDefinitions.push(new Dt(e, t ? Dt.UNITMODE_PIXEL : Dt.UNITMODE_PERCENTAGE)), this._columnDefinitionObservers.push(this._columnDefinitions[this.columnCount - 1].onChangedObservable.add(() => this._markAsDirty())), this._markAsDirty(), this;
+      return this._columnDefinitions.push(new wt(e, t ? wt.UNITMODE_PIXEL : wt.UNITMODE_PERCENTAGE)), this._columnDefinitionObservers.push(this._columnDefinitions[this.columnCount - 1].onChangedObservable.add(() => this._markAsDirty())), this._markAsDirty(), this;
     }
     setRowDefinition(e, t, i = false) {
       if (e < 0 || e >= this._rowDefinitions.length) return this;
       const r = this._rowDefinitions[e];
-      return r && r.isPixel === i && r.value === t ? this : (this._rowDefinitions[e].onChangedObservable.remove(this._rowDefinitionObservers[e]), this._rowDefinitions[e] = new Dt(t, i ? Dt.UNITMODE_PIXEL : Dt.UNITMODE_PERCENTAGE), this._rowDefinitionObservers[e] = this._rowDefinitions[e].onChangedObservable.add(() => this._markAsDirty()), this._markAsDirty(), this);
+      return r && r.isPixel === i && r.value === t ? this : (this._rowDefinitions[e].onChangedObservable.remove(this._rowDefinitionObservers[e]), this._rowDefinitions[e] = new wt(t, i ? wt.UNITMODE_PIXEL : wt.UNITMODE_PERCENTAGE), this._rowDefinitionObservers[e] = this._rowDefinitions[e].onChangedObservable.add(() => this._markAsDirty()), this._markAsDirty(), this);
     }
     setColumnDefinition(e, t, i = false) {
       if (e < 0 || e >= this._columnDefinitions.length) return this;
       const r = this._columnDefinitions[e];
-      return r && r.isPixel === i && r.value === t ? this : (this._columnDefinitions[e].onChangedObservable.remove(this._columnDefinitionObservers[e]), this._columnDefinitions[e] = new Dt(t, i ? Dt.UNITMODE_PIXEL : Dt.UNITMODE_PERCENTAGE), this._columnDefinitionObservers[e] = this._columnDefinitions[e].onChangedObservable.add(() => this._markAsDirty()), this._markAsDirty(), this);
+      return r && r.isPixel === i && r.value === t ? this : (this._columnDefinitions[e].onChangedObservable.remove(this._columnDefinitionObservers[e]), this._columnDefinitions[e] = new wt(t, i ? wt.UNITMODE_PIXEL : wt.UNITMODE_PERCENTAGE), this._columnDefinitionObservers[e] = this._columnDefinitions[e].onChangedObservable.add(() => this._markAsDirty()), this._markAsDirty(), this);
     }
     getChildrenAt(e, t) {
       const i = this._cells[`${e}:${t}`];
@@ -145111,7 +145111,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         }, $.pointerOutAnimation = () => {
           $.color = Te.toHexString(), $.background = F.background;
         }, $.onPointerClickObservable.add(() => {
-          pl(qe.background);
+          pl(Ke.background);
         }), ce.addControl($, 0, 0);
         const ie = new ha();
         ie.name = "Dialogue Body", ie.background = f;
@@ -145120,14 +145120,14 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
           0.5625
         ];
         ie.addRowDefinition(1, false), ie.addColumnDefinition(pe[0], false), ie.addColumnDefinition(pe[1], false), ce.addControl(ie, 1, 0);
-        const Je = new ha();
-        Je.name = "Picker Grid", Je.addRowDefinition(0.85, false), Je.addRowDefinition(0.15, false), ie.addControl(Je, 0, 0);
+        const Ze = new ha();
+        Ze.name = "Picker Grid", Ze.addRowDefinition(0.85, false), Ze.addRowDefinition(0.15, false), ie.addControl(Ze, 0, 0);
         const Ge = new Jn();
         Ge.name = "GUI Color Picker", t.pickerHeight < t.pickerWidth ? Ge.width = 0.89 : Ge.height = 0.89, Ge.value = ue.FromHexString(t.lastColor), Ge.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_CENTER, Ge.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, Ge.onPointerDownObservable.add(() => {
           K = Ge.name, te = "", Ps(false);
         }), Ge.onValueChangedObservable.add(function(_t) {
           K == Ge.name && Is(_t, Ge.name);
-        }), Je.addControl(Ge, 0, 0);
+        }), Ze.addControl(Ge, 0, 0);
         const pt = new ha();
         pt.name = "Dialogue Right Half", pt.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT;
         const De = [
@@ -145137,11 +145137,11 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         pt.addRowDefinition(De[0], false), pt.addRowDefinition(De[1], false), ie.addControl(pt, 1, 1);
         const Qe = new ha();
         Qe.name = "Swatches and Buttons";
-        const ge = [
+        const me = [
           0.417,
           0.583
         ];
-        Qe.addRowDefinition(1, false), Qe.addColumnDefinition(ge[0], false), Qe.addColumnDefinition(ge[1], false), pt.addControl(Qe, 0, 0);
+        Qe.addRowDefinition(1, false), Qe.addColumnDefinition(me[0], false), Qe.addColumnDefinition(me[1], false), pt.addControl(Qe, 0, 0);
         const dt = new ha();
         dt.name = "New and Current Swatches";
         const ei = [
@@ -145151,33 +145151,33 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
           0.16
         ];
         dt.addRowDefinition(ei[0], false), dt.addRowDefinition(ei[1], false), dt.addRowDefinition(ei[2], false), dt.addRowDefinition(ei[3], false), Qe.addControl(dt, 0, 0);
-        const wt = new ha();
-        wt.name = "Active Swatches", wt.width = 0.67, wt.addRowDefinition(0.5, false), wt.addRowDefinition(0.5, false), dt.addControl(wt, 2, 0);
-        const ye = Math.floor(parseInt(t.pickerWidth) * pe[1] * ge[0] * 0.11), me = Math.floor(parseInt(t.pickerHeight) * X[1] * De[0] * ei[1] * 0.5);
-        let Nt;
-        t.pickerWidth > t.pickerHeight ? Nt = me : Nt = ye;
-        const Yt = new Jr();
-        Yt.text = "new", Yt.name = "New Color Label", Yt.color = u, Yt.fontSize = Nt, dt.addControl(Yt, 1, 0);
-        const Ke = new ia();
-        Ke.name = "New Color Swatch", Ke.background = t.lastColor, Ke.thickness = 0, wt.addControl(Ke, 0, 0);
-        const qe = At.CreateSimpleButton("currentSwatch", "");
-        qe.background = t.lastColor, qe.thickness = 0, qe.onPointerClickObservable.add(() => {
-          const _t = ue.FromHexString(qe.background);
-          Is(_t, qe.name), Ps(false);
-        }), qe.pointerDownAnimation = () => {
-        }, qe.pointerUpAnimation = () => {
-        }, qe.pointerEnterAnimation = () => {
-        }, qe.pointerOutAnimation = () => {
-        }, wt.addControl(qe, 1, 0);
+        const Nt = new ha();
+        Nt.name = "Active Swatches", Nt.width = 0.67, Nt.addRowDefinition(0.5, false), Nt.addRowDefinition(0.5, false), dt.addControl(Nt, 2, 0);
+        const ye = Math.floor(parseInt(t.pickerWidth) * pe[1] * me[0] * 0.11), ge = Math.floor(parseInt(t.pickerHeight) * X[1] * De[0] * ei[1] * 0.5);
+        let Dt;
+        t.pickerWidth > t.pickerHeight ? Dt = ge : Dt = ye;
+        const Qt = new Jr();
+        Qt.text = "new", Qt.name = "New Color Label", Qt.color = u, Qt.fontSize = Dt, dt.addControl(Qt, 1, 0);
+        const Je = new ia();
+        Je.name = "New Color Swatch", Je.background = t.lastColor, Je.thickness = 0, Nt.addControl(Je, 0, 0);
+        const Ke = At.CreateSimpleButton("currentSwatch", "");
+        Ke.background = t.lastColor, Ke.thickness = 0, Ke.onPointerClickObservable.add(() => {
+          const _t = ue.FromHexString(Ke.background);
+          Is(_t, Ke.name), Ps(false);
+        }), Ke.pointerDownAnimation = () => {
+        }, Ke.pointerUpAnimation = () => {
+        }, Ke.pointerEnterAnimation = () => {
+        }, Ke.pointerOutAnimation = () => {
+        }, Nt.addControl(Ke, 1, 0);
         const Ft = new ia();
         Ft.name = "Swatch Outline", Ft.width = 0.67, Ft.thickness = 2, Ft.color = E, Ft.isHitTestVisible = false, dt.addControl(Ft, 2, 0);
         const Er = new Jr();
-        Er.name = "Current Color Label", Er.text = "current", Er.color = u, Er.fontSize = Nt, dt.addControl(Er, 3, 0);
+        Er.name = "Current Color Label", Er.text = "current", Er.color = u, Er.fontSize = Dt, dt.addControl(Er, 3, 0);
         const Rr = new ha();
         Rr.name = "Button Grid", Rr.height = 0.8;
         const ka = 1 / 3;
         Rr.addRowDefinition(ka, false), Rr.addRowDefinition(ka, false), Rr.addRowDefinition(ka, false), Qe.addControl(Rr, 0, 1);
-        const yn = Math.floor(parseInt(t.pickerWidth) * pe[1] * ge[1] * 0.67).toString() + "px", zs = Math.floor(parseInt(t.pickerHeight) * X[1] * De[0] * (parseFloat(Rr.height.toString()) / 100) * ka * 0.7).toString() + "px";
+        const yn = Math.floor(parseInt(t.pickerWidth) * pe[1] * me[1] * 0.67).toString() + "px", zs = Math.floor(parseInt(t.pickerHeight) * X[1] * De[0] * (parseFloat(Rr.height.toString()) / 100) * ka * 0.7).toString() + "px";
         parseFloat(yn) > parseFloat(zs) ? R = Math.floor(parseFloat(zs) * 0.45) : R = Math.floor(parseFloat(yn) * 0.11);
         const pr = At.CreateSimpleButton("butOK", "OK");
         pr.width = yn, pr.height = zs, pr.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, pr.thickness = 2, pr.color = u, pr.fontSize = R, pr.background = f, pr.onPointerEnterObservable.add(() => {
@@ -145189,7 +145189,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         }, pr.pointerUpAnimation = () => {
           pr.background = p;
         }, pr.onPointerClickObservable.add(() => {
-          Ps(false), pl(Ke.background);
+          Ps(false), pl(Je.background);
         }), Rr.addControl(pr, 0, 0);
         const ji = At.CreateSimpleButton("butCancel", "Cancel");
         ji.width = yn, ji.height = zs, ji.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, ji.thickness = 2, ji.color = u, ji.fontSize = R, ji.background = f, ji.onPointerEnterObservable.add(() => {
@@ -145201,7 +145201,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         }, ji.pointerUpAnimation = () => {
           ji.background = p;
         }, ji.onPointerClickObservable.add(() => {
-          Ps(false), pl(qe.background);
+          Ps(false), pl(Ke.background);
         }), Rr.addControl(ji, 1, 0), t.savedColors && (se = At.CreateSimpleButton("butSave", "Save"), se.width = yn, se.height = zs, se.verticalAlignment = be.VERTICAL_ALIGNMENT_CENTER, se.thickness = 2, se.fontSize = R, t.savedColors.length < t.swatchLimit ? (se.color = u, se.background = f) : yh(se, true), se.onPointerEnterObservable.add(() => {
           t.savedColors && t.savedColors.length < t.swatchLimit && (se.background = p);
         }), se.onPointerOutObservable.add(() => {
@@ -145211,7 +145211,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         }, se.pointerUpAnimation = () => {
           t.savedColors && t.savedColors.length < t.swatchLimit && (se.background = p);
         }, se.onPointerClickObservable.add(() => {
-          t.savedColors && (t.savedColors.length == 0 && Wa(true), t.savedColors.length < t.swatchLimit && za(Ke.background, se), Ps(false));
+          t.savedColors && (t.savedColors.length == 0 && Wa(true), t.savedColors.length < t.swatchLimit && za(Je.background, se), Ps(false));
         }), t.savedColors.length > 0 && Wa(true), Rr.addControl(se, 2, 0));
         const Xi = new ha();
         Xi.name = "Dialog Lower Right", Xi.addRowDefinition(0.02, false), Xi.addRowDefinition(0.63, false), Xi.addRowDefinition(0.21, false), Xi.addRowDefinition(0.14, false), pt.addControl(Xi, 1, 0);
@@ -145303,7 +145303,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
         function Is(_t, Bt) {
           K = Bt;
           const vt = _t.toHexString();
-          if (Ke.background = vt, ir.name != K && (ir.text = Math.floor(_t.r * 255).toString()), Ti.name != K && (Ti.text = Math.floor(_t.g * 255).toString()), Ir.name != K && (Ir.text = Math.floor(_t.b * 255).toString()), rr.name != K && (rr.text = _t.r.toString()), Ni.name != K && (Ni.text = _t.g.toString()), Yr.name != K && (Yr.text = _t.b.toString()), di.name != K) {
+          if (Je.background = vt, ir.name != K && (ir.text = Math.floor(_t.r * 255).toString()), Ti.name != K && (Ti.text = Math.floor(_t.g * 255).toString()), Ir.name != K && (Ir.text = Math.floor(_t.b * 255).toString()), rr.name != K && (rr.text = _t.r.toString()), Ni.name != K && (Ni.text = _t.g.toString()), Yr.name != K && (Yr.text = _t.b.toString()), di.name != K) {
             const aa = vt.split("#");
             di.text = aa[1];
           }
@@ -145317,7 +145317,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
           } else vt != "" && (Math.floor(parseInt(vt)) < 0 ? vt = "0" : Math.floor(parseInt(vt)) > 255 ? vt = "255" : isNaN(parseInt(vt)) && (vt = "0")), K == _t.name && (te = vt);
           if (vt != "") {
             vt = parseInt(vt).toString(), _t.text = vt;
-            const yr = ue.FromHexString(Ke.background);
+            const yr = ue.FromHexString(Je.background);
             K == _t.name && (Bt == "r" ? Is(new ue(parseInt(vt) / 255, yr.g, yr.b), _t.name) : Bt == "g" ? Is(new ue(yr.r, parseInt(vt) / 255, yr.b), _t.name) : Is(new ue(yr.r, yr.g, parseInt(vt) / 255), _t.name));
           }
         }
@@ -145328,7 +145328,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
             return;
           } else vt != "" && vt != "." && parseFloat(vt) != 0 && (parseFloat(vt) < 0 ? vt = "0.0" : parseFloat(vt) > 1 ? vt = "1.0" : isNaN(parseFloat(vt)) && (vt = "0.0")), K == _t.name && (te = vt);
           vt != "" && vt != "." && parseFloat(vt) != 0 ? (vt = parseFloat(vt).toString(), _t.text = vt) : vt = "0.0";
-          const yr = ue.FromHexString(Ke.background);
+          const yr = ue.FromHexString(Je.background);
           K == _t.name && (Bt == "r" ? Is(new ue(parseFloat(vt), yr.g, yr.b), _t.name) : Bt == "g" ? Is(new ue(yr.r, parseFloat(vt), yr.b), _t.name) : Is(new ue(yr.r, yr.g, parseFloat(vt)), _t.name));
         }
         function af(_t) {
@@ -145403,7 +145403,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
             D.background = p;
           }, D.onPointerClickObservable.add(() => {
             de ? de = false : de = true, Ps();
-          }), Je.addControl(D, 1, 0)) : Je.removeControl(D);
+          }), Ze.addControl(D, 1, 0)) : Ze.removeControl(D);
         }
         function yh(_t, Bt) {
           Bt ? (_t.color = x, _t.background = S) : (_t.color = u, _t.background = f);
@@ -145501,7 +145501,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       this._maxHeight.toString(this._host) !== e && this._maxHeight.fromString(e) && this._markAsDirty();
     }
     constructor(e, t = "") {
-      super(e), this.name = e, this._textHorizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, this._textVerticalAlignment = be.VERTICAL_ALIGNMENT_TOP, this._prevText = this.text, this._lineSpacing = new Dt(0), this._maxHeight = new Dt(1, Dt.UNITMODE_PERCENTAGE, false), this.onLinesReadyObservable = new J(), this.text = t, this.isPointerBlocker = true, this.onLinesReadyObservable.add(() => this._updateCursorPosition()), this._highlightCursorInfo = {
+      super(e), this.name = e, this._textHorizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, this._textVerticalAlignment = be.VERTICAL_ALIGNMENT_TOP, this._prevText = this.text, this._lineSpacing = new wt(0), this._maxHeight = new wt(1, wt.UNITMODE_PERCENTAGE, false), this.onLinesReadyObservable = new J(), this.text = t, this.isPointerBlocker = true, this.onLinesReadyObservable.add(() => this._updateCursorPosition()), this._highlightCursorInfo = {
         initialStartIndex: -1,
         initialRelativeStartIndex: -1,
         initialLineIndex: -1
@@ -145920,7 +145920,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       return (this._connectedControl ? this._connectedControl.centerY : 0) + this._y2.getValue(this._host);
     }
     constructor(e) {
-      super(e), this.name = e, this._lineWidth = 1, this._x1 = new Dt(0), this._y1 = new Dt(0), this._x2 = new Dt(0), this._y2 = new Dt(0), this._dash = new Array(), this._automaticSize = true, this.isHitTestVisible = false, this._horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, this._verticalAlignment = be.VERTICAL_ALIGNMENT_TOP;
+      super(e), this.name = e, this._lineWidth = 1, this._x1 = new wt(0), this._y1 = new wt(0), this._x2 = new wt(0), this._y2 = new wt(0), this._dash = new Array(), this._automaticSize = true, this.isHitTestVisible = false, this._horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, this._verticalAlignment = be.VERTICAL_ALIGNMENT_TOP;
     }
     _getTypeName() {
       return "Line";
@@ -145972,7 +145972,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
   W("BABYLON.GUI.Line", sf);
   class c1 {
     constructor(e) {
-      this._multiLine = e, this._x = new Dt(0), this._y = new Dt(0), this._point = new v(0, 0, 0);
+      this._multiLine = e, this._x = new wt(0), this._y = new wt(0), this._point = new v(0, 0, 0);
     }
     get x() {
       return this._x.toString(this._multiLine._host);
@@ -146228,7 +146228,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       this._isThumbClamped !== e && (this._isThumbClamped = e, this._markAsDirty());
     }
     constructor(e) {
-      super(e), this.name = e, this._thumbWidth = new Dt(20, Dt.UNITMODE_PIXEL, false), this._minimum = 0, this._maximum = 100, this._value = 50, this._isVertical = false, this._barOffset = new Dt(5, Dt.UNITMODE_PIXEL, false), this._isThumbClamped = false, this._displayThumb = true, this._step = 0, this._lastPointerDownId = -1, this._effectiveBarOffset = 0, this.onValueChangedObservable = new J(), this._pointerIsDown = false, this.isPointerBlocker = true;
+      super(e), this.name = e, this._thumbWidth = new wt(20, wt.UNITMODE_PIXEL, false), this._minimum = 0, this._maximum = 100, this._value = 50, this._isVertical = false, this._barOffset = new wt(5, wt.UNITMODE_PIXEL, false), this._isThumbClamped = false, this._displayThumb = true, this._step = 0, this._lastPointerDownId = -1, this._effectiveBarOffset = 0, this.onValueChangedObservable = new J(), this._pointerIsDown = false, this.isPointerBlocker = true;
     }
     _getTypeName() {
       return "BaseSlider";
@@ -146483,7 +146483,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
       }
       let e = this.parentClientWidth, t = this.parentClientHeight;
       for (const i of this.children) !i.isVisible || i.notRenderable || (i.horizontalAlignment === be.HORIZONTAL_ALIGNMENT_CENTER && i._offsetLeft(this._currentMeasure.left - i._currentMeasure.left), i.verticalAlignment === be.VERTICAL_ALIGNMENT_CENTER && i._offsetTop(this._currentMeasure.top - i._currentMeasure.top), e = Math.max(e, i._currentMeasure.left - this._currentMeasure.left + i._currentMeasure.width + i.paddingRightInPixels), t = Math.max(t, i._currentMeasure.top - this._currentMeasure.top + i._currentMeasure.height + i.paddingBottomInPixels));
-      this._currentMeasure.width !== e && (this._width.updateInPlace(e, Dt.UNITMODE_PIXEL), this._currentMeasure.width = e, this._rebuildLayout = true, this._isDirty = true), this._currentMeasure.height !== t && (this._height.updateInPlace(t, Dt.UNITMODE_PIXEL), this._currentMeasure.height = t, this._rebuildLayout = true, this._isDirty = true), super._postMeasure();
+      this._currentMeasure.width !== e && (this._width.updateInPlace(e, wt.UNITMODE_PIXEL), this._currentMeasure.width = e, this._rebuildLayout = true, this._isDirty = true), this._currentMeasure.height !== t && (this._height.updateInPlace(t, wt.UNITMODE_PIXEL), this._currentMeasure.height = t, this._rebuildLayout = true, this._isDirty = true), super._postMeasure();
     }
   }
   class B_ extends No {
@@ -147408,7 +147408,7 @@ clipPos=viewProjection*worldPos;previousClipPos=previousViewProjection*previousW
   W("BABYLON.GUI.RadialGradient", l0e);
   class c0e {
     constructor(e) {
-      this._fontFamily = "Arial", this._fontStyle = "", this._fontWeight = "", this._fontSize = new Dt(18, Dt.UNITMODE_PIXEL, false), this.onChangedObservable = new J(), this._host = e;
+      this._fontFamily = "Arial", this._fontStyle = "", this._fontWeight = "", this._fontSize = new wt(18, wt.UNITMODE_PIXEL, false), this.onChangedObservable = new J(), this._host = e;
     }
     get fontSize() {
       return this._fontSize.toString(this._host);
@@ -159163,7 +159163,7 @@ void main()
     });
   }
   SZ(bg, "FlowGraphGLTFDataProvider", async () => (await Y(async () => {
-    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-1XBOxhje.js").then(async (m) => {
+    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-DJRy61_S.js").then(async (m) => {
       await m.__tla;
       return m;
     });
@@ -160669,38 +160669,38 @@ void main()
       const L = y.position.add(v.TransformCoordinates(h, V)), ee = v.TransformCoordinates(y.ArmLTarget[0].add(((_c2 = y.Movings.LArmStartVectorMoving) == null ? void 0 : _c2[B % y.Movings.LArmStartVectorMoving.length]) ?? new v(0, 0, 0)), V), q = y.position.add(v.TransformCoordinates(h.add(y.ArmLTarget[1]).add(((_d2 = y.Movings.LArmTargetPositionMoving) == null ? void 0 : _d2[B % y.Movings.LArmTargetPositionMoving.length]) ?? new v(0, 0, 0)), V)), de = v.TransformCoordinates(y.ArmLTarget[2].add(((_e2 = y.Movings.LArmTargetVectorMoving) == null ? void 0 : _e2[B % y.Movings.LArmTargetVectorMoving.length]) ?? new v(0, 0, 0)), V), se = y.position.add(v.TransformCoordinates(u, V)), te = v.TransformCoordinates(y.ArmRTarget[0].add(((_f = y.Movings.RArmStartVectorMoving) == null ? void 0 : _f[B % y.Movings.RArmStartVectorMoving.length]) ?? new v(0, 0, 0)), V), K = y.position.add(v.TransformCoordinates(u.add(y.ArmRTarget[1]).add(((_g2 = y.Movings.RArmTargetPositionMoving) == null ? void 0 : _g2[B % y.Movings.RArmTargetPositionMoving.length]) ?? new v(0, 0, 0)), V)), Se = v.TransformCoordinates(y.ArmRTarget[2].add(((_h2 = y.Movings.RArmTargetVectorMoving) == null ? void 0 : _h2[B % y.Movings.RArmTargetVectorMoving.length]) ?? new v(0, 0, 0)), V), ce = y.position.add(v.TransformCoordinates(S, V)), fe = v.TransformCoordinates(y.LegLTarget[0].add(((_i2 = y.Movings.LLegStartVectorMoving) == null ? void 0 : _i2[B % y.Movings.LLegStartVectorMoving.length]) ?? new v(0, 0, 0)), V), X = y.position.add(v.TransformCoordinates(S.add(y.LegLTarget[1]).add(((_j2 = y.Movings.LLegTargetPositionMoving) == null ? void 0 : _j2[B % y.Movings.LLegTargetPositionMoving.length]) ?? new v(0, 0, 0)), V)), F = v.TransformCoordinates(y.LegLTarget[2].add(((_k2 = y.Movings.LLegTargetVectorMoving) == null ? void 0 : _k2[B % y.Movings.LLegTargetVectorMoving.length]) ?? new v(0, 0, 0)), V), $ = y.position.add(v.TransformCoordinates(E, V)), le = v.TransformCoordinates(y.LegRTarget[0].add(((_l2 = y.Movings.RLegStartVectorMoving) == null ? void 0 : _l2[B % y.Movings.RLegStartVectorMoving.length]) ?? new v(0, 0, 0)), V), Te = y.position.add(v.TransformCoordinates(E.add(y.LegRTarget[1]).add(((_m2 = y.Movings.RLegTargetPositionMoving) == null ? void 0 : _m2[B % y.Movings.RLegTargetPositionMoving.length]) ?? new v(0, 0, 0)), V)), ie = v.TransformCoordinates(y.LegRTarget[2].add(((_n = y.Movings.RLegTargetVectorMoving) == null ? void 0 : _n[B % y.Movings.RLegTargetVectorMoving.length]) ?? new v(0, 0, 0)), V);
       if (i.head) {
         l = qs.CreateHermiteSpline(L, ee, q, de, 15), c = qs.CreateHermiteSpline(se, te, K, Se, 15), x = qs.CreateHermiteSpline($, le, Te, ie, 15), m = qs.CreateHermiteSpline(ce, fe, X, F, 15);
-        const pe = l.getPoints(), Je = c.getPoints(), Ge = x.getPoints(), pt = m.getPoints();
+        const pe = l.getPoints(), Ze = c.getPoints(), Ge = x.getPoints(), pt = m.getPoints();
         pe.forEach((De, Qe) => {
           if (Qe != pe.length - 1) {
-            const ge = new ds("legarms", C);
-            ge.width = 0.04, ge.height = v.Distance(De, pe[Qe + 1]) * 1.3, ge.angle = Math.atan2(-De.y + pe[Qe + 1].y, -De.x + pe[Qe + 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = y.position.z, s.push(ge);
+            const me = new ds("legarms", C);
+            me.width = 0.04, me.height = v.Distance(De, pe[Qe + 1]) * 1.3, me.angle = Math.atan2(-De.y + pe[Qe + 1].y, -De.x + pe[Qe + 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = y.position.z, s.push(me);
           } else {
-            const ge = new ds("legarms", C);
-            ge.width = 0.04, ge.height = 0.04, ge.angle = Math.atan2(De.y - pe[Qe - 1].y, De.x - pe[Qe - 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = y.position.z, s.push(ge);
+            const me = new ds("legarms", C);
+            me.width = 0.04, me.height = 0.04, me.angle = Math.atan2(De.y - pe[Qe - 1].y, De.x - pe[Qe - 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = y.position.z, s.push(me);
           }
-        }), Je.forEach((De, Qe) => {
-          if (Qe != Je.length - 1) {
-            const ge = new ds("legarms", C);
-            ge.width = 0.04, ge.height = v.Distance(De, Je[Qe + 1]) * 1.3, ge.angle = Math.atan2(-De.y + Je[Qe + 1].y, -De.x + Je[Qe + 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = y.position.z, s.push(ge);
+        }), Ze.forEach((De, Qe) => {
+          if (Qe != Ze.length - 1) {
+            const me = new ds("legarms", C);
+            me.width = 0.04, me.height = v.Distance(De, Ze[Qe + 1]) * 1.3, me.angle = Math.atan2(-De.y + Ze[Qe + 1].y, -De.x + Ze[Qe + 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = y.position.z, s.push(me);
           } else {
-            const ge = new ds("legarms", C);
-            ge.width = 0.04, ge.height = 0.04, ge.angle = Math.atan2(De.y - Je[Qe - 1].y, De.x - Je[Qe - 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = y.position.z, s.push(ge);
+            const me = new ds("legarms", C);
+            me.width = 0.04, me.height = 0.04, me.angle = Math.atan2(De.y - Ze[Qe - 1].y, De.x - Ze[Qe - 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = y.position.z, s.push(me);
           }
         }), Ge.forEach((De, Qe) => {
           if (Qe != Ge.length - 1) {
-            const ge = new ds("legarms", C);
-            ge.width = 0.04, ge.height = v.Distance(De, Ge[Qe + 1]) * 1.3, ge.angle = Math.atan2(-De.y + Ge[Qe + 1].y, -De.x + Ge[Qe + 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = y.position.z, s.push(ge);
+            const me = new ds("legarms", C);
+            me.width = 0.04, me.height = v.Distance(De, Ge[Qe + 1]) * 1.3, me.angle = Math.atan2(-De.y + Ge[Qe + 1].y, -De.x + Ge[Qe + 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = y.position.z, s.push(me);
           } else {
-            const ge = new ds("legarms", C);
-            ge.width = 0.04, ge.height = 0.04, ge.angle = Math.atan2(De.y - Ge[Qe - 1].y, De.x - Ge[Qe - 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = y.position.z, s.push(ge);
+            const me = new ds("legarms", C);
+            me.width = 0.04, me.height = 0.04, me.angle = Math.atan2(De.y - Ge[Qe - 1].y, De.x - Ge[Qe - 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = y.position.z, s.push(me);
           }
         }), pt.forEach((De, Qe) => {
           if (Qe != pt.length - 1) {
-            const ge = new ds("legarms", C);
-            ge.width = 0.04, ge.height = v.Distance(De, pt[Qe + 1]) * 1.3, ge.angle = Math.atan2(-De.y + pt[Qe + 1].y, -De.x + pt[Qe + 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = y.position.z, s.push(ge);
+            const me = new ds("legarms", C);
+            me.width = 0.04, me.height = v.Distance(De, pt[Qe + 1]) * 1.3, me.angle = Math.atan2(-De.y + pt[Qe + 1].y, -De.x + pt[Qe + 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = y.position.z, s.push(me);
           } else {
-            const ge = new ds("legarms", C);
-            ge.width = 0.04, ge.height = 0.04, ge.angle = Math.atan2(De.y - pt[Qe - 1].y, De.x - pt[Qe - 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = y.position.z, s.push(ge);
+            const me = new ds("legarms", C);
+            me.width = 0.04, me.height = 0.04, me.angle = Math.atan2(De.y - pt[Qe - 1].y, De.x - pt[Qe - 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = y.position.z, s.push(me);
           }
         }), i.head.position = i.body.position.add(v.TransformCoordinates(i.head.offsets, z.RotationZ(i.body.angle))), i.head.angle = y.angle + i.head.angleValue + (((_o = y.Movings.HeadAngleMoving) == null ? void 0 : _o[B % y.Movings.HeadAngleMoving.length]) ?? 0);
       }
@@ -160712,7 +160712,7 @@ void main()
           "unequip",
           "name"
         ].includes(pe)) {
-          const Je = i[pe].offsets ?? new v(0, 0, 0);
+          const Ze = i[pe].offsets ?? new v(0, 0, 0);
           i[pe].angleoffset || (i[pe].angleoffset = 0), [
             "eye",
             "hair",
@@ -160722,7 +160722,7 @@ void main()
             "mouse",
             "defaultEye",
             "defaultMouse"
-          ].includes(pe) ? (i[pe].angle = i.head.angle + i[pe].angleoffset, i[pe].position = i.head.position.add(v.TransformCoordinates(Je.subtract(i.head.offsets), z.RotationZ(i.head.angle))), i[pe].position.z -= 0.01) : pe == "Lhand" ? (de.x != 0 ? i[pe].angle = Math.atan(de.y / de.x) + Math.PI / 2 + i[pe].angleoffset : i[pe].angle = i.body.angle + Math.PI / 2 + i[pe].angleoffset, i[pe].position = q, i[pe].position.z -= 0.02) : pe == "Rhand" ? (Se.x != 0 ? i[pe].angle = Math.atan(Se.y / Se.x) - Math.PI / 2 + i[pe].angleoffset : i[pe].angle = i.body.angle - Math.PI / 2 + i[pe].angleoffset, i[pe].position = K, i[pe].position.z -= 0.02) : pe == "bubble" || pe == "speech" || pe == "speechBubble" || pe == "nameText" || pe == "nameTag" ? (i[pe].position = i.body.positionValue.add(Je), i[pe].position.z = -5) : (i[pe].angle = i.body.angle + i[pe].angleoffset, i[pe].position = i.body.position.add(v.TransformCoordinates(Je, z.RotationZ(i.body.angle))));
+          ].includes(pe) ? (i[pe].angle = i.head.angle + i[pe].angleoffset, i[pe].position = i.head.position.add(v.TransformCoordinates(Ze.subtract(i.head.offsets), z.RotationZ(i.head.angle))), i[pe].position.z -= 0.01) : pe == "Lhand" ? (de.x != 0 ? i[pe].angle = Math.atan(de.y / de.x) + Math.PI / 2 + i[pe].angleoffset : i[pe].angle = i.body.angle + Math.PI / 2 + i[pe].angleoffset, i[pe].position = q, i[pe].position.z -= 0.02) : pe == "Rhand" ? (Se.x != 0 ? i[pe].angle = Math.atan(Se.y / Se.x) - Math.PI / 2 + i[pe].angleoffset : i[pe].angle = i.body.angle - Math.PI / 2 + i[pe].angleoffset, i[pe].position = K, i[pe].position.z -= 0.02) : pe == "bubble" || pe == "speech" || pe == "speechBubble" || pe == "nameText" || pe == "nameTag" ? (i[pe].position = i.body.positionValue.add(Ze), i[pe].position.z = -5) : (i[pe].angle = i.body.angle + i[pe].angleoffset, i[pe].position = i.body.position.add(v.TransformCoordinates(Ze, z.RotationZ(i.body.angle))));
         }
       });
     }
@@ -160939,26 +160939,26 @@ void main()
       p = qs.CreateHermiteSpline(Se, ce, fe, X, 50);
       const F = r.position.add(v.TransformCoordinates(S, B)), $ = v.TransformCoordinates(r.LegRTarget[0].add(((_l2 = r.Movings.RLegStartVectorMoving) == null ? void 0 : _l2[D % r.Movings.RLegStartVectorMoving.length]) ?? v.Zero()), B), le = r.position.add(v.TransformCoordinates(S.add(r.LegRTarget[1]).add(((_m2 = r.Movings.RLegTargetPositionMoving) == null ? void 0 : _m2[D % r.Movings.RLegTargetPositionMoving.length]) ?? v.Zero()), B)), Te = v.TransformCoordinates(r.LegRTarget[2].add(((_n = r.Movings.RLegTargetVectorMoving) == null ? void 0 : _n[D % r.Movings.RLegTargetVectorMoving.length]) ?? v.Zero()), B);
       m = qs.CreateHermiteSpline(F, $, le, Te, 50);
-      const ie = o.getPoints(), pe = l.getPoints(), Je = m.getPoints(), Ge = p.getPoints();
+      const ie = o.getPoints(), pe = l.getPoints(), Ze = m.getPoints(), Ge = p.getPoints();
       ie.forEach((De, Qe) => {
         if (Qe != ie.length - 1) {
-          const ge = new ds("LArm", P);
-          ge.width = 0.04, ge.height = v.Distance(De, ie[Qe + 1]) * 1.3, ge.angle = Math.atan2(-De.y + ie[Qe + 1].y, -De.x + ie[Qe + 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = De.z, ge.color = r.color, ge.isPickable = true, y.push(ge);
+          const me = new ds("LArm", P);
+          me.width = 0.04, me.height = v.Distance(De, ie[Qe + 1]) * 1.3, me.angle = Math.atan2(-De.y + ie[Qe + 1].y, -De.x + ie[Qe + 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = De.z, me.color = r.color, me.isPickable = true, y.push(me);
         }
       }), pe.forEach((De, Qe) => {
         if (Qe != pe.length - 1) {
-          const ge = new ds("RArm", P);
-          ge.width = 0.04, ge.height = v.Distance(De, pe[Qe + 1]) * 1.3, ge.angle = Math.atan2(-De.y + pe[Qe + 1].y, -De.x + pe[Qe + 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = De.z, ge.color = r.color, ge.isPickable = true, y.push(ge);
+          const me = new ds("RArm", P);
+          me.width = 0.04, me.height = v.Distance(De, pe[Qe + 1]) * 1.3, me.angle = Math.atan2(-De.y + pe[Qe + 1].y, -De.x + pe[Qe + 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = De.z, me.color = r.color, me.isPickable = true, y.push(me);
         }
-      }), Je.forEach((De, Qe) => {
-        if (Qe != Je.length - 1) {
-          const ge = new ds("RLeg", P);
-          ge.width = 0.04, ge.height = v.Distance(De, Je[Qe + 1]) * 1.3, ge.angle = Math.atan2(-De.y + Je[Qe + 1].y, -De.x + Je[Qe + 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = De.z, ge.color = r.color, ge.isPickable = true, y.push(ge);
+      }), Ze.forEach((De, Qe) => {
+        if (Qe != Ze.length - 1) {
+          const me = new ds("RLeg", P);
+          me.width = 0.04, me.height = v.Distance(De, Ze[Qe + 1]) * 1.3, me.angle = Math.atan2(-De.y + Ze[Qe + 1].y, -De.x + Ze[Qe + 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = De.z, me.color = r.color, me.isPickable = true, y.push(me);
         }
       }), Ge.forEach((De, Qe) => {
         if (Qe != Ge.length - 1) {
-          const ge = new ds("LLeg", P);
-          ge.width = 0.04, ge.height = v.Distance(De, Ge[Qe + 1]) * 1.3, ge.angle = Math.atan2(-De.y + Ge[Qe + 1].y, -De.x + Ge[Qe + 1].x) + Math.PI / 2, ge.position.x = De.x, ge.position.y = De.y, ge.position.z = De.z, ge.color = r.color, ge.isPickable = true, y.push(ge);
+          const me = new ds("LLeg", P);
+          me.width = 0.04, me.height = v.Distance(De, Ge[Qe + 1]) * 1.3, me.angle = Math.atan2(-De.y + Ge[Qe + 1].y, -De.x + Ge[Qe + 1].x) + Math.PI / 2, me.position.x = De.x, me.position.y = De.y, me.position.z = De.z, me.color = r.color, me.isPickable = true, y.push(me);
         }
       }), n.angle = r.angle + n.angleValue + (((_o = r.Movings.HeadAngleMoving) == null ? void 0 : _o[D % r.Movings.HeadAngleMoving.length]) ?? 0);
       const pt = new v(0, Xr * 85, -0.01).add(((_p2 = r.Movings.HeadMoving) == null ? void 0 : _p2[D % r.Movings.HeadMoving.length]) ?? v.Zero());
@@ -161221,7 +161221,7 @@ void main()
       console.log(p);
     };
     return ea.useEffect(() => {
-      o = new Ze(a), o.name = "main", o.clearColor = new ue(0.7, 0.7, 0.7), t = us.CreateFullscreenUI("UI");
+      o = new qe(a), o.name = "main", o.clearColor = new ue(0.7, 0.7, 0.7), t = us.CreateFullscreenUI("UI");
       const ee = new ls("textpanel");
       ee.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, ee.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, ee.adaptHeightToChildren = true, ee.adaptWidthToChildren = true, t.addControl(ee), ee.isVertical = true;
       const q = [], de = [
@@ -161322,24 +161322,24 @@ void main()
         "Right Leg Target Vector",
         "Recording Speed"
       ], te = (ye) => {
-        var me = new Jr(`Text${ye}`);
-        return me.color = "black", me.resizeToFit = true, me.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, me.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, me.textHorizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, me.number = ye, me.onPointerDownObservable.add(() => {
+        var ge = new Jr(`Text${ye}`);
+        return ge.color = "black", ge.resizeToFit = true, ge.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, ge.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, ge.textHorizontalAlignment = be.HORIZONTAL_ALIGNMENT_LEFT, ge.number = ye, ge.onPointerDownObservable.add(() => {
           if ([
             0,
             3,
             4,
             5
-          ].includes(me.number)) {
-            const Nt = parseFloat(prompt(`Input the value of ${se[me.number]}`));
-            Nt != null && de[me.number].set(Nt);
-          } else if (me.number != 18) {
-            const Nt = parseFloat(prompt(`Input the X of ${se[me.number]}`)), Yt = parseFloat(prompt(`Input the Y of ${se[me.number]}`)), Ke = parseFloat(prompt(`Input the Z of ${se[me.number]}`));
-            if (Nt != null && Yt != null && Ke != null) {
-              const qe = new v(Nt, Yt, Ke);
-              de[me.number].set(qe);
+          ].includes(ge.number)) {
+            const Dt = parseFloat(prompt(`Input the value of ${se[ge.number]}`));
+            Dt != null && de[ge.number].set(Dt);
+          } else if (ge.number != 18) {
+            const Dt = parseFloat(prompt(`Input the X of ${se[ge.number]}`)), Qt = parseFloat(prompt(`Input the Y of ${se[ge.number]}`)), Je = parseFloat(prompt(`Input the Z of ${se[ge.number]}`));
+            if (Dt != null && Qt != null && Je != null) {
+              const Ke = new v(Dt, Qt, Je);
+              de[ge.number].set(Ke);
             }
           }
-        }), ee.addControl(me), me;
+        }), ee.addControl(ge), ge;
       };
       for (var K = 0; K < 19; K++) q.push(te(K));
       const Se = new ls("Buttons1");
@@ -161352,8 +161352,8 @@ void main()
       fe.verticalAlignment = be.VERTICAL_ALIGNMENT_BOTTOM, fe.height = "310px", fe.width = "1800px", fe.top = "-220px", fe.addControl(X), fe.zIndex = 0, fe.onWheelObservable.add((ye) => {
         $.length <= 6 || (ye.y > 0 ? fe.horizontalBar.value += 1 / ($.length - 6) : fe.horizontalBar.value -= 1 / ($.length - 6));
       }), fe.horizontalBar.onValueChangedObservable.add((ye) => {
-        const me = Math.round(ye * ($.length - 6));
-        for (var Nt = 0; Nt < $.length; Nt++) Nt >= me && Nt < me + 6 ? $[Nt].scene.spritesEnabled = true : $[Nt].scene.spritesEnabled = false;
+        const ge = Math.round(ye * ($.length - 6));
+        for (var Dt = 0; Dt < $.length; Dt++) Dt >= ge && Dt < ge + 6 ? $[Dt].scene.spritesEnabled = true : $[Dt].scene.spritesEnabled = false;
       }), t.addControl(fe), X.isVertical = false;
       var ie = At.CreateSimpleButton("btn1", "None");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
@@ -161406,101 +161406,101 @@ void main()
       var ie = At.CreateSimpleButton("btn1", "Frame Capture");
       ie.width = "100px", ie.height = "100px", ie.background = "green";
       let F = 0, $ = [];
-      var le = function(ye, me) {
-        const Nt = new Ze(ye);
-        Nt.name = `sub${me}`;
-        const Yt = new wi("Camera", -Math.PI / 2, Math.PI / 2, 2, v.Zero(), Nt);
-        if (me == -1) return Yt;
-        const Ke = Lx(Nt);
-        return Ke.upper.eye = R(Nt, 2e4), Ke.positionValue = y.BodyMoving[me], Ke.angleValue = y.BodyAngleMoving[me], Ke.head.angleValue = y.HeadAngleMoving[me], Ke.ArmLTarget = [
-          y.LArmStartVectorMoving[me],
-          y.LArmTargetPositionMoving[me].add(new v(-0.3, 0, 0)),
-          y.LArmTargetVectorMoving[me]
-        ], Ke.ArmRTarget = [
-          y.RArmStartVectorMoving[me],
-          y.RArmTargetPositionMoving[me].add(new v(0.3, 0, 0)),
-          y.RArmTargetVectorMoving[me]
-        ], Ke.LegLTarget = [
-          y.LLegStartVectorMoving[me],
-          y.LLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-          y.LLegTargetVectorMoving[me]
-        ], Ke.LegRTarget = [
-          y.RLegStartVectorMoving[me],
-          y.RLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-          y.RLegTargetVectorMoving[me]
-        ], Yt.char = Ke, Yt;
+      var le = function(ye, ge) {
+        const Dt = new qe(ye);
+        Dt.name = `sub${ge}`;
+        const Qt = new wi("Camera", -Math.PI / 2, Math.PI / 2, 2, v.Zero(), Dt);
+        if (ge == -1) return Qt;
+        const Je = Lx(Dt);
+        return Je.upper.eye = R(Dt, 2e4), Je.positionValue = y.BodyMoving[ge], Je.angleValue = y.BodyAngleMoving[ge], Je.head.angleValue = y.HeadAngleMoving[ge], Je.ArmLTarget = [
+          y.LArmStartVectorMoving[ge],
+          y.LArmTargetPositionMoving[ge].add(new v(-0.3, 0, 0)),
+          y.LArmTargetVectorMoving[ge]
+        ], Je.ArmRTarget = [
+          y.RArmStartVectorMoving[ge],
+          y.RArmTargetPositionMoving[ge].add(new v(0.3, 0, 0)),
+          y.RArmTargetVectorMoving[ge]
+        ], Je.LegLTarget = [
+          y.LLegStartVectorMoving[ge],
+          y.LLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+          y.LLegTargetVectorMoving[ge]
+        ], Je.LegRTarget = [
+          y.RLegStartVectorMoving[ge],
+          y.RLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+          y.RLegTargetVectorMoving[ge]
+        ], Qt.char = Je, Qt;
       };
       const Te = (ye) => {
-        const me = le(a, ye);
-        var Nt = new O$("view", me), Yt = At.CreateSimpleButton("btn1", "None");
-        Yt.width = "300px", Yt.height = "300px", Yt.onPointerClickObservable.add(() => {
-          const Ke = ye;
-          if (r.positionValue = y.BodyMoving[Ke], r.angleValue = y.BodyAngleMoving[Ke], r.head.angleValue = y.HeadAngleMoving[Ke], r.ArmLTarget = [
-            y.LArmStartVectorMoving[Ke].clone(),
-            y.LArmTargetPositionMoving[Ke].add(new v(-0.3, 0, 0)),
-            y.LArmTargetVectorMoving[Ke].clone()
+        const ge = le(a, ye);
+        var Dt = new O$("view", ge), Qt = At.CreateSimpleButton("btn1", "None");
+        Qt.width = "300px", Qt.height = "300px", Qt.onPointerClickObservable.add(() => {
+          const Je = ye;
+          if (r.positionValue = y.BodyMoving[Je], r.angleValue = y.BodyAngleMoving[Je], r.head.angleValue = y.HeadAngleMoving[Je], r.ArmLTarget = [
+            y.LArmStartVectorMoving[Je].clone(),
+            y.LArmTargetPositionMoving[Je].add(new v(-0.3, 0, 0)),
+            y.LArmTargetVectorMoving[Je].clone()
           ], r.ArmRTarget = [
-            y.RArmStartVectorMoving[Ke].clone(),
-            y.RArmTargetPositionMoving[Ke].add(new v(0.3, 0, 0)),
-            y.RArmTargetVectorMoving[Ke].clone()
+            y.RArmStartVectorMoving[Je].clone(),
+            y.RArmTargetPositionMoving[Je].add(new v(0.3, 0, 0)),
+            y.RArmTargetVectorMoving[Je].clone()
           ], r.LegLTarget = [
-            y.LLegStartVectorMoving[Ke].clone(),
-            y.LLegTargetPositionMoving[Ke].add(new v(0, -0.3, 0)),
-            y.LLegTargetVectorMoving[Ke].clone()
+            y.LLegStartVectorMoving[Je].clone(),
+            y.LLegTargetPositionMoving[Je].add(new v(0, -0.3, 0)),
+            y.LLegTargetVectorMoving[Je].clone()
           ], r.LegRTarget = [
-            y.RLegStartVectorMoving[Ke].clone(),
-            y.RLegTargetPositionMoving[Ke].add(new v(0, -0.3, 0)),
-            y.RLegTargetVectorMoving[Ke].clone()
+            y.RLegStartVectorMoving[Je].clone(),
+            y.RLegTargetPositionMoving[Je].add(new v(0, -0.3, 0)),
+            y.RLegTargetVectorMoving[Je].clone()
           ], F = ye, s) {
-            const qe = F == 0 ? y.BodyMoving.length - 1 : F - 1;
-            s.positionValue = y.BodyMoving[qe], s.angleValue = y.BodyAngleMoving[qe], s.head.angleValue = y.HeadAngleMoving[qe], s.ArmLTarget = [
-              y.LArmStartVectorMoving[qe],
-              y.LArmTargetPositionMoving[qe].add(new v(-0.3, 0, 0)),
-              y.LArmTargetVectorMoving[qe]
+            const Ke = F == 0 ? y.BodyMoving.length - 1 : F - 1;
+            s.positionValue = y.BodyMoving[Ke], s.angleValue = y.BodyAngleMoving[Ke], s.head.angleValue = y.HeadAngleMoving[Ke], s.ArmLTarget = [
+              y.LArmStartVectorMoving[Ke],
+              y.LArmTargetPositionMoving[Ke].add(new v(-0.3, 0, 0)),
+              y.LArmTargetVectorMoving[Ke]
             ], s.ArmRTarget = [
-              y.RArmStartVectorMoving[qe],
-              y.RArmTargetPositionMoving[qe].add(new v(0.3, 0, 0)),
-              y.RArmTargetVectorMoving[qe]
+              y.RArmStartVectorMoving[Ke],
+              y.RArmTargetPositionMoving[Ke].add(new v(0.3, 0, 0)),
+              y.RArmTargetVectorMoving[Ke]
             ], s.LegLTarget = [
-              y.LLegStartVectorMoving[qe],
-              y.LLegTargetPositionMoving[qe].add(new v(0, -0.3, 0)),
-              y.LLegTargetVectorMoving[qe]
+              y.LLegStartVectorMoving[Ke],
+              y.LLegTargetPositionMoving[Ke].add(new v(0, -0.3, 0)),
+              y.LLegTargetVectorMoving[Ke]
             ], s.LegRTarget = [
-              y.RLegStartVectorMoving[qe],
-              y.RLegTargetPositionMoving[qe].add(new v(0, -0.3, 0)),
-              y.RLegTargetVectorMoving[qe]
+              y.RLegStartVectorMoving[Ke],
+              y.RLegTargetPositionMoving[Ke].add(new v(0, -0.3, 0)),
+              y.RLegTargetVectorMoving[Ke]
             ];
           }
           if (n) {
-            const qe = F == y.BodyMoving.length - 1 ? 0 : F + 1;
-            n.positionValue = y.BodyMoving[qe], n.angleValue = y.BodyAngleMoving[qe], n.head.angleValue = y.HeadAngleMoving[qe], n.ArmLTarget = [
-              y.LArmStartVectorMoving[qe],
-              y.LArmTargetPositionMoving[qe].add(new v(-0.3, 0, 0)),
-              y.LArmTargetVectorMoving[qe]
+            const Ke = F == y.BodyMoving.length - 1 ? 0 : F + 1;
+            n.positionValue = y.BodyMoving[Ke], n.angleValue = y.BodyAngleMoving[Ke], n.head.angleValue = y.HeadAngleMoving[Ke], n.ArmLTarget = [
+              y.LArmStartVectorMoving[Ke],
+              y.LArmTargetPositionMoving[Ke].add(new v(-0.3, 0, 0)),
+              y.LArmTargetVectorMoving[Ke]
             ], n.ArmRTarget = [
-              y.RArmStartVectorMoving[qe],
-              y.RArmTargetPositionMoving[qe].add(new v(0.3, 0, 0)),
-              y.RArmTargetVectorMoving[qe]
+              y.RArmStartVectorMoving[Ke],
+              y.RArmTargetPositionMoving[Ke].add(new v(0.3, 0, 0)),
+              y.RArmTargetVectorMoving[Ke]
             ], n.LegLTarget = [
-              y.LLegStartVectorMoving[qe],
-              y.LLegTargetPositionMoving[qe].add(new v(0, -0.3, 0)),
-              y.LLegTargetVectorMoving[qe]
+              y.LLegStartVectorMoving[Ke],
+              y.LLegTargetPositionMoving[Ke].add(new v(0, -0.3, 0)),
+              y.LLegTargetVectorMoving[Ke]
             ], n.LegRTarget = [
-              y.RLegStartVectorMoving[qe],
-              y.RLegTargetPositionMoving[qe].add(new v(0, -0.3, 0)),
-              y.RLegTargetVectorMoving[qe]
+              y.RLegStartVectorMoving[Ke],
+              y.RLegTargetPositionMoving[Ke].add(new v(0, -0.3, 0)),
+              y.RLegTargetVectorMoving[Ke]
             ];
           }
-        }), Yt.addControl(Nt), Yt.scene = me.getScene(), Yt.name = Yt.scene.name, Yt.camview = Nt, Yt.char = me.char, $.push(Yt), X.addControl(Yt), console.log($);
+        }), Qt.addControl(Dt), Qt.scene = ge.getScene(), Qt.name = Qt.scene.name, Qt.camview = Dt, Qt.char = ge.char, $.push(Qt), X.addControl(Qt), console.log($);
       };
       ie.onPointerClickObservable.add(() => {
         if (y.BodyMoving.length > 0) {
-          const Nt = prompt("\uD574\uB2F9 \uB3D9\uC791\uC73C\uB85C \uC6C0\uC9C1\uC77C \uD504\uB808\uC784 \uAC1C\uC218\uB97C \uC785\uB825\uD558\uC138\uC694");
-          y.count.push(Number(Nt));
+          const Dt = prompt("\uD574\uB2F9 \uB3D9\uC791\uC73C\uB85C \uC6C0\uC9C1\uC77C \uD504\uB808\uC784 \uAC1C\uC218\uB97C \uC785\uB825\uD558\uC138\uC694");
+          y.count.push(Number(Dt));
         }
         y.LArmStartVectorMoving.push(r.ArmLTarget[0].subtract(v.Zero())), y.LArmTargetPositionMoving.push(r.ArmLTarget[1].subtract(new v(-0.3, 0, 0))), y.LArmTargetVectorMoving.push(r.ArmLTarget[2].subtract(v.Zero())), y.RArmStartVectorMoving.push(r.ArmRTarget[0].subtract(v.Zero())), y.RArmTargetPositionMoving.push(r.ArmRTarget[1].subtract(new v(0.3, 0, 0))), y.RArmTargetVectorMoving.push(r.ArmRTarget[2].subtract(v.Zero())), y.LLegStartVectorMoving.push(r.LegLTarget[0].subtract(v.Zero())), y.LLegTargetPositionMoving.push(r.LegLTarget[1].subtract(new v(0, -0.3, 0))), y.LLegTargetVectorMoving.push(r.LegLTarget[2].subtract(v.Zero())), y.RLegStartVectorMoving.push(r.LegRTarget[0].subtract(v.Zero())), y.RLegTargetPositionMoving.push(r.LegRTarget[1].subtract(new v(0, -0.3, 0))), y.RLegTargetVectorMoving.push(r.LegRTarget[2].subtract(v.Zero())), y.BodyMoving.push(r.position.subtract(v.Zero())), y.BodyAngleMoving.push(r.angle - 0), y.HeadMoving.push(v.Zero()), y.HeadAngleMoving.push(r.head.angleValue - 0), F = y.BodyMoving.length - 1, Te(F), fe.horizontalBar.value = 1;
         const ye = Math.round($.length - 6);
-        for (var me = 0; me < $.length; me++) me >= ye && me < ye + 6 ? $[me].scene.spritesEnabled = true : $[me].scene.spritesEnabled = false;
+        for (var ge = 0; ge < $.length; ge++) ge >= ye && ge < ye + 6 ? $[ge].scene.spritesEnabled = true : $[ge].scene.spritesEnabled = false;
       }), ce.addControl(ie);
       var ie = At.CreateSimpleButton("btn1", "Frame Edit");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
@@ -161546,15 +161546,15 @@ void main()
           v.Zero(),
           new v(0, -0.3, 0),
           v.Zero()
-        ], Object.keys(y).forEach((me) => {
-          if (me == "count") return;
-          const Nt = [];
-          if (y[me].forEach((Ke, qe) => {
-            if (qe > 0) if (me != "BodyAngleMoving" && me != "HeadAngleMoving") for (var Ft = 0; Ft < y.count[qe]; Ft++) Nt.push(v.Lerp(y[me][qe - 1], Ke, Ft / y.count[qe]));
-            else for (var Ft = 0; Ft < y.count[qe]; Ft++) Math.abs(y[me][qe - 1] - Ke) < Math.PI ? Nt.push(y[me][qe - 1] + (Ke - y[me][qe - 1]) * (Ft / y.count[qe])) : Ke < 0 ? Nt.push(y[me][qe - 1] + (Ke - y[me][qe - 1] + Math.PI * 2) * (Ft / y.count[qe])) : Nt.push(y[me][qe - 1] + (Ke - y[me][qe - 1] - Math.PI * 2) * (Ft / y.count[qe]));
-          }), me != "BodyAngleMoving" && me != "HeadAngleMoving") for (var Yt = 0; Yt < y.count[0]; Yt++) Nt.push(v.Lerp(y[me][y[me].length - 1], y[me][0], Yt / y.count[0]));
-          else for (var Yt = 0; Yt < y.count[0]; Yt++) Math.abs(y[me][y[me].length - 1] - y[me][0]) < Math.PI ? Nt.push(y[me][y[me].length - 1] + (y[me][0] - y[me][y[me].length - 1]) * (Yt / y.count[0])) : y[me][0] < 0 ? Nt.push(y[me][y[me].length - 1] + (y[me][0] - y[me][y[me].length - 1] + Math.PI * 2) * (Yt / y.count[0])) : Nt.push(y[me][y[me].length - 1] + (y[me][0] - y[me][y[me].length - 1] - Math.PI * 2) * (Yt / y.count[0]));
-          r.Movings[me] = Nt;
+        ], Object.keys(y).forEach((ge) => {
+          if (ge == "count") return;
+          const Dt = [];
+          if (y[ge].forEach((Je, Ke) => {
+            if (Ke > 0) if (ge != "BodyAngleMoving" && ge != "HeadAngleMoving") for (var Ft = 0; Ft < y.count[Ke]; Ft++) Dt.push(v.Lerp(y[ge][Ke - 1], Je, Ft / y.count[Ke]));
+            else for (var Ft = 0; Ft < y.count[Ke]; Ft++) Math.abs(y[ge][Ke - 1] - Je) < Math.PI ? Dt.push(y[ge][Ke - 1] + (Je - y[ge][Ke - 1]) * (Ft / y.count[Ke])) : Je < 0 ? Dt.push(y[ge][Ke - 1] + (Je - y[ge][Ke - 1] + Math.PI * 2) * (Ft / y.count[Ke])) : Dt.push(y[ge][Ke - 1] + (Je - y[ge][Ke - 1] - Math.PI * 2) * (Ft / y.count[Ke]));
+          }), ge != "BodyAngleMoving" && ge != "HeadAngleMoving") for (var Qt = 0; Qt < y.count[0]; Qt++) Dt.push(v.Lerp(y[ge][y[ge].length - 1], y[ge][0], Qt / y.count[0]));
+          else for (var Qt = 0; Qt < y.count[0]; Qt++) Math.abs(y[ge][y[ge].length - 1] - y[ge][0]) < Math.PI ? Dt.push(y[ge][y[ge].length - 1] + (y[ge][0] - y[ge][y[ge].length - 1]) * (Qt / y.count[0])) : y[ge][0] < 0 ? Dt.push(y[ge][y[ge].length - 1] + (y[ge][0] - y[ge][y[ge].length - 1] + Math.PI * 2) * (Qt / y.count[0])) : Dt.push(y[ge][y[ge].length - 1] + (y[ge][0] - y[ge][y[ge].length - 1] - Math.PI * 2) * (Qt / y.count[0]));
+          r.Movings[ge] = Dt;
         });
       }), ce.addControl(ie);
       var ie = At.CreateSimpleButton("btn1", "Prev Frame");
@@ -161662,43 +161662,43 @@ void main()
           y.RLegTargetPositionMoving[ye].add(new v(0, -0.3, 0)),
           y.RLegTargetVectorMoving[ye]
         ], s) {
-          const me = F == 0 ? y.BodyMoving.length - 1 : F - 1;
-          s.positionValue = y.BodyMoving[me], s.angleValue = y.BodyAngleMoving[me], s.head.angleValue = y.HeadAngleMoving[me], s.ArmLTarget = [
-            y.LArmStartVectorMoving[me],
-            y.LArmTargetPositionMoving[me].add(new v(-0.3, 0, 0)),
-            y.LArmTargetVectorMoving[me]
+          const ge = F == 0 ? y.BodyMoving.length - 1 : F - 1;
+          s.positionValue = y.BodyMoving[ge], s.angleValue = y.BodyAngleMoving[ge], s.head.angleValue = y.HeadAngleMoving[ge], s.ArmLTarget = [
+            y.LArmStartVectorMoving[ge],
+            y.LArmTargetPositionMoving[ge].add(new v(-0.3, 0, 0)),
+            y.LArmTargetVectorMoving[ge]
           ], s.ArmRTarget = [
-            y.RArmStartVectorMoving[me],
-            y.RArmTargetPositionMoving[me].add(new v(0.3, 0, 0)),
-            y.RArmTargetVectorMoving[me]
+            y.RArmStartVectorMoving[ge],
+            y.RArmTargetPositionMoving[ge].add(new v(0.3, 0, 0)),
+            y.RArmTargetVectorMoving[ge]
           ], s.LegLTarget = [
-            y.LLegStartVectorMoving[me],
-            y.LLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-            y.LLegTargetVectorMoving[me]
+            y.LLegStartVectorMoving[ge],
+            y.LLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+            y.LLegTargetVectorMoving[ge]
           ], s.LegRTarget = [
-            y.RLegStartVectorMoving[me],
-            y.RLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-            y.RLegTargetVectorMoving[me]
+            y.RLegStartVectorMoving[ge],
+            y.RLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+            y.RLegTargetVectorMoving[ge]
           ];
         }
         if (n) {
-          const me = F == y.BodyMoving.length - 1 ? 0 : F + 1;
-          n.positionValue = y.BodyMoving[me], n.angleValue = y.BodyAngleMoving[me], n.head.angleValue = y.HeadAngleMoving[me], n.ArmLTarget = [
-            y.LArmStartVectorMoving[me],
-            y.LArmTargetPositionMoving[me].add(new v(-0.3, 0, 0)),
-            y.LArmTargetVectorMoving[me]
+          const ge = F == y.BodyMoving.length - 1 ? 0 : F + 1;
+          n.positionValue = y.BodyMoving[ge], n.angleValue = y.BodyAngleMoving[ge], n.head.angleValue = y.HeadAngleMoving[ge], n.ArmLTarget = [
+            y.LArmStartVectorMoving[ge],
+            y.LArmTargetPositionMoving[ge].add(new v(-0.3, 0, 0)),
+            y.LArmTargetVectorMoving[ge]
           ], n.ArmRTarget = [
-            y.RArmStartVectorMoving[me],
-            y.RArmTargetPositionMoving[me].add(new v(0.3, 0, 0)),
-            y.RArmTargetVectorMoving[me]
+            y.RArmStartVectorMoving[ge],
+            y.RArmTargetPositionMoving[ge].add(new v(0.3, 0, 0)),
+            y.RArmTargetVectorMoving[ge]
           ], n.LegLTarget = [
-            y.LLegStartVectorMoving[me],
-            y.LLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-            y.LLegTargetVectorMoving[me]
+            y.LLegStartVectorMoving[ge],
+            y.LLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+            y.LLegTargetVectorMoving[ge]
           ], n.LegRTarget = [
-            y.RLegStartVectorMoving[me],
-            y.RLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-            y.RLegTargetVectorMoving[me]
+            y.RLegStartVectorMoving[ge],
+            y.RLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+            y.RLegTargetVectorMoving[ge]
           ];
         }
       }), ce.addControl(ie);
@@ -161739,68 +161739,68 @@ void main()
       }), ce.addControl(ie);
       var ie = At.CreateSimpleButton("btn1", "Animation Merge");
       ie.width = "100px", ie.height = "100px", ie.background = "green", ie.onPointerClickObservable.add(() => {
-        const ye = prompt("Input Animation Name"), me = Number(prompt("Input Merging Frame"));
-        let Nt = 0, Yt = 0;
-        Object.keys(r.Movings).forEach((Ke) => {
-          r.Movings[Ke].length > Nt && (Nt = r.Movings[Ke].length), A[ye][Ke].length > Yt && (Yt = A[ye][Ke].length);
-        }), Object.keys(r.Movings).forEach((Ke) => {
-          for (; r.Movings[Ke].length < Nt; ) Ke == "BodyAngleMoving" || Ke == "HeadAngleMoving" ? r.Movings[Ke].push(0) : r.Movings[Ke].push(v.Zero());
-        }), Object.keys(r.Movings).forEach((Ke) => {
-          let qe, Ft;
-          switch (Ke) {
+        const ye = prompt("Input Animation Name"), ge = Number(prompt("Input Merging Frame"));
+        let Dt = 0, Qt = 0;
+        Object.keys(r.Movings).forEach((Je) => {
+          r.Movings[Je].length > Dt && (Dt = r.Movings[Je].length), A[ye][Je].length > Qt && (Qt = A[ye][Je].length);
+        }), Object.keys(r.Movings).forEach((Je) => {
+          for (; r.Movings[Je].length < Dt; ) Je == "BodyAngleMoving" || Je == "HeadAngleMoving" ? r.Movings[Je].push(0) : r.Movings[Je].push(v.Zero());
+        }), Object.keys(r.Movings).forEach((Je) => {
+          let Ke, Ft;
+          switch (Je) {
             case "BodyAngleMoving":
-              qe = r.angleValue + r.Movings[Ke][r.Movings[Ke].length - 1], Ft = P[ye].angleValue;
+              Ke = r.angleValue + r.Movings[Je][r.Movings[Je].length - 1], Ft = P[ye].angleValue;
               break;
             case "HeadAngleMoving":
-              qe = r.upper.head.angleValue + r.Movings[Ke][r.Movings[Ke].length - 1], Ft = P[ye].upper.head.angleValue;
+              Ke = r.upper.head.angleValue + r.Movings[Je][r.Movings[Je].length - 1], Ft = P[ye].upper.head.angleValue;
               break;
             case "BodyMoving":
-              qe = r.positionValue.add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].position;
+              Ke = r.positionValue.add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].position;
               break;
             case "HeadMoving":
-              qe = v.Zero(), Ft = v.Zero();
+              Ke = v.Zero(), Ft = v.Zero();
               break;
             case "LArmStartVectorMoving":
-              qe = r.ArmLTarget[0], Ft = P[ye].ArmLTarget[0];
+              Ke = r.ArmLTarget[0], Ft = P[ye].ArmLTarget[0];
               break;
             case "LArmTargetPositionMoving":
-              qe = r.ArmLTarget[1], Ft = P[ye].ArmLTarget[1];
+              Ke = r.ArmLTarget[1], Ft = P[ye].ArmLTarget[1];
               break;
             case "LArmTargetVectorMoving":
-              qe = r.ArmLTarget[2], Ft = P[ye].ArmLTarget[2];
+              Ke = r.ArmLTarget[2], Ft = P[ye].ArmLTarget[2];
               break;
             case "LLegStartVectorMoving":
-              qe = r.LegLTarget[0].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].LegLTarget[0];
+              Ke = r.LegLTarget[0].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].LegLTarget[0];
               break;
             case "LLegTargetPositionMoving":
-              qe = r.LegLTarget[1].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].LegLTarget[1];
+              Ke = r.LegLTarget[1].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].LegLTarget[1];
               break;
             case "LLegTargetVectorMoving":
-              qe = r.LegLTarget[2].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].LegLTarget[2];
+              Ke = r.LegLTarget[2].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].LegLTarget[2];
               break;
             case "RArmStartVectorMoving":
-              qe = r.ArmRTarget[0].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].ArmRTarget[0];
+              Ke = r.ArmRTarget[0].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].ArmRTarget[0];
               break;
             case "RArmTargetPositionMoving":
-              qe = r.ArmRTarget[1].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].ArmRTarget[1];
+              Ke = r.ArmRTarget[1].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].ArmRTarget[1];
               break;
             case "RArmTargetVectorMoving":
-              qe = r.ArmRTarget[2].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].ArmRTarget[2];
+              Ke = r.ArmRTarget[2].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].ArmRTarget[2];
               break;
             case "RLegStartVectorMoving":
-              qe = r.LegRTarget[0].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].LegRTarget[0];
+              Ke = r.LegRTarget[0].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].LegRTarget[0];
               break;
             case "RLegTargetPositionMoving":
-              qe = r.LegRTarget[1].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].LegRTarget[1];
+              Ke = r.LegRTarget[1].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].LegRTarget[1];
               break;
             case "RLegTargetVectorMoving":
-              qe = r.LegRTarget[2].add(r.Movings[Ke][r.Movings[Ke].length - 1]), Ft = P[ye].LegRTarget[2];
+              Ke = r.LegRTarget[2].add(r.Movings[Je][r.Movings[Je].length - 1]), Ft = P[ye].LegRTarget[2];
               break;
           }
-          if (Ke != "BodyAngleMoving" && Ke != "HeadAngleMoving") for (var Er = 0; Er < me; Er++) r.Movings[Ke].push(v.Lerp(qe, Ft, Er / me)), console.log(Ke, qe, Ft, v.Lerp(qe, Ft, Er / me), Er / me);
-          else for (var Er = 0; Er < me; Er++) Math.abs(Ft - qe) < Math.PI ? r.Movings[Ke].push(Ft + (qe - Ft) * (Er / me)) : qe < 0 ? r.Movings[Ke].push(Ft + (qe - Ft + Math.PI * 2) * (Er / me)) : r.Movings[Ke].push(Ft + (qe - Ft - Math.PI * 2) * (Er / me));
-        }), Object.keys(r.Movings).forEach((Ke) => {
-          for (r.Movings[Ke].push(...A[ye][Ke]); r.Movings[Ke].length < Yt + Nt; ) Ke == "BodyAngleMoving" || Ke == "HeadAngleMoving" ? r.Movings[Ke].push(0) : r.Movings[Ke].push(v.Zero());
+          if (Je != "BodyAngleMoving" && Je != "HeadAngleMoving") for (var Er = 0; Er < ge; Er++) r.Movings[Je].push(v.Lerp(Ke, Ft, Er / ge)), console.log(Je, Ke, Ft, v.Lerp(Ke, Ft, Er / ge), Er / ge);
+          else for (var Er = 0; Er < ge; Er++) Math.abs(Ft - Ke) < Math.PI ? r.Movings[Je].push(Ft + (Ke - Ft) * (Er / ge)) : Ke < 0 ? r.Movings[Je].push(Ft + (Ke - Ft + Math.PI * 2) * (Er / ge)) : r.Movings[Je].push(Ft + (Ke - Ft - Math.PI * 2) * (Er / ge));
+        }), Object.keys(r.Movings).forEach((Je) => {
+          for (r.Movings[Je].push(...A[ye][Je]); r.Movings[Je].length < Qt + Dt; ) Je == "BodyAngleMoving" || Je == "HeadAngleMoving" ? r.Movings[Je].push(0) : r.Movings[Je].push(v.Zero());
         });
       }), ce.addControl(ie);
       var ie = At.CreateSimpleButton("btn1", "Animation Reset");
@@ -161834,53 +161834,53 @@ void main()
           if (s) s.upper.deleteSelf(), s = void 0;
           else {
             s = Lx(o, true);
-            const ye = new Me(1, 0.8, 0.8, 0.5), me = F == 0 ? y.BodyMoving.length - 1 : F - 1;
-            s.positionValue = y.BodyMoving[me], s.upper.eye = R(o, 2e4, true), s.angleValue = y.BodyAngleMoving[me], s.head.angleValue = y.HeadAngleMoving[me], s.ArmLTarget = [
-              y.LArmStartVectorMoving[me],
-              y.LArmTargetPositionMoving[me].add(new v(-0.3, 0, 0)),
-              y.LArmTargetVectorMoving[me]
+            const ye = new Me(1, 0.8, 0.8, 0.5), ge = F == 0 ? y.BodyMoving.length - 1 : F - 1;
+            s.positionValue = y.BodyMoving[ge], s.upper.eye = R(o, 2e4, true), s.angleValue = y.BodyAngleMoving[ge], s.head.angleValue = y.HeadAngleMoving[ge], s.ArmLTarget = [
+              y.LArmStartVectorMoving[ge],
+              y.LArmTargetPositionMoving[ge].add(new v(-0.3, 0, 0)),
+              y.LArmTargetVectorMoving[ge]
             ], s.ArmRTarget = [
-              y.RArmStartVectorMoving[me],
-              y.RArmTargetPositionMoving[me].add(new v(0.3, 0, 0)),
-              y.RArmTargetVectorMoving[me]
+              y.RArmStartVectorMoving[ge],
+              y.RArmTargetPositionMoving[ge].add(new v(0.3, 0, 0)),
+              y.RArmTargetVectorMoving[ge]
             ], s.LegLTarget = [
-              y.LLegStartVectorMoving[me],
-              y.LLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-              y.LLegTargetVectorMoving[me]
+              y.LLegStartVectorMoving[ge],
+              y.LLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+              y.LLegTargetVectorMoving[ge]
             ], s.LegRTarget = [
-              y.RLegStartVectorMoving[me],
-              y.RLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-              y.RLegTargetVectorMoving[me]
+              y.RLegStartVectorMoving[ge],
+              y.RLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+              y.RLegTargetVectorMoving[ge]
             ], s.color = ye, s.upper.head.color = ye, s.upper.eye.color = ye;
           }
           if (n) n.upper.deleteSelf(), n = void 0;
           else {
             n = Lx(o, true);
-            const ye = new Me(0.8, 1, 0.8, 0.5), me = F == y.BodyMoving.length - 1 ? 0 : F + 1;
-            n.positionValue = y.BodyMoving[me], n.upper.eye = R(o, 2e4, true), n.angleValue = y.BodyAngleMoving[me], n.head.angleValue = y.HeadAngleMoving[me], n.ArmLTarget = [
-              y.LArmStartVectorMoving[me],
-              y.LArmTargetPositionMoving[me].add(new v(-0.3, 0, 0)),
-              y.LArmTargetVectorMoving[me]
+            const ye = new Me(0.8, 1, 0.8, 0.5), ge = F == y.BodyMoving.length - 1 ? 0 : F + 1;
+            n.positionValue = y.BodyMoving[ge], n.upper.eye = R(o, 2e4, true), n.angleValue = y.BodyAngleMoving[ge], n.head.angleValue = y.HeadAngleMoving[ge], n.ArmLTarget = [
+              y.LArmStartVectorMoving[ge],
+              y.LArmTargetPositionMoving[ge].add(new v(-0.3, 0, 0)),
+              y.LArmTargetVectorMoving[ge]
             ], n.ArmRTarget = [
-              y.RArmStartVectorMoving[me],
-              y.RArmTargetPositionMoving[me].add(new v(0.3, 0, 0)),
-              y.RArmTargetVectorMoving[me]
+              y.RArmStartVectorMoving[ge],
+              y.RArmTargetPositionMoving[ge].add(new v(0.3, 0, 0)),
+              y.RArmTargetVectorMoving[ge]
             ], n.LegLTarget = [
-              y.LLegStartVectorMoving[me],
-              y.LLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-              y.LLegTargetVectorMoving[me]
+              y.LLegStartVectorMoving[ge],
+              y.LLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+              y.LLegTargetVectorMoving[ge]
             ], n.LegRTarget = [
-              y.RLegStartVectorMoving[me],
-              y.RLegTargetPositionMoving[me].add(new v(0, -0.3, 0)),
-              y.RLegTargetVectorMoving[me]
+              y.RLegStartVectorMoving[ge],
+              y.RLegTargetPositionMoving[ge].add(new v(0, -0.3, 0)),
+              y.RLegTargetVectorMoving[ge]
             ], n.color = ye, n.upper.head.color = ye, n.upper.eye.color = ye;
           }
         }
       }), ce.addControl(ie);
       const pe = At.CreateSimpleButton("btn1", "Save");
       pe.zIndex = 3, pe.verticalAlignment = be.VERTICAL_ALIGNMENT_TOP, pe.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, pe.width = "100px", pe.height = "100px", pe.background = "green", t.addControl(pe);
-      const Je = (ye = null) => {
-        const me = {
+      const Ze = () => {
+        const ye = {
           BodyPosition: r.position,
           HeadPosition: r.children[0].position,
           BodyAngle: r.angleValue,
@@ -161890,29 +161890,29 @@ void main()
           LegLTarget: r.LegLTarget,
           LegRTarget: r.LegRTarget,
           Movings: r.Movings
-        }, Nt = bC(me), Yt = JSON.stringify(Nt, null, 2), Ke = new Blob([
-          Yt
+        }, ge = bC(ye), Dt = JSON.stringify(ge, null, 2), Qt = new Blob([
+          Dt
         ], {
           type: "application/json"
         });
-        re.Download(Ke, filename ?? "Move_result.json"), console.log(Yt, filename);
+        re.Download(Qt, "Move_result.json"), console.log(Dt);
       };
-      pe.onPointerClickObservable.add(Je);
+      pe.onPointerClickObservable.add(Ze);
       const Ge = At.CreateSimpleButton("btn1", "Load");
       Ge.zIndex = 3, Ge.verticalAlignment = be.VERTICAL_ALIGNMENT_BOTTOM, Ge.horizontalAlignment = be.HORIZONTAL_ALIGNMENT_RIGHT, Ge.width = "100px", Ge.height = "100px", Ge.background = "green", t.addControl(Ge);
       const pt = () => {
         const ye = document.createElement("input");
-        ye.type = "file", ye.accept = ".json", ye.click(), ye.onchange = (me) => {
-          const Nt = me.target.files[0];
-          if (Nt) {
-            const Yt = new FileReader();
-            Yt.onload = (Ke) => {
+        ye.type = "file", ye.accept = ".json", ye.click(), ye.onchange = (ge) => {
+          const Dt = ge.target.files[0];
+          if (Dt) {
+            const Qt = new FileReader();
+            Qt.onload = (Je) => {
               try {
-                const qe = JSON.parse(Ke.target.result);
-                console.log("Loaded JSON:", qe);
+                const Ke = JSON.parse(Je.target.result);
+                console.log("Loaded JSON:", Ke);
                 try {
                   const Ft = {};
-                  Object.keys(qe).forEach((Xi) => {
+                  Object.keys(Ke).forEach((Xi) => {
                     if ([
                       "ArmLTarget",
                       "ArmRTarget",
@@ -161920,31 +161920,31 @@ void main()
                       "LegRTarget"
                     ].includes(Xi)) {
                       let qt = [];
-                      qe[Xi].forEach((Mi) => {
+                      Ke[Xi].forEach((Mi) => {
                         qt.push(new v(Mi._x, Mi._y, Mi._z));
                       }), Ft[Xi] = qt;
                     } else if (Xi == "Movings") {
                       let qt = {};
-                      Object.keys(qe[Xi]).forEach((Mi) => {
-                        if (Mi == "HeadAngleMoving" || Mi == "BodyAngleMoving") qt[Mi] = qe[Xi][Mi];
+                      Object.keys(Ke[Xi]).forEach((Mi) => {
+                        if (Mi == "HeadAngleMoving" || Mi == "BodyAngleMoving") qt[Mi] = Ke[Xi][Mi];
                         else {
                           let ir = [];
-                          qe[Xi][Mi].forEach((Ti) => {
+                          Ke[Xi][Mi].forEach((Ti) => {
                             ir.push(new v(Ti._x, Ti._y, Ti._z));
                           }), qt[Mi] = ir;
                         }
                       }), Ft.Movings = qt;
-                    } else typeof qe[Xi] == "object" ? Ft[Xi] = new v(qe[Xi]._x, qe[Xi]._y, qe[Xi]._z) : Ft[Xi] = qe[Xi];
+                    } else typeof Ke[Xi] == "object" ? Ft[Xi] = new v(Ke[Xi]._x, Ke[Xi]._y, Ke[Xi]._z) : Ft[Xi] = Ke[Xi];
                   });
                   const { ArmLTarget: Er, ArmRTarget: Rr, BodyAngle: ka, HeadAngleValue: yn, LegLTarget: zs, LegRTarget: pr, Movings: ji } = Ft;
                   r.ArmLTarget = Er, r.ArmRTarget = Rr, r.LegLTarget = zs, r.LegRTarget = pr, r.angleValue = ka, r.children[0].angleValue = yn, r.Movings = ji;
                 } catch (Ft) {
                   console.error("Error load Move:", Ft);
                 }
-              } catch (qe) {
-                console.error("Error parsing JSON:", qe);
+              } catch (Ke) {
+                console.error("Error parsing JSON:", Ke);
               }
-            }, Yt.readAsText(Nt);
+            }, Qt.readAsText(Dt);
           }
         };
       };
@@ -161953,23 +161953,23 @@ void main()
       De.intensity = 0.7;
       const Qe = new Sn("orthoCamera", new v(0, 0, -10), o);
       Qe.mode = tt.ORTHOGRAPHIC_CAMERA;
-      const ge = o.getEngine().getAspectRatio(Qe);
-      Qe.orthoLeft = -ge * 1.5, Qe.orthoRight = ge * 1.5, Qe.orthoTop = 1.5, Qe.orthoBottom = -1.5, r = Lx(o), r.upper.eye = R(o, 2e4);
+      const me = o.getEngine().getAspectRatio(Qe);
+      Qe.orthoLeft = -me * 1.5, Qe.orthoRight = me * 1.5, Qe.orthoTop = 1.5, Qe.orthoBottom = -1.5, r = Lx(o), r.upper.eye = R(o, 2e4);
       const dt = new Cs("footlineManager", "danceVil/Avatar/dot.png", 100, {
         width: 43,
         height: 44
       }, o);
       for (var K = 0; K < 100; K++) {
-        const me = new ds("footline", dt);
-        me.color.a = 0.5, me.position.x = -3 + 0.06 * K, me.position.y = -0.475, me.position.z = 0.1, me.width = 0.04, me.height = 3e-3;
+        const ge = new ds("footline", dt);
+        ge.color.a = 0.5, ge.position.x = -3 + 0.06 * K, ge.position.y = -0.475, ge.position.z = 0.1, ge.width = 0.04, ge.height = 3e-3;
       }
       const ei = new Cs("footlineManager", "danceVil/Avatar/dot.png", 100, {
         width: 43,
         height: 44
       }, o);
       for (var K = 0; K < 100; K++) {
-        const me = new ds("footline", ei);
-        me.color.a = 0.5, me.position.x = 0, me.position.y = -3 + 0.06 * K, me.position.z = 0.1, me.height = 0.04, me.width = 3e-3;
+        const ge = new ds("footline", ei);
+        ge.color.a = 0.5, ge.position.x = 0, ge.position.y = -3 + 0.06 * K, ge.position.z = 0.1, ge.height = 0.04, ge.width = 3e-3;
       }
       console.log(r), o.onBeforeRenderObservable.add(() => {
         q[0].text = `
@@ -162024,43 +162024,40 @@ void main()
       }), a.runRenderLoop(() => {
         o.render();
       });
-      const wt = {};
+      const Nt = {};
       return o.onKeyboardObservable.add((ye) => {
-        if (ye.type == 1 && !wt[ye.event.code]) if (wt[ye.event.code] = true, wt.ControlLeft && wt.KeyZ && wt.ShiftLeft) {
-          const me = m.pop();
-          me && (me[0] == "body" ? (p.push([
-            me[0],
+        if (ye.type == 1 && !Nt[ye.event.code]) if (Nt[ye.event.code] = true, Nt.ControlLeft && Nt.KeyZ && Nt.ShiftLeft) {
+          const ge = m.pop();
+          ge && (ge[0] == "body" ? (p.push([
+            ge[0],
             JSON.parse(JSON.stringify(r.positionValue))
-          ]), r.positionValue = new v(me[1]._x, me[1]._y, me[1]._z)) : me[0] == "bodyangle" ? (p.push([
-            me[0],
+          ]), r.positionValue = new v(ge[1]._x, ge[1]._y, ge[1]._z)) : ge[0] == "bodyangle" ? (p.push([
+            ge[0],
             JSON.parse(JSON.stringify(r.angleValue))
-          ]), r.angleValue = JSON.parse(JSON.stringify(me[1]))) : me[0] == "head" ? (p.push([
-            me[0],
+          ]), r.angleValue = JSON.parse(JSON.stringify(ge[1]))) : ge[0] == "head" ? (p.push([
+            ge[0],
             JSON.parse(JSON.stringify(r.children[0].angleValue))
-          ]), r.children[0].angleValue = JSON.parse(JSON.stringify(me[1]))) : (p.push([
-            me[0],
-            JSON.parse(JSON.stringify(r[me[0]]))
-          ]), r[me[0]][0] = new v(me[1][0]._x, me[1][0]._y, me[1][0]._z), r[me[0]][1] = new v(me[1][1]._x, me[1][1]._y, me[1][1]._z), r[me[0]][2] = new v(me[1][2]._x, me[1][2]._y, me[1][2]._z))), wt.KeyZ = false;
-        } else if (wt.ControlLeft && wt.KeyZ) {
-          const me = p.pop();
-          me && (me[0] == "body" ? (m.unshift([
-            me[0],
+          ]), r.children[0].angleValue = JSON.parse(JSON.stringify(ge[1]))) : (p.push([
+            ge[0],
+            JSON.parse(JSON.stringify(r[ge[0]]))
+          ]), r[ge[0]][0] = new v(ge[1][0]._x, ge[1][0]._y, ge[1][0]._z), r[ge[0]][1] = new v(ge[1][1]._x, ge[1][1]._y, ge[1][1]._z), r[ge[0]][2] = new v(ge[1][2]._x, ge[1][2]._y, ge[1][2]._z))), Nt.KeyZ = false;
+        } else if (Nt.ControlLeft && Nt.KeyZ) {
+          const ge = p.pop();
+          ge && (ge[0] == "body" ? (m.unshift([
+            ge[0],
             JSON.parse(JSON.stringify(r.positionValue))
-          ]), r.positionValue = new v(me[1]._x, me[1]._y, me[1]._z)) : me[0] == "bodyangle" ? (m.unshift([
-            me[0],
+          ]), r.positionValue = new v(ge[1]._x, ge[1]._y, ge[1]._z)) : ge[0] == "bodyangle" ? (m.unshift([
+            ge[0],
             JSON.parse(JSON.stringify(r.angleValue))
-          ]), r.angleValue = JSON.parse(JSON.stringify(me[1]))) : me[0] == "head" ? (m.unshift([
-            me[0],
+          ]), r.angleValue = JSON.parse(JSON.stringify(ge[1]))) : ge[0] == "head" ? (m.unshift([
+            ge[0],
             JSON.parse(JSON.stringify(r.children[0].angleValue))
-          ]), r.children[0].angleValue = JSON.parse(JSON.stringify(me[1]))) : (m.unshift([
-            me[0],
-            JSON.parse(JSON.stringify(r[me[0]]))
-          ]), r[me[0]][0] = new v(me[1][0]._x, me[1][0]._y, me[1][0]._z), r[me[0]][1] = new v(me[1][1]._x, me[1][1]._y, me[1][1]._z), r[me[0]][2] = new v(me[1][2]._x, me[1][2]._y, me[1][2]._z))), wt.KeyZ = false;
-        } else if (wt.ControlLeft && wt.KeyS && wt.ShiftLeft) {
-          const me = prompt("Enter File name");
-          Je(me + ".json"), wt.ControlLeft = false, wt.KeyS = false, wt.ShiftLeft = false;
-        } else wt.ControlLeft && wt.KeyO ? (pt(), wt.ControlLeft = false, wt.KeyO = false) : wt.ControlLeft && wt.KeyS && (Je(), wt.ControlLeft = false, wt.KeyS = false);
-        else wt[ye.event.code] = false;
+          ]), r.children[0].angleValue = JSON.parse(JSON.stringify(ge[1]))) : (m.unshift([
+            ge[0],
+            JSON.parse(JSON.stringify(r[ge[0]]))
+          ]), r[ge[0]][0] = new v(ge[1][0]._x, ge[1][0]._y, ge[1][0]._z), r[ge[0]][1] = new v(ge[1][1]._x, ge[1][1]._y, ge[1][1]._z), r[ge[0]][2] = new v(ge[1][2]._x, ge[1][2]._y, ge[1][2]._z))), Nt.KeyZ = false;
+        } else Nt.ControlLeft && Nt.KeyS && Nt.ShiftLeft ? (prompt("Enter File name"), Ze(), Nt.ControlLeft = false, Nt.KeyS = false, Nt.ShiftLeft = false) : Nt.ControlLeft && Nt.KeyO ? (pt(), Nt.ControlLeft = false, Nt.KeyO = false) : Nt.ControlLeft && Nt.KeyS && (Ze(), Nt.ControlLeft = false, Nt.KeyS = false);
+        else Nt[ye.event.code] = false;
       }), () => {
       };
     }, []), ea.useEffect(() => {
@@ -162214,7 +162211,7 @@ void main()
         window.removeEventListener("resize", m);
       };
     }, []), ea.useEffect(() => {
-      i = new Ze(a), i.clearColor = new ue(1, 1, 1), t = us.CreateFullscreenUI("UI");
+      i = new qe(a), i.clearColor = new ue(1, 1, 1), t = us.CreateFullscreenUI("UI");
       var m = new fl("light1", v.Up(), i);
       m.intensity = 0.7;
       const x = new Sn("orthoCamera", new v(-1.2, -0.1, -10), i);
@@ -162271,7 +162268,7 @@ void main()
         const te = [], K = [];
         Object.keys(ms).forEach((fe) => {
           if (ms[fe].manager.name.startsWith("tile")) {
-            const X = Math.round(ms[fe].position.x * 100) / 100, F = Math.round(ms[fe].position.y * 100) / 100, $ = Math.round(ms[fe].width / 2 * 100) / 100, le = Math.round(ms[fe].height / 2 * 100) / 100, Te = Math.round((X - $) * 100) / 100, ie = Math.round((X + $) * 100) / 100, pe = Math.round((F - le) * 100) / 100, Je = Math.round((F + le) * 100) / 100;
+            const X = Math.round(ms[fe].position.x * 100) / 100, F = Math.round(ms[fe].position.y * 100) / 100, $ = Math.round(ms[fe].width / 2 * 100) / 100, le = Math.round(ms[fe].height / 2 * 100) / 100, Te = Math.round((X - $) * 100) / 100, ie = Math.round((X + $) * 100) / 100, pe = Math.round((F - le) * 100) / 100, Ze = Math.round((F + le) * 100) / 100;
             K.push([
               {
                 x: Te,
@@ -162283,11 +162280,11 @@ void main()
               },
               {
                 x: ie,
-                y: Je
+                y: Ze
               },
               {
                 x: Te,
-                y: Je
+                y: Ze
               }
             ]);
           } else te.push([
@@ -162431,8 +162428,8 @@ void main()
                     ie.panel.removeControl(ie), ie.inMain = false;
                     const pe = In[gn];
                     if (pe.cur_panel == null) {
-                      const Je = new ls("");
-                      Je.isVertical = false, Je.height = "100px", pe.Vpanel.addControl(Je), pe.cur_panel = Je;
+                      const Ze = new ls("");
+                      Ze.isVertical = false, Ze.height = "100px", pe.Vpanel.addControl(Ze), pe.cur_panel = Ze;
                     }
                     pe.cur_panel.addControl(ie), pe.count += 1, ie.panel = pe.cur_panel, pe.values[ie.objid] = Ql[ie.objid], pe.count == 3 && (pe.count = 0, pe.cur_panel = null), console.log(pe);
                   }
@@ -162894,7 +162891,7 @@ void main()
         window.removeEventListener("resize", f);
       };
     }, []), ea.useEffect(() => {
-      i = new Ze(a), i.name = "MAP", i.clearColor = new ue(1, 1, 1), t = us.CreateFullscreenUI("UI");
+      i = new qe(a), i.name = "MAP", i.clearColor = new ue(1, 1, 1), t = us.CreateFullscreenUI("UI");
       var f = new fl("light1", v.Up(), i);
       f.intensity = 0.7;
       const p = new Sn("orthoCamera", new v(-1.2, -0.1, -10), i);
@@ -163001,7 +162998,7 @@ void main()
     }, []);
     let o;
     var l = function(f) {
-      var p = new Ze(f);
+      var p = new qe(f);
       p.name = "sub";
       var m = new wi("Camera", -Math.PI / 2, Math.PI / 2, 2.5, new v(0, 0, 0), p);
       return p.ambientColor = new ue(0.3, 0.3, 0.3), o = A1(p, ri[0], true), o.body.positionValue = new v(0, -0.65, 0), dd(sS, o), m;
@@ -163292,7 +163289,7 @@ void main()
         timeStep: 1 / 60
       });
       l.adaptToDeviceRatio = true, window.devicePixelRatio < 2 ? l.setHardwareScalingLevel(1 / (window.devicePixelRatio * 1.01)) : l.setHardwareScalingLevel(1 / (window.devicePixelRatio * 1.05)), e.current = l;
-      const c = new Ze(l);
+      const c = new qe(l);
       c.clearColor = new Me(0.8, 0.8, 0.8);
       const h = us.CreateFullscreenUI("UI");
       r.current = new ia("panel");
