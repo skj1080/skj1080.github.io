@@ -16382,31 +16382,31 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
     return lS.delete(a);
   }
   function LC(a, e) {
-    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-DbkjJJgT.js").then(async (m) => {
+    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-L-k4J25v.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-DF-0yd-M.js").then(async (m) => {
+    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-CZtClXLf.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-BCGgGwpn.js").then(async (m) => {
+    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-mu9WarnK.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-NF6zLdKZ.js").then(async (m) => {
+    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-B3dVIO_e.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-DaoZFk4-.js").then(async (m) => {
+    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-d_ruS0YQ.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-DBSG6dKb.js").then(async (m) => {
+    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-21XZtYPF.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-DBSG6dKb.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-21XZtYPF.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-6VojD3mX.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-m71k-4zF.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-CbQMYzSY.js").then(async (m) => {
+    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-Cs6S4N-R.js").then(async (m) => {
       await m.__tla;
       return m;
     }), []).then((i) => new i._ExrTextureLoader())));
@@ -62645,7 +62645,7 @@ Make sure timestamp query is supported and enabled in your browser.`);
         }, void 0)).FlowGraphArrayIndexBlock;
       case "FlowGraphCodeExecutionBlock":
         return async () => (await Y(async () => {
-          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-Dy6cFaD8.js").then(async (m) => {
+          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-D-X7oj3H.js").then(async (m) => {
             await m.__tla;
             return m;
           });
@@ -159163,7 +159163,7 @@ void main()
     });
   }
   SZ(bg, "FlowGraphGLTFDataProvider", async () => (await Y(async () => {
-    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-B3xp1Z8c.js").then(async (m) => {
+    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-1XBOxhje.js").then(async (m) => {
       await m.__tla;
       return m;
     });
@@ -160526,7 +160526,7 @@ void main()
     xm[a.name] || (xm[a.name] = {}), xm[a.name][e] || (xm[a.name][e] = new Cs(`avatar_${Fr[e].Type}`, `danceVil/Avatar/${Fr[e].Filename}`, 1e3, {
       width: Fr[e].Width,
       height: Fr[e].Height
-    }, a));
+    }, a, 0));
     const t = xm[a.name][e];
     t.isPickable = e == "5001";
     const i = new ds(`Sprite-${Fr[e].Type}`, t);
@@ -160536,7 +160536,7 @@ void main()
     Sm[a.name] || (Sm[a.name] = {}), Sm[a.name][e] || (Sm[a.name][e] = new Cs(`avatar_${Zc[e].Type}`, `danceVil/Avatar/${Zc[e].Filename}`, 1e3, {
       width: Zc[e].Width,
       height: Zc[e].Height
-    }, a));
+    }, a, 0));
     const c = Sm[a.name][e];
     c.isPickable = e == "5001";
     const h = new ds(`Sprite-${Zc[e].Type}`, c);
@@ -160548,7 +160548,7 @@ void main()
     }, r = [], s = [], n = new Cs("shadow", "danceVil/Avatar/shadow.png", 10, {
       width: 100,
       height: 40
-    }, a);
+    }, a, 0);
     n.renderingGroupId = 3;
     const o = new ds(`Sprite-${n.name}`, n);
     o.width = n.cellWidth * rl, o.height = n.cellHeight * rl, r.push(o), Object.keys(e).forEach((B) => {
@@ -160654,7 +160654,7 @@ void main()
     const C = new Cs("dot", "danceVil/Avatar/dot.png", 65, {
       width: 43,
       height: 44
-    }, a);
+    }, a, 0);
     C.renderingGroupId = 3;
     function R() {
       var _a2, _b2, _c2, _d2, _e2, _f, _g2, _h2, _i2, _j2, _k2, _l2, _m2, _n, _o;
