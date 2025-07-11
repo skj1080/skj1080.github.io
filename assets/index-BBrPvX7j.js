@@ -16382,31 +16382,31 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
     return lS.delete(a);
   }
   function LC(a, e) {
-    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-EaqYQQKd.js").then(async (m) => {
+    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-Cqibq1h7.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-Dk_yCocl.js").then(async (m) => {
+    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-b_4rM5RD.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-DLqeBh3I.js").then(async (m) => {
+    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-DRQ6DCVz.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-BSpuoaPE.js").then(async (m) => {
+    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-_fOBBE_e.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-CnmyIbP3.js").then(async (m) => {
+    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-oUmZy_7v.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-DYsnQArT.js").then(async (m) => {
+    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-BuGAtYe8.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-DYsnQArT.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-BuGAtYe8.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-BG9zjMmN.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-BfT8HN2-.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-BV4-un6H.js").then(async (m) => {
+    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-DnsUAFFs.js").then(async (m) => {
       await m.__tla;
       return m;
     }), []).then((i) => new i._ExrTextureLoader())));
@@ -62645,7 +62645,7 @@ Make sure timestamp query is supported and enabled in your browser.`);
         }, void 0)).FlowGraphArrayIndexBlock;
       case "FlowGraphCodeExecutionBlock":
         return async () => (await Y(async () => {
-          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-DGiWsgDW.js").then(async (m) => {
+          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-D6pVGbX3.js").then(async (m) => {
             await m.__tla;
             return m;
           });
@@ -159163,7 +159163,7 @@ void main()
     });
   }
   SZ(bg, "FlowGraphGLTFDataProvider", async () => (await Y(async () => {
-    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-B3g_MrmT.js").then(async (m) => {
+    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-ANuj_OyW.js").then(async (m) => {
       await m.__tla;
       return m;
     });
@@ -163150,61 +163150,61 @@ void main()
       var C = At.CreateSimpleButton("btn1", "x right");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[Ki[A].Type].offsets;
+        const D = o[A.includes("hand") ? A : Ki[A].Type].offsets;
         D.x += 5e-3;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "x left");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[Ki[A].Type].offsets;
+        const D = o[A.includes("hand") ? A : Ki[A].Type].offsets;
         D.x -= 5e-3;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "y up");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[Ki[A].Type].offsets;
+        const D = o[A.includes("hand") ? A : Ki[A].Type].offsets;
         D.y += 5e-3;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "y down");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[Ki[A].Type].offsets;
+        const D = o[A.includes("hand") ? A : Ki[A].Type].offsets;
         D.y -= 5e-3;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "z front");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[Ki[A].Type].offsets;
+        const D = o[A.includes("hand") ? A : Ki[A].Type].offsets;
         D.z -= 5e-3;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "z back");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const D = o[Ki[A].Type].offsets;
+        const D = o[A.includes("hand") ? A : Ki[A].Type].offsets;
         D.z += 5e-3;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "rotate left");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[Ki[A].Type];
+        const R = o[A.includes("hand") ? A : Ki[A].Type];
         R.angleoffset += Math.PI / 32, R.angleoffset %= 2 * Math.PI, R.angleoffset = Math.round(R.angleoffset * 1e5) / 1e5;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "rotate right");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[Ki[A].Type];
+        const R = o[A.includes("hand") ? A : Ki[A].Type];
         R.angleoffset -= Math.PI / 32, R.angleoffset %= 2 * Math.PI, R.angleoffset = Math.round(R.angleoffset * 1e5) / 1e5;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "flip");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[Ki[A].Type];
+        const R = o[A.includes("hand") ? A : Ki[A].Type];
         R.invertU = !R.invertU;
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "Color");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[Ki[A].Type];
+        const R = o[A.includes("hand") ? A : Ki[A].Type];
         try {
           const D = prompt("Input R (0-255)"), B = prompt("Input G (0-255)"), V = prompt("Input B (0-255)"), L = Me.FromInts(D, B, V, 255);
           L.r = Math.round(L.r * 1e5) / 1e5, L.g = Math.round(L.g * 1e5) / 1e5, L.b = Math.round(L.b * 1e5) / 1e5, R.color = L;
@@ -163215,13 +163215,13 @@ void main()
       var C = At.CreateSimpleButton("btn1", "Check");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[Ki[A].Type];
+        const R = o[A.includes("hand") ? A : Ki[A].Type];
         alert(JSON.stringify(P(R)));
       }), E.addControl(C);
       var C = At.CreateSimpleButton("btn1", "Save");
       C.width = "100px", C.height = "100px", C.background = "green", C.onPointerClickObservable.add(() => {
         if (!A) return;
-        const R = o[Ki[A].Type], D = R.offsets;
+        const R = o[A.includes("hand") ? A : Ki[A].Type], D = R.offsets;
         D.x = Math.round(D.x * 1e5) / 1e5, D.y = Math.round(D.y * 1e5) / 1e5, D.z = Math.round(D.z * 1e5) / 1e5, console.log(R), y(R);
       }), E.addControl(C), Object.keys(Ki).forEach((R) => {
         if (Number(R) < 1e5 && Number(R) > 9e3 && !t.getControlByName(`button-${R}`)) {
@@ -163236,7 +163236,7 @@ void main()
               let L = null;
               if (Ki[D.objid].Type == "hand" && (B.buttonIndex == 0 ? L = "Lhand" : L = "Rhand"), V[L || Ki[D.objid].Type] && V[L || Ki[D.objid].Type][0] == D.objid) o.unequip(L || Ki[D.objid].Type), delete V[L || Ki[D.objid].Type], A = null;
               else {
-                o.unequip(L || Ki[D.objid].Type), o.equip(D.objid, L), A = D.objid;
+                o.unequip(L || Ki[D.objid].Type), o.equip(D.objid, L), A = L || D.objid;
                 const Z = Ki[D.objid].attributes ?? EC[Ki[D.objid].Type] ?? {};
                 ri[Mt][L || Ki[D.objid].Type] = [
                   D.objid,
