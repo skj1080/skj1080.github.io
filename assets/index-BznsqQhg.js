@@ -16382,31 +16382,31 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
     return lS.delete(a);
   }
   function LC(a, e) {
-    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-GkKN3MBG.js").then(async (m) => {
+    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-DqGFYxrV.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-BfVdlWSv.js").then(async (m) => {
+    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-Ce_5WTgS.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-BhKStmmC.js").then(async (m) => {
+    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-VUn69TT7.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-Czu9O4cy.js").then(async (m) => {
+    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-D2MPvgW4.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-taUMbPR5.js").then(async (m) => {
+    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-5heOzq3E.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-BL18F6kq.js").then(async (m) => {
+    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-DJPiIg6q.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-BL18F6kq.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-DJPiIg6q.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-BDHyVBoP.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-BpfRCL3K.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-BhmM-MpU.js").then(async (m) => {
+    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-CZiTsbM1.js").then(async (m) => {
       await m.__tla;
       return m;
     }), []).then((i) => new i._ExrTextureLoader())));
@@ -62645,7 +62645,7 @@ Make sure timestamp query is supported and enabled in your browser.`);
         }, void 0)).FlowGraphArrayIndexBlock;
       case "FlowGraphCodeExecutionBlock":
         return async () => (await Y(async () => {
-          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-CYHInMbu.js").then(async (m) => {
+          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-hpsI4glK.js").then(async (m) => {
             await m.__tla;
             return m;
           });
@@ -159163,7 +159163,7 @@ void main()
     });
   }
   bZ(bg, "FlowGraphGLTFDataProvider", async () => (await Y(async () => {
-    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-BgFi-5P0.js").then(async (m) => {
+    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-DWbQvlAw.js").then(async (m) => {
       await m.__tla;
       return m;
     });
@@ -163476,7 +163476,8 @@ void main()
         const D = await (await fetch(`https://dev.play3.io:5000/npc/${P}`, {
           method: "POST",
           headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "api-key": "650312c325f980060f7c7e4b767f9ffc4cb5e38cd98f87d031d16be322391141"
           },
           body: C
         })).json();
