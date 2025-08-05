@@ -16382,31 +16382,31 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
     return lS.delete(a);
   }
   function LC(a, e) {
-    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-DhgpTrrk.js").then(async (m) => {
+    (e === "image/ktx" || e === "image/ktx2") && (a = ".ktx"), lS.has(a) || (a.endsWith(".ies") && zc(".ies", () => Y(() => import("./iesTextureLoader-BXuvrWsd.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-DyVz44bX.js").then(async (m) => {
+    }), []).then((i) => new i._IESTextureLoader())), a.endsWith(".dds") && zc(".dds", () => Y(() => import("./ddsTextureLoader-Dg4VJBdb.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-aexc9Gn5.js").then(async (m) => {
+    }), []).then((i) => new i._DDSTextureLoader())), a.endsWith(".basis") && zc(".basis", () => Y(() => import("./basisTextureLoader-BAojPE-9.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-D8U_-SsB.js").then(async (m) => {
+    }), []).then((i) => new i._BasisTextureLoader())), a.endsWith(".env") && zc(".env", () => Y(() => import("./envTextureLoader-YLYoz42D.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-DLVgpyDM.js").then(async (m) => {
+    }), []).then((i) => new i._ENVTextureLoader())), a.endsWith(".hdr") && zc(".hdr", () => Y(() => import("./hdrTextureLoader-DAZNs7C_.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-CI4lv5c_.js").then(async (m) => {
+    }), []).then((i) => new i._HDRTextureLoader())), (a.endsWith(".ktx") || a.endsWith(".ktx2")) && (zc(".ktx", () => Y(() => import("./ktxTextureLoader-BOJNUAlZ.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-CI4lv5c_.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader())), zc(".ktx2", () => Y(() => import("./ktxTextureLoader-BOJNUAlZ.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-BWDy225B.js").then(async (m) => {
+    }), []).then((i) => new i._KTXTextureLoader()))), a.endsWith(".tga") && zc(".tga", () => Y(() => import("./tgaTextureLoader-BTZYiqOl.js").then(async (m) => {
       await m.__tla;
       return m;
-    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-B79Gl492.js").then(async (m) => {
+    }), []).then((i) => new i._TGATextureLoader())), a.endsWith(".exr") && zc(".exr", () => Y(() => import("./exrTextureLoader-DvEdYWsu.js").then(async (m) => {
       await m.__tla;
       return m;
     }), []).then((i) => new i._ExrTextureLoader())));
@@ -62645,7 +62645,7 @@ Make sure timestamp query is supported and enabled in your browser.`);
         }, void 0)).FlowGraphArrayIndexBlock;
       case "FlowGraphCodeExecutionBlock":
         return async () => (await Y(async () => {
-          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-D8n4rrCQ.js").then(async (m) => {
+          const { FlowGraphCodeExecutionBlock: e } = await import("./flowGraphCodeExecutionBlock-DlJ39_Ym.js").then(async (m) => {
             await m.__tla;
             return m;
           });
@@ -159163,7 +159163,7 @@ void main()
     });
   }
   EZ(yg, "FlowGraphGLTFDataProvider", async () => (await Y(async () => {
-    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-BAVXqgRW.js").then(async (m) => {
+    const { FlowGraphGLTFDataProvider: a } = await import("./flowGraphGLTFDataProvider-OJGInePQ.js").then(async (m) => {
       await m.__tla;
       return m;
     });
@@ -162823,7 +162823,7 @@ void main()
               width: P.Width,
               height: P.Height
             }, i);
-            jc[A] = D, D.isPickable = true;
+            D.renderingGroupId = 4, jc[A] = D, D.isPickable = true;
           }
           if (zn == null) {
             const D = new $r("");
