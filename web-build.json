@@ -1,0 +1,50 @@
+{
+  "build_id": "ea6d41a-dirty-7a6fa5bfa7c8",
+  "source_commit": "ea6d41a588fd508eacfedbc186b76ce5fe6256d5",
+  "working_tree_dirty": true,
+  "runtime_source_sha256": "827b8448a38ba66ba32fcc697a6ec8a17b08ecb390bb3092d462e29a2ca6cccb",
+  "source_sha256": "7a6fa5bfa7c87ebd90d90eb072adad9c67b85e018d2683e34ef516362c31c0a4",
+  "engine_version": "4.7.stable.official.5b4e0cb0f",
+  "built_at_utc": "2026-09-15T03:35:23.172140+00:00",
+  "platform": "web",
+  "thread_support": false,
+  "url": "https://test-tube-dev.store/",
+  "artifacts": {
+    "index.html": {
+      "bytes": 5455,
+      "sha256": "125a58877959aa793d9adac299fac011f668b786881072ce15cda97e704d3c76"
+    },
+    "index.js": {
+      "bytes": 279815,
+      "sha256": "68586d6daafc93c6e697b3fb258976874aa7459b8931165ebb1dc3c9614cc42c"
+    },
+    "index.pck": {
+      "bytes": 67780420,
+      "sha256": "382c8b37a97a3f9f7fe0e831da13f8f21d5d56a1e97ae942b306986859888977"
+    },
+    "index.wasm": {
+      "bytes": 39509339,
+      "sha256": "7eda98958eb09135a1acb54a4323a00b1a55af1997f15fa1cdc2b93e3df46656"
+    },
+    "index.png": {
+      "bytes": 1021071,
+      "sha256": "08f23e705c218a2cd82706523888458262606864d6f288dcc39ae78459462727"
+    },
+    "index.icon.png": {
+      "bytes": 1616,
+      "sha256": "080dea3366c8ad6ccb136193ce2950b621f3d09165c645f61ef8ea7ccb6cc6ca"
+    },
+    "index.apple-touch-icon.png": {
+      "bytes": 3207,
+      "sha256": "969feaef0563e215347ee6e79e8cd8cb73bea6c56973644d56af11ae890cd781"
+    },
+    "index.audio.position.worklet.js": {
+      "bytes": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+    },
+    "index.audio.worklet.js": {
+      "bytes": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+    }
+  }
+}
